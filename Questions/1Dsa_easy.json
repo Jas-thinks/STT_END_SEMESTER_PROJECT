@@ -1,0 +1,1757 @@
+{
+  "subject": "Data Structures and Algorithms",
+  "difficulty": "Easy",
+  "total_questions": 250,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Arrays",
+      "question": "What is an array?",
+      "options": ["A linear data structure", "A non-linear data structure", "A tree structure", "A graph structure"],
+      "correct_answer": 0
+    },
+    {
+      "id": 2,
+      "topic": "Arrays",
+      "question": "What is the time complexity to access an element in an array by index?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 3,
+      "topic": "Arrays",
+      "question": "In a zero-indexed array of size 10, what is the last valid index?",
+      "options": ["10", "9", "8", "11"],
+      "correct_answer": 1
+    },
+    {
+      "id": 4,
+      "topic": "Arrays",
+      "question": "Which operation is most expensive in an array?",
+      "options": ["Accessing element", "Searching element", "Inserting at beginning", "All are same"],
+      "correct_answer": 2
+    },
+    {
+      "id": 5,
+      "topic": "Arrays",
+      "question": "What is the space complexity of an array of n elements?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 6,
+      "topic": "Arrays",
+      "question": "How do you find the maximum element in an unsorted array?",
+      "options": ["Binary search", "Linear search through all elements", "Sort first", "Use hash table"],
+      "correct_answer": 1
+    },
+    {
+      "id": 7,
+      "topic": "Arrays",
+      "question": "What is the output of array[5] if array = [10, 20, 30, 40, 50, 60]?",
+      "options": ["50", "60", "40", "Index out of bounds"],
+      "correct_answer": 1
+    },
+    {
+      "id": 8,
+      "topic": "Arrays",
+      "question": "Which of the following can be stored in an array?",
+      "options": ["Only integers", "Only strings", "Any data type", "Only primitive types"],
+      "correct_answer": 2
+    },
+    {
+      "id": 9,
+      "topic": "Arrays",
+      "question": "What is a 2D array also called?",
+      "options": ["Matrix", "Vector", "List", "Tree"],
+      "correct_answer": 0
+    },
+    {
+      "id": 10,
+      "topic": "Arrays",
+      "question": "How do you reverse an array in-place?",
+      "options": ["Create new array", "Swap elements from both ends", "Sort descending", "Use stack"],
+      "correct_answer": 1
+    },
+    {
+      "id": 11,
+      "topic": "Arrays",
+      "question": "What is the size of an array?",
+      "options": ["Number of elements", "Memory occupied", "Index range", "Depends on data type"],
+      "correct_answer": 0
+    },
+    {
+      "id": 12,
+      "topic": "Arrays",
+      "question": "Which is true about array indexing?",
+      "options": ["Always starts from 1", "Always starts from 0", "Depends on language", "Can start from any number"],
+      "correct_answer": 2
+    },
+    {
+      "id": 13,
+      "topic": "Arrays",
+      "question": "What does array rotation mean?",
+      "options": ["Sorting array", "Moving elements circularly", "Reversing array", "Swapping elements"],
+      "correct_answer": 1
+    },
+    {
+      "id": 14,
+      "topic": "Arrays",
+      "question": "What is the sum of array [1, 2, 3, 4, 5]?",
+      "options": ["10", "15", "20", "12"],
+      "correct_answer": 1
+    },
+    {
+      "id": 15,
+      "topic": "Arrays",
+      "question": "How to check if an array is sorted?",
+      "options": ["Compare each element with next", "Use binary search", "Check first and last", "Count elements"],
+      "correct_answer": 0
+    },
+    {
+      "id": 16,
+      "topic": "Arrays",
+      "question": "What is the minimum number of comparisons needed to find min and max in an array?",
+      "options": ["n", "2n", "3n/2", "n/2"],
+      "correct_answer": 2
+    },
+    {
+      "id": 17,
+      "topic": "Arrays",
+      "question": "What is a subarray?",
+      "options": ["Non-contiguous elements", "Contiguous elements from array", "Sorted elements", "Unique elements"],
+      "correct_answer": 1
+    },
+    {
+      "id": 18,
+      "topic": "Arrays",
+      "question": "What is array traversal?",
+      "options": ["Sorting array", "Visiting each element", "Searching element", "Deleting elements"],
+      "correct_answer": 1
+    },
+    {
+      "id": 19,
+      "topic": "Arrays",
+      "question": "Which search is best for sorted arrays?",
+      "options": ["Linear search", "Binary search", "Jump search", "Exponential search"],
+      "correct_answer": 1
+    },
+    {
+      "id": 20,
+      "topic": "Arrays",
+      "question": "What is the prefix sum of an array?",
+      "options": ["Sum of first element", "Cumulative sum at each index", "Total sum", "Average of elements"],
+      "correct_answer": 1
+    },
+    {
+      "id": 21,
+      "topic": "Arrays",
+      "question": "How to remove duplicates from a sorted array?",
+      "options": ["Use two pointers", "Use sorting", "Use recursion", "Create new array always"],
+      "correct_answer": 0
+    },
+    {
+      "id": 22,
+      "topic": "Arrays",
+      "question": "What is the advantage of arrays?",
+      "options": ["Dynamic size", "Fast access by index", "Easy insertion", "No memory waste"],
+      "correct_answer": 1
+    },
+    {
+      "id": 23,
+      "topic": "Arrays",
+      "question": "What is the disadvantage of arrays?",
+      "options": ["Slow access", "Fixed size", "High memory", "Complex structure"],
+      "correct_answer": 1
+    },
+    {
+      "id": 24,
+      "topic": "Arrays",
+      "question": "How to find frequency of elements in array?",
+      "options": ["Sorting", "Hash table", "Tree", "Graph"],
+      "correct_answer": 1
+    },
+    {
+      "id": 25,
+      "topic": "Arrays",
+      "question": "What is a sparse array?",
+      "options": ["Array with many zeros", "Sorted array", "Small array", "2D array"],
+      "correct_answer": 0
+    },
+    {
+      "id": 26,
+      "topic": "Linked List",
+      "question": "What is a linked list?",
+      "options": ["Array-based structure", "Linear structure with nodes", "Tree structure", "Graph structure"],
+      "correct_answer": 1
+    },
+    {
+      "id": 27,
+      "topic": "Linked List",
+      "question": "What does each node in a linked list contain?",
+      "options": ["Only data", "Only pointer", "Data and pointer", "Index and data"],
+      "correct_answer": 2
+    },
+    {
+      "id": 28,
+      "topic": "Linked List",
+      "question": "What does the last node point to in a singly linked list?",
+      "options": ["First node", "NULL", "Previous node", "Itself"],
+      "correct_answer": 1
+    },
+    {
+      "id": 29,
+      "topic": "Linked List",
+      "question": "What is the time complexity to insert at the beginning of linked list?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 30,
+      "topic": "Linked List",
+      "question": "What is the time complexity to access nth element in linked list?",
+      "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 31,
+      "topic": "Linked List",
+      "question": "What is a doubly linked list?",
+      "options": ["Two linked lists", "Nodes with two data fields", "Nodes with prev and next pointers", "List with two heads"],
+      "correct_answer": 2
+    },
+    {
+      "id": 32,
+      "topic": "Linked List",
+      "question": "What is a circular linked list?",
+      "options": ["List in circle shape", "Last node points to first", "List with no nodes", "List with cycles"],
+      "correct_answer": 1
+    },
+    {
+      "id": 33,
+      "topic": "Linked List",
+      "question": "What is the head pointer in linked list?",
+      "options": ["Last node", "Middle node", "First node", "Any node"],
+      "correct_answer": 2
+    },
+    {
+      "id": 34,
+      "topic": "Linked List",
+      "question": "How to find the length of a linked list?",
+      "options": ["Check head pointer", "Traverse and count nodes", "Check last pointer", "Use size variable"],
+      "correct_answer": 1
+    },
+    {
+      "id": 35,
+      "topic": "Linked List",
+      "question": "What is the advantage of linked list over array?",
+      "options": ["Random access", "Dynamic size", "Less memory", "Faster access"],
+      "correct_answer": 1
+    },
+    {
+      "id": 36,
+      "topic": "Linked List",
+      "question": "How to detect if a linked list has a cycle?",
+      "options": ["Count nodes", "Use two pointers", "Check head", "Traverse once"],
+      "correct_answer": 1
+    },
+    {
+      "id": 37,
+      "topic": "Linked List",
+      "question": "What is the space complexity of a linked list with n nodes?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 38,
+      "topic": "Linked List",
+      "question": "How to reverse a linked list?",
+      "options": ["Swap data", "Change pointer directions", "Create new list", "Sort descending"],
+      "correct_answer": 1
+    },
+    {
+      "id": 39,
+      "topic": "Linked List",
+      "question": "What is the disadvantage of linked list?",
+      "options": ["Fixed size", "No random access", "Fast insertion", "Dynamic"],
+      "correct_answer": 1
+    },
+    {
+      "id": 40,
+      "topic": "Linked List",
+      "question": "How to find middle element of linked list?",
+      "options": ["Divide length by 2", "Use slow and fast pointers", "Check all nodes", "Use array"],
+      "correct_answer": 1
+    },
+    {
+      "id": 41,
+      "topic": "Linked List",
+      "question": "What happens when you insert at end of linked list?",
+      "options": ["Change head", "Traverse to end then insert", "Insert at beginning", "Create new list"],
+      "correct_answer": 1
+    },
+    {
+      "id": 42,
+      "topic": "Linked List",
+      "question": "How to delete a node in linked list?",
+      "options": ["Set node to NULL", "Change previous node pointer", "Remove from memory", "Mark as deleted"],
+      "correct_answer": 1
+    },
+    {
+      "id": 43,
+      "topic": "Linked List",
+      "question": "What is a sentinel node?",
+      "options": ["Last node", "Dummy node", "Middle node", "Head node"],
+      "correct_answer": 1
+    },
+    {
+      "id": 44,
+      "topic": "Linked List",
+      "question": "Can linked list be sorted?",
+      "options": ["No, never", "Yes, using various algorithms", "Only if small", "Only doubly linked"],
+      "correct_answer": 1
+    },
+    {
+      "id": 45,
+      "topic": "Linked List",
+      "question": "What is the next pointer of the last node in doubly linked list?",
+      "options": ["First node", "NULL", "Previous node", "Itself"],
+      "correct_answer": 1
+    },
+    {
+      "id": 46,
+      "topic": "Linked List",
+      "question": "How many pointers does each node have in singly linked list?",
+      "options": ["0", "1", "2", "3"],
+      "correct_answer": 1
+    },
+    {
+      "id": 47,
+      "topic": "Linked List",
+      "question": "What is the time complexity to search in linked list?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 48,
+      "topic": "Linked List",
+      "question": "How to merge two sorted linked lists?",
+      "options": ["Concatenate", "Compare and link nodes", "Sort after merge", "Create new list"],
+      "correct_answer": 1
+    },
+    {
+      "id": 49,
+      "topic": "Linked List",
+      "question": "What is a skip list?",
+      "options": ["List with gaps", "Layered linked list", "Sorted list", "Empty list"],
+      "correct_answer": 1
+    },
+    {
+      "id": 50,
+      "topic": "Linked List",
+      "question": "How to check if linked list is palindrome?",
+      "options": ["Reverse and compare", "Check first and last", "Use stack", "All of the above"],
+      "correct_answer": 3
+    },
+    {
+      "id": 51,
+      "topic": "Stack",
+      "question": "What is a stack?",
+      "options": ["FIFO structure", "LIFO structure", "Random access", "Tree structure"],
+      "correct_answer": 1
+    },
+    {
+      "id": 52,
+      "topic": "Stack",
+      "question": "What does LIFO stand for?",
+      "options": ["Last In First Out", "Last In Final Out", "List In First Out", "Linear In First Out"],
+      "correct_answer": 0
+    },
+    {
+      "id": 53,
+      "topic": "Stack",
+      "question": "Which operation adds element to stack?",
+      "options": ["Pop", "Push", "Peek", "Insert"],
+      "correct_answer": 1
+    },
+    {
+      "id": 54,
+      "topic": "Stack",
+      "question": "Which operation removes element from stack?",
+      "options": ["Push", "Pop", "Peek", "Delete"],
+      "correct_answer": 1
+    },
+    {
+      "id": 55,
+      "topic": "Stack",
+      "question": "What is the time complexity of push operation?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 56,
+      "topic": "Stack",
+      "question": "What is peek operation in stack?",
+      "options": ["Remove top", "View top without removing", "Add element", "Clear stack"],
+      "correct_answer": 1
+    },
+    {
+      "id": 57,
+      "topic": "Stack",
+      "question": "What happens when you pop from empty stack?",
+      "options": ["Returns NULL", "Stack underflow", "Returns 0", "Creates element"],
+      "correct_answer": 1
+    },
+    {
+      "id": 58,
+      "topic": "Stack",
+      "question": "What happens when you push to full stack?",
+      "options": ["Overflow", "Creates space", "Removes bottom", "Error ignored"],
+      "correct_answer": 0
+    },
+    {
+      "id": 59,
+      "topic": "Stack",
+      "question": "Which real-world example follows stack principle?",
+      "options": ["Queue at ticket counter", "Pile of plates", "Traffic light", "Binary tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 60,
+      "topic": "Stack",
+      "question": "How is stack implemented?",
+      "options": ["Array or linked list", "Only array", "Only linked list", "Tree structure"],
+      "correct_answer": 0
+    },
+    {
+      "id": 61,
+      "topic": "Stack",
+      "question": "What is the space complexity of stack with n elements?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 62,
+      "topic": "Stack",
+      "question": "Which application uses stack?",
+      "options": ["BFS", "Function call management", "Shortest path", "Hashing"],
+      "correct_answer": 1
+    },
+    {
+      "id": 63,
+      "topic": "Stack",
+      "question": "How to reverse a string using stack?",
+      "options": ["Push all chars then pop", "Use two stacks", "Pop then push", "Direct reversal"],
+      "correct_answer": 0
+    },
+    {
+      "id": 64,
+      "topic": "Stack",
+      "question": "What is infix expression?",
+      "options": ["A+B", "+AB", "AB+", "A+(B)"],
+      "correct_answer": 0
+    },
+    {
+      "id": 65,
+      "topic": "Stack",
+      "question": "What is postfix expression?",
+      "options": ["A+B", "+AB", "AB+", "None"],
+      "correct_answer": 2
+    },
+    {
+      "id": 66,
+      "topic": "Stack",
+      "question": "Which expression is easiest to evaluate using stack?",
+      "options": ["Infix", "Postfix", "Prefix", "All same"],
+      "correct_answer": 1
+    },
+    {
+      "id": 67,
+      "topic": "Stack",
+      "question": "How to check balanced parentheses?",
+      "options": ["Count them", "Use stack", "Use queue", "Use array"],
+      "correct_answer": 1
+    },
+    {
+      "id": 68,
+      "topic": "Stack",
+      "question": "What is the top of an empty stack?",
+      "options": ["0", "-1", "NULL", "Undefined"],
+      "correct_answer": 1
+    },
+    {
+      "id": 69,
+      "topic": "Stack",
+      "question": "Which sorting algorithm uses stack?",
+      "options": ["Bubble sort", "Quick sort (recursive)", "Selection sort", "Counting sort"],
+      "correct_answer": 1
+    },
+    {
+      "id": 70,
+      "topic": "Stack",
+      "question": "How to implement two stacks using one array?",
+      "options": ["Use half each", "One from start, one from end", "Not possible", "Use linked list"],
+      "correct_answer": 1
+    },
+    {
+      "id": 71,
+      "topic": "Stack",
+      "question": "What is monotonic stack?",
+      "options": ["Single element stack", "Stack with increasing/decreasing elements", "Empty stack", "Full stack"],
+      "correct_answer": 1
+    },
+    {
+      "id": 72,
+      "topic": "Stack",
+      "question": "Can stack be used for DFS?",
+      "options": ["Yes", "No", "Only for trees", "Only for graphs"],
+      "correct_answer": 0
+    },
+    {
+      "id": 73,
+      "topic": "Stack",
+      "question": "What is browser back button an example of?",
+      "options": ["Queue", "Stack", "Array", "List"],
+      "correct_answer": 1
+    },
+    {
+      "id": 74,
+      "topic": "Stack",
+      "question": "How to find next greater element?",
+      "options": ["Linear search", "Use stack", "Sort array", "Binary search"],
+      "correct_answer": 1
+    },
+    {
+      "id": 75,
+      "topic": "Stack",
+      "question": "What is the minimum number of stacks needed to implement a queue?",
+      "options": ["1", "2", "3", "Cannot implement"],
+      "correct_answer": 1
+    },
+    {
+      "id": 76,
+      "topic": "Queue",
+      "question": "What is a queue?",
+      "options": ["LIFO structure", "FIFO structure", "Random access", "Tree structure"],
+      "correct_answer": 1
+    },
+    {
+      "id": 77,
+      "topic": "Queue",
+      "question": "What does FIFO stand for?",
+      "options": ["First In First Out", "First In Final Out", "Fast In First Out", "First In Fast Out"],
+      "correct_answer": 0
+    },
+    {
+      "id": 78,
+      "topic": "Queue",
+      "question": "What is enqueue operation?",
+      "options": ["Remove element", "Add element", "View element", "Clear queue"],
+      "correct_answer": 1
+    },
+    {
+      "id": 79,
+      "topic": "Queue",
+      "question": "What is dequeue operation?",
+      "options": ["Add element", "Remove element", "View element", "Sort queue"],
+      "correct_answer": 1
+    },
+    {
+      "id": 80,
+      "topic": "Queue",
+      "question": "What is the time complexity of enqueue?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 81,
+      "topic": "Queue",
+      "question": "What is front in queue?",
+      "options": ["Where elements are added", "Where elements are removed", "Middle element", "Last element"],
+      "correct_answer": 1
+    },
+    {
+      "id": 82,
+      "topic": "Queue",
+      "question": "What is rear in queue?",
+      "options": ["Where elements are removed", "Where elements are added", "First element", "Middle element"],
+      "correct_answer": 1
+    },
+    {
+      "id": 83,
+      "topic": "Queue",
+      "question": "Which real-world example follows queue?",
+      "options": ["Stack of books", "People waiting in line", "Browser history", "Nested function calls"],
+      "correct_answer": 1
+    },
+    {
+      "id": 84,
+      "topic": "Queue",
+      "question": "What is circular queue?",
+      "options": ["Queue in circle", "Last position connects to first", "Queue with no elements", "Double-ended queue"],
+      "correct_answer": 1
+    },
+    {
+      "id": 85,
+      "topic": "Queue",
+      "question": "What is priority queue?",
+      "options": ["Elements with priorities", "Sorted queue", "Fast queue", "Small queue"],
+      "correct_answer": 0
+    },
+    {
+      "id": 86,
+      "topic": "Queue",
+      "question": "What is deque?",
+      "options": ["Double queue", "Double-ended queue", "Empty queue", "Single-ended queue"],
+      "correct_answer": 1
+    },
+    {
+      "id": 87,
+      "topic": "Queue",
+      "question": "Can elements be inserted from both ends in deque?",
+      "options": ["Yes", "No", "Only if empty", "Only if full"],
+      "correct_answer": 0
+    },
+    {
+      "id": 88,
+      "topic": "Queue",
+      "question": "Which traversal uses queue?",
+      "options": ["DFS", "BFS", "Inorder", "Preorder"],
+      "correct_answer": 1
+    },
+    {
+      "id": 89,
+      "topic": "Queue",
+      "question": "How to implement queue using array?",
+      "options": ["Use front and rear pointers", "Use single pointer", "Cannot implement", "Use stack"],
+      "correct_answer": 0
+    },
+    {
+      "id": 90,
+      "topic": "Queue",
+      "question": "What is the disadvantage of linear queue?",
+      "options": ["Slow operations", "Wasted space", "Complex", "Large memory"],
+      "correct_answer": 1
+    },
+    {
+      "id": 91,
+      "topic": "Queue",
+      "question": "How to check if queue is empty?",
+      "options": ["front == rear", "front == NULL", "rear == NULL", "Depends on implementation"],
+      "correct_answer": 3
+    },
+    {
+      "id": 92,
+      "topic": "Queue",
+      "question": "What is the time complexity of dequeue?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 93,
+      "topic": "Queue",
+      "question": "Which scheduling algorithm uses queue?",
+      "options": ["Priority scheduling", "Round Robin", "Shortest Job First", "All"],
+      "correct_answer": 1
+    },
+    {
+      "id": 94,
+      "topic": "Queue",
+      "question": "How many queues needed to implement stack?",
+      "options": ["1", "2", "3", "Cannot implement"],
+      "correct_answer": 1
+    },
+    {
+      "id": 95,
+      "topic": "Queue",
+      "question": "What happens in queue overflow?",
+      "options": ["Queue is empty", "Queue is full", "Queue is deleted", "Queue is reversed"],
+      "correct_answer": 1
+    },
+    {
+      "id": 96,
+      "topic": "Queue",
+      "question": "In circular queue, how to check if full?",
+      "options": ["rear == front", "(rear+1)%size == front", "rear > front", "rear == size"],
+      "correct_answer": 1
+    },
+    {
+      "id": 97,
+      "topic": "Queue",
+      "question": "Which data structure is used in BFS?",
+      "options": ["Stack", "Queue", "Tree", "Array"],
+      "correct_answer": 1
+    },
+    {
+      "id": 98,
+      "topic": "Queue",
+      "question": "What is monotonic queue?",
+      "options": ["Single element", "Maintains order property", "Empty queue", "Circular queue"],
+      "correct_answer": 1
+    },
+    {
+      "id": 99,
+      "topic": "Queue",
+      "question": "How is priority queue implemented?",
+      "options": ["Array", "Linked list", "Heap", "All of these"],
+      "correct_answer": 3
+    },
+    {
+      "id": 100,
+      "topic": "Queue",
+      "question": "Which is faster in priority queue?",
+      "options": ["Enqueue", "Dequeue", "Both same", "Depends on implementation"],
+      "correct_answer": 3
+    },
+    {
+      "id": 101,
+      "topic": "Trees",
+      "question": "What is a tree?",
+      "options": ["Linear structure", "Non-linear hierarchical structure", "Sequential structure", "Random structure"],
+      "correct_answer": 1
+    },
+    {
+      "id": 102,
+      "topic": "Trees",
+      "question": "What is the topmost node of tree called?",
+      "options": ["Leaf", "Root", "Child", "Parent"],
+      "correct_answer": 1
+    },
+    {
+      "id": 103,
+      "topic": "Trees",
+      "question": "What are nodes with no children called?",
+      "options": ["Root", "Internal nodes", "Leaf nodes", "Branch nodes"],
+      "correct_answer": 2
+    },
+    {
+      "id": 104,
+      "topic": "Trees",
+      "question": "What is the height of a tree?",
+      "options": ["Number of nodes", "Number of edges", "Longest path from root to leaf", "Number of leaves"],
+      "correct_answer": 2
+    },
+    {
+      "id": 105,
+      "topic": "Trees",
+      "question": "What is the depth of root node?",
+      "options": ["0", "1", "-1", "Undefined"],
+      "correct_answer": 0
+    },
+    {
+      "id": 106,
+      "topic": "Trees",
+      "question": "What is a binary tree?",
+      "options": ["Tree with 2 nodes", "Each node has at most 2 children", "Tree with 2 levels", "Tree with 2 roots"],
+      "correct_answer": 1
+    },
+    {
+      "id": 107,
+      "topic": "Trees",
+      "question": "What is the maximum number of nodes at level L?",
+      "options": ["L", "2^L", "L^2", "2*L"],
+      "correct_answer": 1
+    },
+    {
+      "id": 108,
+      "topic": "Trees",
+      "question": "What is inorder traversal sequence?",
+      "options": ["Root-Left-Right", "Left-Root-Right", "Left-Right-Root", "Right-Root-Left"],
+      "correct_answer": 1
+    },
+    {
+      "id": 109,
+      "topic": "Trees",
+      "question": "What is preorder traversal sequence?",
+      "options": ["Root-Left-Right", "Left-Root-Right", "Left-Right-Root", "Right-Left-Root"],
+      "correct_answer": 0
+    },
+    {
+      "id": 110,
+      "topic": "Trees",
+      "question": "What is postorder traversal sequence?",
+      "options": ["Root-Left-Right", "Left-Root-Right", "Left-Right-Root", "Right-Root-Left"],
+      "correct_answer": 2
+    },
+    {
+      "id": 111,
+      "topic": "Trees",
+      "question": "What is level order traversal?",
+      "options": ["DFS", "BFS", "Inorder", "Preorder"],
+      "correct_answer": 1
+    },
+    {
+      "id": 112,
+      "topic": "Trees",
+      "question": "Which data structure is used for level order traversal?",
+      "options": ["Stack", "Queue", "Array", "Linked list"],
+      "correct_answer": 1
+    },
+    {
+      "id": 113,
+      "topic": "Trees",
+      "question": "What is a full binary tree?",
+      "options": ["All levels filled", "Each node has 0 or 2 children", "All leaves at same level", "Tree with maximum nodes"],
+      "correct_answer": 1
+    },
+    {
+      "id": 114,
+      "topic": "Trees",
+      "question": "What is a complete binary tree?",
+      "options": ["All nodes have 2 children", "All levels filled except last", "Tree is balanced", "All leaves at same level"],
+      "correct_answer": 1
+    },
+    {
+      "id": 115,
+      "topic": "Trees",
+      "question": "What is a perfect binary tree?",
+      "options": ["Balanced tree", "All internal nodes have 2 children and leaves at same level", "Tree with no gaps", "Full tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 116,
+      "topic": "Trees",
+      "question": "What is Binary Search Tree (BST)?",
+      "options": ["Sorted binary tree", "Left < Root < Right", "Balanced tree", "Complete tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 117,
+      "topic": "Trees",
+      "question": "What is the time complexity to search in BST (average case)?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 118,
+      "topic": "Trees",
+      "question": "How many traversals exist for binary tree?",
+      "options": ["2", "3", "4", "5"],
+      "correct_answer": 2
+    },
+    {
+      "id": 119,
+      "topic": "Trees",
+      "question": "What is the parent of a node at index i in array representation?",
+      "options": ["i/2", "(i-1)/2", "2i", "2i+1"],
+      "correct_answer": 1
+    },
+    {
+      "id": 120,
+      "topic": "Trees",
+      "question": "What is left child of node at index i?",
+      "options": ["2i", "2i+1", "i+1", "i/2"],
+      "correct_answer": 1
+    },
+    {
+      "id": 121,
+      "topic": "Trees",
+      "question": "What is right child of node at index i?",
+      "options": ["2i", "2i+1", "2i+2", "i+2"],
+      "correct_answer": 2
+    },
+    {
+      "id": 122,
+      "topic": "Trees",
+      "question": "What is a balanced tree?",
+      "options": ["All nodes equal", "Height difference of subtrees ≤ 1", "All leaves at same level", "Equal children"],
+      "correct_answer": 1
+    },
+    {
+      "id": 123,
+      "topic": "Trees",
+      "question": "What is a skewed tree?",
+      "options": ["Balanced tree", "All nodes on one side", "Perfect tree", "Complete tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 124,
+      "topic": "Trees",
+      "question": "How to find height of binary tree?",
+      "options": ["Count nodes", "Max depth from root", "Count leaves", "Count levels"],
+      "correct_answer": 1
+    },
+    {
+      "id": 125,
+      "topic": "Trees",
+      "question": "What is the minimum height of tree with n nodes?",
+      "options": ["log n", "n", "n/2", "√n"],
+      "correct_answer": 0
+    },
+    {
+      "id": 126,
+      "topic": "Trees",
+      "question": "What is a binary heap?",
+      "options": ["Sorted tree", "Complete binary tree with heap property", "Balanced tree", "Full tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 127,
+      "topic": "Trees",
+      "question": "In max heap, parent is ___ than children",
+      "options": ["Less", "Greater", "Equal", "Different"],
+      "correct_answer": 1
+    },
+    {
+      "id": 128,
+      "topic": "Trees",
+      "question": "In min heap, parent is ___ than children",
+      "options": ["Greater", "Less", "Equal", "Unrelated"],
+      "correct_answer": 1
+    },
+    {
+      "id": 129,
+      "topic": "Trees",
+      "question": "What is the degree of a node?",
+      "options": ["Height", "Number of children", "Depth", "Level"],
+      "correct_answer": 1
+    },
+    {
+      "id": 130,
+      "topic": "Trees",
+      "question": "What is an ancestor node?",
+      "options": ["Child node", "Node on path to root", "Sibling node", "Leaf node"],
+      "correct_answer": 1
+    },
+    {
+      "id": 131,
+      "topic": "Trees",
+      "question": "What are sibling nodes?",
+      "options": ["Adjacent nodes", "Nodes with same parent", "Same level nodes", "Connected nodes"],
+      "correct_answer": 1
+    },
+    {
+      "id": 132,
+      "topic": "Trees",
+      "question": "What is diameter of tree?",
+      "options": ["Height", "Longest path between any two nodes", "Number of nodes", "Number of leaves"],
+      "correct_answer": 1
+    },
+    {
+      "id": 133,
+      "topic": "Trees",
+      "question": "How to check if tree is symmetric?",
+      "options": ["Check all nodes", "Mirror of left matches right", "Count nodes", "Check height"],
+      "correct_answer": 1
+    },
+    {
+      "id": 134,
+      "topic": "Trees",
+      "question": "What is lowest common ancestor (LCA)?",
+      "options": ["Root node", "Lowest node that has both as descendants", "Leaf node", "Any ancestor"],
+      "correct_answer": 1
+    },
+    {
+      "id": 135,
+      "topic": "Trees",
+      "question": "Can we construct tree from inorder and preorder?",
+      "options": ["Yes", "No", "Sometimes", "Only for BST"],
+      "correct_answer": 0
+    },
+    {
+      "id": 136,
+      "topic": "Trees",
+      "question": "What is AVL tree?",
+      "options": ["Binary tree", "Self-balancing BST", "Heap", "Complete tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 137,
+      "topic": "Trees",
+      "question": "What is the balance factor in AVL tree?",
+      "options": ["Height of tree", "Height difference of subtrees", "Number of nodes", "Depth of node"],
+      "correct_answer": 1
+    },
+    {
+      "id": 138,
+      "topic": "Trees",
+      "question": "What is Red-Black tree?",
+      "options": ["Colored tree", "Self-balancing BST", "Binary heap", "AVL tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 139,
+      "topic": "Trees",
+      "question": "What is a trie?",
+      "options": ["Binary tree", "Tree for storing strings", "Balanced tree", "Heap"],
+      "correct_answer": 1
+    },
+    {
+      "id": 140,
+      "topic": "Trees",
+      "question": "What is segment tree used for?",
+      "options": ["Sorting", "Range queries", "Searching", "Hashing"],
+      "correct_answer": 1
+    },
+    {
+      "id": 141,
+      "topic": "Graphs",
+      "question": "What is a graph?",
+      "options": ["Linear structure", "Collection of vertices and edges", "Tree structure", "Array structure"],
+      "correct_answer": 1
+    },
+    {
+      "id": 142,
+      "topic": "Graphs",
+      "question": "What are vertices in graph?",
+      "options": ["Edges", "Nodes", "Paths", "Connections"],
+      "correct_answer": 1
+    },
+    {
+      "id": 143,
+      "topic": "Graphs",
+      "question": "What are edges in graph?",
+      "options": ["Nodes", "Connections between vertices", "Paths", "Cycles"],
+      "correct_answer": 1
+    },
+    {
+      "id": 144,
+      "topic": "Graphs",
+      "question": "What is directed graph?",
+      "options": ["Graph with directions", "Edges have direction", "Cyclic graph", "Connected graph"],
+      "correct_answer": 1
+    },
+    {
+      "id": 145,
+      "topic": "Graphs",
+      "question": "What is undirected graph?",
+      "options": ["No directions on edges", "Bidirectional edges", "Both A and B", "Neither"],
+      "correct_answer": 2
+    },
+    {
+      "id": 146,
+      "topic": "Graphs",
+      "question": "What is weighted graph?",
+      "options": ["Heavy graph", "Edges have weights", "Large graph", "Dense graph"],
+      "correct_answer": 1
+    },
+    {
+      "id": 147,
+      "topic": "Graphs",
+      "question": "What is degree of vertex?",
+      "options": ["Number of vertices", "Number of edges connected", "Weight", "Distance"],
+      "correct_answer": 1
+    },
+    {
+      "id": 148,
+      "topic": "Graphs",
+      "question": "What is in-degree?",
+      "options": ["Outgoing edges", "Incoming edges", "Total edges", "Connected vertices"],
+      "correct_answer": 1
+    },
+    {
+      "id": 149,
+      "topic": "Graphs",
+      "question": "What is out-degree?",
+      "options": ["Incoming edges", "Outgoing edges", "Total edges", "Degree + 1"],
+      "correct_answer": 1
+    },
+    {
+      "id": 150,
+      "topic": "Graphs",
+      "question": "How to represent a graph?",
+      "options": ["Adjacency matrix", "Adjacency list", "Both", "Neither"],
+      "correct_answer": 2
+    },
+    {
+      "id": 151,
+      "topic": "Graphs",
+      "question": "What is adjacency matrix?",
+      "options": ["List of vertices", "2D array for edges", "Array of lists", "Tree structure"],
+      "correct_answer": 1
+    },
+    {
+      "id": 152,
+      "topic": "Graphs",
+      "question": "What is adjacency list?",
+      "options": ["Matrix", "Array of lists", "Single list", "Tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 153,
+      "topic": "Graphs",
+      "question": "Which is better for sparse graphs?",
+      "options": ["Adjacency matrix", "Adjacency list", "Both same", "Neither"],
+      "correct_answer": 1
+    },
+    {
+      "id": 154,
+      "topic": "Graphs",
+      "question": "What is DFS?",
+      "options": ["Depth First Search", "Direct First Search", "Deep Forward Search", "Data First Search"],
+      "correct_answer": 0
+    },
+    {
+      "id": 155,
+      "topic": "Graphs",
+      "question": "What data structure is used in DFS?",
+      "options": ["Queue", "Stack", "Array", "Tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 156,
+      "topic": "Graphs",
+      "question": "What is BFS?",
+      "options": ["Best First Search", "Breadth First Search", "Binary First Search", "Backward First Search"],
+      "correct_answer": 1
+    },
+    {
+      "id": 157,
+      "topic": "Graphs",
+      "question": "What data structure is used in BFS?",
+      "options": ["Stack", "Queue", "Array", "Tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 158,
+      "topic": "Graphs",
+      "question": "What is a path in graph?",
+      "options": ["Single vertex", "Sequence of vertices", "Edge", "Cycle"],
+      "correct_answer": 1
+    },
+    {
+      "id": 159,
+      "topic": "Graphs",
+      "question": "What is a cycle?",
+      "options": ["Path", "Path that starts and ends at same vertex", "Edge", "Vertex"],
+      "correct_answer": 1
+    },
+    {
+      "id": 160,
+      "topic": "Graphs",
+      "question": "What is connected graph?",
+      "options": ["All vertices reachable", "Has cycles", "Weighted graph", "Directed graph"],
+      "correct_answer": 0
+    },
+    {
+      "id": 161,
+      "topic": "Graphs",
+      "question": "What is disconnected graph?",
+      "options": ["No edges", "Not all vertices connected", "Has cycles", "Directed"],
+      "correct_answer": 1
+    },
+    {
+      "id": 162,
+      "topic": "Graphs",
+      "question": "What is complete graph?",
+      "options": ["All vertices connected", "Every pair connected", "Cyclic", "Tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 163,
+      "topic": "Graphs",
+      "question": "What is bipartite graph?",
+      "options": ["Two vertices", "Vertices in two sets with no edges within", "Two edges", "Two components"],
+      "correct_answer": 1
+    },
+    {
+      "id": 164,
+      "topic": "Graphs",
+      "question": "Is tree a graph?",
+      "options": ["Yes", "No", "Sometimes", "Never"],
+      "correct_answer": 0
+    },
+    {
+      "id": 165,
+      "topic": "Graphs",
+      "question": "Does tree have cycles?",
+      "options": ["Yes", "No", "Sometimes", "Always"],
+      "correct_answer": 1
+    },
+    {
+      "id": 166,
+      "topic": "Graphs",
+      "question": "What is topological sorting?",
+      "options": ["Sorting vertices", "Linear ordering in DAG", "Sorting edges", "Finding shortest path"],
+      "correct_answer": 1
+    },
+    {
+      "id": 167,
+      "topic": "Graphs",
+      "question": "What is DAG?",
+      "options": ["Data Algorithm Graph", "Directed Acyclic Graph", "Direct Array Graph", "Dynamic Algorithm Graph"],
+      "correct_answer": 1
+    },
+    {
+      "id": 168,
+      "topic": "Graphs",
+      "question": "Can topological sort be applied to cyclic graph?",
+      "options": ["Yes", "No", "Sometimes", "Always"],
+      "correct_answer": 1
+    },
+    {
+      "id": 169,
+      "topic": "Graphs",
+      "question": "What is shortest path problem?",
+      "options": ["Finding longest path", "Finding path with minimum weight", "Finding cycles", "Finding vertices"],
+      "correct_answer": 1
+    },
+    {
+      "id": 170,
+      "topic": "Graphs",
+      "question": "Which algorithm finds shortest path in unweighted graph?",
+      "options": ["DFS", "BFS", "Dijkstra", "Bellman-Ford"],
+      "correct_answer": 1
+    },
+    {
+      "id": 171,
+      "topic": "Graphs",
+      "question": "What is Dijkstra's algorithm used for?",
+      "options": ["Finding cycles", "Shortest path in weighted graph", "Topological sort", "Finding components"],
+      "correct_answer": 1
+    },
+    {
+      "id": 172,
+      "topic": "Graphs",
+      "question": "Can Dijkstra handle negative weights?",
+      "options": ["Yes", "No", "Sometimes", "With modification"],
+      "correct_answer": 1
+    },
+    {
+      "id": 173,
+      "topic": "Graphs",
+      "question": "What is spanning tree?",
+      "options": ["Complete graph", "Subgraph connecting all vertices", "Cyclic graph", "Disconnected graph"],
+      "correct_answer": 1
+    },
+    {
+      "id": 174,
+      "topic": "Graphs",
+      "question": "What is minimum spanning tree?",
+      "options": ["Smallest tree", "Spanning tree with minimum weight", "Tree with minimum vertices", "Balanced tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 175,
+      "topic": "Graphs",
+      "question": "Which algorithm finds MST?",
+      "options": ["DFS", "BFS", "Kruskal", "Dijkstra"],
+      "correct_answer": 2
+    },
+    {
+      "id": 176,
+      "topic": "Dynamic Programming",
+      "question": "What is dynamic programming?",
+      "options": ["Random algorithm", "Optimization technique", "Sorting method", "Search algorithm"],
+      "correct_answer": 1
+    },
+    {
+      "id": 177,
+      "topic": "Dynamic Programming",
+      "question": "What is memoization?",
+      "options": ["Forgetting results", "Storing results to avoid recomputation", "Deleting cache", "Memory allocation"],
+      "correct_answer": 1
+    },
+    {
+      "id": 178,
+      "topic": "Dynamic Programming",
+      "question": "What is tabulation?",
+      "options": ["Top-down approach", "Bottom-up approach", "Recursive approach", "Iterative sorting"],
+      "correct_answer": 1
+    },
+    {
+      "id": 179,
+      "topic": "Dynamic Programming",
+      "question": "What are overlapping subproblems?",
+      "options": ["Unique problems", "Problems solved multiple times", "Independent problems", "Large problems"],
+      "correct_answer": 1
+    },
+    {
+      "id": 180,
+      "topic": "Dynamic Programming",
+      "question": "What is optimal substructure?",
+      "options": ["Problem cannot be divided", "Optimal solution contains optimal solutions of subproblems", "Large structure", "Complex structure"],
+      "correct_answer": 1
+    },
+    {
+      "id": 181,
+      "topic": "Dynamic Programming",
+      "question": "What is the nth Fibonacci number F(5)?",
+      "options": ["3", "5", "8", "13"],
+      "correct_answer": 1
+    },
+    {
+      "id": 182,
+      "topic": "Dynamic Programming",
+      "question": "What is the time complexity of naive recursive Fibonacci?",
+      "options": ["O(n)", "O(2^n)", "O(log n)", "O(n²)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 183,
+      "topic": "Dynamic Programming",
+      "question": "What is time complexity of DP Fibonacci?",
+      "options": ["O(2^n)", "O(n)", "O(log n)", "O(n²)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 184,
+      "topic": "Dynamic Programming",
+      "question": "What is 0/1 knapsack problem?",
+      "options": ["Sorting items", "Selecting items with weight constraint", "Counting items", "Searching items"],
+      "correct_answer": 1
+    },
+    {
+      "id": 185,
+      "topic": "Dynamic Programming",
+      "question": "Can an item be taken multiple times in 0/1 knapsack?",
+      "options": ["Yes", "No", "Sometimes", "Depends on weight"],
+      "correct_answer": 1
+    },
+    {
+      "id": 186,
+      "topic": "Dynamic Programming",
+      "question": "What is longest common subsequence (LCS)?",
+      "options": ["Longest substring", "Longest subsequence common to two sequences", "Shortest sequence", "Any sequence"],
+      "correct_answer": 1
+    },
+    {
+      "id": 187,
+      "topic": "Dynamic Programming",
+      "question": "What is the difference between subsequence and substring?",
+      "options": ["Same thing", "Subsequence need not be contiguous", "Substring is longer", "No difference"],
+      "correct_answer": 1
+    },
+    {
+      "id": 188,
+      "topic": "Dynamic Programming",
+      "question": "What is coin change problem?",
+      "options": ["Counting coins", "Finding ways to make amount", "Sorting coins", "Exchanging currency"],
+      "correct_answer": 1
+    },
+    {
+      "id": 189,
+      "topic": "Dynamic Programming",
+      "question": "What is edit distance?",
+      "options": ["String length", "Operations to transform one string to another", "Distance between characters", "String comparison"],
+      "correct_answer": 1
+    },
+    {
+      "id": 190,
+      "topic": "Dynamic Programming",
+      "question": "What operations are allowed in edit distance?",
+      "options": ["Only insert", "Insert, delete, replace", "Only delete", "Only replace"],
+      "correct_answer": 1
+    },
+    {
+      "id": 191,
+      "topic": "Dynamic Programming",
+      "question": "What is longest increasing subsequence?",
+      "options": ["Sorted array", "Longest subsequence in increasing order", "Maximum element", "Array length"],
+      "correct_answer": 1
+    },
+    {
+      "id": 192,
+      "topic": "Dynamic Programming",
+      "question": "What is matrix chain multiplication?",
+      "options": ["Multiplying matrices", "Optimal parenthesization", "Matrix addition", "Matrix sorting"],
+      "correct_answer": 1
+    },
+    {
+      "id": 193,
+      "topic": "Dynamic Programming",
+      "question": "What is the main advantage of DP?",
+      "options": ["Simple code", "Avoids recomputation", "Less memory", "Fast sorting"],
+      "correct_answer": 1
+    },
+    {
+      "id": 194,
+      "topic": "Dynamic Programming",
+      "question": "What is the disadvantage of DP?",
+      "options": ["Slow", "Extra space", "Complex", "Incorrect"],
+      "correct_answer": 1
+    },
+    {
+      "id": 195,
+      "topic": "Dynamic Programming",
+      "question": "When should we use DP?",
+      "options": ["Always", "Overlapping subproblems and optimal substructure", "Never", "For sorting"],
+      "correct_answer": 1
+    },
+    {
+      "id": 196,
+      "topic": "Searching",
+      "question": "What is linear search?",
+      "options": ["Sequential search", "Binary search", "Random search", "Sorted search"],
+      "correct_answer": 0
+    },
+    {
+      "id": 197,
+      "topic": "Searching",
+      "question": "What is time complexity of linear search?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 198,
+      "topic": "Searching",
+      "question": "What is binary search?",
+      "options": ["Search in unsorted array", "Divide and conquer search", "Sequential search", "Random search"],
+      "correct_answer": 1
+    },
+    {
+      "id": 199,
+      "topic": "Searching",
+      "question": "What is prerequisite for binary search?",
+      "options": ["Large array", "Sorted array", "Unique elements", "Small array"],
+      "correct_answer": 1
+    },
+    {
+      "id": 200,
+      "topic": "Searching",
+      "question": "What is time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 201,
+      "topic": "Sorting",
+      "question": "What is sorting?",
+      "options": ["Searching elements", "Arranging in order", "Deleting elements", "Adding elements"],
+      "correct_answer": 1
+    },
+    {
+      "id": 202,
+      "topic": "Sorting",
+      "question": "What is bubble sort?",
+      "options": ["Divide and conquer", "Repeatedly swap adjacent elements", "Select minimum", "Partition array"],
+      "correct_answer": 1
+    },
+    {
+      "id": 203,
+      "topic": "Sorting",
+      "question": "What is time complexity of bubble sort?",
+      "options": ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 204,
+      "topic": "Sorting",
+      "question": "What is selection sort?",
+      "options": ["Select maximum and swap", "Select minimum and place", "Divide array", "Merge arrays"],
+      "correct_answer": 1
+    },
+    {
+      "id": 205,
+      "topic": "Sorting",
+      "question": "What is insertion sort?",
+      "options": ["Insert at end", "Build sorted array by inserting elements", "Delete and insert", "Random insertion"],
+      "correct_answer": 1
+    },
+    {
+      "id": 206,
+      "topic": "Sorting",
+      "question": "Which sort is best for small arrays?",
+      "options": ["Quick sort", "Merge sort", "Insertion sort", "Heap sort"],
+      "correct_answer": 2
+    },
+    {
+      "id": 207,
+      "topic": "Sorting",
+      "question": "What is merge sort?",
+      "options": ["Merge arrays", "Divide and merge", "Swap elements", "Select minimum"],
+      "correct_answer": 1
+    },
+    {
+      "id": 208,
+      "topic": "Sorting",
+      "question": "What is time complexity of merge sort?",
+      "options": ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 209,
+      "topic": "Sorting",
+      "question": "What is quick sort?",
+      "options": ["Quick swap", "Partition based sorting", "Merge based", "Selection based"],
+      "correct_answer": 1
+    },
+    {
+      "id": 210,
+      "topic": "Sorting",
+      "question": "What is pivot in quick sort?",
+      "options": ["Middle element", "Element used for partitioning", "Maximum element", "Minimum element"],
+      "correct_answer": 1
+    },
+    {
+      "id": 211,
+      "topic": "Sorting",
+      "question": "Is merge sort stable?",
+      "options": ["Yes", "No", "Sometimes", "Depends"],
+      "correct_answer": 0
+    },
+    {
+      "id": 212,
+      "topic": "Sorting",
+      "question": "What is stable sorting?",
+      "options": ["Fast sorting", "Maintains relative order of equal elements", "Slow sorting", "In-place sorting"],
+      "correct_answer": 1
+    },
+    {
+      "id": 213,
+      "topic": "Sorting",
+      "question": "What is in-place sorting?",
+      "options": ["Sorts quickly", "Uses constant extra space", "Uses array", "Uses recursion"],
+      "correct_answer": 1
+    },
+    {
+      "id": 214,
+      "topic": "Sorting",
+      "question": "Is bubble sort stable?",
+      "options": ["Yes", "No", "Sometimes", "Never"],
+      "correct_answer": 0
+    },
+    {
+      "id": 215,
+      "topic": "Sorting",
+      "question": "What is counting sort used for?",
+      "options": ["Any numbers", "Small range integers", "Floating points", "Strings"],
+      "correct_answer": 1
+    },
+    {
+      "id": 216,
+      "topic": "Hashing",
+      "question": "What is hashing?",
+      "options": ["Sorting technique", "Mapping data to fixed size", "Searching method", "Tree structure"],
+      "correct_answer": 1
+    },
+    {
+      "id": 217,
+      "topic": "Hashing",
+      "question": "What is hash function?",
+      "options": ["Sorting function", "Maps key to index", "Search function", "Delete function"],
+      "correct_answer": 1
+    },
+    {
+      "id": 218,
+      "topic": "Hashing",
+      "question": "What is hash table?",
+      "options": ["Sorted array", "Array with hash function", "Linked list", "Tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 219,
+      "topic": "Hashing",
+      "question": "What is collision in hashing?",
+      "options": ["Error", "Two keys map to same index", "Overflow", "Underflow"],
+      "correct_answer": 1
+    },
+    {
+      "id": 220,
+      "topic": "Hashing",
+      "question": "What is chaining?",
+      "options": ["Linking tables", "Using linked list for collisions", "Sorting", "Searching"],
+      "correct_answer": 1
+    },
+    {
+      "id": 221,
+      "topic": "Hashing",
+      "question": "What is open addressing?",
+      "options": ["Open hash table", "Resolve collision by probing", "Multiple hash functions", "No collisions"],
+      "correct_answer": 1
+    },
+    {
+      "id": 222,
+      "topic": "Hashing",
+      "question": "What is linear probing?",
+      "options": ["Linear search", "Check next slot sequentially", "Random probing", "Double hashing"],
+      "correct_answer": 1
+    },
+    {
+      "id": 223,
+      "topic": "Hashing",
+      "question": "What is load factor?",
+      "options": ["Table size", "Ratio of elements to table size", "Number of collisions", "Hash function"],
+      "correct_answer": 1
+    },
+    {
+      "id": 224,
+      "topic": "Hashing",
+      "question": "What is average time complexity of hash table operations?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 225,
+      "topic": "Hashing",
+      "question": "What is double hashing?",
+      "options": ["Two hash tables", "Using two hash functions", "Hashing twice", "Collision method"],
+      "correct_answer": 1
+    },
+    {
+      "id": 226,
+      "topic": "Recursion",
+      "question": "What is recursion?",
+      "options": ["Loop", "Function calling itself", "Iteration", "Sorting method"],
+      "correct_answer": 1
+    },
+    {
+      "id": 227,
+      "topic": "Recursion",
+      "question": "What is base case in recursion?",
+      "options": ["First call", "Stopping condition", "Recursive call", "Return value"],
+      "correct_answer": 1
+    },
+    {
+      "id": 228,
+      "topic": "Recursion",
+      "question": "What happens without base case?",
+      "options": ["Works fine", "Infinite recursion", "Fast execution", "No output"],
+      "correct_answer": 1
+    },
+    {
+      "id": 229,
+      "topic": "Recursion",
+      "question": "What is the factorial of 5?",
+      "options": ["120", "60", "100", "150"],
+      "correct_answer": 0
+    },
+    {
+      "id": 230,
+      "topic": "Recursion",
+      "question": "What is tail recursion?",
+      "options": ["Last statement is recursive call", "First statement", "Multiple calls", "No recursion"],
+      "correct_answer": 0
+    },
+    {
+      "id": 231,
+      "topic": "Strings",
+      "question": "What is a string?",
+      "options": ["Number array", "Character sequence", "Integer", "Boolean"],
+      "correct_answer": 1
+    },
+    {
+      "id": 232,
+      "topic": "Strings",
+      "question": "How to find length of string?",
+      "options": ["Count characters", "Use length function", "Both", "Neither"],
+      "correct_answer": 2
+    },
+    {
+      "id": 233,
+      "topic": "Strings",
+      "question": "What is palindrome string?",
+      "options": ["Sorted string", "Reads same forward and backward", "Unique characters", "Long string"],
+      "correct_answer": 1
+    },
+    {
+      "id": 234,
+      "topic": "Strings",
+      "question": "Is 'madam' a palindrome?",
+      "options": ["Yes", "No", "Maybe", "Invalid"],
+      "correct_answer": 0
+    },
+    {
+      "id": 235,
+      "topic": "Strings",
+      "question": "How to reverse a string?",
+      "options": ["Sort it", "Swap characters from ends", "Delete characters", "Add characters"],
+      "correct_answer": 1
+    },
+    {
+      "id": 236,
+      "topic": "Strings",
+      "question": "What is substring?",
+      "options": ["Sub array", "Contiguous part of string", "Character", "Full string"],
+      "correct_answer": 1
+    },
+    {
+      "id": 237,
+      "topic": "Strings",
+      "question": "What is subsequence of string?",
+      "options": ["Substring", "Characters in order but not necessarily contiguous", "Reversed string", "Same string"],
+      "correct_answer": 1
+    },
+    {
+      "id": 238,
+      "topic": "Greedy",
+      "question": "What is greedy algorithm?",
+      "options": ["Always optimal", "Makes locally optimal choice", "Random choice", "Worst choice"],
+      "correct_answer": 1
+    },
+    {
+      "id": 239,
+      "topic": "Greedy",
+      "question": "Does greedy always give optimal solution?",
+      "options": ["Yes", "No", "Sometimes", "Always for sorting"],
+      "correct_answer": 2
+    },
+    {
+      "id": 240,
+      "topic": "Greedy",
+      "question": "What is activity selection problem?",
+      "options": ["Selecting all activities", "Maximum non-overlapping activities", "Minimum activities", "Random selection"],
+      "correct_answer": 1
+    },
+    {
+      "id": 241,
+      "topic": "Bit Manipulation",
+      "question": "What is a bit?",
+      "options": ["Byte", "Binary digit (0 or 1)", "Integer", "Character"],
+      "correct_answer": 1
+    },
+    {
+      "id": 242,
+      "topic": "Bit Manipulation",
+      "question": "What is bitwise AND operator?",
+      "options": ["||", "&&", "&", "AND"],
+      "correct_answer": 2
+    },
+    {
+      "id": 243,
+      "topic": "Bit Manipulation",
+      "question": "What is bitwise OR operator?",
+      "options": ["||", "|", "OR", "&"],
+      "correct_answer": 1
+    },
+    {
+      "id": 244,
+      "topic": "Bit Manipulation",
+      "question": "What is XOR of same numbers?",
+      "options": ["1", "0", "Number itself", "Undefined"],
+      "correct_answer": 1
+    },
+    {
+      "id": 245,
+      "topic": "Bit Manipulation",
+      "question": "How to check if number is power of 2?",
+      "options": ["n % 2 == 0", "n & (n-1) == 0", "n / 2 == 1", "n * 2"],
+      "correct_answer": 1
+    },
+    {
+      "id": 246,
+      "topic": "Complexity",
+      "question": "What is time complexity?",
+      "options": ["Memory used", "Time taken as function of input size", "Code lines", "Algorithm type"],
+      "correct_answer": 1
+    },
+    {
+      "id": 247,
+      "topic": "Complexity",
+      "question": "What is space complexity?",
+      "options": ["Time taken", "Memory used", "Disk space", "Cache size"],
+      "correct_answer": 1
+    },
+    {
+      "id": 248,
+      "topic": "Complexity",
+      "question": "What does Big O notation represent?",
+      "options": ["Exact time", "Upper bound", "Lower bound", "Average case"],
+      "correct_answer": 1
+    },
+    {
+      "id": 249,
+      "topic": "Complexity",
+      "question": "Which is faster: O(n) or O(log n)?",
+      "options": ["O(n)", "O(log n)", "Both same", "Depends"],
+      "correct_answer": 1
+    },
+    {
+      "id": 250,
+      "topic": "Complexity",
+      "question": "What is the time complexity of accessing array element?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
+      "correct_answer": 2
+    }
+  ]
+}

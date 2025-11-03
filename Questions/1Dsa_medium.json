@@ -1,0 +1,532 @@
+[
+
+  {
+    "question": "What is the time complexity of inserting an element in the middle of an array?",
+    "options": ["O(n)", "O(1)", "O(log n)", "O(n^2)"],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Which of the following is an advantage of arrays over linked lists?",
+    "options": ["Random access", "Dynamic size", "Easy insertion", "Memory efficient"],
+    "answer": "Random access"
+  },
+  {
+    "question": "What is the time complexity of deleting the first element of an array?",
+    "options": ["O(n)", "O(1)", "O(log n)", "O(n^2)"],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Which of the following algorithms can sort an array in O(n log n) time?",
+    "options": ["Merge Sort", "Bubble Sort", "Insertion Sort", "Selection Sort"],
+    "answer": "Merge Sort"
+  },
+  {
+    "question": "Which of these is a stable sorting algorithm?",
+    "options": ["Merge Sort", "Quick Sort", "Heap Sort", "Selection Sort"],
+    "answer": "Merge Sort"
+  },
+  {
+    "question": "How do you find the maximum subarray sum (Kadane’s algorithm) time complexity?",
+    "options": ["O(n)", "O(n^2)", "O(log n)", "O(n^3)"],
+    "answer": "O(n)"
+  },
+  {
+    "question": "What is a jagged array?",
+    "options": ["Array of arrays with unequal lengths", "Multi-dimensional array", "Sorted array", "2D square array"],
+    "answer": "Array of arrays with unequal lengths"
+  },
+  {
+    "question": "Which is a divide-and-conquer algorithm?",
+    "options": ["Merge Sort", "Bubble Sort", "Insertion Sort", "Linear Search"],
+    "answer": "Merge Sort"
+  },
+  {
+    "question": "Which of these is a subarray problem?",
+    "options": ["Maximum sum contiguous subarray", "Binary search", "DFS", "Queue simulation"],
+    "answer": "Maximum sum contiguous subarray"
+  },
+  {
+    "question": "Which method is better for finding duplicates in an array?",
+    "options": ["Hashing", "Linear search", "Binary search", "Stack"],
+    "answer": "Hashing"
+  },
+
+ 
+  {
+    "question": "How to reverse a singly linked list iteratively?",
+    "options": ["Use 3 pointers", "Use stack only", "Swap data", "Cannot reverse"],
+    "answer": "Use 3 pointers"
+  },
+  {
+    "question": "What is the time complexity of inserting at the end of a singly linked list (without tail pointer)?",
+    "options": ["O(n)", "O(1)", "O(log n)", "O(n^2)"],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Which is true for doubly linked lists?",
+    "options": ["Traversal possible in both directions", "Only one direction traversal", "Cannot insert at end", "Head is null"],
+    "answer": "Traversal possible in both directions"
+  },
+  {
+    "question": "Detecting a loop in linked list can be done using?",
+    "options": ["Floyd’s cycle detection", "Stack", "Queue", "Merge Sort"],
+    "answer": "Floyd’s cycle detection"
+  },
+  {
+    "question": "Merging two sorted linked lists can be done in time complexity?",
+    "options": ["O(n + m)", "O(n*m)", "O(n^2)", "O(log n)"],
+    "answer": "O(n + m)"
+  },
+  {
+    "question": "Which linked list is used in LRU cache implementation?",
+    "options": ["Doubly linked list", "Singly linked list", "Circular linked list", "Skip list"],
+    "answer": "Doubly linked list"
+  },
+  {
+    "question": "Which operation is costly in singly linked list?",
+    "options": ["Access by index", "Insertion at head", "Deletion at head", "Traversal"],
+    "answer": "Access by index"
+  },
+
+
+  {
+    "question": "What is the space complexity of stack using array for n elements?",
+    "options": ["O(n)", "O(1)", "O(n^2)", "O(log n)"],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Which of these problems can be solved using stack?",
+    "options": ["Balanced parentheses", "DFS traversal", "Queue implementation", "BFS traversal"],
+    "answer": "Balanced parentheses"
+  },
+  {
+    "question": "How to implement two stacks in a single array efficiently?",
+    "options": ["Start from both ends", "Stack1 then Stack2", "Stack in Stack", "Cannot"],
+    "answer": "Start from both ends"
+  },
+  {
+    "question": "What is postfix expression used for?",
+    "options": ["Stack evaluation", "Queue simulation", "Graph traversal", "Tree traversal"],
+    "answer": "Stack evaluation"
+  },
+  {
+    "question": "Which of these is a stack application?",
+    "options": ["Undo operation in editors", "Sorting array", "Binary search", "Queue scheduling"],
+    "answer": "Undo operation in editors"
+  },
+
+
+  {
+    "question": "Circular queue solves which problem?",
+    "options": ["Wasted space in linear queue", "Stack overflow", "Graph cycles", "DFS traversal"],
+    "answer": "Wasted space in linear queue"
+  },
+  {
+    "question": "Priority queue is implemented using?",
+    "options": ["Heap", "Stack", "Queue", "Array only"],
+    "answer": "Heap"
+  },
+  {
+    "question": "Dequeue allows insertion/deletion from?",
+    "options": ["Both ends", "Front only", "Rear only", "Middle only"],
+    "answer": "Both ends"
+  },
+  {
+    "question": "Which application uses queue?",
+    "options": ["CPU scheduling", "DFS traversal", "Binary search", "Array insertion"],
+    "answer": "CPU scheduling"
+  },
+  {
+    "question": "Which is true for circular queue?",
+    "options": ["Front can be ahead of Rear", "Front is always zero", "Rear is always zero", "Cannot wrap around"],
+    "answer": "Front can be ahead of Rear"
+  },
+
+ 
+  {
+    "question": "Height-balanced tree is called?",
+    "options": ["AVL tree", "BST", "Red-Black tree", "Binary tree"],
+    "answer": "AVL tree"
+  },
+  {
+    "question": "Which traversal uses stack explicitly?",
+    "options": ["Preorder iterative", "Inorder recursive", "Level-order", "Postorder recursive"],
+    "answer": "Preorder iterative"
+  },
+  {
+    "question": "Lowest Common Ancestor (LCA) is used in?",
+    "options": ["Binary tree", "Stack", "Queue", "Graph BFS"],
+    "answer": "Binary tree"
+  },
+  {
+    "question": "Full binary tree has nodes with?",
+    "options": ["0 or 2 children", "1 child", "Any number of children", "3 children only"],
+    "answer": "0 or 2 children"
+  },
+  {
+    "question": "Number of nodes in a complete binary tree of height h?",
+    "options": ["2^(h+1) - 1", "2^h", "h^2", "h+1"],
+    "answer": "2^(h+1) - 1"
+  },
+  {
+    "question": "Which traversal is used for expression tree evaluation?",
+    "options": ["Post-order", "Pre-order", "In-order", "Level-order"],
+    "answer": "Post-order"
+  },
+  {
+    "question": "Which tree is used for database indexing?",
+    "options": ["B-Tree", "Binary tree", "Stack", "Queue"],
+    "answer": "B-Tree"
+  },
+
+  
+  {
+    "question": "0/1 Knapsack problem can be solved in which complexity using DP?",
+    "options": ["O(n*W)", "O(n^2)", "O(n)", "O(log n)"],
+    "answer": "O(n*W)"
+  },
+  {
+    "question": "Longest Common Subsequence (LCS) time complexity using DP?",
+    "options": ["O(m*n)", "O(n^2)", "O(n)", "O(log n)"],
+    "answer": "O(m*n)"
+  },
+  {
+    "question": "Fibonacci sequence can be solved in O(n) using?",
+    "options": ["DP", "Recursion", "Stack", "Queue"],
+    "answer": "DP"
+  },
+  {
+    "question": "Which of these is a DP problem?",
+    "options": ["Coin change", "Linear search", "Binary search", "DFS traversal"],
+    "answer": "Coin change"
+  },
+  {
+    "question": "Which approach uses top-down DP?",
+    "options": ["Memoization", "Tabulation", "DFS", "BFS"],
+    "answer": "Memoization"
+  },
+  {
+    "question": "Which approach uses bottom-up DP?",
+    "options": ["Tabulation", "Memoization", "Stack", "Queue"],
+    "answer": "Tabulation"
+  },
+  {
+    "question": "Minimum steps to reach end in DP is an example of?",
+    "options": ["Optimization", "Sorting", "Searching", "Queue simulation"],
+    "answer": "Optimization"
+  },
+  {
+    "question": "DP is not suitable for which type of problem?",
+    "options": ["Non-overlapping subproblems", "Fibonacci", "Knapsack", "LCS"],
+    "answer": "Non-overlapping subproblems"
+  },
+
+ 
+  {
+    "question": "DFS can be implemented using?",
+    "options": ["Stack", "Queue", "Heap", "Array"],
+    "answer": "Stack"
+  },
+  {
+    "question": "BFS can be implemented using?",
+    "options": ["Queue", "Stack", "Heap", "Array"],
+    "answer": "Queue"
+  },
+  {
+    "question": "Directed graph edges have?",
+    "options": ["Direction", "No direction", "Two heads", "None"],
+    "answer": "Direction"
+  },
+  {
+    "question": "Undirected graph edges have?",
+    "options": ["No direction", "Direction", "Only one edge", "None"],
+    "answer": "No direction"
+  },
+  {
+    "question": "Which of these is a weighted graph?",
+    "options": ["Edges have weights", "Edges have no weights", "Stack-based", "Queue-based"],
+    "answer": "Edges have weights"
+  },
+  {
+    "question": "Graph with no cycles is called?",
+    "options": ["Acyclic graph", "Cyclic graph", "Tree", "Forest"],
+    "answer": "Acyclic graph"
+  },
+  {
+    "question": "Which is used to detect cycles in graph?",
+    "options": ["DFS", "BFS", "Queue", "Stack"],
+    "answer": "DFS"
+  },
+  {
+    "question": "Adjacency list representation is good for?",
+    "options": ["Sparse graphs", "Dense graphs", "Trees only", "Stacks"],
+    "answer": "Sparse graphs"
+  }
+]
+
+
+
+  {
+    "question": "Find the first repeating element in an array of size n.",
+    "options": ["Use hashing", "Sort then traverse", "Brute force", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "Maximum subarray sum using divide and conquer has complexity?",
+    "options": ["O(n log n)", "O(n)", "O(n^2)", "O(n^3)"],
+    "answer": "O(n log n)"
+  },
+  {
+    "question": "Given sorted array, find pair with sum x efficiently?",
+    "options": ["Two pointers", "Brute force", "Binary search for each", "Stack"],
+    "answer": "Two pointers"
+  },
+  {
+    "question": "Find majority element (appears > n/2) efficiently?",
+    "options": ["Boyer-Moore algorithm", "Sorting", "Hashing", "All"],
+    "answer": "Boyer-Moore algorithm"
+  },
+  {
+    "question": "Rotate array by d positions complexity?",
+    "options": ["O(n)", "O(d*n)", "O(log n)", "O(1)"],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Find missing number from 1 to n array?",
+    "options": ["Sum formula", "XOR method", "Hashing", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "Check if array is a subset of another?",
+    "options": ["Hashing", "Sorting + two pointers", "Brute force", "All"],
+    "answer": "All"
+  },
+  {
+    "question": "Maximum product subarray problem time complexity?",
+    "options": ["O(n)", "O(n^2)", "O(log n)", "O(n^3)"],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Trapping rainwater problem can be solved using?",
+    "options": ["Two pointers", "Stack", "DP", "All"],
+    "answer": "All"
+  },
+  {
+    "question": "Find kth smallest element in unsorted array?",
+    "options": ["Quickselect", "Sort then pick", "Heap", "All"],
+    "answer": "All"
+  },
+
+  // -------- LINKED LIST (7) --------
+  {
+    "question": "Detect and remove loop in linked list efficiently?",
+    "options": ["Floyd’s cycle + pointer", "Hashing", "Brute force", "All"],
+    "answer": "All"
+  },
+  {
+    "question": "Reverse a linked list in groups of size k complexity?",
+    "options": ["O(n)", "O(n^2)", "O(log n)", "O(k*n)"],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Check if linked list is palindrome?",
+    "options": ["Reverse second half + compare", "Stack", "Brute force", "All"],
+    "answer": "All"
+  },
+  {
+    "question": "Flatten a multilevel linked list?",
+    "options": ["Recursion", "Stack", "Iterative pointer manipulation", "All"],
+    "answer": "All"
+  },
+  {
+    "question": "Add two numbers represented by linked lists?",
+    "options": ["Reverse + add", "Use stack", "Recursive addition", "All"],
+    "answer": "All"
+  },
+  {
+    "question": "Intersection point of two linked lists can be found using?",
+    "options": ["Length difference", "Hashing", "Brute force", "All"],
+    "answer": "All"
+  },
+  {
+    "question": "Clone a linked list with next and random pointer complexity?",
+    "options": ["O(n)", "O(n^2)", "O(log n)", "O(n*log n)"],
+    "answer": "O(n)"
+  },
+
+  // -------- STACK (5) --------
+  {
+    "question": "Evaluate postfix expression with multi-digit numbers using stack?",
+    "options": ["Use stack", "Recursion", "Queue", "Array"],
+    "answer": "Use stack"
+  },
+  {
+    "question": "Next greater element problem uses which DS?",
+    "options": ["Stack", "Queue", "Array", "Hashing"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Check for balanced brackets including {}, [], ()?",
+    "options": ["Stack", "Queue", "Recursion", "Array"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Implement min stack (O(1) min retrieval)?",
+    "options": ["Auxiliary stack", "Recursion", "Queue", "Array"],
+    "answer": "Auxiliary stack"
+  },
+  {
+    "question": "Largest rectangle in histogram uses?",
+    "options": ["Stack", "Queue", "DP", "Graph"],
+    "answer": "Stack"
+  },
+
+  // -------- QUEUE (5) --------
+  {
+    "question": "LRU cache can be implemented using?",
+    "options": ["Doubly linked list + Hashmap", "Stack", "Queue only", "Array"],
+    "answer": "Doubly linked list + Hashmap"
+  },
+  {
+    "question": "Sliding window maximum problem uses?",
+    "options": ["Deque", "Stack", "Queue", "Array"],
+    "answer": "Deque"
+  },
+  {
+    "question": "Which queue type supports priority insertion?",
+    "options": ["Priority queue", "Circular queue", "Simple queue", "Deque"],
+    "answer": "Priority queue"
+  },
+  {
+    "question": "Implement k queues in single array efficiently using?",
+    "options": ["Auxiliary arrays", "Stack", "Linked list", "Queue"],
+    "answer": "Auxiliary arrays"
+  },
+  {
+    "question": "Which application uses circular queue?",
+    "options": ["CPU scheduling", "DFS", "BFS", "Stack simulation"],
+    "answer": "CPU scheduling"
+  },
+
+  // -------- TREES (7) --------
+  {
+    "question": "Check if binary tree is BST?",
+    "options": ["Inorder traversal + compare", "DFS only", "BFS only", "Stack simulation"],
+    "answer": "Inorder traversal + compare"
+  },
+  {
+    "question": "Diameter of binary tree problem uses?",
+    "options": ["DFS", "BFS", "Queue", "Stack"],
+    "answer": "DFS"
+  },
+  {
+    "question": "Lowest Common Ancestor in BST can be found in?",
+    "options": ["O(h)", "O(n)", "O(log n)", "O(n^2)"],
+    "answer": "O(h)"
+  },
+  {
+    "question": "Serialize and deserialize binary tree uses?",
+    "options": ["DFS/BFS", "Stack", "Queue only", "Heap"],
+    "answer": "DFS/BFS"
+  },
+  {
+    "question": "Convert binary tree to doubly linked list uses?",
+    "options": ["Inorder traversal", "Preorder traversal", "Postorder traversal", "Level order"],
+    "answer": "Inorder traversal"
+  },
+  {
+    "question": "Check if binary tree is balanced?",
+    "options": ["Postorder height check", "Preorder traversal", "DFS only", "BFS only"],
+    "answer": "Postorder height check"
+  },
+  {
+    "question": "Construct binary tree from inorder and preorder?",
+    "options": ["Recursion", "Stack", "Queue", "DFS only"],
+    "answer": "Recursion"
+  },
+
+  // -------- DYNAMIC PROGRAMMING (8) --------
+  {
+    "question": "Min cost path in matrix problem complexity using DP?",
+    "options": ["O(m*n)", "O(n^2)", "O(n)", "O(log n)"],
+    "answer": "O(m*n)"
+  },
+  {
+    "question": "Rod cutting problem is example of?",
+    "options": ["Optimization", "Sorting", "Searching", "Queue simulation"],
+    "answer": "Optimization"
+  },
+  {
+    "question": "Longest Increasing Subsequence problem uses which approach?",
+    "options": ["DP", "Greedy", "Stack", "Queue"],
+    "answer": "DP"
+  },
+  {
+    "question": "Edit distance problem time complexity?",
+    "options": ["O(m*n)", "O(n^2)", "O(n)", "O(log n)"],
+    "answer": "O(m*n)"
+  },
+  {
+    "question": "Matrix chain multiplication problem is solved using?",
+    "options": ["DP", "Greedy", "Divide & Conquer", "Stack"],
+    "answer": "DP"
+  },
+  {
+    "question": "Count ways to reach nth stair with 1 or 2 steps uses?",
+    "options": ["DP", "Recursion", "Stack", "Queue"],
+    "answer": "DP"
+  },
+  {
+    "question": "Subset sum problem can be solved in?",
+    "options": ["O(n*sum)", "O(n^2)", "O(n)", "O(log n)"],
+    "answer": "O(n*sum)"
+  },
+  {
+    "question": "0/1 Knapsack top-down approach uses?",
+    "options": ["Memoization", "Tabulation", "Stack", "Queue"],
+    "answer": "Memoization"
+  },
+
+  // -------- GRAPHS (8) --------
+  {
+    "question": "Detect cycle in directed graph uses?",
+    "options": ["DFS with recursion stack", "BFS", "Queue", "Stack"],
+    "answer": "DFS with recursion stack"
+  },
+  {
+    "question": "Detect cycle in undirected graph uses?",
+    "options": ["Union-Find", "DFS", "BFS", "Stack"],
+    "answer": "Union-Find"
+  },
+  {
+    "question": "Topological sorting possible in?",
+    "options": ["DAG", "Graph with cycle", "Tree", "Queue"],
+    "answer": "DAG"
+  },
+  {
+    "question": "Dijkstra’s algorithm is used for?",
+    "options": ["Shortest path", "DFS", "BFS", "Queue scheduling"],
+    "answer": "Shortest path"
+  },
+  {
+    "question": "Bellman-Ford algorithm handles?",
+    "options": ["Negative weights", "Positive weights only", "Cycles only", "Stack"],
+    "answer": "Negative weights"
+  },
+  {
+    "question": "Prim’s algorithm is used for?",
+    "options": ["Minimum spanning tree", "DFS", "Shortest path", "Queue simulation"],
+    "answer": "Minimum spanning tree"
+  },
+  {
+    "question": "Kruskal’s algorithm is greedy and uses?",
+    "options": ["Union-Find", "DFS", "Queue", "Stack"],
+    "answer": "Union-Find"
+  },
+  {
+    "question": "Adjacency matrix is suitable for?",
+    "options": ["Dense graphs", "Sparse graphs", "Stacks", "Queues"],
+    "answer": "Dense graphs"
+  }
+]
+
