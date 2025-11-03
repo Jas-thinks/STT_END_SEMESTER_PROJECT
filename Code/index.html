@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ultimate Interview Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎓 Interview Preparation Portal</h1>
+
+  <div class="selectors">
+    <label for="subjectSelect">Select Subject:</label>
+    <select id="subjectSelect">
+      <option value="os">Operating System</option>
+      <option value="sql">SQL</option>
+      <option value="dbms">DBMS</option>
+      <option value="system_design">System Design</option>
+      <option value="cn">Computer Networks</option>
+      <option value="aptitude">Aptitude</option>
+      <option value="ml">Machine Learning</option>
+      <option value="dl">Deep Learning</option>
+      <option value="genai">Generative AI</option>
+      <option value="python">Python</option>
+    </select>
+
+    <label for="levelSelect">Select Difficulty:</label>
+    <select id="levelSelect">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+      <option value="interview">Interview</option>
+    </select>
+
+    <button onclick="loadQuestions()">Start Quiz</button>
+  </div>
+
+  <div id="quizContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
