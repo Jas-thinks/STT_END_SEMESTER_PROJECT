@@ -1,51 +1,292 @@
+/* ========== GLOBAL STYLES ========== */
 body {
-  font-family: Poppins, sans-serif;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0a0f1e, #000000);
+  color: #e6edf3;
+  overflow-x: hidden;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
   text-align: center;
-  background: #f5f7fa;
-  margin: 0;
-  padding: 0;
+  padding: 80px 20px 60px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(10,15,30,1) 0%, rgba(0,0,0,1) 100%);
+  box-shadow: inset 0 0 100px rgba(88,166,255,0.3);
+  border-bottom: 1px solid #30363d;
 }
 
-h1 {
-  background: #007bff;
-  color: white;
-  padding: 15px;
-  margin: 0;
+.logo {
+  height: 150px;              /* Increased size from 100px → 150px */
+  margin-bottom: 25px;
+  filter: drop-shadow(0px 0px 15px #58a6ff);
+  animation: float 5s ease-in-out infinite;
+  transition: transform 0.4s ease;
 }
 
+.logo:hover {
+  transform: scale(1.05);     /* Slight hover zoom effect */
+  filter: drop-shadow(0px 0px 25px #58a6ff);
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+
+/* QUOTE */
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: #ffffff; /* pure white */
+  text-align: center;
+  width: 80%;
+  margin: 40px auto;
+  line-height: 1.7;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4),
+               0 0 30px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+/* ========== SELECTORS ========== */
 .selectors {
-  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 40px 0;
 }
 
 select, button {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #161b22;
+  color: #e6edf3;
+  font-weight: 500;
+  font-size: 1em;
+  box-shadow: 0 0 10px rgba(88,166,255,0.1);
 }
 
 button {
-  background: #28a745;
-  color: white;
+  background-color: #238636;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-#quizContainer {
-  margin: 30px auto;
-  width: 70%;
-  background: white;
-  padding: 20px;
+button:hover {
+  background-color: #2ea043;
+  box-shadow: 0 0 15px rgba(35,134,54,0.6);
+}
+
+/* ========== QUESTION BOXES ========== */
+.questions {
+  width: 85%;
+  margin: auto;
+  background-color: rgba(22,27,34,0.9);
+  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 20px rgba(88,166,255,0.2);
 }
 
 .question {
-  margin-bottom: 20px;
-  text-align: left;
+  background: #0d1117;
+  padding: 20px;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: 0.3s;
 }
 
-hr {
-  border: 0;
-  height: 1px;
-  background: #ddd;
+.question:hover {
+  transform: scale(1.01);
+  border-color: #58a6ff;
+  box-shadow: 0 0 10px rgba(88,166,255,0.3);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #8b949e;
+  font-size: 0.9em;
+  border-top: 1px solid #30363d;
+  background: #0a0f1e;
+}
+
+
+.site-title {
+  font-family: 'Cinzel', serif;
+  font-size: 4em;
+  color: #00b7ff;
+  position: relative;
+  text-shadow: 0 0 20px #00b7ff;
+}
+
+.logo {
+  height: 160px;
+  border-radius: 12px;
+  padding: 10px;
+  background: radial-gradient(circle at center, rgba(88,166,255,0.2), transparent 70%);
+  filter: drop-shadow(0px 0px 25px #58a6ff);
+  transition: all 0.4s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1) rotate(2deg);
+  filter: drop-shadow(0px 0px 35px #58a6ff);
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+
+
+.site-title {
+  font-family: 'Monoton', cursive;
+  font-size: 5em;
+  color: #00ffff;
+  text-shadow: 0 0 25px #00ffff, 0 0 55px #00b7ff;
+}
+
+
+
+
+.site-title::after {
+  content: '';
+  position: absolute;
+  left: -20%;
+  top: 0;
+  width: 140%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(0,183,255,0.7), transparent);
+  animation: lightning 5s linear infinite; /* 🔥 slower sweep */
+}
+
+@keyframes lightning {
+  0% { left: -100%; opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { left: 100%; opacity: 0.8; }
+}
+
+
+
+
+/* ============================= */
+/* 🔥 STREAK SECTION STYLING 🔥 */
+/* ============================= */
+
+.streak-container {
+  margin-top: 25px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.streak-container h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+#badge {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: gold;
+  text-shadow: 0 0 10px gold;
+}
+
+#markTodayBtn {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #00b7ff, #0066ff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#markTodayBtn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #0066ff, #00b7ff);
+}
+
+
+/* ✅ Streak Section Styling */
+.streak-section {
+  text-align: center;
+  background: #111;
+  border-top: 2px solid #00b7ff;
+  padding: 50px 20px;
+  color: white;
+  box-shadow: 0 -5px 20px rgba(0,183,255,0.2);
+}
+
+.streak-title {
+  font-size: 2em;
+  color: #00b7ff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #00b7ff;
+}
+
+.streak-days {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+#markDayBtn {
+  background: linear-gradient(90deg, #00b7ff, #007bff);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 15px rgba(0,183,255,0.5);
+}
+
+#markDayBtn:hover {
+  background: linear-gradient(90deg, #007bff, #00b7ff);
+  transform: scale(1.05);
+}
+
+#badgeContainer {
+  margin-top: 25px;
+}
+
+.badge {
+  display: inline-block;
+  background: gold;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 20px gold;
 }

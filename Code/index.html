@@ -3,41 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ultimate Interview Quiz</title>
+  <title>TheTrueTest</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Cinzel:wght@700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>🎓 Interview Preparation Portal</h1>
+  <!-- 🏛️ Header -->
+  <header class="hero">
+    <img src="iit.jpg" alt="IIT Bhilai Logo" class="logo" />
+    <h1 class="site-title">TheTrueTest</h1>
+    <p class="quote">
+      “The true test of character is not how much we know how to do,<br>
+      but is how we behave when we don’t know what to do.”
+    </p>
 
-  <div class="selectors">
-    <label for="subjectSelect">Select Subject:</label>
-    <select id="subjectSelect">
-      <option value="os">Operating System</option>
-      <option value="sql">SQL</option>
-      <option value="dbms">DBMS</option>
-      <option value="system_design">System Design</option>
-      <option value="cn">Computer Networks</option>
-      <option value="aptitude">Aptitude</option>
-      <option value="ml">Machine Learning</option>
-      <option value="dl">Deep Learning</option>
-      <option value="genai">Generative AI</option>
-      <option value="python">Python</option>
-    </select>
+    <!-- 🔥 Streak Tracker (top right corner) -->
+    <div class="streak-widget">
+      <h3>🔥 Streak Tracker</h3>
+      <div id="calendar"></div>
+      <p>Current Streak: <span id="streakCount">0</span> days</p>
+      <button id="markTodayBtn">Mark Today ✅</button>
+      <p id="badge"></p>
+    </div>
+  </header>
 
-    <label for="levelSelect">Select Difficulty:</label>
-    <select id="levelSelect">
-      <option value="easy">Easy</option>
-      <option value="medium">Medium</option>
-      <option value="hard">Hard</option>
-      <option value="interview">Interview</option>
-    </select>
+  <!-- 📚 Main Section -->
+  <main>
+    <section class="selectors">
+      <select id="subjectSelect">
+        <option value="">Select Subject</option>
+        <option value="1Dsa">DSA</option>
+        <option value="2Os">Operating Systems</option>
+        <option value="3Sql">SQL</option>
+        <option value="4Dbms">DBMS</option>
+        <option value="5System_design">System Design</option>
+        <option value="6Networks">Computer Networks</option>
+        <option value="7Aptitude">Aptitude</option>
+        <option value="8ML">Machine Learning</option>
+        <option value="9DL">Deep Learning</option>
+        <option value="10Gen_Ai">Generative AI</option>
+      </select>
 
-    <button onclick="loadQuestions()">Start Quiz</button>
-  </div>
+      <select id="levelSelect">
+        <option value="">Select Level</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        <option value="mnc">Interview / MNC</option>
+        <option value="interview">Interview (ML/DL/GenAI)</option>
+      </select>
 
-  <div id="quizContainer"></div>
+      <button id="startBtn">Load Questions</button>
+      <button id="shuffleBtn">Shuffle</button>
+      <button id="clearBtn">Clear</button>
+    </section>
+
+    <div id="quizMeta" class="hidden"><span id="metaText"></span></div>
+    <section id="quizContainer" class="questions empty">
+      <p class="hint">Select subject & level, then click <strong>Load Questions</strong>.</p>
+    </section>
+  </main>
+
+  <!-- ⚡ Footer -->
+  <footer>
+    <p>© 2025 TheTrueTest | Built with ❤️ by Jaswinder Singh, IIT Bhilai</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
