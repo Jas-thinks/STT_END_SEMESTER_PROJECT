@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "A train 180 m long passes a man walking in the same direction at 6 km/h in 18 seconds. Find the speed of the train in km/h.",
+    "options": ["A. 48", "B. 54", "C. 60", "D. 66"],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "A sum of ₹12,000 amounts to ₹15,552 in 2 years at compound interest. Find the rate of interest per annum.",
+    "options": ["A. 12%", "B. 13%", "C. 14%", "D. 15%"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "question": "A boat travels 16 km downstream in 2 hours and the same distance upstream in 4 hours. Find the speed of the boat in still water.",
+    "options": ["A. 4 km/h", "B. 6 km/h", "C. 8 km/h", "D. 10 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 4,
+    "question": "Two pipes can fill a cistern in 12 and 15 minutes respectively. A waste pipe can empty it in 6 minutes. If all pipes are opened together, how long will it take to fill the cistern?",
+    "options": ["A. 20 min", "B. 30 min", "C. 60 min", "D. Never fills"],
+    "answer": "D"
+  },
+  {
+    "id": 5,
+    "question": "A, B, and C together can complete a piece of work in 6 days. A alone can complete it in 18 days and B in 9 days. In how many days can C alone complete it?",
+    "options": ["A. 9", "B. 12", "C. 18", "D. 24"],
+    "answer": "D"
+  },
+  {
+    "id": 6,
+    "question": "The average age of 10 students is 20 years. If a teacher’s age is included, the average increases by 2 years. Find the teacher’s age.",
+    "options": ["A. 30", "B. 32", "C. 38", "D. 42"],
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "question": "A person invests ₹10,000 at 10% p.a. compounded annually. Find the amount after 3 years.",
+    "options": ["A. ₹12,000", "B. ₹13,100", "C. ₹13,310", "D. ₹14,000"],
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "question": "The difference between the squares of two consecutive numbers is 31. Find the smaller number.",
+    "options": ["A. 14", "B. 15", "C. 16", "D. 17"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "question": "A can finish a work in 15 days, B in 20 days, and C in 30 days. If they all work together, in how many days will they finish it?",
+    "options": ["A. 5", "B. 6", "C. 8", "D. 10"],
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "question": "The population of a town increases by 10% annually. If the population in 2022 was 20,000, what will it be in 2025?",
+    "options": ["A. 24,000", "B. 26,620", "C. 26,620", "D. 27,000"],
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "question": "A train crosses a platform in 36 seconds and a man standing on the platform in 20 seconds. If the train’s speed is 54 km/h, find the length of the platform.",
+    "options": ["A. 180 m", "B. 240 m", "C. 300 m", "D. 360 m"],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "question": "A man invests ₹8,000 in a scheme that offers 20% compound interest per annum. Find the amount after 2 years if interest is compounded annually.",
+    "options": ["A. ₹9,200", "B. ₹10,000", "C. ₹11,520", "D. ₹12,000"],
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "question": "A rectangular field has a length that is 4 m more than twice its breadth. If the perimeter is 64 m, find the area.",
+    "options": ["A. 192", "B. 200", "C. 208", "D. 216"],
+    "answer": "A"
+  },
+  {
+    "id": 14,
+    "question": "The ratio of the present ages of A and B is 4:5, and the sum of their ages is 45 years. What will be the ratio of their ages after 5 years?",
+    "options": ["A. 4:5", "B. 5:6", "C. 6:7", "D. 7:8"],
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "question": "A car’s speed increases by 20% and then decreases by 20%. Find the net percentage change in speed.",
+    "options": ["A. 0%", "B. 2%", "C. 4%", "D. 5%"],
+    "answer": "C"
+  },
+  {
+    "id": 16,
+    "question": "If 3x + 2y = 12 and 2x + 3y = 13, find the value of x + y.",
+    "options": ["A. 4", "B. 5", "C. 6", "D. 7"],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "question": "A sum becomes 4 times in 12 years at simple interest. In how many years will it double?",
+    "options": ["A. 3 years", "B. 4 years", "C. 6 years", "D. 8 years"],
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "question": "A man spends 80% of his income. His income increases by 25% and his expenditure by 20%. Find the percentage change in his savings.",
+    "options": ["A. 10%", "B. 20%", "C. 25%", "D. 30%"],
+    "answer": "C"
+  },
+  {
+    "id": 19,
+    "question": "A and B together can do a work in 8 days, while A alone can do it in 12 days. In how many days can B alone do it?",
+    "options": ["A. 16", "B. 20", "C. 24", "D. 30"],
+    "answer": "C"
+  },
+  {
+    "id": 20,
+    "question": "A man bought 5 dozen bananas for ₹60 and sold them at the rate of ₹15 per dozen. Find his profit percent.",
+    "options": ["A. 10%", "B. 15%", "C. 20%", "D. 25%"],
+    "answer": "C"
+  },
+  {
+    "id": 21,
+    "question": "The sum of the ages of a father and his son is 60 years. After 10 years, the father’s age will be twice the son’s age. Find their present ages.",
+    "options": ["A. 40 and 20", "B. 42 and 18", "C. 45 and 15", "D. 50 and 10"],
+    "answer": "A"
+  },
+  {
+    "id": 22,
+    "question": "A man can row 8 km/h in still water. If the stream’s speed is 2 km/h, find his upstream speed.",
+    "options": ["A. 4 km/h", "B. 5 km/h", "C. 6 km/h", "D. 7 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 23,
+    "question": "If the average of 5 numbers is 24, and the average of 3 of them is 20, find the average of the remaining two numbers.",
+    "options": ["A. 30", "B. 32", "C. 34", "D. 36"],
+    "answer": "A"
+  },
+  {
+    "id": 24,
+    "question": "A trader mixes 10 kg of sugar at ₹20/kg with 15 kg at ₹30/kg. Find the average price per kg of the mixture.",
+    "options": ["A. ₹24", "B. ₹25", "C. ₹26", "D. ₹27"],
+    "answer": "B"
+  },
+  {
+    "id": 25,
+    "question": "A person walks 2/3 of a distance at 4 km/h and the remaining at 6 km/h. Find his average speed for the entire journey.",
+    "options": ["A. 4.5 km/h", "B. 4.8 km/h", "C. 5 km/h", "D. 5.4 km/h"],
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "question": "The sum of the digits of a two-digit number is 9. If 27 is added to the number, its digits are reversed. Find the number.",
+    "options": ["A. 36", "B. 45", "C. 54", "D. 63"],
+    "answer": "B"
+  },
+  {
+    "id": 27,
+    "question": "The ratio of milk to water in a mixture is 7:5. If 6 liters of water is added, the ratio becomes 7:8. Find the quantity of milk in the mixture.",
+    "options": ["A. 21", "B. 24", "C. 28", "D. 30"],
+    "answer": "C"
+  },
+  {
+    "id": 28,
+    "question": "A and B invest in a business in the ratio 3:5. After 8 months, A withdraws half of his capital. If the total profit at the end of the year is ₹24,000, find B’s share.",
+    "options": ["A. ₹14,000", "B. ₹15,000", "C. ₹16,000", "D. ₹18,000"],
+    "answer": "C"
+  },
+  {
+    "id": 29,
+    "question": "A man covers 1/3 of a distance at 4 km/h and the remaining at 5 km/h. If he takes 36 minutes to cover the total distance, find the total distance.",
+    "options": ["A. 2.4 km", "B. 3 km", "C. 3.6 km", "D. 4 km"],
+    "answer": "C"
+  },
+  {
+    "id": 30,
+    "question": "A trader marks an article 25% above cost price and allows 10% discount. Find the gain percent.",
+    "options": ["A. 10%", "B. 12.5%", "C. 13.5%", "D. 15%"],
+    "answer": "B"
+  },
+  {
+    "id": 31,
+    "question": "The difference between the compound interest and simple interest on ₹10,000 for 2 years at 10% p.a. is:",
+    "options": ["A. ₹10", "B. ₹20", "C. ₹25", "D. ₹30"],
+    "answer": "C"
+  },
+  {
+    "id": 32,
+    "question": "A train 150 m long crosses another train 100 m long running in the opposite direction in 10 seconds. If the speed of the first train is 45 km/h, find the speed of the second train.",
+    "options": ["A. 36 km/h", "B. 45 km/h", "C. 54 km/h", "D. 60 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 33,
+    "question": "A sum of ₹5,000 becomes ₹6,600 in 2 years at compound interest. Find the rate of interest per annum.",
+    "options": ["A. 10%", "B. 12%", "C. 15%", "D. 16%"],
+    "answer": "C"
+  },
+  {
+    "id": 34,
+    "question": "The ratio of two numbers is 4:5. If each number is increased by 20, the ratio becomes 5:6. Find the numbers.",
+    "options": ["A. 40, 50", "B. 60, 75", "C. 80, 100", "D. 100, 120"],
+    "answer": "A"
+  },
+  {
+    "id": 35,
+    "question": "A shopkeeper buys an article for ₹720 and marks it at 25% above cost price. He sells it after allowing 10% discount. Find his profit percent.",
+    "options": ["A. 10%", "B. 12.5%", "C. 15%", "D. 20%"],
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "A man travels 15 km at 5 km/h, 20 km at 10 km/h, and 30 km at 15 km/h. Find his average speed.",
+    "options": ["A. 8 km/h", "B. 9 km/h", "C. 10 km/h", "D. 12 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 37,
+    "question": "If 12 men can build a wall in 18 days, how many days will 9 men take to build the same wall?",
+    "options": ["A. 20", "B. 22", "C. 24", "D. 27"],
+    "answer": "D"
+  },
+  {
+    "id": 38,
+    "question": "A sum of ₹2,000 becomes ₹2,420 in 2 years at compound interest. Find the rate of interest per annum.",
+    "options": ["A. 8%", "B. 9%", "C. 10%", "D. 11%"],
+    "answer": "B"
+  },
+  {
+    "id": 39,
+    "question": "The perimeter of a rectangle is 56 m and its breadth is 12 m. Find its area.",
+    "options": ["A. 180 m²", "B. 192 m²", "C. 200 m²", "D. 210 m²"],
+    "answer": "B"
+  },
+  {
+    "id": 40,
+    "question": "A trader sells two articles at ₹1,000 each. On one he gains 20% and on the other he loses 20%. Find his overall gain or loss percent.",
+    "options": ["A. No profit no loss", "B. 1% gain", "C. 2% loss", "D. 4% loss"],
+    "answer": "D"
+  },
+  {
+    "id": 41,
+    "question": "A certain number is divided by 13; it leaves a remainder 8. What will be the remainder when the square of that number is divided by 13?",
+    "options": ["A. 2", "B. 3", "C. 5", "D. 12"],
+    "answer": "A"
+  },
+  {
+    "id": 42,
+    "question": "A can complete a work in 10 days and B in 15 days. They work together for 5 days. What fraction of work remains?",
+    "options": ["A. 1/3", "B. 1/4", "C. 1/2", "D. 2/5"],
+    "answer": "A"
+  },
+  {
+    "id": 43,
+    "question": "A sum of ₹8,000 becomes ₹9,680 in 2 years at compound interest. Find the rate of interest per annum.",
+    "options": ["A. 8%", "B. 9%", "C. 10%", "D. 11%"],
+    "answer": "C"
+  },
+  {
+    "id": 44,
+    "question": "The simple interest on ₹1,200 at 5% per annum for certain years is ₹300. Find the time period.",
+    "options": ["A. 3 years", "B. 4 years", "C. 5 years", "D. 6 years"],
+    "answer": "C"
+  },
+  {
+    "id": 45,
+    "question": "A number when divided by 899 gives a remainder 63. What will be the remainder when the number is divided by 29?",
+    "options": ["A. 5", "B. 6", "C. 7", "D. 8"],
+    "answer": "C"
+  },
+  {
+    "id": 46,
+    "question": "A man can row 12 km downstream in 3 hours and return in 6 hours. Find the speed of the stream.",
+    "options": ["A. 1 km/h", "B. 1.5 km/h", "C. 2 km/h", "D. 2.5 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 47,
+    "question": "A trader sells 80% of his goods at 25% profit and the rest at 10% loss. Find his overall profit percent.",
+    "options": ["A. 15%", "B. 16%", "C. 17%", "D. 18%"],
+    "answer": "B"
+  },
+  {
+    "id": 48,
+    "question": "A man invested ₹20,000 in 12% stock at ₹120. Find his income.",
+    "options": ["A. ₹1,800", "B. ₹2,000", "C. ₹2,400", "D. ₹2,500"],
+    "answer": "A"
+  },
+  {
+    "id": 49,
+    "question": "A man can complete a work in 12 days. With the help of a boy, he can do it in 8 days. In how many days can the boy alone do it?",
+    "options": ["A. 16", "B. 20", "C. 24", "D. 32"],
+    "answer": "C"
+  },
+  {
+    "id": 50,
+    "question": "The difference between the compound interest and simple interest on a certain sum for 2 years at 8% p.a. is ₹128. Find the sum.",
+    "options": ["A. ₹10,000", "B. ₹12,000", "C. ₹15,000", "D. ₹20,000"],
+    "answer": "A"
+  }
+]

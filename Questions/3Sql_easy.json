@@ -1,0 +1,512 @@
+[
+  {
+    "question": "What does SQL stand for?",
+    "options": ["Structured Query Language", "Simple Query Language", "Sequential Query Logic", "Standard Question Language"],
+    "answer": "Structured Query Language"
+  },
+  {
+    "question": "Which SQL statement is used to retrieve data from a database?",
+    "options": ["GET", "SELECT", "EXTRACT", "FETCH"],
+    "answer": "SELECT"
+  },
+  {
+    "question": "Which SQL clause is used to filter the results?",
+    "options": ["WHERE", "ORDER BY", "GROUP BY", "HAVING"],
+    "answer": "WHERE"
+  },
+  {
+    "question": "Which SQL command is used to add new records?",
+    "options": ["ADD", "INSERT INTO", "UPDATE", "APPEND"],
+    "answer": "INSERT INTO"
+  },
+  {
+    "question": "Which SQL command is used to modify existing data?",
+    "options": ["CHANGE", "MODIFY", "UPDATE", "ALTER"],
+    "answer": "UPDATE"
+  },
+  {
+    "question": "Which SQL statement is used to remove records?",
+    "options": ["REMOVE", "DELETE", "DROP", "CLEAR"],
+    "answer": "DELETE"
+  },
+  {
+    "question": "Which SQL keyword sorts the result set?",
+    "options": ["SORT", "ORDER BY", "ARRANGE", "GROUP BY"],
+    "answer": "ORDER BY"
+  },
+  {
+    "question": "What is the default sorting order of ORDER BY?",
+    "options": ["Descending", "Ascending", "Random", "None"],
+    "answer": "Ascending"
+  },
+  {
+    "question": "Which keyword is used with SELECT to eliminate duplicates?",
+    "options": ["UNIQUE", "DISTINCT", "SEPARATE", "DIFFERENT"],
+    "answer": "DISTINCT"
+  },
+  {
+    "question": "Which SQL statement is used to create a new table?",
+    "options": ["CREATE TABLE", "MAKE TABLE", "NEW TABLE", "ADD TABLE"],
+    "answer": "CREATE TABLE"
+  },
+  {
+    "question": "Which command is used to delete a table from the database?",
+    "options": ["REMOVE TABLE", "DELETE TABLE", "DROP TABLE", "CLEAR TABLE"],
+    "answer": "DROP TABLE"
+  },
+  {
+    "question": "Which keyword is used to change a table structure?",
+    "options": ["UPDATE", "MODIFY", "ALTER", "CHANGE"],
+    "answer": "ALTER"
+  },
+  {
+    "question": "Which SQL function returns the total number of rows?",
+    "options": ["SUM()", "COUNT()", "TOTAL()", "ROWS()"],
+    "answer": "COUNT()"
+  },
+  {
+    "question": "Which SQL clause groups rows sharing a property?",
+    "options": ["GROUP BY", "ORDER BY", "WHERE", "HAVING"],
+    "answer": "GROUP BY"
+  },
+  {
+    "question": "Which SQL function gives the average value of a numeric column?",
+    "options": ["MEAN()", "AVG()", "AVERAGE()", "SUM()/COUNT()"],
+    "answer": "AVG()"
+  },
+  {
+    "question": "Which command is used to add a column in an existing table?",
+    "options": ["INSERT COLUMN", "ALTER TABLE ADD", "UPDATE TABLE", "MODIFY COLUMN"],
+    "answer": "ALTER TABLE ADD"
+  },
+  {
+    "question": "Which SQL constraint ensures that a column cannot have NULL values?",
+    "options": ["NOT NULL", "UNIQUE", "PRIMARY KEY", "CHECK"],
+    "answer": "NOT NULL"
+  },
+  {
+    "question": "Which constraint ensures unique values in a column?",
+    "options": ["UNIQUE", "NOT NULL", "CHECK", "DEFAULT"],
+    "answer": "UNIQUE"
+  },
+  {
+    "question": "Which constraint uniquely identifies each record?",
+    "options": ["PRIMARY KEY", "FOREIGN KEY", "UNIQUE", "CHECK"],
+    "answer": "PRIMARY KEY"
+  },
+  {
+    "question": "Which constraint links two tables?",
+    "options": ["LINK KEY", "PRIMARY KEY", "FOREIGN KEY", "JOIN KEY"],
+    "answer": "FOREIGN KEY"
+  },
+  {
+    "question": "Which SQL function returns the largest value?",
+    "options": ["MAX()", "TOP()", "HIGHEST()", "UPPER()"],
+    "answer": "MAX()"
+  },
+  {
+    "question": "Which SQL function returns the smallest value?",
+    "options": ["MIN()", "LOW()", "SMALL()", "BOTTOM()"],
+    "answer": "MIN()"
+  },
+  {
+    "question": "Which SQL statement is used to rename a table?",
+    "options": ["RENAME TABLE", "ALTER TABLE RENAME TO", "CHANGE TABLE NAME", "MODIFY TABLE"],
+    "answer": "ALTER TABLE RENAME TO"
+  },
+  {
+    "question": "Which clause is used to filter grouped data?",
+    "options": ["WHERE", "ORDER BY", "HAVING", "LIMIT"],
+    "answer": "HAVING"
+  },
+  {
+    "question": "Which operator is used to check a range of values?",
+    "options": ["RANGE", "WITHIN", "BETWEEN", "IN"],
+    "answer": "BETWEEN"
+  },
+  {
+    "question": "Which operator is used to check multiple values?",
+    "options": ["BETWEEN", "IN", "LIKE", "ANY"],
+    "answer": "IN"
+  },
+  {
+    "question": "Which operator is used for pattern matching?",
+    "options": ["MATCH", "SEARCH", "LIKE", "REGEXP"],
+    "answer": "LIKE"
+  },
+  {
+    "question": "What does the % symbol mean in LIKE?",
+    "options": ["Single character wildcard", "Multiple character wildcard", "End of string", "Separator"],
+    "answer": "Multiple character wildcard"
+  },
+  {
+    "question": "What does the _ symbol mean in LIKE?",
+    "options": ["Any single character", "Any number of characters", "Digit only", "Alphabet only"],
+    "answer": "Any single character"
+  },
+  {
+    "question": "Which SQL command combines rows from two or more tables?",
+    "options": ["CONNECT", "JOIN", "UNION", "LINK"],
+    "answer": "JOIN"
+  },
+  {
+    "question": "Which SQL keyword combines the result of two SELECT statements?",
+    "options": ["JOIN", "UNION", "MERGE", "GROUP"],
+    "answer": "UNION"
+  },
+  {
+    "question": "Which SQL statement is used to remove all records but keep the table?",
+    "options": ["DROP TABLE", "DELETE FROM", "TRUNCATE TABLE", "REMOVE TABLE"],
+    "answer": "TRUNCATE TABLE"
+  },
+  {
+    "question": "Which SQL clause limits the number of rows returned?",
+    "options": ["LIMIT", "TOP", "ROWNUM", "MAXROWS"],
+    "answer": "LIMIT"
+  },
+  {
+    "question": "Which SQL keyword is used to select only distinct values?",
+    "options": ["UNIQUE", "DISTINCT", "ONLY", "DIFFERENT"],
+    "answer": "DISTINCT"
+  },
+  {
+    "question": "Which SQL statement creates a new database?",
+    "options": ["CREATE DATABASE", "MAKE DATABASE", "NEW DATABASE", "ADD DATABASE"],
+    "answer": "CREATE DATABASE"
+  },
+  {
+    "question": "Which command is used to remove a database?",
+    "options": ["DELETE DATABASE", "DROP DATABASE", "REMOVE DATABASE", "CLEAR DATABASE"],
+    "answer": "DROP DATABASE"
+  },
+  {
+    "question": "What keyword is used to sort in descending order?",
+    "options": ["DOWN", "DESC", "REVERSE", "DECREASE"],
+    "answer": "DESC"
+  },
+  {
+    "question": "What SQL command retrieves all columns?",
+    "options": ["SELECT *", "SELECT ALL", "SELECT ROWS", "FETCH ALL"],
+    "answer": "SELECT *"
+  },
+  {
+    "question": "Which clause is used to rename a column in output?",
+    "options": ["AS", "RENAME", "ALIAS", "CHANGE"],
+    "answer": "AS"
+  },
+  {
+    "question": "Which function is used to sum numeric values?",
+    "options": ["ADD()", "SUM()", "TOTAL()", "COUNT()"],
+    "answer": "SUM()"
+  },
+  {
+    "question": "Which keyword is used to check null values?",
+    "options": ["IS EMPTY", "IS NULL", "NULL", "EQUALS NULL"],
+    "answer": "IS NULL"
+  },
+  {
+    "question": "Which command removes all data from a table permanently?",
+    "options": ["TRUNCATE", "DELETE", "DROP", "CLEAR"],
+    "answer": "TRUNCATE"
+  },
+  {
+    "question": "Which SQL function returns current date?",
+    "options": ["NOW()", "CURDATE()", "DATE()", "TODAY()"],
+    "answer": "CURDATE()"
+  },
+  {
+    "question": "Which SQL clause is used to join conditions?",
+    "options": ["AND/OR", "IF/ELSE", "WITH", "CASE"],
+    "answer": "AND/OR"
+  },
+  {
+    "question": "Which SQL statement changes an existing record?",
+    "options": ["CHANGE", "UPDATE", "ALTER", "MODIFY"],
+    "answer": "UPDATE"
+  },
+  {
+    "question": "Which of the following is not an aggregate function?",
+    "options": ["AVG()", "SUM()", "COUNT()", "ROUND()"],
+    "answer": "ROUND()"
+  },
+  {
+    "question": "What does the HAVING clause work with?",
+    "options": ["Aggregate functions", "Individual rows", "Primary keys", "Indexes"],
+    "answer": "Aggregate functions"
+  },
+  {
+    "question": "Which of the following retrieves all records from 'students' table?",
+    "options": ["SELECT ALL FROM students;", "SELECT * FROM students;", "GET * FROM students;", "SHOW students;"],
+    "answer": "SELECT * FROM students;"
+  },
+  {
+    "question": "Which of the following is a valid SQL data type?",
+    "options": ["NUMBER", "FLOAT", "INT", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which SQL statement is used to change a column name?",
+    "options": ["ALTER TABLE RENAME COLUMN", "UPDATE COLUMN NAME", "CHANGE COLUMN NAME", "RENAME COLUMN TO"],
+    "answer": "ALTER TABLE RENAME COLUMN"
+  },
+  {
+    "question": "Which clause is used to provide condition for aggregation?",
+    "options": ["HAVING", "WHERE", "ORDER BY", "LIMIT"],
+    "answer": "HAVING"
+  },
+  {
+    "question": "Which JOIN returns all rows when there is a match in either left or right table?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+    "answer": "FULL OUTER JOIN"
+  },
+  {
+    "question": "Which type of JOIN returns only the rows that match in both tables?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN"],
+    "answer": "INNER JOIN"
+  },
+  {
+    "question": "What will happen if a foreign key constraint is violated during an INSERT?",
+    "options": ["Data inserted with warning", "Error occurs", "Ignored", "Inserted with null values"],
+    "answer": "Error occurs"
+  },
+  {
+    "question": "Which SQL keyword is used to copy data from one table to another?",
+    "options": ["COPY INTO", "INSERT INTO SELECT", "TRANSFER", "CLONE TABLE"],
+    "answer": "INSERT INTO SELECT"
+  },
+  {
+    "question": "Which of the following is not a type of SQL JOIN?",
+    "options": ["INNER JOIN", "CROSS JOIN", "OUTER JOIN", "SELF OUTER JOIN"],
+    "answer": "SELF OUTER JOIN"
+  },
+  {
+    "question": "Which SQL clause is used to rename a result column?",
+    "options": ["AS", "RENAME", "ALIAS", "TO"],
+    "answer": "AS"
+  },
+  {
+    "question": "Which keyword is used to check for existence of records?",
+    "options": ["IN", "EXISTS", "ANY", "SOME"],
+    "answer": "EXISTS"
+  },
+  {
+    "question": "A subquery must be enclosed in:",
+    "options": ["Curly braces {}", "Parentheses ()", "Square brackets []", "None"],
+    "answer": "Parentheses ()"
+  },
+  {
+    "question": "What is the purpose of a VIEW in SQL?",
+    "options": ["To store data physically", "To show a virtual table", "To improve storage", "To speed up transactions"],
+    "answer": "To show a virtual table"
+  },
+  {
+    "question": "Which command removes all rows from a table but keeps its structure?",
+    "options": ["DROP", "DELETE", "TRUNCATE", "REMOVE"],
+    "answer": "TRUNCATE"
+  },
+  {
+    "question": "Which operator is used to compare a single value to multiple possible values?",
+    "options": ["ANY", "IN", "EXISTS", "SOME"],
+    "answer": "IN"
+  },
+  {
+    "question": "Which SQL keyword is used to return only rows that exist in both queries?",
+    "options": ["UNION", "INTERSECT", "EXCEPT", "JOIN"],
+    "answer": "INTERSECT"
+  },
+  {
+    "question": "Which SQL keyword is used to remove duplicates when combining results?",
+    "options": ["UNION ALL", "UNION", "JOIN", "DISTINCT"],
+    "answer": "UNION"
+  },
+  {
+    "question": "Which of the following statements creates a view?",
+    "options": ["MAKE VIEW v1 AS SELECT...", "CREATE VIEW v1 AS SELECT...", "NEW VIEW v1 AS SELECT...", "DEFINE VIEW v1 AS SELECT..."],
+    "answer": "CREATE VIEW v1 AS SELECT..."
+  },
+  {
+    "question": "Which SQL statement is used to delete a view?",
+    "options": ["DELETE VIEW", "REMOVE VIEW", "DROP VIEW", "ALTER VIEW"],
+    "answer": "DROP VIEW"
+  },
+  {
+    "question": "What is a correlated subquery?",
+    "options": ["Independent subquery", "Subquery that refers to outer query", "Recursive query", "Temporary query"],
+    "answer": "Subquery that refers to outer query"
+  },
+  {
+    "question": "Which of the following SQL functions is used to find the remainder?",
+    "options": ["MOD()", "REMAINDER()", "DIV()", "ROUND()"],
+    "answer": "MOD()"
+  },
+  {
+    "question": "Which SQL constraint ensures that all values in a column are unique and not null?",
+    "options": ["PRIMARY KEY", "UNIQUE", "NOT NULL", "CHECK"],
+    "answer": "PRIMARY KEY"
+  },
+  {
+    "question": "What will happen if you try to insert a NULL value in a column defined as NOT NULL?",
+    "options": ["It will insert 0", "It will insert NULL", "Error will occur", "It will skip the record"],
+    "answer": "Error will occur"
+  },
+  {
+    "question": "Which SQL statement is used to rollback a transaction?",
+    "options": ["ROLLBACK", "UNDO", "REVERSE", "CANCEL"],
+    "answer": "ROLLBACK"
+  },
+  {
+    "question": "Which SQL command is used to save a transaction permanently?",
+    "options": ["SAVEPOINT", "COMMIT", "END", "FINISH"],
+    "answer": "COMMIT"
+  },
+  {
+    "question": "What is the main purpose of an INDEX in SQL?",
+    "options": ["To reduce storage", "To speed up query performance", "To store data", "To remove duplicates"],
+    "answer": "To speed up query performance"
+  },
+  {
+    "question": "Which type of index is created automatically for a PRIMARY KEY?",
+    "options": ["Clustered index", "Non-clustered index", "Bitmap index", "Hash index"],
+    "answer": "Clustered index"
+  },
+  {
+    "question": "Which SQL keyword is used to remove an index?",
+    "options": ["DROP INDEX", "DELETE INDEX", "REMOVE INDEX", "ALTER INDEX"],
+    "answer": "DROP INDEX"
+  },
+  {
+    "question": "Which SQL statement is used to add a foreign key?",
+    "options": ["ALTER TABLE ADD FOREIGN KEY", "CREATE FOREIGN KEY", "ADD CONSTRAINT FOREIGN", "DEFINE FOREIGN KEY"],
+    "answer": "ALTER TABLE ADD FOREIGN KEY"
+  },
+  {
+    "question": "Which SQL clause is used to restrict rows returned by GROUP BY?",
+    "options": ["WHERE", "HAVING", "ORDER BY", "LIMIT"],
+    "answer": "HAVING"
+  },
+  {
+    "question": "What does ACID stand for in databases?",
+    "options": ["Accuracy, Consistency, Isolation, Durability", "Atomicity, Consistency, Isolation, Durability", "Atomic, Correct, Isolated, Durable", "Automatic, Consistent, Isolated, Dependable"],
+    "answer": "Atomicity, Consistency, Isolation, Durability"
+  },
+  {
+    "question": "Which SQL command creates a backup of the database?",
+    "options": ["BACKUP DATABASE", "SAVE DATABASE", "COPY DATABASE", "STORE DATABASE"],
+    "answer": "BACKUP DATABASE"
+  },
+  {
+    "question": "Which command restores a database backup?",
+    "options": ["RESTORE DATABASE", "LOAD DATABASE", "IMPORT DATABASE", "RECOVER DATABASE"],
+    "answer": "RESTORE DATABASE"
+  },
+  {
+    "question": "Which normalization form removes partial dependencies?",
+    "options": ["1NF", "2NF", "3NF", "BCNF"],
+    "answer": "2NF"
+  },
+  {
+    "question": "Which normalization form removes transitive dependencies?",
+    "options": ["1NF", "2NF", "3NF", "BCNF"],
+    "answer": "3NF"
+  },
+  {
+    "question": "Which SQL statement defines integrity constraints?",
+    "options": ["ALTER TABLE", "DEFINE CONSTRAINT", "CREATE TABLE", "SET CONSTRAINT"],
+    "answer": "CREATE TABLE"
+  },
+  {
+    "question": "What is the default isolation level in most databases?",
+    "options": ["READ COMMITTED", "READ UNCOMMITTED", "REPEATABLE READ", "SERIALIZABLE"],
+    "answer": "READ COMMITTED"
+  },
+  {
+    "question": "Which SQL keyword defines a condition to execute statements?",
+    "options": ["CASE", "IF", "WHEN", "THEN"],
+    "answer": "CASE"
+  },
+  {
+    "question": "Which SQL function converts text to uppercase?",
+    "options": ["TOUPPER()", "UPPER()", "UCASE()", "TEXTUP()"],
+    "answer": "UPPER()"
+  },
+  {
+    "question": "Which SQL function extracts a substring?",
+    "options": ["SUBSTRING()", "PART()", "SPLIT()", "SUBSTR()"],
+    "answer": "SUBSTRING()"
+  },
+  {
+    "question": "Which SQL function returns the current time?",
+    "options": ["TIME()", "NOW()", "CURTIME()", "CURRENT()"],
+    "answer": "CURTIME()"
+  },
+  {
+    "question": "What does the keyword CASCADE do in SQL?",
+    "options": ["Deletes parent and related child rows", "Ignores foreign keys", "Disables constraints", "Creates dependency"],
+    "answer": "Deletes parent and related child rows"
+  },
+  {
+    "question": "Which of the following can a TRIGGER not be used for?",
+    "options": ["INSERT", "UPDATE", "DELETE", "SELECT"],
+    "answer": "SELECT"
+  },
+  {
+    "question": "Which SQL command defines a trigger?",
+    "options": ["CREATE TRIGGER", "DEFINE TRIGGER", "NEW TRIGGER", "ADD TRIGGER"],
+    "answer": "CREATE TRIGGER"
+  },
+  {
+    "question": "Which SQL command is used to change the definition of an existing trigger?",
+    "options": ["ALTER TRIGGER", "UPDATE TRIGGER", "REDEFINE TRIGGER", "MODIFY TRIGGER"],
+    "answer": "ALTER TRIGGER"
+  },
+  {
+    "question": "What is the purpose of a foreign key?",
+    "options": ["To uniquely identify each record", "To enforce referential integrity", "To create indexes", "To store binary data"],
+    "answer": "To enforce referential integrity"
+  },
+  {
+    "question": "Which SQL statement is used to display database names?",
+    "options": ["SHOW DATABASES", "LIST DATABASES", "DISPLAY DATABASES", "VIEW DATABASES"],
+    "answer": "SHOW DATABASES"
+  },
+  {
+    "question": "Which SQL command lists all tables in a database?",
+    "options": ["SHOW TABLES", "LIST TABLES", "DISPLAY TABLES", "VIEW TABLES"],
+    "answer": "SHOW TABLES"
+  },
+  {
+    "question": "Which function counts distinct values only?",
+    "options": ["COUNT()", "COUNT(DISTINCT ...)", "COUNT UNIQUE()", "DISTINCT COUNT()"],
+    "answer": "COUNT(DISTINCT ...)"
+  },
+  {
+    "question": "Which SQL command is used to define a temporary table?",
+    "options": ["CREATE TEMP TABLE", "MAKE TEMP TABLE", "NEW TEMPORARY TABLE", "DEFINE TEMP TABLE"],
+    "answer": "CREATE TEMP TABLE"
+  },
+  {
+    "question": "Which keyword is used to prevent NULL values being inserted?",
+    "options": ["NOT NULL", "NO NULL", "NON NULL", "DEFAULT"],
+    "answer": "NOT NULL"
+  },
+  {
+    "question": "Which function returns the current user name?",
+    "options": ["USER()", "CURRENT_USER()", "SESSION_USER()", "ALL OF THE ABOVE"],
+    "answer": "ALL OF THE ABOVE"
+  },
+  {
+    "question": "Which of the following cannot be rolled back?",
+    "options": ["INSERT", "DELETE", "TRUNCATE", "UPDATE"],
+    "answer": "TRUNCATE"
+  },
+  {
+    "question": "Which SQL function returns number of characters in a string?",
+    "options": ["LENGTH()", "CHAR_LENGTH()", "SIZE()", "Both A and B"],
+    "answer": "Both A and B"
+  },
+  {
+    "question": "Which SQL command is used to create a sequence?",
+    "options": ["CREATE SEQUENCE", "DEFINE SEQUENCE", "NEW SEQUENCE", "GENERATE SEQUENCE"],
+    "answer": "CREATE SEQUENCE"
+  }
+]

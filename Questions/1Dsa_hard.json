@@ -1,0 +1,1757 @@
+{
+  "subject": "Data Structures and Algorithms",
+  "difficulty": "Hard",
+  "total_questions": 250,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Arrays",
+      "question": "What is the time complexity to find the maximum sum of a contiguous subarray of size $k$ using the Sliding Window technique?",
+      "options": ["O(N log N)", "O(N^2)", "O(N)", "O(k)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 2,
+      "topic": "Arrays",
+      "question": "The Dutch National Flag problem partitions an array into three sections. Which sorting algorithm is it closely associated with in terms of partitioning logic?",
+      "options": ["Merge Sort", "Heap Sort", "Quick Sort", "Radix Sort"],
+      "correct_answer": 2
+    },
+    {
+      "id": 3,
+      "topic": "Arrays",
+      "question": "What is the tightest space complexity for solving the 3SUM problem ($a+b+c=0$) using a hash set, excluding output storage?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 4,
+      "topic": "Arrays",
+      "question": "Kadane's algorithm, used for the Maximum Subarray Sum problem, is a specialized form of which general algorithmic technique?",
+      "options": ["Greedy Algorithm", "Backtracking", "Divide and Conquer", "Dynamic Programming"],
+      "correct_answer": 3
+    },
+    {
+      "id": 5,
+      "topic": "Arrays",
+      "question": "A $N \\times M$ matrix is spiral traversed. In an iterative solution, how many pointers/variables are minimally required to track the boundaries?",
+      "options": ["2", "3", "4", "5"],
+      "correct_answer": 2
+    },
+    {
+      "id": 6,
+      "topic": "Arrays",
+      "question": "What is the time complexity to rotate an $N \\times N$ matrix 90 degrees in place?",
+      "options": ["O(1)", "O(N)", "O(N log N)", "O(N^2)"],
+      "correct_answer": 3
+    },
+    {
+      "id": 7,
+      "topic": "Arrays",
+      "question": "Which of the following problems *cannot* be solved optimally in linear time $O(N)$ using the two-pointer approach on a sorted array?",
+      "options": ["Two Sum", "Pair with given difference", "Closest Pair of Points", "Counting triplets with sum $< S$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 8,
+      "topic": "Arrays",
+      "question": "In the Maximum Contiguous Product Subarray problem, why must the solution track both the maximum and minimum product seen so far?",
+      "options": ["To handle division by zero cases", "To implement the dynamic programming state transition correctly", "Because a negative number multiplied by a large negative number can become the new overall maximum", "To check for overflow conditions"],
+      "correct_answer": 2
+    },
+    {
+      "id": 9,
+      "topic": "Arrays",
+      "question": "The Water Trapping problem on an array of heights typically uses two pointers moving towards the center. Why is the height of the shorter of the two boundary pointers used to calculate trapped water?",
+      "options": ["It simplifies the math and avoids overflow", "It determines the maximum water level possible for the current column", "It helps detect the location of a peak", "The longer pointer's height is irrelevant"],
+      "correct_answer": 1
+    },
+    {
+      "id": 10,
+      "topic": "Arrays",
+      "question": "What is the time complexity of building a **Prefix Sum Array** from an array of $N$ elements?",
+      "options": ["O(1)", "O(log N)", "O(N)", "O(N^2)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 11,
+      "topic": "Arrays",
+      "question": "The time complexity to find the median of two sorted arrays of size $M$ and $N$ in $O(\\log(\\min(M, N)))$ is achieved using which technique?",
+      "options": ["Two Pointers", "Binary Search on the shorter array's partition point", "Merge Sort on both arrays", "Quick Select"],
+      "correct_answer": 1
+    },
+    {
+      "id": 12,
+      "topic": "Arrays",
+      "question": "When performing multiple range sum queries on an array, how does the Prefix Sum Array optimize the query time compared to linear scan?",
+      "options": ["From $O(N)$ per query to $O(N \\log N)$", "From $O(N)$ per query to $O(1)$", "From $O(1)$ per query to $O(N)$", "From $O(\\log N)$ per query to $O(1)$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 13,
+      "topic": "Arrays",
+      "question": "The maximum number of swaps required by Bubble Sort in the worst case for an array of $N$ elements is proportional to:",
+      "options": ["$N$", "$N \\log N$", "$N^2$", "$2^N$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 14,
+      "topic": "Arrays",
+      "question": "In the context of arrays, what is the 'Run-Length Encoding' (RLE) technique primarily used for?",
+      "options": ["Error correction in data transmission", "Data compression, especially for data with long sequences of the same value", "Quick searching in unsorted arrays", "Encryption of sensitive array data"],
+      "correct_answer": 1
+    },
+    {
+      "id": 15,
+      "topic": "Arrays",
+      "question": "In the 'Smallest Subarray with a given Sum' problem, the optimal $O(N)$ solution relies on which technique?",
+      "options": ["Two-Pointer/Sliding Window", "Dynamic Programming", "Ternary Search", "Binary Search"],
+      "correct_answer": 0
+    },
+    {
+      "id": 16,
+      "topic": "Arrays",
+      "question": "The fastest theoretical time complexity for calculating the range maximum query (RMQ) on a static array after $O(N \\log N)$ preprocessing is:",
+      "options": ["O(N)", "O(log N)", "O(1)", "O($\\sqrt{N}$)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 17,
+      "topic": "Arrays",
+      "question": "The time complexity to solve the 'Majority Element' problem (element appearing $N/2$ times) using the Boyer-Moore Voting Algorithm is:",
+      "options": ["O(N log N)", "O(N^2)", "O(N)", "O(1)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 18,
+      "topic": "Arrays",
+      "question": "What is the key advantage of using a **Difference Array** over a standard array for processing multiple range update operations?",
+      "options": ["Faster search time", "Constant space complexity", "Reduces $O(N)$ range updates to $O(1)$ updates and $O(N)$ final calculation", "It inherently handles negative numbers"],
+      "correct_answer": 2
+    },
+    {
+      "id": 19,
+      "topic": "Arrays",
+      "question": "Given an array of $N$ integers where $1 \\le A[i] \\le N$, how can the first duplicate be found in $O(N)$ time and $O(1)$ extra space?",
+      "options": ["By using a Hash Set to store visited elements", "By sorting the array and checking adjacent elements", "By using the array indices as a hash map and marking visited numbers negative", "By applying Binary Search"],
+      "correct_answer": 2
+    },
+    {
+      "id": 20,
+      "topic": "Arrays",
+      "question": "Which array property is utilized when using a two-pointer approach to check if an array is a palindrome?",
+      "options": ["Homogeneity of elements", "Contiguous memory allocation", "Ordered/Symmetrical access pattern", "Immutability of the array size"],
+      "correct_answer": 2
+    },
+    {
+      "id": 21,
+      "topic": "Arrays",
+      "question": "In a 2D array, accessing elements row by row (Row Major Order) is generally faster than column by column (Column Major Order) in languages like C/C++. This is due to which memory phenomenon?",
+      "options": ["Pointer Arithmetic", "Garbage Collection", "Cache Locality/Spatial Locality", "Stack Overflow"],
+      "correct_answer": 2
+    },
+    {
+      "id": 22,
+      "topic": "Arrays",
+      "question": "Which mathematical concept forms the basis of the $O(N)$ approach to find the Missing Number in an array containing $N$ numbers from $0$ to $N$?",
+      "options": ["Prime Factorization", "Gaussian Summation (sum of an arithmetic series)", "Fibonacci Sequence", "Euclidean Algorithm"],
+      "correct_answer": 1
+    },
+    {
+      "id": 23,
+      "topic": "Arrays",
+      "question": "The time complexity of the most efficient in-place matrix transposition for an $N \\times M$ matrix is:",
+      "options": ["$O(1)$", "$O(\\min(N, M))$", "$O(N \\times M)$", "$O(N^2 + M^2)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 24,
+      "topic": "Arrays",
+      "question": "Which data structure is often used in conjunction with arrays to efficiently handle overlapping interval problems?",
+      "options": ["Min-Heap", "Trie", "Hash Map", "Sorted List/Interval Tree"],
+      "correct_answer": 3
+    },
+    {
+      "id": 25,
+      "topic": "Arrays",
+      "question": "For finding the two unique numbers in an array where every other number appears twice, the optimal solution uses which bitwise operation?",
+      "options": ["AND (\\&)", "OR (|)", "XOR (^)", "NOT (~)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 26,
+      "topic": "Linked List",
+      "question": "In Floyd's Cycle-Finding algorithm for a singly linked list, if the list length is $L$ and the cycle length is $C$, the fast and slow pointers meet after $k$ steps. The starting point of the cycle is $L - x$ where $x$ is the remaining distance to the meeting point. At the meeting point, if one pointer is reset to the head, where will they meet on the next pass?",
+      "options": ["At the node before the meeting point", "At the start of the cycle", "At the node after the meeting point", "At the tail of the list"],
+      "correct_answer": 1
+    },
+    {
+      "id": 27,
+      "topic": "Linked List",
+      "question": "The operation of reversing a singly linked list in $k$-groups (where $k > 1$) can be implemented optimally using which approach?",
+      "options": ["Iterative approach with $O(k)$ space for the group", "A single-pass iterative approach with $O(1)$ auxiliary space", "A recursive approach with $O(N)$ space complexity", "Using a hash map to store node connections"],
+      "correct_answer": 1
+    },
+    {
+      "id": 28,
+      "topic": "Linked List",
+      "question": "To correctly add two numbers represented by linked lists (where digits are stored in forward order, e.g., 9 $\\to$ 2 $\\to$ 1 is 921), what auxiliary data structure or technique is required?",
+      "options": ["Two Pointers", "Merge Sort", "Stack or Recursion with carry tracking", "Binary Search"],
+      "correct_answer": 2
+    },
+    {
+      "id": 29,
+      "topic": "Linked List",
+      "question": "A deep copy of a linked list containing an additional 'arbitrary' or 'random' pointer (pointing to any node in the list) is typically achieved in $O(N)$ time and $O(1)$ extra space using which technique?",
+      "options": ["Two-pass using a Hash Map for mapping old to new nodes", "Three-pass method where the new node is interwoven with the old list", "Recursion with memoization", "Sorting the list before copying"],
+      "correct_answer": 1
+    },
+    {
+      "id": 30,
+      "topic": "Linked List",
+      "question": "What is the tightest time complexity to find the point of intersection of two non-cyclic singly linked lists, given their lengths $N$ and $M$?",
+      "options": ["$O(N \\cdot M)$", "$O(N + M)$", "$O(\\log(N + M))$", "$O(\\max(N, M)^2)$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 31,
+      "topic": "Linked List",
+      "question": "To efficiently merge $K$ sorted linked lists, which data structure provides the optimal $O(N \\log K)$ time complexity (where $N$ is the total number of elements)?",
+      "options": ["A Hash Map", "A Min-Heap of size $K$", "A Stack of size $K$", "A Queue of size $N$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 32,
+      "topic": "Linked List",
+      "question": "Why is deletion of a node given only a pointer to that node in a singly linked list generally an $O(N)$ operation, but can be performed in $O(1)$ if the node is not the tail?",
+      "options": ["Because only the tail node needs an external pointer update", "To delete any non-tail node, the *previous* node's pointer must be updated, which requires a search from the head", "It is only $O(1)$ because no search is needed", "The deletion is $O(1)$ only if the list is circular"],
+      "correct_answer": 1
+    },
+    {
+      "id": 33,
+      "topic": "Linked List",
+      "question": "In a Doubly Linked List, what is the space complexity overhead per node compared to a Singly Linked List (assuming data size is constant)?",
+      "options": ["$O(1)$ extra space, but $2 \\times$ the pointer storage", "$O(N)$ extra space", "$O(\\log N)$ extra space", "No extra space is required"],
+      "correct_answer": 0
+    },
+    {
+      "id": 34,
+      "topic": "Linked List",
+      "question": "To check if a singly linked list is a palindrome in $O(N)$ time and $O(1)$ auxiliary space, which technique is necessary?",
+      "options": ["Use a Stack to store all nodes", "Reverse the first half of the list and compare it to the second half", "Use a Hash Map to store node data", "Use a recursive approach with memoization"],
+      "correct_answer": 1
+    },
+    {
+      "id": 35,
+      "topic": "Linked List",
+      "question": "The time complexity to rotate a singly linked list by $k$ positions (where $k \\le N$) is:",
+      "options": ["O(1)", "O(log N)", "O(N)", "O(N^2)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 36,
+      "topic": "Linked List",
+      "question": "What is the primary reason why a linked list is preferred over an array for implementing memory management in an Operating System?",
+      "options": ["Faster random access time", "Better cache locality", "Dynamic sizing and $O(1)$ time for insertion/deletion at arbitrary points (with pointer access)", "Lower memory overhead"],
+      "correct_answer": 2
+    },
+    {
+      "id": 37,
+      "topic": "Linked List",
+      "question": "To remove the $N^{th}$ node from the end of a singly linked list in a single pass, which specific technique is used?",
+      "options": ["Reversing the list first", "Using two pointers separated by $N$ nodes", "Using a Hash Map to store all nodes", "Applying the Tortoise and Hare algorithm"],
+      "correct_answer": 1
+    },
+    {
+      "id": 38,
+      "topic": "Linked List",
+      "question": "What is the key invariant that a **Skip List** maintains to achieve expected $O(\\log N)$ time complexity for search, insertion, and deletion?",
+      "options": ["Perfectly balanced tree structure", "Constant time for all operations", "A series of sorted linked lists at multiple levels, where each level is a subset of the one below", "Using a Fibonacci sequence for node count"],
+      "correct_answer": 2
+    },
+    {
+      "id": 39,
+      "topic": "Linked List",
+      "question": "The most significant drawback of a Skip List compared to a self-balancing BST (like AVL) is:",
+      "options": ["Worse worst-case time complexity, which remains $O(N)$", "Higher space complexity", "More complex implementation logic", "Poorer cache performance"],
+      "correct_answer": 0
+    },
+    {
+      "id": 40,
+      "topic": "Linked List",
+      "question": "If a singly linked list has a cycle, what is the tightest space complexity for a solution that removes the cycle?",
+      "options": ["O(N) with a set", "O(log N)", "O(1) with Floyd's cycle detection and pointer manipulation", "O(N^2)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 41,
+      "topic": "Linked List",
+      "question": "In a *XOR* Linked List, how is the address of the next or previous node determined?",
+      "options": ["It is stored directly in two separate fields", "By XORing the address of the current node with the address of the head", "By XORing the address of the previous node with the XOR'd value stored in the current node", "It is calculated using bit shifting operations"],
+      "correct_answer": 2
+    },
+    {
+      "id": 42,
+      "topic": "Linked List",
+      "question": "The core difficulty in manipulating pointers in linked lists, especially during reversal, comes from the fact that:",
+      "options": ["Nodes are dynamically allocated", "Each node only stores a pointer to the next one (in a SLL), losing the reference to the previous node after moving forward", "Linked lists cannot be indexed", "The list size changes constantly"],
+      "correct_answer": 1
+    },
+    {
+      "id": 43,
+      "topic": "Linked List",
+      "question": "To perform a **stable** sort on a linked list in $O(N \\log N)$ time, which sorting algorithm is the preferred choice?",
+      "options": ["Quick Sort", "Insertion Sort", "Heap Sort", "Merge Sort"],
+      "correct_answer": 3
+    },
+    {
+      "id": 44,
+      "topic": "Linked List",
+      "question": "What is the primary role of a 'dummy' or 'sentinel' head node in complex linked list operations (like merging or reversal)?",
+      "options": ["To act as the permanent tail of the list", "To simplify edge case handling, especially when the original head node needs to be replaced or deleted", "To store metadata about the list", "To ensure the list is always sorted"],
+      "correct_answer": 1
+    },
+    {
+      "id": 45,
+      "topic": "Linked List",
+      "question": "In a Circular Singly Linked List (CSLL) of length $N$, what is the time complexity to find the element that appears before the node pointed to by the head?",
+      "options": ["O(1)", "O($\\log N$)", "O(N)", "O(N^2)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 46,
+      "topic": "Linked List",
+      "question": "To flatten a multilevel doubly linked list where nodes can have a 'child' pointer in addition to 'next' and 'prev', the recursive approach is similar to which tree traversal?",
+      "options": ["Inorder Traversal", "Level Order Traversal", "Preorder Traversal", "Postorder Traversal"],
+      "correct_answer": 2
+    },
+    {
+      "id": 47,
+      "topic": "Linked List",
+      "question": "What is the tightest time complexity to remove all duplicate nodes from a sorted linked list, ensuring each value appears only once?",
+      "options": ["O(N \\log N)", "O(N)", "O(N^2)", "O(1)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 48,
+      "topic": "Linked List",
+      "question": "If you are given a pointer to a node in a singly linked list and need to check if it's the tail node, what must be done?",
+      "options": ["Check if its data field is NULL", "Check if the list size equals its index", "Traverse the list from the head to find the tail and check if the given node equals the tail", "Check if its next pointer is NULL"],
+      "correct_answer": 3
+    },
+    {
+      "id": 49,
+      "topic": "Linked List",
+      "question": "The primary advantage of a Doubly Linked List over a Singly Linked List for implementing a Least Recently Used (LRU) Cache is:",
+      "options": ["Faster random access", "Ability to iterate backward", "O(1) deletion of a non-head node given a reference to it", "Higher memory efficiency"],
+      "correct_answer": 2
+    },
+    {
+      "id": 50,
+      "topic": "Linked List",
+      "question": "Which specific variation of the Linked List structure is most suited for a job scheduler that continuously loops through available processes?",
+      "options": ["Singly Linked List", "Doubly Linked List", "Circular Linked List", "Skip List"],
+      "correct_answer": 2
+    },
+    {
+      "id": 51,
+      "topic": "Stack/Queue",
+      "question": "What is the amortized time complexity of the `enqueue` operation for a Queue implemented using two Stacks?",
+      "options": ["O(N)", "O(log N)", "O(1)", "O(N^2)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 52,
+      "topic": "Stack/Queue",
+      "question": "The 'Next Greater Element' problem is optimally solved in $O(N)$ time using which specialized type of stack?",
+      "options": ["A Recursive Stack", "A Monotonic Stack", "A Stack of Indices", "A Stack of Tuples"],
+      "correct_answer": 1
+    },
+    {
+      "id": 53,
+      "topic": "Stack/Queue",
+      "question": "Which data structure is essential for performing $O(N)$ time-complexity conversion from **Infix** to **Postfix** expression?",
+      "options": ["A Queue", "A Min-Heap", "A Stack to manage operators and parentheses", "A Hash Map"],
+      "correct_answer": 2
+    },
+    {
+      "id": 54,
+      "topic": "Stack/Queue",
+      "question": "The minimum number of stacks required to simulate the behavior of a Queue while maintaining $O(1)$ amortized time for both enqueue and dequeue is:",
+      "options": ["1", "2", "3", "4"],
+      "correct_answer": 1
+    },
+    {
+      "id": 55,
+      "topic": "Stack/Queue",
+      "question": "The time complexity to find the largest rectangle area in a histogram of $N$ bars, using a Monotonic Stack, is:",
+      "options": ["O(N log N)", "O(N)", "O(N^2)", "O(1)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 56,
+      "topic": "Stack/Queue",
+      "question": "In a **Monotonic Queue** (Deque), how is the invariant of maintaining sorted order preserved during an **enqueue** (addLast) operation?",
+      "options": ["By removing elements from the front until the new element is greater", "By always inserting at the front", "By removing elements from the back until the new element maintains the property", "By sorting the queue after every insertion"],
+      "correct_answer": 2
+    },
+    {
+      "id": 57,
+      "topic": "Stack/Queue",
+      "question": "The optimal $O(N)$ solution to the 'Sliding Window Maximum' problem relies heavily on which data structure?",
+      "options": ["A Min-Heap", "A Max-Heap", "A Monotonic Deque", "A Simple Stack"],
+      "correct_answer": 2
+    },
+    {
+      "id": 58,
+      "topic": "Stack/Queue",
+      "question": "What is the primary function of a **System Stack** in memory management during function calls?",
+      "options": ["Storing global variables", "Managing the execution flow by storing local variables, return addresses, and parameters for each active function call", "Implementing a caching layer", "Handling inter-process communication"],
+      "correct_answer": 1
+    },
+    {
+      "id": 59,
+      "topic": "Stack/Queue",
+      "question": "A **Max Stack** (a stack that supports $O(1)$ `getMax` operation) is typically implemented by storing:",
+      "options": ["All elements in a single array", "Two parallel stacks: one for data and one for the maximum element encountered so far at each level", "A Min-Heap alongside the stack", "Only unique elements in the data stack"],
+      "correct_answer": 1
+    },
+    {
+      "id": 60,
+      "topic": "Stack/Queue",
+      "question": "The time complexity to convert a decimal number to its binary representation using repeated division by 2 and a stack is:",
+      "options": ["O(1)", "O($\\log N$)", "O(N)", "O(N log N)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 61,
+      "topic": "Stack/Queue",
+      "question": "In a circular buffer implementation of a Queue with a fixed size $S$, how is the full condition typically determined?",
+      "options": ["(rear + 1) % S == front", "rear == front", "rear > S", "front == 0 and rear == S-1"],
+      "correct_answer": 0
+    },
+    {
+      "id": 62,
+      "topic": "Stack/Queue",
+      "question": "If an array-based stack dynamically resizes by doubling its capacity when full, what is the average (amortized) time complexity for a sequence of $N$ push operations?",
+      "options": ["O(N)", "O($\\log N$)", "O(1)", "O($N^2$)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 63,
+      "topic": "Stack/Queue",
+      "question": "Which type of expression notation is the most straightforward to evaluate using a single stack due to its unambiguous operator precedence?",
+      "options": ["Infix", "Postfix (Reverse Polish Notation)", "Prefix (Polish Notation)", "Conditional Infix"],
+      "correct_answer": 1
+    },
+    {
+      "id": 64,
+      "topic": "Stack/Queue",
+      "question": "What is the primary purpose of a **priority queue** in the implementation of Dijkstra's Shortest Path algorithm?",
+      "options": ["To check for cycles in the graph", "To manage the unvisited nodes and efficiently extract the one with the smallest distance value", "To store the final shortest paths", "To perform the relaxation operation"],
+      "correct_answer": 1
+    },
+    {
+      "id": 65,
+      "topic": "Stack/Queue",
+      "question": "The time complexity for extracting the minimum element from a standard Binary Min-Heap (used as a Priority Queue) is:",
+      "options": ["O(1)", "O($\\log N$)", "O(N)", "O(N \\log N)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 66,
+      "topic": "Stack/Queue",
+      "question": "How can a stack be used to perform an iterative **Postorder Traversal** of a binary tree?",
+      "options": ["Using a single stack and checking if the left or right child has been visited", "Using two stacks to reverse the order of the Preorder traversal", "Using recursion to manage the call stack implicitly", "It is impossible to perform iteratively with a stack"],
+      "correct_answer": 1
+    },
+    {
+      "id": 67,
+      "topic": "Stack/Queue",
+      "question": "In a system with multiple writers and multiple readers, which data structure is most appropriate for reliable message passing and inter-process communication?",
+      "options": ["A Min-Heap", "A Shared Hash Map", "A Concurrent Queue", "A Linked List"],
+      "correct_answer": 2
+    },
+    {
+      "id": 68,
+      "topic": "Stack/Queue",
+      "question": "The maximum capacity of an array-implemented stack with $N$ elements is reached. To avoid overflow, the next step should be:",
+      "options": ["Raise an error", "Shrink the array size", "Rehash the array", "Dynamically resize the array (e.g., doubling)"],
+      "correct_answer": 3
+    },
+    {
+      "id": 69,
+      "topic": "Stack/Queue",
+      "question": "To efficiently reverse the first $K$ elements of a Queue, which auxiliary data structure is the most logical choice?",
+      "options": ["A Second Queue", "A Stack", "A Min-Heap", "A Hash Map"],
+      "correct_answer": 1
+    },
+    {
+      "id": 70,
+      "topic": "Stack/Queue",
+      "question": "A **Min-Max Stack** (supporting min/max in $O(1)$) requires how many auxiliary data structures in the minimal space-efficient solution?",
+      "options": ["One (single auxiliary stack)", "Two (one for min, one for max)", "Three (one for min, one for max, one for indices)", "None, it's done with XOR"],
+      "correct_answer": 1
+    },
+    {
+      "id": 71,
+      "topic": "Stack/Queue",
+      "question": "In a *Priority Queue* implemented with a Binary Heap, what is the worst-case time complexity to **decrease the key** of an element?",
+      "options": ["O(1)", "O($\\log N$)", "O(N)", "O(N \\log N)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 72,
+      "topic": "Stack/Queue",
+      "question": "Which specialized queue implementation is used to solve the Shortest Path problem in an unweighted graph?",
+      "options": ["Priority Queue", "Monotonic Queue", "Simple FIFO Queue", "Deque (Double-Ended Queue)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 73,
+      "topic": "Stack/Queue",
+      "question": "The time complexity to evaluate a **Prefix** expression (Polish Notation) of length $N$ using a stack is:",
+      "options": ["O($N \\log N$)", "O(N)", "O(N^2)", "O(1)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 74,
+      "topic": "Stack/Queue",
+      "question": "What is the primary advantage of a *linked list* implementation of a Stack over an *array* implementation, regarding the `push` operation?",
+      "options": ["Better cache locality", "Simpler implementation", "Avoids the possibility of stack overflow", "Guaranteed $O(1)$ time complexity without potential resizing costs"],
+      "correct_answer": 3
+    },
+    {
+      "id": 75,
+      "topic": "Stack/Queue",
+      "question": "When implementing two stacks in a single array of size $N$, the most space-efficient technique involves having:",
+      "options": ["Both stacks start from index 0 and grow towards $N/2$", "One stack start from 0 and grow towards the center, and the other start from $N-1$ and grow towards the center", "Both stacks use $N/2$ size and never cross over", "Using a linked list on top of the array"],
+      "correct_answer": 1
+    },
+    {
+      "id": 76,
+      "topic": "Trees/BST",
+      "question": "What is the key theoretical guarantee of a self-balancing BST (like AVL or Red-Black Tree) regarding its height $h$ for $N$ nodes?",
+      "options": ["$h = N$", "$h = O(N \\log N)$", "$h = O(\\log N)$", "$h = O(1)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 77,
+      "topic": "Trees/BST",
+      "question": "Which tree traversal algorithm is implicitly used in the most common recursive solution for finding the **diameter** of a binary tree?",
+      "options": ["Preorder", "Inorder", "Postorder", "Level Order"],
+      "correct_answer": 2
+    },
+    {
+      "id": 78,
+      "topic": "Trees/BST",
+      "question": "In a Binary Search Tree, what does an **Inorder Traversal** always yield?",
+      "options": ["A random sequence of nodes", "The nodes in descending order", "The nodes in non-decreasing (sorted) order", "The nodes ordered by depth"],
+      "correct_answer": 2
+    },
+    {
+      "id": 79,
+      "topic": "Trees/BST",
+      "question": "The **Morris Traversal** algorithm performs Inorder traversal of a BST in $O(N)$ time. What is its space complexity?",
+      "options": ["O($N$)", "O($\\log N$)", "O(1)", "O($N \\log N$)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 80,
+      "topic": "Trees/BST",
+      "question": "What is the time complexity to convert a sorted array of $N$ elements into a **Balanced** Binary Search Tree?",
+      "options": ["O(N)", "O($\\log N$)", "O($N \\log N$)", "O($N^2$)"],
+      "correct_answer": 0
+    },
+    {
+      "id": 81,
+      "topic": "Trees/BST",
+      "question": "Given the **Preorder** and **Inorder** traversal sequences of a tree, what is the minimum information required to *uniquely* construct the binary tree?",
+      "options": ["The tree must be a BST", "Both the Preorder and Inorder sequences are sufficient", "The Postorder traversal is also needed", "The tree height is needed"],
+      "correct_answer": 1
+    },
+    {
+      "id": 82,
+      "topic": "Trees/BST",
+      "question": "What is the defining characteristic of a **Red-Black Tree** that guarantees its $O(\\log N)$ height?",
+      "options": ["Every node is either red or black, and the path from root to any leaf contains the same number of black nodes", "The balance factor is strictly $\\pm 1$", "The number of nodes at each level is a power of 2", "All leaves are at the same depth"],
+      "correct_answer": 0
+    },
+    {
+      "id": 83,
+      "topic": "Trees/BST",
+      "question": "What is the technique used in the **Serialization and Deserialization** of a binary tree to unambiguously reconstruct the structure, even with null children?",
+      "options": ["Level Order Traversal with null markers", "Inorder Traversal only", "Preorder Traversal with null markers", "Postorder Traversal only"],
+      "correct_answer": 2
+    },
+    {
+      "id": 84,
+      "topic": "Trees/BST",
+      "question": "To find the **k-th smallest element** in a BST efficiently, which modification to the standard BST structure can be used to achieve $O(\\log N)$ time?",
+      "options": ["Adding parent pointers", "Using a Min-Heap", "Storing the size of each subtree within its root node", "Converting it to an AVL tree"],
+      "correct_answer": 2
+    },
+    {
+      "id": 85,
+      "topic": "Trees/BST",
+      "question": "The **Lowest Common Ancestor (LCA)** of two nodes in a *general* binary tree requires a path-tracking approach. In a **BST**, what simpler condition determines the LCA in $O(\\log N)$ time?",
+      "options": ["The LCA is the node whose value is between the two node values", "The LCA is the root node", "The LCA is the node where the paths from the root diverge", "The LCA is the node with the minimum depth"],
+      "correct_answer": 2
+    },
+    {
+      "id": 86,
+      "topic": "Trees/BST",
+      "question": "What is the worst-case space complexity for a recursive depth-first traversal (Preorder, Inorder, or Postorder) of a **skewed** binary tree with $N$ nodes?",
+      "options": ["O($1$)", "O($\\log N$)", "O($N$)", "O($N \\log N$)"],
+      "correct_answer": 2
+    },
+    {
+      "id": 87,
+      "topic": "Trees/BST",
+      "question": "The **Fenwick Tree** (Binary Indexed Tree) is a data structure designed to perform updates and Range Sum Queries (RSQ) in which time complexity?",
+      "options": ["O(1)", "O($\\log N$)", "O($\\sqrt{N}$)", "O(N)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 88,
+      "topic": "Trees/BST",
+      "question": "A **Segment Tree** built on an array of size $N$ has an internal space complexity of approximately:",
+      "options": ["$O(N)$", "$O(\\log N)$", "$O(2N)$ to $O(4N)$", "$O(N^2)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 89,
+      "topic": "Trees/BST",
+      "question": "What is the primary advantage of a **B-Tree** over a standard BST or AVL tree when dealing with external memory (disk storage)?",
+      "options": ["Faster search time in RAM", "Minimizes the number of disk I/O operations by maximizing the fan-out and minimizing tree height", "Reduces overall space consumption", "Allows for concurrent updates"],
+      "correct_answer": 1
+    },
+    {
+      "id": 90,
+      "topic": "Trees/BST",
+      "question": "The process of rebalancing an AVL tree after an insertion/deletion operation is performed via:",
+      "options": ["Restructuring", "Rotation", "Color flipping", "Swapping child pointers"],
+      "correct_answer": 1
+    },
+    {
+      "id": 91,
+      "topic": "Trees/BST",
+      "question": "A $K$-ary tree is one where each node has at most $K$ children. What is the time complexity to find an element in a perfectly balanced $K$-ary tree with $N$ nodes?",
+      "options": ["$O(K \\cdot N)$", "$O(\\log_2 N)$", "$O(K \\cdot \\log_K N)$", "$O(\\log_K N)$"],
+      "correct_answer": 3
+    },
+    {
+      "id": 92,
+      "topic": "Trees/BST",
+      "question": "Which specific condition must be met for a node to be a valid successor during a **deletion** operation in a Binary Search Tree?",
+      "options": ["It must be the smallest node in the deleted node's left subtree", "It must be the largest node in the deleted node's right subtree", "It must be the smallest node in the deleted node's right subtree", "It must be the root of the tree"],
+      "correct_answer": 2
+    },
+    {
+      "id": 93,
+      "topic": "Trees/BST",
+      "question": "The **Top View** of a binary tree is typically found using a Level Order Traversal (BFS) in conjunction with which other concept?",
+      "options": ["Hash map to track the first node seen at each horizontal distance", "Monotonic Stack", "Floyd's Cycle Detection", "Prefix Sum"],
+      "correct_answer": 0
+    },
+    {
+      "id": 94,
+      "topic": "Trees/BST",
+      "question": "What is the time complexity to perform an inorder traversal using the iterative approach with a single stack?",
+      "options": ["O(1) space, O(N) time", "O(N) space, O(N log N) time", "O(N) space, O(N) time", "O(log N) space, O(N) time"],
+      "correct_answer": 2
+    },
+    {
+      "id": 95,
+      "topic": "Trees/BST",
+      "question": "What is a **Trie (Prefix Tree)** primarily optimized for, achieving $O(L)$ time complexity (where $L$ is the length of the key)?",
+      "options": ["Range sum queries", "Set operations (union, intersection)", "Searching, insertion, and deletion of strings based on their prefixes", "Finding the minimum value in a collection"],
+      "correct_answer": 2
+    },
+    {
+      "id": 96,
+      "topic": "Trees/BST",
+      "question": "In a **Binary Heap**, the `heapify` operation (re-establishing the heap property after a change) has a worst-case time complexity proportional to:",
+      "options": ["$O(1)$", "$O(\\log N)$", "$O(N)$", "$O(N \\log N)$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 97,
+      "topic": "Trees/BST",
+      "question": "To find the number of **univalued subtrees** in a binary tree, the most effective approach uses which type of traversal to pass information up from the children?",
+      "options": ["Preorder", "Inorder", "Postorder", "Level Order"],
+      "correct_answer": 2
+    },
+    {
+      "id": 98,
+      "topic": "Trees/BST",
+      "question": "A **Splay Tree** is a self-adjusting binary search tree that uses which core operation to bring recently accessed nodes closer to the root?",
+      "options": ["Color Flipping", "Rotation (Zig-Zig, Zig-Zag, Zig)", "Rebalancing Factor", "Node Swapping"],
+      "correct_answer": 1
+    },
+    {
+      "id": 99,
+      "topic": "Trees/BST",
+      "question": "The average time complexity for searching in a **Splay Tree** is $O(\\log N)$, but its worst-case time complexity is:",
+      "options": ["$O(1)$", "$O(\\log N)$", "$O(N)$", "$O(N \\log N)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 100,
+      "topic": "Trees/BST",
+      "question": "Which condition is the most difficult to meet when constructing a tree uniquely from its traversals?",
+      "options": ["Preorder and Inorder are available", "Postorder and Inorder are available", "Preorder and Postorder are available", "Level Order and Inorder are available"],
+      "correct_answer": 2
+    },
+    {
+      "id": 101,
+      "topic": "Heaps/Priority Queue",
+      "question": "In a Min-Heap implemented using an array, where is the minimum element always located?",
+      "options": ["At the last index of the array", "At the first index (index 0 or 1)", "At any random location", "At the index $N/2$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 102,
+      "topic": "Heaps/Priority Queue",
+      "question": "The time complexity to perform the **Build Heap** operation on an arbitrary array of $N$ elements is:",
+      "options": ["O($N \\log N$)", "O(N)", "O($N^2$)", "O($\\log N$)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 103,
+      "topic": "Heaps/Priority Queue",
+      "question": "To find the **k-th largest element** in a stream of data efficiently, the optimal approach uses a **Priority Queue** of size:",
+      "options": ["$N$", "$K$", "$N - K$", "$K \\log N$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 104,
+      "topic": "Heaps/Priority Queue",
+      "question": "The **Median Finder** problem (finding the median of a data stream) is optimally solved using two Heaps. Which two types of heaps are used, and how?",
+      "options": ["Two Min-Heaps, one for small elements, one for large", "A Min-Heap for the lower half and a Max-Heap for the upper half", "Two Max-Heaps, one for small elements, one for large", "A single heap of size $N/2$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 105,
+      "topic": "Heaps/Priority Queue",
+      "question": "What is the primary reason why a Binary Heap is represented as an array rather than an explicit tree structure with pointers?",
+      "options": ["To facilitate recursion", "To guarantee $O(1)$ access to any element", "To exploit the property of a Complete Binary Tree and save space on pointers, thus improving cache performance", "To prevent overflow"],
+      "correct_answer": 2
+    },
+    {
+      "id": 106,
+      "topic": "Heaps/Priority Queue",
+      "question": "Which element in a Min-Heap can be located in $O(1)$ time, excluding the root?",
+      "options": ["The maximum element", "The second smallest element", "Any random element", "The median element"],
+      "correct_answer": 0
+    },
+    {
+      "id": 107,
+      "topic": "Heaps/Priority Queue",
+      "question": "What is the maximum number of children a node can have in a **Binomial Heap**?",
+      "options": ["2", "k (where k is the number of nodes)", "log N (where N is the number of nodes)", "Unbounded"],
+      "correct_answer": 3
+    },
+    {
+      "id": 108,
+      "topic": "Heaps/Priority Queue",
+      "question": "The worst-case time complexity for merging two **Binary Heaps** of size $M$ and $N$ is proportional to:",
+      "options": ["$O(1)$", "$O(\\log (M+N))$", "$O(M+N)$", "$O((M+N) \\log (M+N))$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 109,
+      "topic": "Heaps/Priority Queue",
+      "question": "Which type of heap provides the best time complexity for the **decrease key** operation, achieving $O(1)$ amortized time?",
+      "options": ["Binary Heap", "Binomial Heap", "Fibonacci Heap", "D-ary Heap"],
+      "correct_answer": 2
+    },
+    {
+      "id": 110,
+      "topic": "Heaps/Priority Queue",
+      "question": "The time complexity to insert a new element into a **Fibonacci Heap** is:",
+      "options": ["$O(\\log N)$", "$O(N)$", "$O(1)$ amortized", "$O(1)$ worst case"],
+      "correct_answer": 2
+    },
+    {
+      "id": 111,
+      "topic": "Heaps/Priority Queue",
+      "question": "To sort a nearly sorted array (where elements are at most $K$ distance from their sorted position), which data structure provides the optimal $O(N \\log K)$ solution?",
+      "options": ["Quick Sort (Randomized)", "A Min-Heap of size $K$", "A Max-Heap of size $N$", "Merge Sort"],
+      "correct_answer": 1
+    },
+    {
+      "id": 112,
+      "topic": "Heaps/Priority Queue",
+      "question": "What is the primary operation in the Heap Sort algorithm that contributes to its $O(N \\log N)$ time complexity?",
+      "options": ["The Build Heap operation", "The $N$ sequential `Extract Min/Max` operations, each costing $O(\\log N)$", "The initial array reading", "The final copying of elements"],
+      "correct_answer": 1
+    },
+    {
+      "id": 113,
+      "topic": "Heaps/Priority Queue",
+      "question": "In a Max-Heap, if a node's key is increased, what operation must be performed to restore the heap property?",
+      "options": ["Heapify down (sift down)", "Heapify up (sift up)", "Rebuild the entire heap", "Swap with the other child"],
+      "correct_answer": 1
+    },
+    {
+      "id": 114,
+      "topic": "Heaps/Priority Queue",
+      "question": "Which real-world application is best suited for a Priority Queue with $O(1)$ amortized `decrease key` operation (like Fibonacci Heap)?",
+      "options": ["Implementing a simple Undo/Redo mechanism", "Efficiently running Dijkstra's Shortest Path Algorithm on large, sparse graphs", "Storing browser history", "Sorting small arrays"],
+      "correct_answer": 1
+    },
+    {
+      "id": 115,
+      "topic": "Heaps/Priority Queue",
+      "question": "To perform a range update on a Min-Heap, what is the best strategy?",
+      "options": ["Iterate over all elements and call `decrease key` on each, then rebuild", "It is not a supported operation on heaps", "Convert the heap to an array, update, then rebuild (Build Heap)", "Use a separate data structure"],
+      "correct_answer": 1
+    },
+    {
+      "id": 116,
+      "topic": "Heaps/Priority Queue",
+      "question": "The **k-way merge** problem (merging $K$ sorted lists) is solved using a Min-Heap of size $K$. Why is $K$ the optimal size for the heap?",
+      "options": ["It is the average number of elements in each list", "It is the number of lists, and the heap only needs to track the smallest element from each list", "It is the total number of elements being merged", "It is a prime number"],
+      "correct_answer": 1
+    },
+    {
+      "id": 117,
+      "topic": "Heaps/Priority Queue",
+      "question": "Which property of the **Binary Heap** ensures that finding the parent, left child, and right child can be done in $O(1)$ time using simple arithmetic?",
+      "options": ["The heap property", "The array-based representation and the Complete Binary Tree property", "The $O(N \\log N)$ insertion time", "The use of pointers"],
+      "correct_answer": 1
+    },
+    {
+      "id": 118,
+      "topic": "Heaps/Priority Queue",
+      "question": "The primary difference in the internal structure of a Min-Heap and a Max-Heap lies in:",
+      "options": ["The total number of nodes", "The sorting order of the child nodes relative to the parent node", "The time complexity of the operations", "The space complexity"],
+      "correct_answer": 1
+    },
+    {
+      "id": 119,
+      "topic": "Heaps/Priority Queue",
+      "question": "What is the tightest time complexity for inserting an element into a **Binomial Heap**?",
+      "options": ["$O(1)$ worst case", "$O(\\log N)$ worst case", "$O(N)$ worst case", "$O(1)$ amortized, $O(\\log N)$ worst case"],
+      "correct_answer": 3
+    },
+    {
+      "id": 120,
+      "topic": "Heaps/Priority Queue",
+      "question": "In the **D-ary Heap** (where each node has $D$ children), the time complexity of the `Extract Min` operation is:",
+      "options": ["$O(\\log_2 N)$", "$O(D \\cdot \\log_D N)$", "$O(\\log_D N)$", "$O(N \\cdot D)$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 121,
+      "topic": "Heaps/Priority Queue",
+      "question": "Which operation on a standard Binary Heap guarantees $O(1)$ worst-case time complexity?",
+      "options": ["Insertion", "Extraction of Min/Max", "Finding the minimum/maximum element (the root)", "Building the heap"],
+      "correct_answer": 2
+    },
+    {
+      "id": 122,
+      "topic": "Heaps/Priority Queue",
+      "question": "The space complexity for storing $N$ elements in a Binary Heap array is:",
+      "options": ["$O(1)$", "$O(\\log N)$", "$O(N)$", "$O(N^2)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 123,
+      "topic": "Heaps/Priority Queue",
+      "question": "For a sequence of $N$ operations, including $N$ `insert` and $N$ `extract min`, on a Binary Heap, the total time complexity is:",
+      "options": ["$O(N)$", "$O(N \\log N)$", "$O(N^2)$", "$O(\\log N)$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 124,
+      "topic": "Heaps/Priority Queue",
+      "question": "What structural property allows the `Build Heap` operation to be faster than $N$ sequential insertions?",
+      "options": ["It only considers leaf nodes", "It performs `heapify` bottom-up, and most of the heapify operations are performed on smaller subtrees", "It uses recursion", "It is only faster for small $N$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 125,
+      "topic": "Heaps/Priority Queue",
+      "question": "If you need to find both the minimum and maximum element simultaneously in $O(1)$, which data structure, though not a standard Heap, would be the most suitable variation?",
+      "options": ["Binomial Heap", "Min-Heap", "Max-Heap", "Min-Max Heap"],
+      "correct_answer": 3
+    },
+    {
+      "id": 126,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "The time complexity of Breadth-First Search (BFS) on a graph represented by an Adjacency List with $V$ vertices and $E$ edges is:",
+      "options": ["$O(V^2)$", "$O(V \\log V)$", "$O(V + E)$", "$O(E)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 127,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "What characteristic of a graph is Depth-First Search (DFS) primarily used to detect in $O(V+E)$ time?",
+      "options": ["Shortest path between two vertices", "Minimum Spanning Tree", "Cycles", "Max flow"],
+      "correct_answer": 2
+    },
+    {
+      "id": 128,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "In a directed graph, the process of finding **Strongly Connected Components (SCCs)** typically uses two runs of which traversal algorithm?",
+      "options": ["BFS and DFS", "Dijkstra's", "Two runs of DFS (Kosaraju's/Tarjan's)", "Floyd-Warshall"],
+      "correct_answer": 2
+    },
+    {
+      "id": 129,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "A graph is considered **Bipartite** if its vertices can be divided into two disjoint sets $U$ and $V$ such that:",
+      "options": ["Every vertex in $U$ is connected to every vertex in $V$", "All edges connect a vertex in $U$ to one in $V$ (and no edges within $U$ or $V$)", "The graph contains no cycles", "The number of edges equals the number of vertices"],
+      "correct_answer": 1
+    },
+    {
+      "id": 130,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "The most efficient algorithm for checking if an undirected graph is **Bipartite** uses which traversal method?",
+      "options": ["DFS", "BFS", "Random Walk", "Topological Sort"],
+      "correct_answer": 1
+    },
+    {
+      "id": 131,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "What is a **Bridge** (Cut Edge) in an undirected graph?",
+      "options": ["An edge that forms a cycle", "An edge that connects two distinct components", "An edge whose removal increases the number of connected components", "An edge with a weight of zero"],
+      "correct_answer": 2
+    },
+    {
+      "id": 132,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "Tarjan's algorithm for finding SCCs relies on maintaining two arrays: `disc` (discovery time) and `low` (lowest discovery time reachable). What does the `low` array track?",
+      "options": ["The shortest distance to the root", "The minimum degree of all neighbors", "The highest discovery time reachable from the current node's subtree (including back edges)", "The lowest discovery time reachable from the current node's subtree, through at most one back-edge"],
+      "correct_answer": 3
+    },
+    {
+      "id": 133,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "Which property is unique to a **Directed Acyclic Graph (DAG)**?",
+      "options": ["It must be connected", "It must have a single source node", "It allows for a linear ordering of its vertices (Topological Sort)", "It is a bipartite graph"],
+      "correct_answer": 2
+    },
+    {
+      "id": 134,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "The time complexity of **Topological Sort** (Kahn's algorithm using a queue) on an Adjacency List is:",
+      "options": ["$O(V^2)$", "$O(V + E)$", "$O(V \\log V)$", "$O(E \\log E)$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 135,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "The **Flood Fill** algorithm, commonly used in image processing, is fundamentally an application of which graph traversal technique?",
+      "options": ["A* Search", "DFS or BFS", "Dijkstra's Algorithm", "Dynamic Programming"],
+      "correct_answer": 1
+    },
+    {
+      "id": 136,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "The time complexity to find all connected components in an undirected graph using DFS is:",
+      "options": ["$O(V)$", "$O(E)$", "$O(V + E)$", "$O(V^2)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 137,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "When detecting a cycle in a **directed** graph using DFS, which type of edge indicates a cycle?",
+      "options": ["Tree edge", "Forward edge", "Back edge (to an ancestor in the DFS tree)", "Cross edge"],
+      "correct_answer": 2
+    },
+    {
+      "id": 138,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "What is the tightest space complexity for storing a graph with $V$ vertices and $E$ edges using an Adjacency List representation?",
+      "options": ["$O(V)$", "$O(V^2)$", "$O(V + E)$", "$O(E \\log V)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 139,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "An **Articulation Point** (Cut Vertex) in a connected graph is a vertex whose removal:",
+      "options": ["Increases the length of the shortest path", "Disconnects the graph or increases the number of connected components", "Creates a cycle", "Decreases the number of edges"],
+      "correct_answer": 1
+    },
+    {
+      "id": 140,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "What is the defining feature of a **Complete Graph** $K_n$ with $n$ vertices?",
+      "options": ["It has no cycles", "The number of edges is $n-1$", "Every pair of distinct vertices is connected by a unique edge", "It is always bipartite"],
+      "correct_answer": 2
+    },
+    {
+      "id": 141,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "In a social network, finding the 'Six Degrees of Separation' between two people is analogous to solving which graph problem?",
+      "options": ["Maximum Flow", "All-Pairs Shortest Path", "Shortest Path in an Unweighted Graph (BFS)", "Minimum Spanning Tree"],
+      "correct_answer": 2
+    },
+    {
+      "id": 142,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "What is the primary difference in goal between DFS and BFS on an unweighted graph?",
+      "options": ["DFS finds all cycles, BFS does not", "DFS explores deeper first, while BFS explores all neighbors at the current depth first (guarantees shortest path in terms of edges)", "BFS has better time complexity", "DFS uses less memory"],
+      "correct_answer": 1
+    },
+    {
+      "id": 143,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "For a graph with $V$ vertices, what is the maximum number of edges $E$ that can exist without forming a cycle (i.e., making it a forest)?",
+      "options": ["$O(V)$", "$V-1$", "$V^2$", "$V \\log V$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 144,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "Which algorithm is most suitable for efficiently finding the shortest path in a graph where edge weights can only be 0 or 1?",
+      "options": ["Dijkstra's with Priority Queue", "Bellman-Ford", "0-1 BFS (using a Deque)", "A* Search"],
+      "correct_answer": 2
+    },
+    {
+      "id": 145,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "The **Eulerian Path** problem seeks a path that traverses every edge exactly once. What is the necessary and sufficient condition for a connected undirected graph to have an Eulerian path?",
+      "options": ["All vertices have an even degree", "Exactly zero or two vertices have an odd degree", "It must be a complete graph", "It must be a tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 146,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "In a graph, the **coloring problem** (minimizing the number of colors such that no two adjacent vertices have the same color) is classified as:",
+      "options": ["P-Complete", "NP-Hard", "Solvable in $O(V)$ time", "A Greedy Problem"],
+      "correct_answer": 1
+    },
+    {
+      "id": 147,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "The problem of finding the shortest path that visits all vertices in a graph exactly once (The **Travelling Salesperson Problem**) is classified as:",
+      "options": ["P-Complete", "NP-Hard", "Solvable with BFS", "A Dynamic Programming problem (with masks)"],
+      "correct_answer": 1
+    },
+    {
+      "id": 148,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "What is the maximum number of **Articulation Points** a path graph of $N$ vertices can have?",
+      "options": ["$0$", "$N$", "$N-1$", "$N-2$"],
+      "correct_answer": 3
+    },
+    {
+      "id": 149,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "The time complexity of finding the **diameter** (longest path) of a general unweighted graph is typically solved using:",
+      "options": ["A single BFS/DFS", "Two BFS/DFS runs starting from an arbitrary node", "Floyd-Warshall", "Prim's Algorithm"],
+      "correct_answer": 1
+    },
+    {
+      "id": 150,
+      "topic": "Graphs - Traversal/Connectivity",
+      "question": "In an Adjacency Matrix representation of a graph, checking the existence of an edge between vertices $i$ and $j$ takes which time complexity?",
+      "options": ["$O(V^2)$", "$O(V)$", "$O(1)$", "$O(\\log V)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 151,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "Dijkstra's Algorithm fails to find the correct shortest path when the graph contains:",
+      "options": ["Cycles", "Negative edge weights", "Multiple paths of the same length", "Disconnected components"],
+      "correct_answer": 1
+    },
+    {
+      "id": 152,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "The **Bellman-Ford Algorithm** is preferred over Dijkstra's when the graph:",
+      "options": ["Is dense", "Is a DAG", "Contains negative edge weights (but no negative cycles)", "Is unweighted"],
+      "correct_answer": 2
+    },
+    {
+      "id": 153,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "What is the time complexity of the **Floyd-Warshall Algorithm** for All-Pairs Shortest Path on a graph with $V$ vertices?",
+      "options": ["$O(V^2)$", "$O(V \\cdot E)$", "$O(V^3)$", "$O(E \\log V)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 154,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "The **Max-Flow Min-Cut Theorem** states that the maximum flow from a source to a sink is equal to:",
+      "options": ["The total capacity of the graph", "The sum of all edge weights", "The minimum capacity of any cut separating the source and the sink", "The shortest path between source and sink"],
+      "correct_answer": 2
+    },
+    {
+      "id": 155,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "In the **Ford-Fulkerson Algorithm** for Max Flow, the search for an **augmenting path** is conducted on which graph?",
+      "options": ["The original flow network", "A bipartite graph", "The Residual Graph", "The Min-Cut graph"],
+      "correct_answer": 2
+    },
+    {
+      "id": 156,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "What is the core greedy criterion used in **Kruskal's Algorithm** for finding the Minimum Spanning Tree (MST)?",
+      "options": ["Always select the edge that connects the most vertices", "Always select the edge with the minimum weight that does not form a cycle", "Always select the edge with the maximum weight", "Always select the edge connected to the starting vertex"],
+      "correct_answer": 1
+    },
+    {
+      "id": 157,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "What is the primary data structure used by Kruskal's Algorithm to efficiently detect if adding a new edge will form a cycle?",
+      "options": ["Priority Queue", "Stack", "Disjoint Set Union (DSU) / Union-Find", "Adjacency Matrix"],
+      "correct_answer": 2
+    },
+    {
+      "id": 158,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "In **Prim's Algorithm** for MST, which data structure is used to efficiently select the next edge to add to the growing tree?",
+      "options": ["An array of size $V^2$", "A Priority Queue (Min-Heap) storing the minimum edge weight to each unvisited vertex", "A Hash Map of edge weights", "A simple FIFO Queue"],
+      "correct_answer": 1
+    },
+    {
+      "id": 159,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "The **Relaxation** operation is fundamental to both Dijkstra's and Bellman-Ford algorithms. What does it involve?",
+      "options": ["Increasing the distance to a vertex", "Updating the distance to a vertex if a shorter path is found through a specific edge", "Removing edges from the graph", "Checking for negative cycles"],
+      "correct_answer": 1
+    },
+    {
+      "id": 160,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "The **Johnson's Algorithm** for All-Pairs Shortest Path is primarily used to handle which graph condition more efficiently than Floyd-Warshall?",
+      "options": ["Dense graphs", "Sparse graphs with negative weights (but no negative cycles)", "Unweighted graphs", "Bipartite graphs"],
+      "correct_answer": 1
+    },
+    {
+      "id": 161,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "The time complexity of Dijkstra's Algorithm using a standard Binary Heap (Priority Queue) implementation is:",
+      "options": ["$O(V + E)$", "$O(V^2)$", "$O((V + E) \\log V)$", "$O(V \\log V + E)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 162,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "What is the primary objective of the **Capacity Scaling** technique when used with the Edmonds-Karp Max Flow algorithm?",
+      "options": ["To simplify the graph structure", "To reduce the number of augmentations needed and improve the overall time complexity", "To prevent negative cycles", "To find the minimum cut"],
+      "correct_answer": 1
+    },
+    {
+      "id": 163,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "The **A* Search Algorithm** is an extension of Dijkstra's that prioritizes nodes using which additional component?",
+      "options": ["A factor for negative weights", "A priority based on the total number of edges", "A heuristic function that estimates the distance from the current node to the goal", "A color property"],
+      "correct_answer": 2
+    },
+    {
+      "id": 164,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "In the context of the **Minimum Cut** problem, a 'cut' is defined as a partition of vertices into two sets $S$ and $T$. The capacity of the cut is the sum of capacities of edges that go from:",
+      "options": ["$S$ to $T$", "Any vertex in $S$ to any vertex in $T$", "The source to any vertex", "Any vertex in $T$ to any vertex in $S$"],
+      "correct_answer": 0
+    },
+    {
+      "id": 165,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "The **Traveling Salesperson Problem (TSP)** with $N$ cities can be solved using Dynamic Programming with bitmasking in which time complexity?",
+      "options": ["$O(N^2)$", "$O(N!)$", "$O(2^N \\cdot N^2)$", "$O(2^N)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 166,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "In a **Weighted Directed Acyclic Graph (DAG)**, the shortest path from a single source can be found in $O(V+E)$ time using which technique?",
+      "options": ["Topological Sort followed by a single-pass relaxation", "Dijkstra's Algorithm", "Bellman-Ford", "Floyd-Warshall"],
+      "correct_answer": 0
+    },
+    {
+      "id": 167,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "A key difference between the application of Kruskal's and Prim's algorithm is that Kruskal's is primarily **edge-based**, while Prim's is primarily:",
+      "options": ["Vertex-based (expanding a single component)", "Path-based", "Flow-based", "Cycle-based"],
+      "correct_answer": 0
+    },
+    {
+      "id": 168,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "To determine if a graph contains a **negative cycle**, one can run the Bellman-Ford algorithm for $V$ iterations. What is the condition for a negative cycle's existence?",
+      "options": ["The shortest path is negative", "The distance to the sink is 0", "A successful relaxation occurs during the $V^{th}$ iteration", "The number of edges is less than $V$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 169,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "What is the primary disadvantage of the Adjacency Matrix representation for a **sparse graph**?",
+      "options": ["Difficulty in implementing DFS/BFS", "High time complexity for checking edge existence", "Wasteful $O(V^2)$ space complexity and slower traversal for sparse graphs", "Inability to store weighted edges"],
+      "correct_answer": 2
+    },
+    {
+      "id": 170,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "The **Residual Graph** in the Max Flow problem is used to find the maximum possible flow by tracking:",
+      "options": ["The total capacity of the graph", "The total flow already sent", "The remaining capacity on edges and the possibility of sending flow backward", "The number of augmenting paths"],
+      "correct_answer": 2
+    },
+    {
+      "id": 171,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "What is the time complexity of the **Edmonds-Karp Algorithm** for Max Flow on a graph with capacity $C$ and $E$ edges?",
+      "options": ["$O(V \\cdot E^2)$", "$O(V^3)$", "$O(E \\cdot C)$", "$O(E \\cdot V)$"],
+      "correct_answer": 0
+    },
+    {
+      "id": 172,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "What is the fundamental property that must hold for a solution to a graph problem to be considered a **Minimum Spanning Tree (MST)**?",
+      "options": ["The sum of all edge weights must be minimal, and it must be a tree spanning all vertices", "It must contain all the shortest paths", "It must not contain any odd cycles", "It must be a complete graph"],
+      "correct_answer": 0
+    },
+    {
+      "id": 173,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "The **Transitive Closure** of a directed graph (which vertices are reachable from which) can be computed using a slight modification of which all-pairs shortest path algorithm?",
+      "options": ["Bellman-Ford", "Floyd-Warshall", "Dijkstra's", "A* Search"],
+      "correct_answer": 1
+    },
+    {
+      "id": 174,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "In an undirected graph, the sum of the degrees of all vertices is equal to:",
+      "options": ["The number of vertices $V$", "The number of edges $E$", "Twice the number of edges $2E$", "The number of cycles"],
+      "correct_answer": 2
+    },
+    {
+      "id": 175,
+      "topic": "Graphs - Path/MST/Flow",
+      "question": "The time complexity to find a cycle in a graph with $V$ vertices and $E$ edges using DFS is:",
+      "options": ["$O(V)$", "$O(E)$", "$O(V + E)$", "$O(V^2)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 176,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The solution to the **Matrix Chain Multiplication** problem relies on which DP property?",
+      "options": ["Optimal Substructure, where the optimal solution to the problem contains within it the optimal solutions to subproblems", "Greedy choice property", "LIFO execution order", "Linear time complexity"],
+      "correct_answer": 0
+    },
+    {
+      "id": 177,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The **Edit Distance** (Levenshtein Distance) problem between two strings $S_1$ and $S_2$ uses a DP table $DP[i][j]$ where $DP[i][j]$ represents:",
+      "options": ["The total number of unique characters", "The length of the longest common substring", "The minimum number of operations to convert the prefix $S_1[1..i]$ to $S_2[1..j]$", "The longest common subsequence"],
+      "correct_answer": 2
+    },
+    {
+      "id": 178,
+      "topic": "Dynamic Programming (DP)",
+      "question": "What is the space complexity of the tabulation solution to the **Longest Common Subsequence (LCS)** problem for strings of length $m$ and $n$ if you only need the length of the LCS?",
+      "options": ["$O(1)$", "$O(m + n)$", "$O(m \\cdot n)$", "$O(\\min(m, n))$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 179,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The optimal solution for the **Longest Increasing Subsequence (LIS)** problem has a time complexity of $O(N \\log N)$. This improvement over the $O(N^2)$ DP is achieved by replacing linear search with:",
+      "options": ["A Hash Map", "A Min-Heap", "Binary Search (to find the right tail of the subsequence)", "A Monotonic Stack"],
+      "correct_answer": 2
+    },
+    {
+      "id": 180,
+      "topic": "Dynamic Programming (DP)",
+      "question": "In the **0/1 Knapsack Problem**, the DP state $DP[i][w]$ typically represents:",
+      "options": ["The maximum weight achieved with the first $i$ items", "The minimum value achieved with the first $i$ items", "The maximum value achieved using the first $i$ items with a total weight limit of $w$", "The total number of ways to pick $i$ items"],
+      "correct_answer": 2
+    },
+    {
+      "id": 181,
+      "topic": "Dynamic Programming (DP)",
+      "question": "What is the primary advantage of **Memoization (Top-Down DP)** over **Tabulation (Bottom-Up DP)**?",
+      "options": ["Always better space complexity", "Only computes the required subproblems (can be faster if not all subproblems are needed)", "Guaranteed $O(1)$ amortized time", "Avoids recursion overhead"],
+      "correct_answer": 1
+    },
+    {
+      "id": 182,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The time complexity to compute the $N^{th}$ Fibonacci number using an iterative DP approach is:",
+      "options": ["$O(1)$", "$O(\\log N)$", "$O(N)$", "$O(N^2)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 183,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The **Coin Change** problem (finding the minimum number of coins to make a total amount $A$) is an example of which DP variation?",
+      "options": ["0/1 Knapsack", "Unbounded Knapsack", "Subset Sum", "Fractional Knapsack"],
+      "correct_answer": 1
+    },
+    {
+      "id": 184,
+      "topic": "Dynamic Programming (DP)",
+      "question": "In the **Partition Equal Subset Sum** problem, the required time complexity using the DP approach is proportional to:",
+      "options": ["$O(N \\cdot \\text{Sum})$", "$O(2^N)$", "$O(N \\log N)$", "$O(\\text{Sum}^2)$"],
+      "correct_answer": 0
+    },
+    {
+      "id": 185,
+      "topic": "Dynamic Programming (DP)",
+      "question": "What is the state transition relationship for the **Minimum Path Sum** problem on a grid $G[i][j]$?",
+      "options": ["$DP[i][j] = G[i][j] + \\min(DP[i-1][j-1])$", "$DP[i][j] = G[i][j] + \\max(DP[i-1][j], DP[i][j-1])$", "$DP[i][j] = G[i][j] + \\min(DP[i-1][j], DP[i][j-1])$", "$DP[i][j] = G[i][j] \\cdot DP[i-1][j]$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 186,
+      "topic": "Dynamic Programming (DP)",
+      "question": "For the **Stock Buy and Sell Problem** (finding max profit with *at most $K$ transactions*), the DP state typically involves which three parameters?",
+      "options": ["Day index, Price, Profit", "Day index, Transaction count, Holding state (buy/sell)", "Stock ID, Day index, Transaction count", "Start date, End date, Max profit"],
+      "correct_answer": 1
+    },
+    {
+      "id": 187,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The **Longest Palindromic Substring** problem is often solved using DP by checking if the inner substring is a palindrome and if:",
+      "options": ["The first and last characters are different", "The first and last characters are the same", "The length is an odd number", "The inner substring is empty"],
+      "correct_answer": 1
+    },
+    {
+      "id": 188,
+      "topic": "Dynamic Programming (DP)",
+      "question": "Which of the following problems *cannot* be solved optimally using Dynamic Programming?",
+      "options": ["All-Pairs Shortest Path (Floyd-Warshall)", "Activity Selection Problem", "Optimal Binary Search Tree", "Longest Common Subsequence"],
+      "correct_answer": 1
+    },
+    {
+      "id": 189,
+      "topic": "Dynamic Programming (DP)",
+      "question": "In the context of DP on trees, what is the term for calculating the optimal solution for a node based on the optimal solutions of its children?",
+      "options": ["Bottom-Up Tree DP (Postorder traversal)", "Top-Down Tree DP (Preorder traversal)", "Tree Traversal", "Node Rebalancing"],
+      "correct_answer": 0
+    },
+    {
+      "id": 190,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The time complexity to find the maximum possible score in the **Egg Dropping Puzzle** using the traditional DP approach is:",
+      "options": ["$O(N)$", "$O(K \\cdot N \\log N)$ (where $K$ is eggs, $N$ is floors)", "$O(K \\cdot N^2)$", "$O(K \\cdot N)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 191,
+      "topic": "Dynamic Programming (DP)",
+      "question": "What is the minimum space optimization that can be applied to the 0/1 Knapsack problem DP table, reducing space complexity from $O(N \\cdot W)$ to $O(W)$ (where $W$ is max weight)?",
+      "options": ["Using a Hash Map for the table", "Using only the previous row's information in a single 1D array, iterating backward to prevent using current row's updated values", "Applying a greedy choice", "Using memoization"],
+      "correct_answer": 1
+    },
+    {
+      "id": 192,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The **Word Break Problem** (checking if a string can be segmented into dictionary words) typically uses a DP array where $DP[i]$ represents:",
+      "options": ["The number of words in the dictionary", "Whether the prefix of the string up to index $i$ is breakable", "The longest word in the dictionary", "The minimum length of the remaining string"],
+      "correct_answer": 1
+    },
+    {
+      "id": 193,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The **Burst Balloons** problem is a hard DP problem that uses which specific DP structure?",
+      "options": ["Subsequence DP", "Interval/Gap DP (where the final result of the merge is calculated first)", "Bitmask DP", "Tree DP"],
+      "correct_answer": 1
+    },
+    {
+      "id": 194,
+      "topic": "Dynamic Programming (DP)",
+      "question": "In the **Interleaving Strings** problem, the DP state $DP[i][j]$ is True if the prefix $S_1[1..i]$ and $S_2[1..j]$ can form the prefix of $S_3$ up to length:",
+      "options": ["$i$", "$j$", "$i \\cdot j$", "$i + j$"],
+      "correct_answer": 3
+    },
+    {
+      "id": 195,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The **Minimum Jumps to Reach End** problem on an array is solvable with $O(N)$ time complexity using a refined greedy approach, but the $O(N^2)$ DP solution also clearly illustrates the property of:",
+      "options": ["Greedy Choice", "Optimal Substructure", "Randomized Select", "Sorting Invariant"],
+      "correct_answer": 1
+    },
+    {
+      "id": 196,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The **Longest Path in a DAG** problem is solved using DP in $O(V+E)$ time. Which graph algorithm is a prerequisite for this approach?",
+      "options": ["BFS", "DFS", "Topological Sort", "Dijkstra's"],
+      "correct_answer": 2
+    },
+    {
+      "id": 197,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The **Catalan Number** sequence often appears as the solution to DP problems involving recursive partitioning, such as:",
+      "options": ["Fibonacci sequence", "Maximum Subarray Sum", "Number of unique BSTs formed from $n$ keys", "Shortest path"],
+      "correct_answer": 2
+    },
+    {
+      "id": 198,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The **Minimum Deletions/Insertions to Make Two Strings Equal** is solved by relating it directly to the length of the:",
+      "options": ["Longest Common Substring", "Edit Distance", "Longest Common Subsequence (LCS)", "Minimum Insertions"],
+      "correct_answer": 2
+    },
+    {
+      "id": 199,
+      "topic": "Dynamic Programming (DP)",
+      "question": "The **Assembly Line Scheduling** problem is a classic DP example where the state transition considers the cost of staying on the current line versus:",
+      "options": ["Waiting for the next available slot", "Switching to the other assembly line", "Skipping the current station", "Restarting the process"],
+      "correct_answer": 1
+    },
+    {
+      "id": 200,
+      "topic": "Dynamic Programming (DP)",
+      "question": "Which DP technique is most suitable for problems where the state space is too large for a traditional array, but intermediate results must be stored and reused?",
+      "options": ["Tabulation", "Memoization with a Hash Map", "Space Optimization (O(1) space)", "Bitmask DP"],
+      "correct_answer": 1
+    },
+    {
+      "id": 201,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The time complexity of the **Median of Medians** algorithm for finding the $k^{th}$ smallest element in the worst case is:",
+      "options": ["$O(N^2)$", "$O(N \\log N)$", "$O(N)$", "$O(\\log N)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 202,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "Which sorting algorithm's worst-case $O(N^2)$ performance occurs when the input array is already sorted in the opposite order?",
+      "options": ["Merge Sort", "Heap Sort", "Quick Sort (with poor pivot selection)", "Insertion Sort"],
+      "correct_answer": 2
+    },
+    {
+      "id": 203,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The **Job Scheduling Problem** (maximizing profit from non-overlapping jobs) is optimally solved by combining which two techniques?",
+      "options": ["Greedy and BFS", "Sorting by finish time and Dynamic Programming", "Quick Sort and DFS", "Hashing and Linear Search"],
+      "correct_answer": 1
+    },
+    {
+      "id": 204,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "Binary Search can be applied to problems where the search space is not an array, but rather an **answer** whose feasibility function is:",
+      "options": ["Random", "Monotonic (e.g., if a value $X$ is feasible, then all values greater than $X$ are also feasible or vice versa)", "Exponential", "Cyclic"],
+      "correct_answer": 1
+    },
+    {
+      "id": 205,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "What is the total time complexity of **Ternary Search** on a unimodal array of length $N$?",
+      "options": ["$O(N)$", "$O(\\log_2 N)$", "$O(\\log_3 N)$ (proportional to $O(\\log N)$)", "$O(N \\log N)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 206,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The **Fractional Knapsack Problem** is optimally solved by a greedy approach. The greedy choice is to prioritize items with the highest:",
+      "options": ["Total weight", "Total value", "Value-to-weight ratio", "Smallest weight"],
+      "correct_answer": 2
+    },
+    {
+      "id": 207,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "What is the key invariant that makes **Merge Sort** a stable sorting algorithm?",
+      "options": ["It uses in-place swapping", "It is non-comparison based", "It handles equal keys by preserving their original relative order during the merge step", "Its complexity is $O(N^2)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 208,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The most space-efficient version of **Quick Sort** (in-place) has a worst-case space complexity related to the recursion depth, which is:",
+      "options": ["$O(1)$", "$O(\\log N)$", "$O(N)$", "$O(N \\log N)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 209,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "Which non-comparison based sorting algorithm has a time complexity of $O(N+K)$, where $K$ is the range of input numbers?",
+      "options": ["Radix Sort", "Bucket Sort", "Counting Sort", "Pigeonhole Sort"],
+      "correct_answer": 2
+    },
+    {
+      "id": 210,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "What is the time complexity of the **worst-case** of Interpolation Search on uniformly distributed data?",
+      "options": ["$O(\\log \\log N)$", "$O(N)$", "$O(\\log N)$", "$O(N^2)$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 211,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The **Jump Search** algorithm (also Block Search) on a sorted array of size $N$ has an optimal time complexity of:",
+      "options": ["$O(N)$", "$O(\\log N)$", "$O(\\sqrt{N})$", "$O(1)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 212,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The **Convex Hull** problem (finding the smallest convex polygon enclosing a set of points) is often solved using a combination of sorting and which other technique (e.g., Graham Scan)?",
+      "options": ["Greedy selection of the points", "Dynamic Programming", "Using a stack to maintain the hull candidates", "Binary Search on the angle"],
+      "correct_answer": 2
+    },
+    {
+      "id": 213,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "Which greedy heuristic is used in **Huffman Coding** to achieve optimal compression?",
+      "options": ["Always pick the most frequent character", "Always merge the two nodes (symbols/trees) with the smallest frequencies", "Always merge the two nodes with the largest frequencies", "Use a fixed-length code for all symbols"],
+      "correct_answer": 1
+    },
+    {
+      "id": 214,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "In the $O(N \\log N)$ implementation of the **Largest Increasing Subsequence** using binary search, the array maintained in the process stores:",
+      "options": ["All possible LIS sequences", "The input data in sorted order", "The smallest tail element of all increasing subsequences of length $i$", "The number of increasing subsequences"],
+      "correct_answer": 2
+    },
+    {
+      "id": 215,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The $\\Omega(N \\log N)$ lower bound for comparison-based sorting algorithms is derived from the minimum number of comparisons needed to distinguish between all $N!$ possible permutations, represented as the height of a:",
+      "options": ["Binary Heap", "Decision Tree", "AVL Tree", "Segment Tree"],
+      "correct_answer": 1
+    },
+    {
+      "id": 216,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "Which of the following sorting algorithms is **not** stable?",
+      "options": ["Merge Sort", "Insertion Sort", "Counting Sort (standard implementation)", "Quick Sort (in-place standard implementation)"],
+      "correct_answer": 3
+    },
+    {
+      "id": 217,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The core operation in **Bucket Sort** is placing elements into buckets. The overall performance relies on the assumption that the input data is:",
+      "options": ["Already sorted", "Uniformly distributed", "Small in range", "Only integers"],
+      "correct_answer": 1
+    },
+    {
+      "id": 218,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The time complexity of **QuickSelect** (finding the $k^{th}$ smallest element) is $O(N)$ on average. What is the key to maintaining this linear time complexity?",
+      "options": ["A stable partition step", "The ability to recursively call on only one side of the partition", "The use of a Min-Heap", "The input being sorted"],
+      "correct_answer": 1
+    },
+    {
+      "id": 219,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "What is the minimal number of comparisons required in the worst case to find the minimum and maximum element in an array of size $N$ simultaneously?",
+      "options": ["$2N$", "$3N/2 - 2$", "$N \\log N$", "$N - 1$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 220,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "In the **Huffman Coding** algorithm, the final constructed tree is a:",
+      "options": ["Binary Search Tree", "Max-Heap", "Full Binary Tree with minimal weighted external path length", "Skewed Tree"],
+      "correct_answer": 2
+    },
+    {
+      "id": 221,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "What is the primary drawback of using the standard **Shell Sort** algorithm?",
+      "options": ["High space complexity", "Not guaranteed to be stable", "Its time complexity is not guaranteed to be $O(N \\log N)$ (depends on gap sequence)", "It is a comparison-based sort"],
+      "correct_answer": 2
+    },
+    {
+      "id": 222,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The **Activity Selection Problem**'s greedy choice relies on sorting the activities by:",
+      "options": ["Starting time", "Duration", "Finishing time", "Profit margin"],
+      "correct_answer": 2
+    },
+    {
+      "id": 223,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "Which search technique is most appropriate for finding the peak element (an element greater than its immediate neighbors) in an unsorted array in $O(\\log N)$ time?",
+      "options": ["Linear Search", "Binary Search (modified)", "Ternary Search", "Exponential Search"],
+      "correct_answer": 1
+    },
+    {
+      "id": 224,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "What is the time complexity of the **Selection Sort** algorithm in the best case (already sorted array)?",
+      "options": ["$O(N)$", "$O(N \\log N)$", "$O(N^2)$", "$O(1)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 225,
+      "topic": "Searching/Sorting/Greedy",
+      "question": "The process of repeatedly choosing the largest number from the remaining list to be the pivot in **Quick Sort** leads to which worst-case scenario?",
+      "options": ["$O(N \\log N)$ time, $O(\\log N)$ space", "$O(N^2)$ time, $O(N)$ space", "$O(N)$ time, $O(1)$ space", "$O(N!)$ time"],
+      "correct_answer": 1
+    },
+    {
+      "id": 226,
+      "topic": "Advanced Topics",
+      "question": "In the **Rabin-Karp** string matching algorithm, the primary function of the **rolling hash** is to achieve $O(1)$ re-computation of the hash for the next window, preventing a worst-case time complexity of:",
+      "options": ["$O(M)$", "$O(N)$", "$O(N+M)$", "$O(N \\cdot M)$"],
+      "correct_answer": 3
+    },
+    {
+      "id": 227,
+      "topic": "Advanced Topics",
+      "question": "The time complexity of the **Knuth-Morris-Pratt (KMP)** string matching algorithm is $O(N+M)$ (where $N$ is text length, $M$ is pattern length). This efficiency is due to the pre-computed:",
+      "options": ["Z-Array", "Hash Table", "Longest Proper Prefix which is also Suffix (LPS) array", "Trie structure"],
+      "correct_answer": 2
+    },
+    {
+      "id": 228,
+      "topic": "Advanced Topics",
+      "question": "In a **Disjoint Set Union (DSU)** data structure, the **Path Compression** optimization is used to ensure that the time complexity of the `Find` operation is nearly constant, specifically:",
+      "options": ["$O(1)$", "$O(\\log N)$", "$O(N)$", "$O(\\alpha(N))$ (Inverse Ackermann function)"],
+      "correct_answer": 3
+    },
+    {
+      "id": 229,
+      "topic": "Advanced Topics",
+      "question": "The **Union by Rank/Size** heuristic in DSU is used to maintain:",
+      "options": ["A minimal number of sets", "A logarithmic time complexity", "A logarithmic tree height to ensure efficient union operations", "A linear space complexity"],
+      "correct_answer": 2
+    },
+    {
+      "id": 230,
+      "topic": "Advanced Topics",
+      "question": "What is the tightest time complexity for a single **Find** operation in a DSU structure using both Path Compression and Union by Rank/Size?",
+      "options": ["$O(N)$", "$O(\\log N)$", "$O(1)$ amortized", "$O(\\alpha(N))$ (nearly constant)"],
+      "correct_answer": 3
+    },
+    {
+      "id": 231,
+      "topic": "Advanced Topics",
+      "question": "The **Suffix Tree** is a compact trie used for advanced string matching. If $N$ is the length of the string, the space complexity of a Suffix Tree is typically:",
+      "options": ["$O(N^2)$", "$O(N \\log N)$", "$O(N)$", "$O(1)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 232,
+      "topic": "Advanced Topics",
+      "question": "The **Z-Algorithm** is a linear time string matching algorithm that computes the Z-array. What does $Z[i]$ represent?",
+      "options": ["The length of the shortest prefix of the text that matches a suffix starting at $i$", "The length of the longest substring starting at $i$ that is also a prefix of the string", "The total number of unique characters up to $i$", "The index of the last character of the pattern"],
+      "correct_answer": 1
+    },
+    {
+      "id": 233,
+      "topic": "Advanced Topics",
+      "question": "What is the primary problem associated with **Linear Probing** in hash tables?",
+      "options": ["Overflow", "Secondary Clustering", "Primary Clustering (long blocks of contiguous filled cells)", "Infinite loop during insertion"],
+      "correct_answer": 2
+    },
+    {
+      "id": 234,
+      "topic": "Advanced Topics",
+      "question": "The time complexity to search for an element in a Hash Table using **Separate Chaining** with load factor $\\lambda$ in the worst case is:",
+      "options": ["$O(1)$", "$O(\\log \\lambda)$", "$O(1 + \\lambda)$", "$O(N)$"],
+      "correct_answer": 3
+    },
+    {
+      "id": 235,
+      "topic": "Advanced Topics",
+      "question": "What is the classification for a problem that is solvable in polynomial time $O(N^k)$?",
+      "options": ["NP-Complete", "NP-Hard", "P (Polynomial Time)", "Unsolvable"],
+      "correct_answer": 2
+    },
+    {
+      "id": 236,
+      "topic": "Advanced Topics",
+      "question": "A problem is **NP-Complete** if it is both in NP (verifiable in polynomial time) and:",
+      "options": ["Solved by a greedy algorithm", "Can be reduced to an NP-Hard problem in polynomial time", "Any other problem in NP can be reduced to it in polynomial time", "Has no known solution"],
+      "correct_answer": 2
+    },
+    {
+      "id": 237,
+      "topic": "Advanced Topics",
+      "question": "What is the tightest time complexity for a sequence of $N$ operations (inserts/deletes) on a **Cuckoo Hashing** table (ignoring rehashes)?",
+      "options": ["$O(N^2)$", "$O(N \\log N)$", "$O(N \\cdot \\text{MaxCycleLength})$", "$O(N)$ amortized"],
+      "correct_answer": 3
+    },
+    {
+      "id": 238,
+      "topic": "Advanced Topics",
+      "question": "The **Amortized Analysis** technique is used to analyze the average cost of an operation over a sequence of operations. Which method views the total cost as credits/debits from a bank account?",
+      "options": ["Aggregate Analysis", "Potential Method", "Accounting Method", "Probabilistic Analysis"],
+      "correct_answer": 2
+    },
+    {
+      "id": 239,
+      "topic": "Advanced Topics",
+      "question": "Which collision resolution technique in hash tables uses a sequence of probe positions determined by two hash functions $h_1(k)$ and $h_2(k)$?",
+      "options": ["Separate Chaining", "Quadratic Probing", "Double Hashing", "Linear Probing"],
+      "correct_answer": 2
+    },
+    {
+      "id": 240,
+      "topic": "Advanced Topics",
+      "question": "The most space-efficient representation of a **Suffix Array** for a string of length $N$ is typically:",
+      "options": ["$O(N^2)$", "$O(N \\log N)$", "$O(N)$", "$O(1)$"],
+      "correct_answer": 2
+    },
+    {
+      "id": 241,
+      "topic": "Advanced Topics",
+      "question": "What is the space complexity of a **Suffix Array** compared to a **Suffix Tree** for a string of length $N$?",
+      "options": ["Suffix Array is $O(N)$, Suffix Tree is $O(N)$ (typically smaller constant factor)", "Suffix Array is $O(N^2)$, Suffix Tree is $O(N)$", "Suffix Array is $O(N)$, Suffix Tree is $O(N^2)$", "Both are $O(1)$"],
+      "correct_answer": 0
+    },
+    {
+      "id": 242,
+      "topic": "Advanced Topics",
+      "question": "Which complexity class describes the set of all decision problems that are NP-Hard but are also in NP?",
+      "options": ["P", "NP-Complete", "P-Space", "EXPTIME"],
+      "correct_answer": 1
+    },
+    {
+      "id": 243,
+      "topic": "Advanced Topics",
+      "question": "The **Master Theorem** in algorithm analysis is primarily used to solve recurrence relations for algorithms that follow which paradigm?",
+      "options": ["Greedy", "Dynamic Programming", "Divide and Conquer", "Backtracking"],
+      "correct_answer": 2
+    },
+    {
+      "id": 244,
+      "topic": "Advanced Topics",
+      "question": "Which of the following growth rates is considered the most efficient for an algorithm?",
+      "options": ["$O(N)$", "$O(N \\log N)$", "$O(\\sqrt{N})$", "$O(\\log N)$"],
+      "correct_answer": 3
+    },
+    {
+      "id": 245,
+      "topic": "Advanced Topics",
+      "question": "The **Finger Search Tree** is an advanced self-balancing BST that improves search time to $O(\\log d)$ (where $d$ is the distance from a given finger node) using:",
+      "options": ["Level-order traversal", "Multi-level indexing and rotations", "Fibonacci sequence", "Separate Chaining"],
+      "correct_answer": 1
+    },
+    {
+      "id": 246,
+      "topic": "Advanced Topics",
+      "question": "In the **Fenwick Tree** (Binary Indexed Tree), the logic for updating and querying is based on which bitwise arithmetic property?",
+      "options": ["XOR of the index", "The least significant bit (LSB) of the index (e.g., $i \\& -i$)", "The most significant bit (MSB) of the index", "Bit shifting by $K$"],
+      "correct_answer": 1
+    },
+    {
+      "id": 247,
+      "topic": "Advanced Topics",
+      "question": "The complexity class **P** is a subset of which other major complexity class?",
+      "options": ["NP-Hard", "NP", "EXPTIME", "P-Space"],
+      "correct_answer": 1
+    },
+    {
+      "id": 248,
+      "topic": "Advanced Topics",
+      "question": "What is the primary concern when choosing a **Hash Function** for a hash table (not considering collision resolution)?",
+      "options": ["It must be non-cryptographic", "It must be computationally fast and distribute keys uniformly across the table slots", "It must ensure all keys map to unique slots", "It must rely on prime numbers only"],
+      "correct_answer": 1
+    },
+    {
+      "id": 249,
+      "topic": "Advanced Topics",
+      "question": "In the context of algorithm analysis, what does the $\\Omega(g(n))$ notation represent?",
+      "options": ["The asymptotically tight bound", "The worst-case scenario", "The upper bound (Big O)", "The lower bound (Big Omega) on the growth rate"],
+      "correct_answer": 3
+    },
+    {
+      "id": 250,
+      "topic": "Advanced Topics",
+      "question": "Which phenomenon causes the actual running time of an algorithm in a real system to be heavily influenced by the access patterns and memory hierarchy (e.g., for arrays vs. linked lists)?",
+      "options": ["Garbage Collection", "Paging", "Cache Locality/Memory Hierarchy effects", "Process Scheduling"],
+      "correct_answer": 2
+    }
+  ]
+}

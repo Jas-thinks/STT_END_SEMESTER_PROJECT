@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "question": "How would you design a URL shortening service like bit.ly?"
+  },
+  {
+    "id": 2,
+    "question": "How would you design a chat application like WhatsApp?"
+  },
+  {
+    "id": 3,
+    "question": "How would you design an online code editor like Replit?"
+  },
+  {
+    "id": 4,
+    "question": "Design a news feed system like Facebook or Twitter."
+  },
+  {
+    "id": 5,
+    "question": "How would you design an e-commerce recommendation system?"
+  },
+  {
+    "id": 6,
+    "question": "Design a file-sharing system like Google Drive."
+  },
+  {
+    "id": 7,
+    "question": "How would you design a notification service for mobile apps?"
+  },
+  {
+    "id": 8,
+    "question": "Design a parking lot management system."
+  },
+  {
+    "id": 9,
+    "question": "How would you design a video streaming service like YouTube?"
+  },
+  {
+    "id": 10,
+    "question": "Design an online food delivery system like Swiggy or Uber Eats."
+  },
+  {
+    "id": 11,
+    "question": "Design an email system similar to Gmail."
+  },
+  {
+    "id": 12,
+    "question": "How would you design a logging and monitoring system?"
+  },
+  {
+    "id": 13,
+    "question": "Design an online exam and proctoring system."
+  },
+  {
+    "id": 14,
+    "question": "How would you design an autocomplete system like Google Search?"
+  },
+  {
+    "id": 15,
+    "question": "Design a system for booking movie tickets."
+  },
+  {
+    "id": 16,
+    "question": "How would you design a rate-limiting system for APIs?"
+  },
+  {
+    "id": 17,
+    "question": "Design a payment gateway system."
+  },
+  {
+    "id": 18,
+    "question": "How would you design a leaderboard system for a gaming app?"
+  },
+  {
+    "id": 19,
+    "question": "Design a system to handle push notifications at scale."
+  },
+  {
+    "id": 20,
+    "question": "How would you design a distributed file system?"
+  },
+  {
+    "id": 21,
+    "question": "Design an online polling or voting system."
+  },
+  {
+    "id": 22,
+    "question": "How would you design a caching layer for a web app?"
+  },
+  {
+    "id": 23,
+    "question": "Design a stock price monitoring system."
+  },
+  {
+    "id": 24,
+    "question": "How would you design an event scheduling system like Google Calendar?"
+  },
+  {
+    "id": 25,
+    "question": "Design a multi-tenant SaaS system."
+  },
+  {
+    "id": 26,
+    "question": "How would you design a metrics collection and visualization platform?"
+  },
+  {
+    "id": 27,
+    "question": "Design a real-time location tracking system like Uber."
+  },
+  {
+    "id": 28,
+    "question": "How would you design a digital wallet system?"
+  },
+  {
+    "id": 29,
+    "question": "Design a content moderation system for social media."
+  },
+  {
+    "id": 30,
+    "question": "How would you design a ride-sharing system like Uber?"
+  },
+  {
+    "id": 31,
+    "question": "Design a distributed job scheduling system like Airflow."
+  },
+  {
+    "id": 32,
+    "question": "How would you design a hotel booking platform?"
+  },
+  {
+    "id": 33,
+    "question": "Design a collaborative document editing system like Google Docs."
+  },
+  {
+    "id": 34,
+    "question": "How would you design a search engine for e-commerce products?"
+  },
+  {
+    "id": 35,
+    "question": "Design a system to detect spam messages."
+  },
+  {
+    "id": 36,
+    "question": "How would you design a distributed caching mechanism?"
+  },
+  {
+    "id": 37,
+    "question": "Design a video conferencing system like Zoom."
+  },
+  {
+    "id": 38,
+    "question": "How would you design a scalable leaderboard with millions of players?"
+  },
+  {
+    "id": 39,
+    "question": "Design a URL monitoring and uptime checking service."
+  },
+  {
+    "id": 40,
+    "question": "How would you design a news aggregator like Google News?"
+  },
+  {
+    "id": 41,
+    "question": "Design a document versioning system."
+  },
+  {
+    "id": 42,
+    "question": "How would you design a distributed logging system?"
+  },
+  {
+    "id": 43,
+    "question": "Design a video recommendation engine."
+  },
+  {
+    "id": 44,
+    "question": "How would you design a job portal like LinkedIn?"
+  },
+  {
+    "id": 45,
+    "question": "Design a real-time analytics system."
+  },
+  {
+    "id": 46,
+    "question": "How would you design an IoT data collection system?"
+  },
+  {
+    "id": 47,
+    "question": "Design a scalable image hosting service like Imgur."
+  },
+  {
+    "id": 48,
+    "question": "How would you design a music streaming system like Spotify?"
+  },
+  {
+    "id": 49,
+    "question": "Design a recommendation system for a movie platform."
+  },
+  {
+    "id": 50,
+    "question": "How would you design a distributed key-value store?"
+  },
+  {
+    "id": 51,
+    "question": "Design a notification retry system."
+  },
+  {
+    "id": 52,
+    "question": "How would you design a workflow automation system like Zapier?"
+  },
+  {
+    "id": 53,
+    "question": "Design a peer-to-peer file sharing system."
+  },
+  {
+    "id": 54,
+    "question": "How would you design a search autocomplete service for a website?"
+  },
+  {
+    "id": 55,
+    "question": "Design a user authentication and authorization system."
+  },
+  {
+    "id": 56,
+    "question": "How would you design a server monitoring dashboard?"
+  },
+  {
+    "id": 57,
+    "question": "Design a comment system for blogs or news articles."
+  },
+  {
+    "id": 58,
+    "question": "How would you design a throttling system for API requests?"
+  },
+  {
+    "id": 59,
+    "question": "Design a warehouse inventory management system."
+  },
+  {
+    "id": 60,
+    "question": "How would you design a data backup and restore system?"
+  },
+  {
+    "id": 61,
+    "question": "Design a health tracking application like Fitbit."
+  },
+  {
+    "id": 62,
+    "question": "How would you design a scalable leaderboard for sports tournaments?"
+  },
+  {
+    "id": 63,
+    "question": "Design a cloud storage service like Dropbox."
+  },
+  {
+    "id": 64,
+    "question": "How would you design a system to handle delayed jobs or background tasks?"
+  },
+  {
+    "id": 65,
+    "question": "Design an image processing pipeline."
+  },
+  {
+    "id": 66,
+    "question": "How would you design a distributed configuration management system?"
+  },
+  {
+    "id": 67,
+    "question": "Design a personalized news recommendation system."
+  },
+  {
+    "id": 68,
+    "question": "How would you design a distributed transaction system?"
+  },
+  {
+    "id": 69,
+    "question": "Design an analytics dashboard for user metrics."
+  },
+  {
+    "id": 70,
+    "question": "How would you design a scalable email delivery service like Amazon SES?"
+  }
+]

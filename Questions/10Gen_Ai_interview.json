@@ -1,0 +1,773 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary difference between a diffusion model and a GAN in generative modeling?",
+    "options": ["GANs learn via adversarial loss; diffusion models learn to denoise data progressively", "Diffusion models use discriminators; GANs do not", "GANs are supervised; diffusion models are unsupervised", "Diffusion models rely on reinforcement learning"],
+    "answer": "GANs learn via adversarial loss; diffusion models learn to denoise data progressively"
+  },
+  {
+    "id": 2,
+    "question": "Why do large language models like GPT use transformer decoders instead of encoders?",
+    "options": ["Because decoders can model sequential dependencies in autoregressive tasks", "Encoders are more expensive to train", "Decoders avoid vanishing gradients", "Encoders cannot process embeddings"],
+    "answer": "Because decoders can model sequential dependencies in autoregressive tasks"
+  },
+  {
+    "id": 3,
+    "question": "What is the role of the attention mechanism in generative AI models?",
+    "options": ["Focus on relevant parts of input", "Reduce overfitting", "Normalize embeddings", "Increase batch size"],
+    "answer": "Focus on relevant parts of input"
+  },
+  {
+    "id": 4,
+    "question": "Which component in Stable Diffusion converts text into a vector space?",
+    "options": ["Text Encoder (CLIP)", "Latent Decoder", "Noise Predictor", "Transformer Block"],
+    "answer": "Text Encoder (CLIP)"
+  },
+  {
+    "id": 5,
+    "question": "Why is KL divergence used in Variational Autoencoders?",
+    "options": ["To enforce latent space regularization", "To increase reconstruction accuracy", "To reduce gradient variance", "To balance data distribution"],
+    "answer": "To enforce latent space regularization"
+  },
+  {
+    "id": 6,
+    "question": "Which optimization algorithm is commonly used during RLHF fine-tuning of LLMs?",
+    "options": ["PPO (Proximal Policy Optimization)", "Adam", "RMSProp", "SGD"],
+    "answer": "PPO (Proximal Policy Optimization)"
+  },
+  {
+    "id": 7,
+    "question": "What is the main advantage of Latent Diffusion Models over pixel-space diffusion models?",
+    "options": ["Faster and more memory efficient", "Better text understanding", "Simpler architecture", "No need for a UNet"],
+    "answer": "Faster and more memory efficient"
+  },
+  {
+    "id": 8,
+    "question": "What does the 'temperature' parameter control in LLM generation?",
+    "options": ["Randomness of output", "Learning rate", "Attention span", "Batch normalization strength"],
+    "answer": "Randomness of output"
+  },
+  {
+    "id": 9,
+    "question": "Which loss function is used in CLIP to align text and image embeddings?",
+    "options": ["Contrastive loss", "MSE loss", "KL Divergence", "Cross-Entropy"],
+    "answer": "Contrastive loss"
+  },
+  {
+    "id": 10,
+    "question": "Why is classifier-free guidance used in diffusion models?",
+    "options": ["To control conditional strength without external classifier", "To improve convergence speed", "To simplify gradient computation", "To reduce batch size"],
+    "answer": "To control conditional strength without external classifier"
+  },
+  {
+    "id": 11,
+    "question": "Which transformer-based architecture powers most modern text-to-image models?",
+    "options": ["Encoder-Decoder Transformer", "BERT", "RNN", "CNN"],
+    "answer": "Encoder-Decoder Transformer"
+  },
+  {
+    "id": 12,
+    "question": "In RLHF, what is the role of the reward model?",
+    "options": ["Score outputs based on human feedback", "Generate responses", "Predict next tokens", "Control model learning rate"],
+    "answer": "Score outputs based on human feedback"
+  },
+  {
+    "id": 13,
+    "question": "What mechanism allows LLMs to handle long context efficiently?",
+    "options": ["Attention", "Memory Tokens", "Sparse Attention", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 14,
+    "question": "What is the key role of the UNet in diffusion models?",
+    "options": ["Predict added noise at each step", "Encode latent features", "Perform attention pooling", "Generate latent vectors"],
+    "answer": "Predict added noise at each step"
+  },
+  {
+    "id": 15,
+    "question": "What is one limitation of transformer models in generative AI?",
+    "options": ["Quadratic complexity in attention", "Low accuracy", "Small context windows", "Lack of embeddings"],
+    "answer": "Quadratic complexity in attention"
+  },
+  {
+    "id": 16,
+    "question": "Which fine-tuning approach reduces memory usage while maintaining performance in LLMs?",
+    "options": ["LoRA (Low-Rank Adaptation)", "Full fine-tuning", "Dropout tuning", "Prompt engineering"],
+    "answer": "LoRA (Low-Rank Adaptation)"
+  },
+  {
+    "id": 17,
+    "question": "Which diffusion method allows deterministic sampling with fewer steps?",
+    "options": ["DDIM", "DDPM", "CLIP Diffusion", "Stable Diffusion"],
+    "answer": "DDIM"
+  },
+  {
+    "id": 18,
+    "question": "Why are pretrained embeddings used in generative models?",
+    "options": ["Accelerate training and preserve semantic meaning", "Reduce token length", "Eliminate fine-tuning", "Simplify architecture"],
+    "answer": "Accelerate training and preserve semantic meaning"
+  },
+  {
+    "id": 19,
+    "question": "What does 'alignment' refer to in generative AI safety?",
+    "options": ["Ensuring model behavior matches human values", "Aligning model weights", "Reducing KL divergence", "Synchronizing embeddings"],
+    "answer": "Ensuring model behavior matches human values"
+  },
+  {
+    "id": 20,
+    "question": "Why do GANs suffer from mode collapse?",
+    "options": ["Generator produces limited output variety", "Discriminator overfits", "Loss becomes constant", "Gradient vanishes"],
+    "answer": "Generator produces limited output variety"
+  },
+  {
+    "id": 21,
+    "question": "Which architecture is primarily responsible for text understanding in ChatGPT?",
+    "options": ["Decoder-only Transformer", "Encoder-only Transformer", "Encoder-Decoder Transformer", "RNN-LSTM Hybrid"],
+    "answer": "Decoder-only Transformer"
+  },
+  {
+    "id": 22,
+    "question": "Why is retrieval-augmented generation (RAG) effective?",
+    "options": ["Combines external knowledge with generative reasoning", "Improves tokenization", "Reduces loss", "Increases gradient flow"],
+    "answer": "Combines external knowledge with generative reasoning"
+  },
+  {
+    "id": 23,
+    "question": "In text-to-image models, what is the main advantage of cross-attention?",
+    "options": ["Align textual and visual modalities", "Reduce computation cost", "Prevent overfitting", "Handle noise"],
+    "answer": "Align textual and visual modalities"
+  },
+  {
+    "id": 24,
+    "question": "What component is critical for maintaining consistency in long-form text generation?",
+    "options": ["Context window", "Token embeddings", "Dropout layer", "Batch size"],
+    "answer": "Context window"
+  },
+  {
+    "id": 25,
+    "question": "Which mechanism allows transformers to scale efficiently for billion-parameter models?",
+    "options": ["Model parallelism", "Pipeline parallelism", "Tensor sharding", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 26,
+    "question": "What does Direct Preference Optimization (DPO) remove from the RLHF pipeline?",
+    "options": ["Reinforcement learning step", "Reward modeling", "Fine-tuning phase", "Data preprocessing"],
+    "answer": "Reinforcement learning step"
+  },
+  {
+    "id": 27,
+    "question": "Why are VAEs not ideal for sharp image generation?",
+    "options": ["Over-regularization from KL term", "Latent underfitting", "Training instability", "Discriminator saturation"],
+    "answer": "Over-regularization from KL term"
+  },
+  {
+    "id": 28,
+    "question": "Which regularization technique is critical in WGANs?",
+    "options": ["Gradient penalty", "Dropout", "Label smoothing", "Early stopping"],
+    "answer": "Gradient penalty"
+  },
+  {
+    "id": 29,
+    "question": "What causes hallucination in large language models?",
+    "options": ["Lack of grounding or external verification", "Excessive fine-tuning", "Low batch size", "High temperature"],
+    "answer": "Lack of grounding or external verification"
+  },
+  {
+    "id": 30,
+    "question": "Which model architecture powers ChatGPT and GPT-4?",
+    "options": ["Transformer Decoder", "Hybrid CNN-RNN", "Diffusion Model", "Autoencoder"],
+    "answer": "Transformer Decoder"
+  },
+  {
+    "id": 31,
+    "question": "What is the primary goal of a latent autoencoder in a diffusion model?",
+    "options": ["Compress image data to smaller latent space", "Generate noise vectors", "Add embeddings", "Stabilize gradients"],
+    "answer": "Compress image data to smaller latent space"
+  },
+  {
+    "id": 32,
+    "question": "Which issue arises from training data contamination in LLMs?",
+    "options": ["Data leakage and factual errors", "Underfitting", "Loss explosion", "Short context"],
+    "answer": "Data leakage and factual errors"
+  },
+  {
+    "id": 33,
+    "question": "What is the major challenge in training multimodal generative models?",
+    "options": ["Aligning heterogeneous data modalities", "Reducing token size", "Simplifying loss functions", "Scaling encoders"],
+    "answer": "Aligning heterogeneous data modalities"
+  },
+  {
+    "id": 34,
+    "question": "Why do large models require quantization for deployment?",
+    "options": ["Reduce memory and computation cost", "Increase accuracy", "Avoid dropout", "Simplify backpropagation"],
+    "answer": "Reduce memory and computation cost"
+  },
+  {
+    "id": 35,
+    "question": "Which tokenization approach is used in GPT models?",
+    "options": ["Byte Pair Encoding (BPE)", "WordPiece", "SentencePiece", "Character-level"],
+    "answer": "Byte Pair Encoding (BPE)"
+  },
+  {
+    "id": 36,
+    "question": "What problem does MoE (Mixture of Experts) solve in large models?",
+    "options": ["Compute efficiency by activating sparse experts", "Overfitting", "Gradient instability", "Loss imbalance"],
+    "answer": "Compute efficiency by activating sparse experts"
+  },
+  {
+    "id": 37,
+    "question": "Why is RLHF critical in aligning LLMs?",
+    "options": ["Incorporates human feedback for reward tuning", "Improves decoding speed", "Reduces token repetition", "Increases data size"],
+    "answer": "Incorporates human feedback for reward tuning"
+  },
+  {
+    "id": 38,
+    "question": "Which evaluation metric measures diversity of generative text?",
+    "options": ["Self-BLEU", "ROUGE", "Accuracy", "Perplexity"],
+    "answer": "Self-BLEU"
+  },
+  {
+    "id": 39,
+    "question": "Why are positional encodings added to transformer inputs?",
+    "options": ["Provide sequence order information", "Reduce variance", "Normalize embeddings", "Improve gradient flow"],
+    "answer": "Provide sequence order information"
+  },
+  {
+    "id": 40,
+    "question": "What is a major ethical concern in deploying generative AI?",
+    "options": ["Bias amplification and misinformation", "Memory leak", "Gradient clipping", "Token mismatch"],
+    "answer": "Bias amplification and misinformation"
+  },
+  {
+    "id": 41,
+    "question": "Which component handles temporal consistency in video generation?",
+    "options": ["3D convolution layers", "Cross-frame attention", "Time embeddings", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 42,
+    "question": "What type of attention is used in image generation transformers like DiT?",
+    "options": ["2D spatial attention", "Temporal attention", "Causal attention", "Masked attention"],
+    "answer": "2D spatial attention"
+  },
+  {
+    "id": 43,
+    "question": "What is the main advantage of ControlNet over standard diffusion models?",
+    "options": ["Condition control over image structure", "Improved noise prediction", "Faster decoding", "Lower data need"],
+    "answer": "Condition control over image structure"
+  },
+  {
+    "id": 44,
+    "question": "What is the function of the reparameterization trick in VAEs?",
+    "options": ["Allow gradient backprop through random sampling", "Simplify decoder loss", "Reduce KL term", "Balance latent space"],
+    "answer": "Allow gradient backprop through random sampling"
+  },
+  {
+    "id": 45,
+    "question": "Which approach is used to mitigate hallucinations in AI assistants?",
+    "options": ["Retrieval-Augmented Generation (RAG)", "Data pruning", "Temperature tuning", "Dropout regularization"],
+    "answer": "Retrieval-Augmented Generation (RAG)"
+  },
+  {
+    "id": 46,
+    "question": "What challenge does catastrophic forgetting address?",
+    "options": ["Loss of old knowledge after new fine-tuning", "Gradient explosion", "Noise accumulation", "Mode collapse"],
+    "answer": "Loss of old knowledge after new fine-tuning"
+  },
+  {
+    "id": 47,
+    "question": "Which optimization technique is used to train diffusion models efficiently?",
+    "options": ["EMA (Exponential Moving Average)", "AdamW", "Gradient Clipping", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 48,
+    "question": "Which model architecture introduced attention maps for interpretability?",
+    "options": ["Transformer", "CNN", "VAE", "GAN"],
+    "answer": "Transformer"
+  },
+  {
+    "id": 49,
+    "question": "Which loss type stabilizes GAN training by enforcing Lipschitz continuity?",
+    "options": ["Wasserstein loss", "Cross-Entropy", "Contrastive loss", "Triplet loss"],
+    "answer": "Wasserstein loss"
+  },
+  {
+    "id": 50,
+    "question": "What is a key difference between GPT and BERT?",
+    "options": ["GPT is generative; BERT is bidirectional and masked", "BERT is autoregressive", "GPT uses encoder-decoder structure", "BERT uses reinforcement learning"],
+    "answer": "GPT is generative; BERT is bidirectional and masked"
+  },
+  {
+    "id": 51,
+    "question": "What is the main reason for using tokenization in LLMs?",
+    "options": [
+      "To convert text into numerical representations",
+      "To compress data",
+      "To remove redundant information",
+      "To perform gradient clipping"
+    ],
+    "answer": "To convert text into numerical representations"
+  },
+  {
+    "id": 52,
+    "question": "Which of the following is NOT a typical step in RLHF?",
+    "options": [
+      "Supervised fine-tuning",
+      "Reward modeling",
+      "Reinforcement fine-tuning",
+      "Batch normalization"
+    ],
+    "answer": "Batch normalization"
+  },
+  {
+    "id": 53,
+    "question": "What is 'temperature' in text generation models?",
+    "options": [
+      "A hyperparameter that controls randomness of predictions",
+      "A measure of model loss",
+      "A normalization factor for embeddings",
+      "A regularization weight for overfitting"
+    ],
+    "answer": "A hyperparameter that controls randomness of predictions"
+  },
+  {
+    "id": 54,
+    "question": "Which of the following architectures is commonly used in diffusion-based image generation?",
+    "options": ["U-Net", "Transformer", "ResNet", "LSTM"],
+    "answer": "U-Net"
+  },
+  {
+    "id": 55,
+    "question": "What is 'context window' in LLMs?",
+    "options": [
+      "Maximum number of tokens model can attend to at once",
+      "A preprocessing filter for text normalization",
+      "A buffer to store gradients",
+      "A type of optimizer used in training"
+    ],
+    "answer": "Maximum number of tokens model can attend to at once"
+  },
+  {
+    "id": 56,
+    "question": "Which of these helps prevent catastrophic forgetting in continual learning of LLMs?",
+    "options": [
+      "Elastic Weight Consolidation (EWC)",
+      "Batch Normalization",
+      "Dropout Regularization",
+      "Gradient Clipping"
+    ],
+    "answer": "Elastic Weight Consolidation (EWC)"
+  },
+  {
+    "id": 57,
+    "question": "In transformer models, positional encoding is used to:",
+    "options": [
+      "Provide sequence order information to the model",
+      "Reduce model size",
+      "Improve weight initialization",
+      "Avoid vanishing gradients"
+    ],
+    "answer": "Provide sequence order information to the model"
+  },
+  {
+    "id": 58,
+    "question": "Which of the following explains the 'Scaling Laws' in LLMs?",
+    "options": [
+      "Model performance improves predictably with data and compute size",
+      "Model accuracy decreases beyond a threshold",
+      "Learning rate scales linearly with dataset size",
+      "Batch size increases inference latency"
+    ],
+    "answer": "Model performance improves predictably with data and compute size"
+  },
+  {
+    "id": 59,
+    "question": "What is a 'LoRA' in model fine-tuning?",
+    "options": [
+      "Low-Rank Adaptation technique for efficient fine-tuning",
+      "Loss Regularization Adjustment",
+      "Layer-wise Reweighting Algorithm",
+      "Latent Representation Augmentation"
+    ],
+    "answer": "Low-Rank Adaptation technique for efficient fine-tuning"
+  },
+  {
+    "id": 60,
+    "question": "In GANs, what happens when the discriminator becomes too strong?",
+    "options": [
+      "The generator fails to learn",
+      "Training converges faster",
+      "Loss goes to zero and stabilizes",
+      "Mode collapse is avoided"
+    ],
+    "answer": "The generator fails to learn"
+  },
+  {
+    "id": 61,
+    "question": "Which of these evaluation metrics is used for image quality in diffusion models?",
+    "options": ["FID Score", "BLEU Score", "ROUGE", "AUC"],
+    "answer": "FID Score"
+  },
+  {
+    "id": 62,
+    "question": "Why are embeddings important in LLMs?",
+    "options": [
+      "They represent semantic meaning of tokens",
+      "They speed up inference",
+      "They reduce overfitting",
+      "They eliminate vanishing gradients"
+    ],
+    "answer": "They represent semantic meaning of tokens"
+  },
+  {
+    "id": 63,
+    "question": "What does 'prompt engineering' aim to do?",
+    "options": [
+      "Optimize input phrasing for better model outputs",
+      "Fine-tune model weights",
+      "Reduce dataset size",
+      "Prune redundant layers"
+    ],
+    "answer": "Optimize input phrasing for better model outputs"
+  },
+  {
+    "id": 64,
+    "question": "Which optimization algorithm is commonly used in transformer training?",
+    "options": ["AdamW", "SGD", "RMSProp", "Adagrad"],
+    "answer": "AdamW"
+  },
+  {
+    "id": 65,
+    "question": "What does 'zero-shot learning' mean in LLMs?",
+    "options": [
+      "Performing tasks without explicit training examples",
+      "Training with minimal labeled data",
+      "Predicting unknown tokens only",
+      "Generating samples with noise"
+    ],
+    "answer": "Performing tasks without explicit training examples"
+  },
+  {
+    "id": 66,
+    "question": "Which of these techniques is used to reduce hallucination in LLMs?",
+    "options": [
+      "Retrieval-Augmented Generation (RAG)",
+      "Batch Normalization",
+      "Pruning",
+      "Dropout"
+    ],
+    "answer": "Retrieval-Augmented Generation (RAG)"
+  },
+  {
+    "id": 67,
+    "question": "Why is gradient checkpointing used in large model training?",
+    "options": [
+      "To save GPU memory during backpropagation",
+      "To increase learning rate",
+      "To reduce parameter count",
+      "To improve numerical stability"
+    ],
+    "answer": "To save GPU memory during backpropagation"
+  },
+  {
+    "id": 68,
+    "question": "Which of these models uses diffusion-based text generation?",
+    "options": ["Stable Diffusion", "GPT-4", "BERT", "Word2Vec"],
+    "answer": "Stable Diffusion"
+  },
+  {
+    "id": 69,
+    "question": "What is the purpose of reinforcement learning in LLM fine-tuning?",
+    "options": [
+      "To align model outputs with human preferences",
+      "To improve token embeddings",
+      "To reduce perplexity directly",
+      "To minimize parameter count"
+    ],
+    "answer": "To align model outputs with human preferences"
+  },
+  {
+    "id": 70,
+    "question": "Which model component computes attention weights in transformers?",
+    "options": ["Scaled Dot Product", "Feedforward Layer", "Embedding Matrix", "Normalization Layer"],
+    "answer": "Scaled Dot Product"
+  },
+  {
+    "id": 71,
+    "question": "What happens when the learning rate is too high in LLM training?",
+    "options": [
+      "Training becomes unstable and may diverge",
+      "Model converges faster",
+      "Gradients vanish",
+      "Loss remains constant"
+    ],
+    "answer": "Training becomes unstable and may diverge"
+  },
+  {
+    "id": 72,
+    "question": "Which dataset is widely used to pretrain large language models?",
+    "options": ["The Pile", "MNIST", "COCO", "ImageNet"],
+    "answer": "The Pile"
+  },
+  {
+    "id": 73,
+    "question": "What is a key challenge when fine-tuning large diffusion models?",
+    "options": [
+      "Maintaining image quality while adapting to new domains",
+      "Gradient vanishing",
+      "Overfitting on small batches",
+      "Exploding activations"
+    ],
+    "answer": "Maintaining image quality while adapting to new domains"
+  },
+  {
+    "id": 74,
+    "question": "Why are attention heads used in transformers?",
+    "options": [
+      "To capture different types of relationships among tokens",
+      "To increase model depth",
+      "To normalize gradients",
+      "To reduce parameter count"
+    ],
+    "answer": "To capture different types of relationships among tokens"
+  },
+  {
+    "id": 75,
+    "question": "Which regularization technique is used in diffusion training to stabilize noise prediction?",
+    "options": ["EMA (Exponential Moving Average)", "Dropout", "BatchNorm", "L2 Regularization"],
+    "answer": "EMA (Exponential Moving Average)"
+  },
+  {
+    "id": 76,
+    "question": "What is the purpose of 'detokenization' in LLM pipelines?",
+    "options": [
+      "To convert model token outputs back to human-readable text",
+      "To segment input sentences",
+      "To filter invalid tokens",
+      "To normalize embeddings"
+    ],
+    "answer": "To convert model token outputs back to human-readable text"
+  },
+  {
+    "id": 77,
+    "question": "Which of the following can lead to mode collapse in GANs?",
+    "options": [
+      "Poor generator–discriminator balance",
+      "Over-regularization",
+      "Low learning rate",
+      "High batch size"
+    ],
+    "answer": "Poor generator–discriminator balance"
+  },
+  {
+    "id": 78,
+    "question": "What is the function of the value vector in the transformer attention mechanism?",
+    "options": [
+      "Stores actual information to be passed to the next layer",
+      "Stores positional indices",
+      "Computes attention scores",
+      "Normalizes attention weights"
+    ],
+    "answer": "Stores actual information to be passed to the next layer"
+  },
+  {
+    "id": 79,
+    "question": "Which LLM variant is designed for reasoning and tool usage?",
+    "options": ["GPT-4", "PaLM 2", "Gemini", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 80,
+    "question": "What is the main benefit of using mixed precision training?",
+    "options": [
+      "Reduced GPU memory and faster computation",
+      "Improved accuracy",
+      "Higher model stability",
+      "Better generalization"
+    ],
+    "answer": "Reduced GPU memory and faster computation"
+  },
+  {
+    "id": 81,
+    "question": "Which algorithm optimizes diffusion model sampling efficiency?",
+    "options": ["DDIM", "Adam", "RMSProp", "Adafactor"],
+    "answer": "DDIM"
+  },
+  {
+    "id": 82,
+    "question": "Why is layer normalization used in transformers?",
+    "options": [
+      "To stabilize training by normalizing activations",
+      "To compress parameters",
+      "To reduce overfitting",
+      "To align attention weights"
+    ],
+    "answer": "To stabilize training by normalizing activations"
+  },
+  {
+    "id": 83,
+    "question": "What is the main difference between BERT and GPT models?",
+    "options": [
+      "BERT is bidirectional, GPT is autoregressive",
+      "GPT uses CNNs, BERT uses RNNs",
+      "BERT is for text generation, GPT for classification",
+      "Both are encoder-only"
+    ],
+    "answer": "BERT is bidirectional, GPT is autoregressive"
+  },
+  {
+    "id": 84,
+    "question": "Which of these improves factual grounding of LLMs?",
+    "options": [
+      "Retrieval-Augmented Generation (RAG)",
+      "BatchNorm",
+      "Gradient clipping",
+      "Early stopping"
+    ],
+    "answer": "Retrieval-Augmented Generation (RAG)"
+  },
+  {
+    "id": 85,
+    "question": "What does 'Top-k sampling' do in text generation?",
+    "options": [
+      "Restricts next-token sampling to top k probable tokens",
+      "Increases context size",
+      "Performs beam search automatically",
+      "Normalizes token embeddings"
+    ],
+    "answer": "Restricts next-token sampling to top k probable tokens"
+  },
+  {
+    "id": 86,
+    "question": "Which is a key advantage of diffusion models over GANs?",
+    "options": [
+      "Stable training and better mode coverage",
+      "Faster inference",
+      "Smaller model size",
+      "No need for noise"
+    ],
+    "answer": "Stable training and better mode coverage"
+  },
+  {
+    "id": 87,
+    "question": "Which method is used to align model responses with safety guidelines?",
+    "options": ["RLHF", "Fine-tuning", "Gradient Scaling", "Data pruning"],
+    "answer": "RLHF"
+  },
+  {
+    "id": 88,
+    "question": "What is the role of embeddings in cross-modal models like CLIP?",
+    "options": [
+      "To map text and image inputs to a shared latent space",
+      "To perform convolution",
+      "To normalize gradients",
+      "To compute cross-attention"
+    ],
+    "answer": "To map text and image inputs to a shared latent space"
+  },
+  {
+    "id": 89,
+    "question": "What are adapters used for in parameter-efficient fine-tuning?",
+    "options": [
+      "Small trainable layers added to frozen models",
+      "Gradient normalization modules",
+      "Noise injection units",
+      "Reinforcement signal layers"
+    ],
+    "answer": "Small trainable layers added to frozen models"
+  },
+  {
+    "id": 90,
+    "question": "Which metric measures diversity in generative image models?",
+    "options": ["Inception Score", "BLEU Score", "ROUGE-L", "WER"],
+    "answer": "Inception Score"
+  },
+  {
+    "id": 91,
+    "question": "Which of these can reduce computational cost during inference?",
+    "options": ["Quantization", "Batch Normalization", "Dropout", "Data Augmentation"],
+    "answer": "Quantization"
+  },
+  {
+    "id": 92,
+    "question": "Why is cosine similarity often used in embedding models?",
+    "options": [
+      "To measure semantic closeness between vector representations",
+      "To reduce loss variance",
+      "To normalize logits",
+      "To improve convergence"
+    ],
+    "answer": "To measure semantic closeness between vector representations"
+  },
+  {
+    "id": 93,
+    "question": "What is a key limitation of autoregressive models like GPT?",
+    "options": [
+      "Cannot process input bidirectionally",
+      "Cannot handle embeddings",
+      "Require massive labeled data",
+      "Use non-differentiable loss"
+    ],
+    "answer": "Cannot process input bidirectionally"
+  },
+  {
+    "id": 94,
+    "question": "Which of these concepts allows a model to self-improve using its own outputs?",
+    "options": ["Self-training", "Prompt-chaining", "Curriculum learning", "Batch regularization"],
+    "answer": "Self-training"
+  },
+  {
+    "id": 95,
+    "question": "Which optimization helps diffusion models reach faster convergence?",
+    "options": ["EMA", "Weight Decay", "Dropout", "Early Stopping"],
+    "answer": "EMA"
+  },
+  {
+    "id": 96,
+    "question": "What is the main challenge of scaling up model context length?",
+    "options": [
+      "Quadratic memory growth with sequence length",
+      "Loss of semantic embeddings",
+      "Vanishing activations",
+      "Increased dropout probability"
+    ],
+    "answer": "Quadratic memory growth with sequence length"
+  },
+  {
+    "id": 97,
+    "question": "Why is data deduplication important in LLM training?",
+    "options": [
+      "To prevent overfitting and repetition bias",
+      "To reduce token vocabulary",
+      "To simplify embeddings",
+      "To avoid quantization errors"
+    ],
+    "answer": "To prevent overfitting and repetition bias"
+  },
+  {
+    "id": 98,
+    "question": "Which of the following techniques improves factuality in GenAI models?",
+    "options": ["RAG", "Dropout", "BatchNorm", "Normalization"],
+    "answer": "RAG"
+  },
+  {
+    "id": 99,
+    "question": "What does the 'key' vector do in the transformer attention mechanism?",
+    "options": [
+      "Acts as an index to match queries with values",
+      "Stores token positions",
+      "Normalizes attention outputs",
+      "Generates embeddings"
+    ],
+    "answer": "Acts as an index to match queries with values"
+  },
+  {
+    "id": 100,
+    "question": "Which evaluation method checks human preference alignment in LLMs?",
+    "options": ["A/B Testing", "BLEU Score", "Perplexity", "FID Score"],
+    "answer": "A/B Testing"
+  }
+]
+

@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "Find the second highest salary from the Employee table without using LIMIT or TOP keywords."
+  },
+  {
+    "id": 2,
+    "question": "Write a query to find employees who earn more than their manager."
+  },
+  {
+    "id": 3,
+    "question": "Write a SQL query to get the nth highest salary from an Employee table."
+  },
+  {
+    "id": 4,
+    "question": "Find departments where the average salary of employees is greater than the overall company average salary."
+  },
+  {
+    "id": 5,
+    "question": "Given a table of orders, find customers who placed orders in consecutive months."
+  },
+  {
+    "id": 6,
+    "question": "Write a query to find employees who never received a bonus."
+  },
+  {
+    "id": 7,
+    "question": "Find all pairs of employees who share the same manager and have the same hire date."
+  },
+  {
+    "id": 8,
+    "question": "Write a SQL query to find top 3 products by revenue in each category."
+  },
+  {
+    "id": 9,
+    "question": "Given a transactions table, find users who made at least one transaction every month in 2024."
+  },
+  {
+    "id": 10,
+    "question": "Find customers who ordered products worth more than the average order value of all customers."
+  },
+  {
+    "id": 11,
+    "question": "Write a query to rank employees within each department based on their salary."
+  },
+  {
+    "id": 12,
+    "question": "Find the running total of sales for each day."
+  },
+  {
+    "id": 13,
+    "question": "Find duplicate records in a table without using DISTINCT or GROUP BY."
+  },
+  {
+    "id": 14,
+    "question": "Given a log of page visits, find the most frequent sequence of 3 consecutive pages visited by a user."
+  },
+  {
+    "id": 15,
+    "question": "Find all employees who have never worked on a project with their direct manager."
+  },
+  {
+    "id": 16,
+    "question": "Write a SQL query to pivot sales data by region and month."
+  },
+  {
+    "id": 17,
+    "question": "Given student scores, find the median score per subject."
+  },
+  {
+    "id": 18,
+    "question": "Find users who have placed an order in every quarter of the year."
+  },
+  {
+    "id": 19,
+    "question": "Write a SQL query to detect consecutive attendance streaks of employees."
+  },
+  {
+    "id": 20,
+    "question": "Given product reviews, find the top 2 most reviewed products in each category."
+  },
+  {
+    "id": 21,
+    "question": "Find employees who have the same salary as the average salary of their department."
+  },
+  {
+    "id": 22,
+    "question": "Write a query to find the cumulative number of signups over time."
+  },
+  {
+    "id": 23,
+    "question": "Given stock prices, find the days with local maxima and minima."
+  },
+  {
+    "id": 24,
+    "question": "Find the longest sequence of days when a user logged in consecutively."
+  },
+  {
+    "id": 25,
+    "question": "Write a SQL query to get the percentage contribution of each department to the company payroll."
+  },
+  {
+    "id": 26,
+    "question": "Find users who made purchases using more than one payment method."
+  },
+  {
+    "id": 27,
+    "question": "Write a SQL query to find products that were never sold in the last 6 months."
+  },
+  {
+    "id": 28,
+    "question": "Given a friendship table, find all indirect friends (friends of friends) for each user."
+  },
+  {
+    "id": 29,
+    "question": "Find the top 3 employees who contributed the most to revenue growth in each quarter."
+  },
+  {
+    "id": 30,
+    "question": "Write a query to identify churned customers (who have not made a purchase in the last 3 months)."
+  },
+  {
+    "id": 31,
+    "question": "Find the ratio of active to inactive users per month."
+  },
+  {
+    "id": 32,
+    "question": "Write a SQL query to detect data anomalies in transaction timestamps (e.g., overlapping times)."
+  },
+  {
+    "id": 33,
+    "question": "Given a payment log, find users who made increasing payments for 3 consecutive transactions."
+  },
+  {
+    "id": 34,
+    "question": "Find employees who joined before their managers."
+  },
+  {
+    "id": 35,
+    "question": "Write a SQL query to identify duplicate email addresses across different user accounts."
+  },
+  {
+    "id": 36,
+    "question": "Given a product catalog and sales table, find products with declining sales trends over the last 3 months."
+  },
+  {
+    "id": 37,
+    "question": "Find cities where every branch has achieved sales greater than $1M."
+  },
+  {
+    "id": 38,
+    "question": "Write a query to calculate moving average of sales for the past 7 days for each product."
+  },
+  {
+    "id": 39,
+    "question": "Find users who placed exactly two orders on the same day."
+  },
+  {
+    "id": 40,
+    "question": "Find all users who have ordered both product A and product B but not product C."
+  },
+  {
+    "id": 41,
+    "question": "Write a SQL query to find overlapping booking periods for the same hotel room."
+  },
+  {
+    "id": 42,
+    "question": "Find the user who has the longest time gap between two consecutive logins."
+  },
+  {
+    "id": 43,
+    "question": "Find employees who have worked on every project in their department."
+  },
+  {
+    "id": 44,
+    "question": "Write a SQL query to normalize a denormalized table containing repeated attributes."
+  },
+  {
+    "id": 45,
+    "question": "Find users whose total spending is in the top 1% across all users."
+  },
+  {
+    "id": 46,
+    "question": "Find all users who have rated every movie in a particular genre."
+  },
+  {
+    "id": 47,
+    "question": "Write a SQL query to compute retention rate for users week over week."
+  },
+  {
+    "id": 48,
+    "question": "Given sales data, find the product that had the maximum percentage growth compared to the previous month."
+  },
+  {
+    "id": 49,
+    "question": "Find the earliest date when cumulative sales crossed $10M."
+  },
+  {
+    "id": 50,
+    "question": "Write a SQL query to calculate user engagement score using multiple activity metrics (logins, posts, comments)."
+  },
+  {
+    "id": 51,
+    "question": "Write a SQL query to find the top 3 most profitable customers for each region."
+  },
+  {
+    "id": 52,
+    "question": "Find users who placed an order every month for the past 12 months consecutively."
+  },
+  {
+    "id": 53,
+    "question": "Write a query to calculate the year-over-year revenue growth for each product."
+  },
+  {
+    "id": 54,
+    "question": "Given a table of users and their followers, find the top influencer (user with the highest number of followers)."
+  },
+  {
+    "id": 55,
+    "question": "Find employees who have the same salary, job title, and department as another employee."
+  },
+  {
+    "id": 56,
+    "question": "Write a SQL query to detect missing dates in a time series of daily sales data."
+  },
+  {
+    "id": 57,
+    "question": "Given a stock trades table, find the day each stock reached its all-time high closing price."
+  },
+  {
+    "id": 58,
+    "question": "Find all users who have made at least one transaction in every category."
+  },
+  {
+    "id": 59,
+    "question": "Write a SQL query to find the average time between two consecutive orders per user."
+  },
+  {
+    "id": 60,
+    "question": "Find all movies that have never received a rating below the average rating of all movies."
+  },
+  {
+    "id": 61,
+    "question": "Write a query to find the top 5 customers contributing to 50% of total sales."
+  },
+  {
+    "id": 62,
+    "question": "Given employee salary history, find the latest salary record for each employee."
+  },
+  {
+    "id": 63,
+    "question": "Find all pairs of employees whose combined salaries exceed the company average salary."
+  },
+  {
+    "id": 64,
+    "question": "Write a SQL query to find customers who downgraded their subscription plan."
+  },
+  {
+    "id": 65,
+    "question": "Find the date when the cumulative number of users first exceeded 1 million."
+  },
+  {
+    "id": 66,
+    "question": "Given student grades, find those whose grades improved consecutively for 3 exams."
+  },
+  {
+    "id": 67,
+    "question": "Write a SQL query to calculate the weighted average rating per product."
+  },
+  {
+    "id": 68,
+    "question": "Find all users who have placed exactly one order in the last 6 months but more than five in total."
+  },
+  {
+    "id": 69,
+    "question": "Given an orders table, find all days when total revenue dropped compared to the previous day."
+  },
+  {
+    "id": 70,
+    "question": "Write a SQL query to find overlapping appointments for each user."
+  },
+  {
+    "id": 71,
+    "question": "Find the user who has the shortest average time between two purchases."
+  },
+  {
+    "id": 72,
+    "question": "Write a query to find employees who changed departments more than twice."
+  },
+  {
+    "id": 73,
+    "question": "Find the top 3 cities that contributed the most to company revenue in each year."
+  },
+  {
+    "id": 74,
+    "question": "Given product reviews, find users who reviewed every product in at least one category."
+  },
+  {
+    "id": 75,
+    "question": "Write a SQL query to identify the first purchase date for every customer."
+  },
+  {
+    "id": 76,
+    "question": "Find the longest continuous streak of daily logins per user."
+  },
+  {
+    "id": 77,
+    "question": "Write a query to calculate total revenue per quarter and compare it with the previous quarter."
+  },
+  {
+    "id": 78,
+    "question": "Find the most common purchase combination of two products bought together."
+  },
+  {
+    "id": 79,
+    "question": "Write a SQL query to detect outlier transactions (those that are more than 3 standard deviations from the mean)."
+  },
+  {
+    "id": 80,
+    "question": "Find the product with the highest percentage of returned orders."
+  },
+  {
+    "id": 81,
+    "question": "Write a query to get the first and last order details for each customer."
+  },
+  {
+    "id": 82,
+    "question": "Find all pairs of users who follow each other mutually."
+  },
+  {
+    "id": 83,
+    "question": "Write a SQL query to calculate the customer lifetime value (CLV)."
+  },
+  {
+    "id": 84,
+    "question": "Find all departments where every employee earns above the average salary of all employees."
+  },
+  {
+    "id": 85,
+    "question": "Write a SQL query to calculate a rolling 3-month revenue average per region."
+  },
+  {
+    "id": 86,
+    "question": "Find customers who have never placed an order after their first purchase month."
+  },
+  {
+    "id": 87,
+    "question": "Write a query to identify employees who have reported to at least two different managers."
+  },
+  {
+    "id": 88,
+    "question": "Find all users who have rated more than one product with the same rating score."
+  },
+  {
+    "id": 89,
+    "question": "Write a SQL query to find the maximum gap between two order dates per customer."
+  },
+  {
+    "id": 90,
+    "question": "Find the product whose sales have grown consecutively for the last 4 months."
+  },
+  {
+    "id": 91,
+    "question": "Write a SQL query to get the ratio of active to inactive users per week."
+  },
+  {
+    "id": 92,
+    "question": "Find users whose first purchase was of the most expensive product."
+  },
+  {
+    "id": 93,
+    "question": "Write a SQL query to find categories that contributed less than 5% of total sales."
+  },
+  {
+    "id": 94,
+    "question": "Find employees who joined before the average joining date of their department."
+  },
+  {
+    "id": 95,
+    "question": "Write a query to identify users who have used the platform in every year since signup."
+  },
+  {
+    "id": 96,
+    "question": "Find top 3 most common search queries per user."
+  },
+  {
+    "id": 97,
+    "question": "Write a SQL query to identify products whose price fluctuated more than 20% over the last quarter."
+  },
+  {
+    "id": 98,
+    "question": "Find users who have made purchases both online and in-store within the same month."
+  },
+  {
+    "id": 99,
+    "question": "Write a query to calculate month-over-month growth in user registrations."
+  },
+  {
+    "id": 100,
+    "question": "Find users who have placed at least one order from each of the last 6 months."
+  }
+]

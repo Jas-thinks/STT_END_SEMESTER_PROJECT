@@ -1,0 +1,603 @@
+[
+  {
+    "id": 1,
+    "question": "What is the main reason FAANG systems prefer load balancers in front of servers?",
+    "options": ["To distribute traffic evenly and ensure high availability", "To compress data packets", "To encrypt application data", "To perform DNS resolution"],
+    "answer": "To distribute traffic evenly and ensure high availability"
+  },
+  {
+    "id": 2,
+    "question": "Which protocol is most commonly used for service discovery in microservice architectures?",
+    "options": ["DNS-SD", "mDNS", "gRPC", "HTTP/2"],
+    "answer": "DNS-SD"
+  },
+  {
+    "id": 3,
+    "question": "At scale, how do FAANG companies ensure low-latency global DNS resolution?",
+    "options": ["Use geo-distributed DNS servers and anycast routing", "Use static DNS records", "Increase TTL of records", "Centralize DNS in one region"],
+    "answer": "Use geo-distributed DNS servers and anycast routing"
+  },
+  {
+    "id": 4,
+    "question": "Why does Google use QUIC over UDP for web traffic?",
+    "options": ["Faster connection setup and congestion control improvements", "It requires less bandwidth", "It simplifies application logic", "It avoids encryption"],
+    "answer": "Faster connection setup and congestion control improvements"
+  },
+  {
+    "id": 5,
+    "question": "Which TCP mechanism helps in optimizing throughput in high bandwidth-delay product networks?",
+    "options": ["Window scaling", "Slow start", "Fast retransmit", "Nagle’s algorithm"],
+    "answer": "Window scaling"
+  },
+  {
+    "id": 6,
+    "question": "Which network topology is used in data centers for scalability and fault tolerance?",
+    "options": ["Clos (Fat-tree) topology", "Star topology", "Bus topology", "Ring topology"],
+    "answer": "Clos (Fat-tree) topology"
+  },
+  {
+    "id": 7,
+    "question": "What is the purpose of ECMP (Equal Cost Multi-Path Routing) in large-scale systems?",
+    "options": ["Utilize multiple paths for load balancing", "Encrypt routing tables", "Reduce ARP latency", "Compress packet headers"],
+    "answer": "Utilize multiple paths for load balancing"
+  },
+  {
+    "id": 8,
+    "question": "Which congestion control algorithm is optimized for data center networks?",
+    "options": ["DC-TCP", "Reno", "Cubic", "Vegas"],
+    "answer": "DC-TCP"
+  },
+  {
+    "id": 9,
+    "question": "Why do distributed systems use heartbeat messages?",
+    "options": ["To detect node failures and maintain cluster health", "To check routing tables", "To optimize encryption", "To balance TCP windows"],
+    "answer": "To detect node failures and maintain cluster health"
+  },
+  {
+    "id": 10,
+    "question": "What is a major advantage of using gRPC in internal FAANG microservices?",
+    "options": ["Binary protocol reduces latency and bandwidth usage", "It’s easier to debug than REST", "It doesn’t require schema definition", "It automatically scales servers"],
+    "answer": "Binary protocol reduces latency and bandwidth usage"
+  },
+  {
+    "id": 11,
+    "question": "How do CDNs reduce latency for users across the globe?",
+    "options": ["By caching content closer to users", "By increasing TTL in DNS", "By compressing TCP headers", "By using a single global IP"],
+    "answer": "By caching content closer to users"
+  },
+  {
+    "id": 12,
+    "question": "In high-traffic systems, why is connection pooling important?",
+    "options": ["Reduces cost of frequent TCP handshakes", "Improves encryption", "Prevents packet fragmentation", "Simplifies DNS lookup"],
+    "answer": "Reduces cost of frequent TCP handshakes"
+  },
+  {
+    "id": 13,
+    "question": "Which mechanism allows multiple clients to maintain open TCP connections efficiently?",
+    "options": ["Multiplexing", "Fragmentation", "Caching", "Redundancy"],
+    "answer": "Multiplexing"
+  },
+  {
+    "id": 14,
+    "question": "What problem does TCP BBR aim to solve?",
+    "options": ["Optimize throughput by modeling network bottleneck bandwidth and RTT", "Reduce checksum errors", "Speed up encryption", "Simplify window management"],
+    "answer": "Optimize throughput by modeling network bottleneck bandwidth and RTT"
+  },
+  {
+    "id": 15,
+    "question": "In distributed caches, what is the benefit of consistent hashing?",
+    "options": ["Minimizes key remapping when nodes are added or removed", "Ensures stronger encryption", "Improves packet compression", "Increases TTL of data"],
+    "answer": "Minimizes key remapping when nodes are added or removed"
+  },
+  {
+    "id": 16,
+    "question": "Why do large-scale systems use asynchronous communication via message queues?",
+    "options": ["Decouples producers and consumers for scalability", "Reduces routing table size", "Simplifies DNS updates", "Prevents IP fragmentation"],
+    "answer": "Decouples producers and consumers for scalability"
+  },
+  {
+    "id": 17,
+    "question": "Which protocol layer handles flow control in TCP/IP?",
+    "options": ["Transport Layer", "Network Layer", "Data Link Layer", "Session Layer"],
+    "answer": "Transport Layer"
+  },
+  {
+    "id": 18,
+    "question": "What is the main drawback of using NAT in scalable architectures?",
+    "options": ["Breaks end-to-end connectivity", "Increases bandwidth", "Improves DNS latency", "Removes routing tables"],
+    "answer": "Breaks end-to-end connectivity"
+  },
+  {
+    "id": 19,
+    "question": "What is the role of keep-alive messages in HTTP/1.1?",
+    "options": ["Reuses TCP connections for multiple requests", "Maintains session tokens", "Encrypts headers", "Handles retransmissions"],
+    "answer": "Reuses TCP connections for multiple requests"
+  },
+  {
+    "id": 20,
+    "question": "Which layer of the OSI model does a load balancer primarily operate at when doing SSL termination?",
+    "options": ["Layer 7 (Application Layer)", "Layer 4 (Transport Layer)", "Layer 3 (Network Layer)", "Layer 2 (Data Link Layer)"],
+    "answer": "Layer 7 (Application Layer)"
+  },
+  {
+    "id": 21,
+    "question": "How does TCP Fast Open improve latency?",
+    "options": ["Allows sending data during handshake phase", "By skipping retransmissions", "By compressing packets", "By reducing MSS"],
+    "answer": "Allows sending data during handshake phase"
+  },
+  {
+    "id": 22,
+    "question": "Why do FAANG systems often use anycast IP addressing for global services?",
+    "options": ["Directs users to nearest server instance for low latency", "Simplifies routing", "Ensures one-to-one delivery", "Improves encryption speed"],
+    "answer": "Directs users to nearest server instance for low latency"
+  },
+  {
+    "id": 23,
+    "question": "Which feature of HTTP/2 helps reduce latency by multiplexing streams?",
+    "options": ["Single TCP connection with multiple parallel streams", "UDP tunneling", "Persistent cookies", "Dynamic DNS caching"],
+    "answer": "Single TCP connection with multiple parallel streams"
+  },
+  {
+    "id": 24,
+    "question": "What does the term 'head-of-line blocking' refer to?",
+    "options": ["A packet delay in one stream holding up others on the same TCP connection", "DNS resolution delay", "IP fragmentation delay", "Queue overflow in switches"],
+    "answer": "A packet delay in one stream holding up others on the same TCP connection"
+  },
+  {
+    "id": 25,
+    "question": "In TCP, which algorithm controls slow growth after congestion is detected?",
+    "options": ["Congestion avoidance", "Slow start", "Fast retransmit", "Additive increase"],
+    "answer": "Congestion avoidance"
+  },
+  {
+    "id": 26,
+    "question": "How does a CDN select the optimal edge server for a user?",
+    "options": ["Based on latency measurements and geolocation", "Random selection", "IP hash", "Fixed routing"],
+    "answer": "Based on latency measurements and geolocation"
+  },
+  {
+    "id": 27,
+    "question": "What is the key motivation behind IPv6 adoption in large-scale systems?",
+    "options": ["Address exhaustion in IPv4", "Improved DNS resolution", "Simpler routing algorithms", "Better firewall compatibility"],
+    "answer": "Address exhaustion in IPv4"
+  },
+  {
+    "id": 28,
+    "question": "Why is UDP often preferred for video streaming applications?",
+    "options": ["Lower latency due to no retransmission", "Better encryption", "Guaranteed delivery", "Simpler handshakes"],
+    "answer": "Lower latency due to no retransmission"
+  },
+  {
+    "id": 29,
+    "question": "Which protocol does Facebook use internally for efficient service-to-service communication?",
+    "options": ["Thrift", "SOAP", "MQTT", "AMQP"],
+    "answer": "Thrift"
+  },
+  {
+    "id": 30,
+    "question": "What is the purpose of circuit breakers in distributed systems?",
+    "options": ["Prevent cascading failures by isolating failing services", "Encrypt inter-service communication", "Ensure reliable DNS lookups", "Balance network load"],
+    "answer": "Prevent cascading failures by isolating failing services"
+  },
+  {
+    "id": 31,
+    "question": "How do hyperscale data centers ensure redundancy in network paths?",
+    "options": ["Using multi-path routing and redundant switches", "By increasing MTU size", "By duplicating IP packets", "By disabling STP"],
+    "answer": "Using multi-path routing and redundant switches"
+  },
+  {
+    "id": 32,
+    "question": "Which routing protocol supports hierarchical design and fast convergence in FAANG-scale networks?",
+    "options": ["OSPF", "RIP", "BGP", "IS-IS"],
+    "answer": "IS-IS"
+  },
+  {
+    "id": 33,
+    "question": "Why is TCP tail latency a major concern in distributed storage systems?",
+    "options": ["Because slowest responses determine overall system latency", "Because it reduces throughput", "Because it affects MTU size", "Because it increases checksum errors"],
+    "answer": "Because slowest responses determine overall system latency"
+  },
+  {
+    "id": 34,
+    "question": "In large-scale systems, what is the main reason to use TLS session resumption?",
+    "options": ["Reduces handshake latency", "Improves encryption strength", "Avoids TCP congestion", "Reduces retransmissions"],
+    "answer": "Reduces handshake latency"
+  },
+  {
+    "id": 35,
+    "question": "What is the advantage of HTTP/3 over HTTP/2?",
+    "options": ["Uses QUIC over UDP to avoid head-of-line blocking", "Supports larger headers", "Improves compression ratio", "Simplifies TCP window scaling"],
+    "answer": "Uses QUIC over UDP to avoid head-of-line blocking"
+  },
+  {
+    "id": 36,
+    "question": "How do FAANG systems detect network congestion at scale?",
+    "options": ["Using ECN bits and RTT measurements", "By increasing MSS", "By random packet dropping", "By lowering TTL"],
+    "answer": "Using ECN bits and RTT measurements"
+  },
+  {
+    "id": 37,
+    "question": "What is the function of a service mesh in microservice networking?",
+    "options": ["Manages communication, load balancing, and observability between services", "Handles routing at OS level", "Encrypts application payload", "Performs static IP mapping"],
+    "answer": "Manages communication, load balancing, and observability between services"
+  },
+  {
+    "id": 38,
+    "question": "Why do large-scale systems use asynchronous replication between data centers?",
+    "options": ["To reduce write latency and improve performance", "To maintain strict consistency", "To avoid DNS lookup delays", "To simplify encryption"],
+    "answer": "To reduce write latency and improve performance"
+  },
+  {
+    "id": 39,
+    "question": "Which algorithm does TCP use for congestion avoidance?",
+    "options": ["Additive Increase Multiplicative Decrease (AIMD)", "Slow Start", "Round Robin", "Random Early Detection"],
+    "answer": "Additive Increase Multiplicative Decrease (AIMD)"
+  },
+  {
+    "id": 40,
+    "question": "In FAANG networks, what is the primary use of overlay networks?",
+    "options": ["Abstract physical topology for flexible routing", "Reduce MTU size", "Eliminate IP headers", "Prevent checksum errors"],
+    "answer": "Abstract physical topology for flexible routing"
+  },
+  {
+    "id": 41,
+    "question": "Why do distributed file systems use leases instead of locks?",
+    "options": ["Leases automatically expire to handle node failures gracefully", "Locks are faster but unreliable", "Leases use less bandwidth", "Locks prevent caching"],
+    "answer": "Leases automatically expire to handle node failures gracefully"
+  },
+  {
+    "id": 42,
+    "question": "What is the purpose of network slicing in 5G architectures?",
+    "options": ["To allocate dedicated virtual network resources for applications", "To increase frequency bands", "To reduce MTU", "To lower packet loss"],
+    "answer": "To allocate dedicated virtual network resources for applications"
+  },
+  {
+    "id": 43,
+    "question": "Which routing protocol is typically used at the edge of FAANG data centers for external connectivity?",
+    "options": ["BGP", "OSPF", "RIP", "EIGRP"],
+    "answer": "BGP"
+  },
+  {
+    "id": 44,
+    "question": "Why do large-scale content systems like YouTube use chunked transfer encoding?",
+    "options": ["To send large files in parts without knowing total size upfront", "To compress headers", "To reduce TCP handshake time", "To simplify DNS resolution"],
+    "answer": "To send large files in parts without knowing total size upfront"
+  },
+  {
+    "id": 45,
+    "question": "Which mechanism allows packet prioritization in real-time streaming?",
+    "options": ["Quality of Service (QoS)", "Load balancing", "ECN", "TTL"],
+    "answer": "Quality of Service (QoS)"
+  },
+  {
+    "id": 46,
+    "question": "What role do overlay tunnels (e.g., VXLAN) play in cloud networks?",
+    "options": ["Encapsulate Layer 2 frames over Layer 3 networks", "Reduce MTU", "Encrypt TCP segments", "Simplify routing tables"],
+    "answer": "Encapsulate Layer 2 frames over Layer 3 networks"
+  },
+  {
+    "id": 47,
+    "question": "In FAANG-scale data centers, why are leaf-spine topologies preferred?",
+    "options": ["They provide predictable latency and non-blocking bandwidth", "They reduce routing hops", "They simplify encryption", "They improve DNS speed"],
+    "answer": "They provide predictable latency and non-blocking bandwidth"
+  },
+  {
+    "id": 48,
+    "question": "What is the primary function of a proxy in distributed systems?",
+    "options": ["Acts as intermediary for caching, security, and request routing", "Encrypts physical data links", "Changes MAC addresses", "Increases MTU size"],
+    "answer": "Acts as intermediary for caching, security, and request routing"
+  },
+  {
+    "id": 49,
+    "question": "How does TCP selective acknowledgment (SACK) improve performance?",
+    "options": ["Allows retransmission of only lost segments", "Reduces header size", "Avoids congestion", "Enables zero-copy I/O"],
+    "answer": "Allows retransmission of only lost segments"
+  },
+  {
+    "id": 50,
+    "question": "Why is latency monitoring critical in large distributed systems?",
+    "options": ["To detect performance bottlenecks before impacting users", "To reduce MTU", "To avoid ARP spoofing", "To handle routing loops"],
+    "answer": "To detect performance bottlenecks before impacting users"
+  },
+  {
+    "id": 51,
+    "question": "Why do FAANG data centers use jumbo frames?",
+    "options": ["To reduce protocol overhead for large transfers", "To improve DNS resolution", "To prevent fragmentation", "To simplify routing"],
+    "answer": "To reduce protocol overhead for large transfers"
+  },
+  {
+    "id": 52,
+    "question": "What problem does ECN (Explicit Congestion Notification) solve?",
+    "options": ["Indicates congestion without dropping packets", "Prevents duplicate ACKs", "Improves checksum", "Speeds up TCP teardown"],
+    "answer": "Indicates congestion without dropping packets"
+  },
+  {
+    "id": 53,
+    "question": "What is the purpose of the SYN cookie mechanism?",
+    "options": ["Prevents SYN flood attacks by avoiding pre-allocation of resources", "Improves throughput", "Encrypts session tokens", "Simplifies DNS lookup"],
+    "answer": "Prevents SYN flood attacks by avoiding pre-allocation of resources"
+  },
+  {
+    "id": 54,
+    "question": "How do FAANG systems handle DDoS protection at the network edge?",
+    "options": ["By using rate limiting, filtering, and distributed firewalls", "By disabling NAT", "By encrypting MAC headers", "By using DNS caching only"],
+    "answer": "By using rate limiting, filtering, and distributed firewalls"
+  },
+  {
+    "id": 55,
+    "question": "Why do distributed databases prefer quorum-based reads and writes?",
+    "options": ["To balance consistency and availability", "To reduce latency", "To increase redundancy", "To improve compression"],
+    "answer": "To balance consistency and availability"
+  },
+  {
+    "id": 56,
+    "question": "Which protocol is used for control communication in SDN (Software Defined Networking)?",
+    "options": ["OpenFlow", "BGP", "TCP", "MPLS"],
+    "answer": "OpenFlow"
+  },
+  {
+    "id": 57,
+    "question": "Why is packet reordering a major issue in multipath TCP?",
+    "options": ["It complicates reassembly at the receiver", "It increases MTU size", "It reduces header checksum", "It improves throughput"],
+    "answer": "It complicates reassembly at the receiver"
+  },
+  {
+    "id": 58,
+    "question": "In content delivery, what is edge computing primarily used for?",
+    "options": ["Processing data close to users to minimize latency", "Encrypting packets", "Reducing congestion", "Simplifying routing tables"],
+    "answer": "Processing data close to users to minimize latency"
+  },
+  {
+    "id": 59,
+    "question": "Why is network telemetry used in modern FAANG infrastructures?",
+    "options": ["Provides real-time visibility into packet-level performance", "Increases throughput", "Simplifies routing", "Reduces encryption delay"],
+    "answer": "Provides real-time visibility into packet-level performance"
+  },
+  {
+    "id": 60,
+    "question": "Why do microservices architectures use sidecars?",
+    "options": ["To offload networking, security, and logging functions", "To handle application-level routing", "To increase packet size", "To manage ARP tables"],
+    "answer": "To offload networking, security, and logging functions"
+  },
+  {
+    "id": 61,
+    "question": "What does the term 'five nines' availability mean?",
+    "options": ["99.999% uptime per year", "99.95% uptime per month", "99.9% uptime per quarter", "100% uptime per week"],
+    "answer": "99.999% uptime per year"
+  },
+  {
+    "id": 62,
+    "question": "How does Amazon reduce cold-start latency in Lambda functions?",
+    "options": ["By pre-warming containers and reusing network connections", "By caching DNS entries", "By using HTTP pipelining", "By compressing headers"],
+    "answer": "By pre-warming containers and reusing network connections"
+  },
+  {
+    "id": 63,
+    "question": "Why do data centers use spine switches with high port density?",
+    "options": ["To handle massive east-west traffic efficiently", "To reduce CPU usage", "To encrypt data faster", "To simplify routing tables"],
+    "answer": "To handle massive east-west traffic efficiently"
+  },
+  {
+    "id": 64,
+    "question": "What is the main benefit of network function virtualization (NFV)?",
+    "options": ["Replaces dedicated hardware with software-based services", "Increases packet fragmentation", "Improves TTL handling", "Simplifies DNS lookups"],
+    "answer": "Replaces dedicated hardware with software-based services"
+  },
+  {
+    "id": 65,
+    "question": "How do hyperscalers ensure minimal downtime during network upgrades?",
+    "options": ["Using rolling updates and redundant links", "Pausing user traffic", "Increasing MTU", "Disabling OSPF"],
+    "answer": "Using rolling updates and redundant links"
+  },
+  {
+    "id": 66,
+    "question": "Why does Netflix use adaptive bitrate streaming (ABR)?",
+    "options": ["Adjusts video quality based on network conditions", "Compresses headers", "Improves encryption", "Avoids TCP handshake"],
+    "answer": "Adjusts video quality based on network conditions"
+  },
+  {
+    "id": 67,
+    "question": "In Google's network, why is jumbo frame support critical for RPC systems?",
+    "options": ["Reduces per-packet overhead for large data transfers", "Improves routing loops", "Simplifies DNS", "Lowers TTL"],
+    "answer": "Reduces per-packet overhead for large data transfers"
+  },
+  {
+    "id": 68,
+    "question": "What is a key reason behind multi-region deployments in FAANG services?",
+    "options": ["Fault tolerance and low latency access", "Simplified encryption", "Static routing", "DNS caching"],
+    "answer": "Fault tolerance and low latency access"
+  },
+  {
+    "id": 69,
+    "question": "Why is congestion-aware load balancing used in distributed systems?",
+    "options": ["Prevents overloading specific paths or servers", "Improves TTL values", "Simplifies BGP", "Encrypts data"],
+    "answer": "Prevents overloading specific paths or servers"
+  },
+  {
+    "id": 70,
+    "question": "Which principle allows Netflix’s Open Connect to serve billions of videos efficiently?",
+    "options": ["Edge caching and localized traffic offload", "Centralized routing", "QoS prioritization", "UDP-based control"],
+    "answer": "Edge caching and localized traffic offload"
+  },
+  {
+    "id": 71,
+    "question": "What is the main purpose of a CDN in large-scale FAANG systems?",
+    "options": ["A. To reduce latency by caching content close to users", "B. To encrypt user data", "C. To compress HTML files", "D. To perform routing"],
+    "answer": "A"
+  },
+  {
+    "id": 72,
+    "question": "In TCP congestion control, what happens during the congestion avoidance phase?",
+    "options": ["A. Congestion window increases linearly", "B. Congestion window increases exponentially", "C. Congestion window remains constant", "D. Connection is reset"],
+    "answer": "A"
+  },
+  {
+    "id": 73,
+    "question": "Which routing protocol is most suitable for large enterprise networks used by MNCs?",
+    "options": ["A. OSPF", "B. RIP", "C. BGP", "D. EIGRP"],
+    "answer": "C"
+  },
+  {
+    "id": 74,
+    "question": "What is the main function of BGP in the Internet?",
+    "options": ["A. Inter-domain routing", "B. Intra-domain routing", "C. Local DNS resolution", "D. Flow control"],
+    "answer": "A"
+  },
+  {
+    "id": 75,
+    "question": "In FAANG scale systems, what is a reverse proxy used for?",
+    "options": ["A. Load balancing and caching requests", "B. Sending requests directly to clients", "C. Encrypting data on the client side", "D. Monitoring CPU usage"],
+    "answer": "A"
+  },
+  {
+    "id": 76,
+    "question": "Which networking layer ensures reliable communication between processes?",
+    "options": ["A. Transport layer", "B. Network layer", "C. Session layer", "D. Data link layer"],
+    "answer": "A"
+  },
+  {
+    "id": 77,
+    "question": "Which protocol is used by routers to exchange information about network reachability?",
+    "options": ["A. BGP", "B. DNS", "C. ICMP", "D. HTTP"],
+    "answer": "A"
+  },
+  {
+    "id": 78,
+    "question": "What is the main drawback of stop-and-wait ARQ?",
+    "options": ["A. Low utilization of the communication link", "B. High bandwidth usage", "C. Data corruption", "D. Packet duplication"],
+    "answer": "A"
+  },
+  {
+    "id": 79,
+    "question": "Which FAANG design concept improves network fault tolerance?",
+    "options": ["A. Redundancy", "B. Data compression", "C. NAT", "D. DNS caching"],
+    "answer": "A"
+  },
+  {
+    "id": 80,
+    "question": "In TCP, what does the 'window size' field represent?",
+    "options": ["A. Amount of data the receiver can accept", "B. Size of the packet header", "C. Size of the data buffer", "D. Sequence number offset"],
+    "answer": "A"
+  },
+  {
+    "id": 81,
+    "question": "Which of the following is a connectionless protocol?",
+    "options": ["A. UDP", "B. TCP", "C. HTTP", "D. FTP"],
+    "answer": "A"
+  },
+  {
+    "id": 82,
+    "question": "What is a common technique used in FAANG to handle large traffic spikes?",
+    "options": ["A. Auto-scaling of servers", "B. Disabling DNS", "C. Using static IP routing", "D. Reducing timeouts"],
+    "answer": "A"
+  },
+  {
+    "id": 83,
+    "question": "Which metric is most commonly used in routing protocols to find the best path?",
+    "options": ["A. Hop count or link cost", "B. MAC address", "C. Port number", "D. Packet ID"],
+    "answer": "A"
+  },
+  {
+    "id": 84,
+    "question": "What is the purpose of the SYN flag in TCP?",
+    "options": ["A. To initiate a connection", "B. To terminate a connection", "C. To reset a connection", "D. To send data"],
+    "answer": "A"
+  },
+  {
+    "id": 85,
+    "question": "Which FAANG design pattern helps reduce database load by caching frequently accessed data?",
+    "options": ["A. Cache-aside pattern", "B. Sharding pattern", "C. Saga pattern", "D. Circuit breaker"],
+    "answer": "A"
+  },
+  {
+    "id": 86,
+    "question": "In DNS hierarchy, what is the role of the root server?",
+    "options": ["A. Directs queries to top-level domain servers", "B. Stores all website IPs", "C. Maintains user records", "D. Acts as a cache for domain lookups"],
+    "answer": "A"
+  },
+  {
+    "id": 87,
+    "question": "What is the main reason for using asynchronous communication in distributed systems?",
+    "options": ["A. To improve scalability and reduce blocking", "B. To make code simpler", "C. To enforce security", "D. To compress data"],
+    "answer": "A"
+  },
+  {
+    "id": 88,
+    "question": "Which algorithm is used for congestion control in TCP?",
+    "options": ["A. AIMD (Additive Increase Multiplicative Decrease)", "B. Dijkstra", "C. Kruskal", "D. Bellman-Ford"],
+    "answer": "A"
+  },
+  {
+    "id": 89,
+    "question": "What is a broadcast storm?",
+    "options": ["A. Excessive broadcast traffic overwhelming the network", "B. Router malfunction", "C. DNS cache poisoning", "D. Encryption failure"],
+    "answer": "A"
+  },
+  {
+    "id": 90,
+    "question": "Which FAANG network architecture pattern allows seamless scaling of backend services?",
+    "options": ["A. Microservices with API gateway", "B. Monolithic architecture", "C. Peer-to-peer network", "D. Single-threaded design"],
+    "answer": "A"
+  },
+  {
+    "id": 91,
+    "question": "In IPv6, what is the size of an IP address?",
+    "options": ["A. 128 bits", "B. 64 bits", "C. 32 bits", "D. 256 bits"],
+    "answer": "A"
+  },
+  {
+    "id": 92,
+    "question": "What does a socket represent in networking?",
+    "options": ["A. An endpoint for communication between processes", "B. A packet header", "C. A network cable", "D. A protocol layer"],
+    "answer": "A"
+  },
+  {
+    "id": 93,
+    "question": "Which technique is used to avoid congestion collapse in TCP?",
+    "options": ["A. Congestion avoidance and slow start", "B. Packet flooding", "C. Round robin scheduling", "D. Increasing MSS"],
+    "answer": "A"
+  },
+  {
+    "id": 94,
+    "question": "Which FAANG concept ensures data consistency across distributed caches?",
+    "options": ["A. Cache invalidation strategies", "B. DNS mapping", "C. ARP tables", "D. Link aggregation"],
+    "answer": "A"
+  },
+  {
+    "id": 95,
+    "question": "Which of the following best describes QoS (Quality of Service)?",
+    "options": ["A. Mechanism to prioritize network traffic", "B. Encryption of data packets", "C. Load balancing", "D. Packet fragmentation"],
+    "answer": "A"
+  },
+  {
+    "id": 96,
+    "question": "What is the role of a load balancer in FAANG architectures?",
+    "options": ["A. Distributes client requests evenly across servers", "B. Encrypts web traffic", "C. Compresses static data", "D. Handles DNS lookups"],
+    "answer": "A"
+  },
+  {
+    "id": 97,
+    "question": "Which network device works at both Layer 2 and Layer 3 of the OSI model?",
+    "options": ["A. Multilayer Switch", "B. Hub", "C. Bridge", "D. Repeater"],
+    "answer": "A"
+  },
+  {
+    "id": 98,
+    "question": "In FAANG-scale systems, why is message queuing used?",
+    "options": ["A. To decouple services and handle asynchronous workloads", "B. To route traffic", "C. To encrypt user data", "D. To manage IP addresses"],
+    "answer": "A"
+  },
+  {
+    "id": 99,
+    "question": "What is the main advantage of using BGP route reflectors in large networks?",
+    "options": ["A. To reduce routing overhead and improve scalability", "B. To increase redundancy", "C. To avoid congestion", "D. To enhance encryption"],
+    "answer": "A"
+  },
+  {
+    "id": 100,
+    "question": "In large-scale distributed systems like FAANG’s, what ensures high availability?",
+    "options": ["A. Replication and fault-tolerant architecture", "B. DNS over HTTPS", "C. Circuit switching", "D. Static routing"],
+    "answer": "A"
+  }
+]
+

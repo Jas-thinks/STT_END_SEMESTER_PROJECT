@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "question": "Explain the vanishing gradient problem mathematically and discuss how it affects very deep networks."
+  },
+  {
+    "id": 2,
+    "question": "Derive how L2 regularization modifies the gradient update rule in stochastic gradient descent."
+  },
+  {
+    "id": 3,
+    "question": "Why do skip connections in ResNet mitigate the degradation problem, and how do they affect gradient flow?"
+  },
+  {
+    "id": 4,
+    "question": "Explain the concept of layer normalization vs batch normalization in terms of internal covariate shift."
+  },
+  {
+    "id": 5,
+    "question": "What are the mathematical differences between GELU and ReLU activations, and why is GELU used in Transformers?"
+  },
+  {
+    "id": 6,
+    "question": "Why does the softmax function suffer from numerical instability, and how can it be stabilized in implementation?"
+  },
+  {
+    "id": 7,
+    "question": "How do you interpret attention weights in Transformer architectures from an information-theoretic perspective?"
+  },
+  {
+    "id": 8,
+    "question": "Explain how positional encoding enables order-awareness in self-attention networks."
+  },
+  {
+    "id": 9,
+    "question": "Describe the mechanism of multi-head attention and how it allows subspace feature learning."
+  },
+  {
+    "id": 10,
+    "question": "How does gradient clipping prevent exploding gradients, and what are its side effects?"
+  },
+  {
+    "id": 11,
+    "question": "Why do deep networks often require warmup phases for learning rate schedules?"
+  },
+  {
+    "id": 12,
+    "question": "How do cosine annealing and cyclical learning rates improve convergence stability?"
+  },
+  {
+    "id": 13,
+    "question": "What are the trade-offs between parameter sharing and model expressiveness in RNNs and Transformers?"
+  },
+  {
+    "id": 14,
+    "question": "Derive the backpropagation equations for LSTM networks."
+  },
+  {
+    "id": 15,
+    "question": "Explain the concept of attention masking and its role in auto-regressive generation."
+  },
+  {
+    "id": 16,
+    "question": "Discuss the optimization landscape of deep neural networks and why local minima are rarely problematic."
+  },
+  {
+    "id": 17,
+    "question": "What is the Hessian matrix in neural network optimization, and how can its eigenvalues indicate sharp minima?"
+  },
+  {
+    "id": 18,
+    "question": "What is the connection between overparameterization and generalization in deep networks?"
+  },
+  {
+    "id": 19,
+    "question": "Explain how dropout can be interpreted as approximate Bayesian inference."
+  },
+  {
+    "id": 20,
+    "question": "How does weight initialization affect gradient propagation in deep nonlinear networks?"
+  },
+  {
+    "id": 21,
+    "question": "Explain the difference between pre-norm and post-norm Transformer architectures."
+  },
+  {
+    "id": 22,
+    "question": "What is the intuition behind gradient noise scale and its effect on generalization?"
+  },
+  {
+    "id": 23,
+    "question": "Discuss how knowledge distillation improves smaller models’ learning from larger models."
+  },
+  {
+    "id": 24,
+    "question": "Why do self-supervised pretraining methods outperform supervised models in low-data regimes?"
+  },
+  {
+    "id": 25,
+    "question": "What is contrastive learning and how is it applied in frameworks like SimCLR or MoCo?"
+  },
+  {
+    "id": 26,
+    "question": "Explain the difference between masked language modeling and next sentence prediction in BERT."
+  },
+  {
+    "id": 27,
+    "question": "Why is weight sharing critical in Transformer decoders for autoregressive generation?"
+  },
+  {
+    "id": 28,
+    "question": "What is the intuition behind scaling laws in deep learning and their empirical observations?"
+  },
+  {
+    "id": 29,
+    "question": "What are the stability and expressivity challenges of very deep residual networks?"
+  },
+  {
+    "id": 30,
+    "question": "How do adaptive optimizers like AdamW differ from Adam in weight decay application?"
+  },
+  {
+    "id": 31,
+    "question": "Explain the purpose of LayerScale and its effect on training large-scale vision transformers."
+  },
+  {
+    "id": 32,
+    "question": "What is the double descent phenomenon in deep learning generalization?"
+  },
+  {
+    "id": 33,
+    "question": "Why are normalization layers often avoided in generative adversarial networks?"
+  },
+  {
+    "id": 34,
+    "question": "Explain how gradient penalty stabilizes GAN training."
+  },
+  {
+    "id": 35,
+    "question": "How does spectral normalization constrain the Lipschitz constant of a neural network?"
+  },
+  {
+    "id": 36,
+    "question": "What are mode collapse issues in GANs and how can they be mitigated?"
+  },
+  {
+    "id": 37,
+    "question": "Discuss the architectural innovations in StyleGAN that lead to high-quality image synthesis."
+  },
+  {
+    "id": 38,
+    "question": "How does diffusion modeling differ from GANs conceptually and mathematically?"
+  },
+  {
+    "id": 39,
+    "question": "Explain the role of denoising score matching in diffusion probabilistic models."
+  },
+  {
+    "id": 40,
+    "question": "How does the reparameterization trick enable gradient-based training in VAEs?"
+  },
+  {
+    "id": 41,
+    "question": "What is the KL divergence term in VAEs and why is it critical for latent space regularization?"
+  },
+  {
+    "id": 42,
+    "question": "What are the theoretical limits of expressiveness for feedforward neural networks?"
+  },
+  {
+    "id": 43,
+    "question": "Explain the role of tokenization granularity in Transformer-based NLP models."
+  },
+  {
+    "id": 44,
+    "question": "What is the difference between autoregressive and autoencoding language models?"
+  },
+  {
+    "id": 45,
+    "question": "Discuss the challenges of training very large-scale models on distributed systems."
+  },
+  {
+    "id": 46,
+    "question": "Explain model parallelism vs data parallelism in large-scale training setups."
+  },
+  {
+    "id": 47,
+    "question": "What is gradient accumulation and why is it used for large-batch training?"
+  },
+  {
+    "id": 48,
+    "question": "Discuss mixed precision training and its numerical stability challenges."
+  },
+  {
+    "id": 49,
+    "question": "Explain the importance of gradient checkpointing for memory-efficient training."
+  },
+  {
+    "id": 50,
+    "question": "How does quantization affect model inference accuracy and speed?"
+  },
+  {
+    "id": 51,
+    "question": "What are the mathematical properties of orthogonal initialization and why is it effective?"
+  },
+  {
+    "id": 52,
+    "question": "Explain the Fisher Information Matrix and its relevance in neural network optimization."
+  },
+  {
+    "id": 53,
+    "question": "How can pruning be made structured for hardware acceleration?"
+  },
+  {
+    "id": 54,
+    "question": "What are the trade-offs between model compression and expressivity?"
+  },
+  {
+    "id": 55,
+    "question": "How does dropout interact with batch normalization during training?"
+  },
+  {
+    "id": 56,
+    "question": "What are catastrophic forgetting and methods to mitigate it in continual learning?"
+  },
+  {
+    "id": 57,
+    "question": "How does transfer learning fail in negative transfer scenarios?"
+  },
+  {
+    "id": 58,
+    "question": "Explain the importance of calibration in deep learning classifiers."
+  },
+  {
+    "id": 59,
+    "question": "What is the role of temperature scaling in model calibration?"
+  },
+  {
+    "id": 60,
+    "question": "Discuss the robustness of deep networks to adversarial perturbations."
+  },
+  {
+    "id": 61,
+    "question": "What is the Fast Gradient Sign Method (FGSM) and how does it generate adversarial examples?"
+  },
+  {
+    "id": 62,
+    "question": "Explain how adversarial training improves model robustness."
+  },
+  {
+    "id": 63,
+    "question": "What are backdoor attacks in deep learning and how can they be detected?"
+  },
+  {
+    "id": 64,
+    "question": "What are out-of-distribution (OOD) detection methods in DL models?"
+  },
+  {
+    "id": 65,
+    "question": "Explain the concept of epistemic vs aleatoric uncertainty in DL models."
+  },
+  {
+    "id": 66,
+    "question": "How do Bayesian neural networks represent uncertainty?"
+  },
+  {
+    "id": 67,
+    "question": "What is the effect of label noise on deep network training, and how can it be mitigated?"
+  },
+  {
+    "id": 68,
+    "question": "What are neural tangent kernels (NTKs) and how do they explain training dynamics?"
+  },
+  {
+    "id": 69,
+    "question": "Explain the lottery ticket hypothesis and its implications for model efficiency."
+  },
+  {
+    "id": 70,
+    "question": "What is zero-shot generalization, and how do large language models achieve it?"
+  },
+  {
+    "id": 71,
+    "question": "Explain why LayerNorm is essential in Transformer training stability and how it differs from BatchNorm."
+  },
+  {
+    "id": 72,
+    "question": "Discuss how self-attention scales quadratically with sequence length and what alternatives reduce complexity."
+  },
+  {
+    "id": 73,
+    "question": "Explain the intuition behind sparse attention mechanisms and how they improve efficiency."
+  },
+  {
+    "id": 74,
+    "question": "What is the difference between encoder-only, decoder-only, and encoder-decoder Transformer architectures?"
+  },
+  {
+    "id": 75,
+    "question": "How do LoRA and adapter tuning help fine-tune large language models efficiently?"
+  },
+  {
+    "id": 76,
+    "question": "Explain the mathematical formulation of self-attention using queries, keys, and values."
+  },
+  {
+    "id": 77,
+    "question": "What is cross-attention and how is it used in sequence-to-sequence models like T5?"
+  },
+  {
+    "id": 78,
+    "question": "How does gradient accumulation differ from micro-batching in distributed training?"
+  },
+  {
+    "id": 79,
+    "question": "Explain the trade-offs between synchronous and asynchronous gradient updates."
+  },
+  {
+    "id": 80,
+    "question": "What are the core design motivations behind Vision Transformers (ViT)?"
+  },
+  {
+    "id": 81,
+    "question": "Why do Vision Transformers require large datasets for pretraining compared to CNNs?"
+  },
+  {
+    "id": 82,
+    "question": "What is the purpose of patch embeddings in Vision Transformers?"
+  },
+  {
+    "id": 83,
+    "question": "Discuss how convolutional inductive bias differs from attention-based modeling."
+  },
+  {
+    "id": 84,
+    "question": "Explain the working of the Swin Transformer and its hierarchical attention mechanism."
+  },
+  {
+    "id": 85,
+    "question": "How does the Transformer architecture handle long-range dependencies better than RNNs?"
+  },
+  {
+    "id": 86,
+    "question": "Explain how attention weights can be visualized to interpret model reasoning."
+  },
+  {
+    "id": 87,
+    "question": "How does temperature in softmax control exploration during decoding?"
+  },
+  {
+    "id": 88,
+    "question": "What are beam search and nucleus sampling, and when are they used?"
+  },
+  {
+    "id": 89,
+    "question": "Explain how reinforcement learning from human feedback (RLHF) is used in large language models."
+  },
+  {
+    "id": 90,
+    "question": "What are the limitations of RLHF in aligning model behavior with human values?"
+  },
+  {
+    "id": 91,
+    "question": "Discuss how reward modeling works in the RLHF training pipeline."
+  },
+  {
+    "id": 92,
+    "question": "What are retrieval-augmented generation (RAG) models, and how do they differ from pure Transformers?"
+  },
+  {
+    "id": 93,
+    "question": "How can contrastive pretraining improve embedding quality in multimodal models?"
+  },
+  {
+    "id": 94,
+    "question": "Explain the role of CLIP in aligning text and image representations."
+  },
+  {
+    "id": 95,
+    "question": "What is the difference between diffusion-based text-to-image models and GAN-based ones?"
+  },
+  {
+    "id": 96,
+    "question": "How do score-based generative models reconstruct data during sampling?"
+  },
+  {
+    "id": 97,
+    "question": "Why do diffusion models require many sampling steps, and how do fast samplers reduce them?"
+  },
+  {
+    "id": 98,
+    "question": "Explain classifier-free guidance in diffusion models."
+  },
+  {
+    "id": 99,
+    "question": "What are the computational bottlenecks in training diffusion models at scale?"
+  },
+  {
+    "id": 100,
+    "question": "What is knowledge distillation in diffusion models and how does it speed up inference?"
+  },
+  {
+    "id": 101,
+    "question": "Discuss the role of attention heads redundancy and pruning in Transformer compression."
+  },
+  {
+    "id": 102,
+    "question": "Explain the idea behind model quantization-aware training."
+  },
+  {
+    "id": 103,
+    "question": "What are the challenges in deploying Transformer models on mobile or edge devices?"
+  },
+  {
+    "id": 104,
+    "question": "How does Mixture of Experts (MoE) architecture scale model capacity efficiently?"
+  },
+  {
+    "id": 105,
+    "question": "Explain how gating networks control expert selection in MoE layers."
+  },
+  {
+    "id": 106,
+    "question": "What are the key differences between dense and sparse expert routing in MoE?"
+  },
+  {
+    "id": 107,
+    "question": "What is pipeline parallelism, and how does it differ from tensor parallelism?"
+  },
+  {
+    "id": 108,
+    "question": "How does gradient sharding help reduce memory footprint in distributed training?"
+  },
+  {
+    "id": 109,
+    "question": "Explain checkpoint averaging and its impact on generalization."
+  },
+  {
+    "id": 110,
+    "question": "Why is mixed-precision training sensitive to floating-point underflow and overflow?"
+  },
+  {
+    "id": 111,
+    "question": "How do parameter-efficient tuning methods like prefix tuning work?"
+  },
+  {
+    "id": 112,
+    "question": "What are the core design ideas behind retrieval-based large models like RETRO?"
+  },
+  {
+    "id": 113,
+    "question": "Explain the difference between causal and bidirectional attention mechanisms."
+  },
+  {
+    "id": 114,
+    "question": "How does token sparsity help accelerate inference in large language models?"
+  },
+  {
+    "id": 115,
+    "question": "What is gradient noise scale, and how does it determine the optimal batch size?"
+  },
+  {
+    "id": 116,
+    "question": "How can Fisher information be used to identify important parameters for pruning?"
+  },
+  {
+    "id": 117,
+    "question": "Discuss how deep ensembles provide better uncertainty estimation compared to dropout."
+  },
+  {
+    "id": 118,
+    "question": "Explain how model calibration affects decision confidence in safety-critical applications."
+  },
+  {
+    "id": 119,
+    "question": "What are the principles behind test-time adaptation for domain generalization?"
+  },
+  {
+    "id": 120,
+    "question": "Explain how meta-learning can be applied for few-shot deep learning problems."
+  }
+]

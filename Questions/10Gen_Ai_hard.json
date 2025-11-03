@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "Which loss function is primarily used in diffusion models to train the noise prediction network?",
+    "options": ["Cross-Entropy", "Mean Squared Error", "KL Divergence", "Binary Cross Entropy"],
+    "answer": "Mean Squared Error"
+  },
+  {
+    "id": 2,
+    "question": "In a GAN, what problem arises when the discriminator becomes too strong compared to the generator?",
+    "options": ["Mode Collapse", "Vanishing Gradient", "Exploding Gradient", "Overfitting"],
+    "answer": "Vanishing Gradient"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is a key innovation in Transformer architectures enabling parallelization?",
+    "options": ["Recurrence", "Self-Attention", "Dropout", "Residual Connections"],
+    "answer": "Self-Attention"
+  },
+  {
+    "id": 4,
+    "question": "What is the main purpose of the KL-divergence term in a Variational Autoencoder (VAE)?",
+    "options": ["To maximize reconstruction accuracy", "To regularize latent distribution", "To penalize overfitting", "To balance noise"],
+    "answer": "To regularize latent distribution"
+  },
+  {
+    "id": 5,
+    "question": "Which diffusion model approach improves image quality using classifier guidance?",
+    "options": ["Stable Diffusion", "Score-based Diffusion", "Latent Diffusion", "Classifier-guided Diffusion"],
+    "answer": "Classifier-guided Diffusion"
+  },
+  {
+    "id": 6,
+    "question": "What is the main difference between DDPM and DDIM models?",
+    "options": ["Number of layers", "Sampling steps and deterministic nature", "Noise schedule", "Loss function"],
+    "answer": "Sampling steps and deterministic nature"
+  },
+  {
+    "id": 7,
+    "question": "In text-to-image generation, CLIP primarily serves what role?",
+    "options": ["Image enhancer", "Text encoder and similarity measure", "Noise generator", "Style transfer module"],
+    "answer": "Text encoder and similarity measure"
+  },
+  {
+    "id": 8,
+    "question": "Why is latent space compression used in Stable Diffusion?",
+    "options": ["Reduce computation cost", "Increase diversity", "Improve text alignment", "Enhance contrast"],
+    "answer": "Reduce computation cost"
+  },
+  {
+    "id": 9,
+    "question": "Which algorithm is commonly used for RLHF fine-tuning in large language models?",
+    "options": ["PPO (Proximal Policy Optimization)", "DQN", "SARSA", "TD-Lambda"],
+    "answer": "PPO (Proximal Policy Optimization)"
+  },
+  {
+    "id": 10,
+    "question": "What does the 'unet' architecture do in diffusion-based generative models?",
+    "options": ["Encodes text", "Predicts noise", "Decodes images", "Estimates latent variance"],
+    "answer": "Predicts noise"
+  },
+  {
+    "id": 11,
+    "question": "What key mechanism enables transformers to handle long-range dependencies?",
+    "options": ["Convolutions", "Recurrent memory", "Multi-head attention", "Pooling"],
+    "answer": "Multi-head attention"
+  },
+  {
+    "id": 12,
+    "question": "What problem is addressed by classifier-free guidance in diffusion models?",
+    "options": ["Overfitting", "Dependency on external classifiers", "Noise imbalance", "Gradient explosion"],
+    "answer": "Dependency on external classifiers"
+  },
+  {
+    "id": 13,
+    "question": "In GAN training, which approach stabilizes learning by matching feature statistics?",
+    "options": ["Wasserstein GAN", "StyleGAN", "Feature Matching", "Spectral Normalization"],
+    "answer": "Feature Matching"
+  },
+  {
+    "id": 14,
+    "question": "What is the function of the 'prior' in a VAE?",
+    "options": ["To initialize weights", "To constrain latent variables", "To improve sampling diversity", "To regularize decoder output"],
+    "answer": "To constrain latent variables"
+  },
+  {
+    "id": 15,
+    "question": "In large-scale generative models, Mixture of Experts (MoE) improves efficiency by:",
+    "options": ["Training all experts simultaneously", "Activating only subsets per input", "Reducing number of layers", "Sharing embeddings across tasks"],
+    "answer": "Activating only subsets per input"
+  },
+  {
+    "id": 16,
+    "question": "Which optimization trick prevents instability in GAN discriminator training?",
+    "options": ["Gradient Clipping", "Weight Clipping", "Spectral Normalization", "Batch Normalization"],
+    "answer": "Spectral Normalization"
+  },
+  {
+    "id": 17,
+    "question": "What does 'alignment' mean in the context of generative AI safety?",
+    "options": ["Matching latent vectors", "Ensuring human-value consistency", "Reducing model loss", "Balancing training datasets"],
+    "answer": "Ensuring human-value consistency"
+  },
+  {
+    "id": 18,
+    "question": "Which method helps in reducing hallucinations in LLMs?",
+    "options": ["Reinforcement Learning", "Retrieval-Augmented Generation", "Contrastive Learning", "Curriculum Learning"],
+    "answer": "Retrieval-Augmented Generation"
+  },
+  {
+    "id": 19,
+    "question": "In diffusion models, the reverse process approximates which distribution?",
+    "options": ["Posterior", "Prior", "Marginal", "Likelihood"],
+    "answer": "Posterior"
+  },
+  {
+    "id": 20,
+    "question": "What is the key innovation in LoRA fine-tuning?",
+    "options": ["Training full model", "Updating low-rank matrices only", "Freezing encoder layers", "Using sparse attention"],
+    "answer": "Updating low-rank matrices only"
+  },
+  {
+    "id": 21,
+    "question": "Which component in LLMs handles next-token prediction?",
+    "options": ["Encoder", "Decoder", "Feedforward network", "Attention block"],
+    "answer": "Decoder"
+  },
+  {
+    "id": 22,
+    "question": "Why is temperature parameter used in generative decoding?",
+    "options": ["Control randomness", "Improve model accuracy", "Increase token length", "Reduce model size"],
+    "answer": "Control randomness"
+  },
+  {
+    "id": 23,
+    "question": "Which metric is most suitable to evaluate text diversity in generative models?",
+    "options": ["BLEU", "ROUGE", "Self-BLEU", "F1 score"],
+    "answer": "Self-BLEU"
+  },
+  {
+    "id": 24,
+    "question": "How does gradient penalty improve WGAN training?",
+    "options": ["Regularizes discriminator Lipschitz constraint", "Reduces overfitting", "Speeds convergence", "Balances loss ratio"],
+    "answer": "Regularizes discriminator Lipschitz constraint"
+  },
+  {
+    "id": 25,
+    "question": "What is the main drawback of autoregressive image models?",
+    "options": ["Slow sampling speed", "Poor accuracy", "Limited scalability", "High overfitting"],
+    "answer": "Slow sampling speed"
+  },
+  {
+    "id": 26,
+    "question": "In a diffusion model, what defines the variance schedule?",
+    "options": ["Noise intensity over time steps", "Learning rate", "Batch size", "Gradient decay"],
+    "answer": "Noise intensity over time steps"
+  },
+  {
+    "id": 27,
+    "question": "Which mechanism allows DALL-E to combine visual and textual representations?",
+    "options": ["Contrastive pretraining", "Cross-attention", "Encoder-decoder mapping", "Token fusion"],
+    "answer": "Cross-attention"
+  },
+  {
+    "id": 28,
+    "question": "What is the function of positional encoding in transformers?",
+    "options": ["Add spatial information", "Normalize token embeddings", "Reduce overfitting", "Control learning rate"],
+    "answer": "Add spatial information"
+  },
+  {
+    "id": 29,
+    "question": "Why do VAEs tend to produce blurry images compared to GANs?",
+    "options": ["KL term over-regularization", "Low reconstruction capacity", "Encoder instability", "Latent noise corruption"],
+    "answer": "KL term over-regularization"
+  },
+  {
+    "id": 30,
+    "question": "Which concept enables scaling of LLMs while maintaining training efficiency?",
+    "options": ["Model parallelism", "Activation checkpointing", "Sparse attention", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 31,
+    "question": "How do diffusion models differ from GANs conceptually?",
+    "options": ["They add and then remove noise progressively", "They use adversarial loss", "They rely on pixel reconstruction", "They require discriminators"],
+    "answer": "They add and then remove noise progressively"
+  },
+  {
+    "id": 32,
+    "question": "What is the purpose of the text encoder in Stable Diffusion?",
+    "options": ["To generate embeddings for image decoding", "To compress latent features", "To control image color", "To stabilize loss"],
+    "answer": "To generate embeddings for image decoding"
+  },
+  {
+    "id": 33,
+    "question": "Which training paradigm is used in DPO (Direct Preference Optimization)?",
+    "options": ["Supervised fine-tuning", "Reinforcement-free alignment", "Contrastive loss optimization", "Unsupervised learning"],
+    "answer": "Reinforcement-free alignment"
+  },
+  {
+    "id": 34,
+    "question": "What limits the context length of LLMs?",
+    "options": ["Quadratic attention complexity", "Token embeddings", "Decoder depth", "Batch normalization"],
+    "answer": "Quadratic attention complexity"
+  },
+  {
+    "id": 35,
+    "question": "Which architecture is commonly used in audio generation models?",
+    "options": ["WaveNet", "U-Net", "ResNet", "DenseNet"],
+    "answer": "WaveNet"
+  },
+  {
+    "id": 36,
+    "question": "What is the purpose of tokenization in generative text models?",
+    "options": ["Convert text to discrete numerical format", "Remove noise", "Store embeddings", "Compress sequence length"],
+    "answer": "Convert text to discrete numerical format"
+  },
+  {
+    "id": 37,
+    "question": "What is 'prompt leakage' in generative AI systems?",
+    "options": ["Model exposing system or training data", "Loss of prompt accuracy", "Prompt mismatch", "Syntax errors in input"],
+    "answer": "Model exposing system or training data"
+  },
+  {
+    "id": 38,
+    "question": "Why is gradient accumulation used in large model training?",
+    "options": ["To simulate larger batch sizes", "To stabilize updates", "To improve GPU memory usage", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 39,
+    "question": "What enables fine-grained image editing in diffusion models?",
+    "options": ["Inpainting masks", "Latent conditioning", "ControlNet", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 40,
+    "question": "What is the main risk of overtraining a generative model?",
+    "options": ["Memorization and privacy leakage", "Loss divergence", "Vanishing gradients", "Mode expansion"],
+    "answer": "Memorization and privacy leakage"
+  },
+  {
+    "id": 41,
+    "question": "What makes autoregressive transformers effective for text generation?",
+    "options": ["Causal masking", "Self-attention", "Large datasets", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 42,
+    "question": "What is the role of the latent autoencoder in Latent Diffusion Models?",
+    "options": ["Compress input image space", "Normalize latent vectors", "Generate attention maps", "Control decoder variance"],
+    "answer": "Compress input image space"
+  },
+  {
+    "id": 43,
+    "question": "How does dropout improve generalization in transformer models?",
+    "options": ["By preventing co-adaptation of neurons", "By reducing parameter count", "By increasing batch diversity", "By scaling activations"],
+    "answer": "By preventing co-adaptation of neurons"
+  },
+  {
+    "id": 44,
+    "question": "Why are pretrained embeddings used in generative pipelines?",
+    "options": ["Accelerate convergence", "Preserve semantic relationships", "Reduce training data need", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 45,
+    "question": "Which concept helps mitigate 'mode collapse' in GANs?",
+    "options": ["Mini-batch discrimination", "Spectral normalization", "Feature matching", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 46,
+    "question": "What is the significance of the reparameterization trick in VAEs?",
+    "options": ["Allows gradient backpropagation through stochastic nodes", "Improves decoder accuracy", "Reduces noise variance", "Simplifies loss computation"],
+    "answer": "Allows gradient backpropagation through stochastic nodes"
+  },
+  {
+    "id": 47,
+    "question": "What is the typical training objective of diffusion-based text-to-image models?",
+    "options": ["Noise prediction", "Reconstruction error minimization", "KL divergence", "Cross-entropy"],
+    "answer": "Noise prediction"
+  },
+  {
+    "id": 48,
+    "question": "What challenge does attention sparsity aim to solve?",
+    "options": ["Quadratic memory cost", "Overfitting", "Training instability", "Gradient vanishing"],
+    "answer": "Quadratic memory cost"
+  },
+  {
+    "id": 49,
+    "question": "What is the key idea behind Retrieval-Augmented Generation (RAG)?",
+    "options": ["Combining external search with generative models", "Fine-tuning on retrieved samples", "Using supervised embeddings", "Reducing temperature in decoding"],
+    "answer": "Combining external search with generative models"
+  },
+  {
+    "id": 50,
+    "question": "Which loss function does DALL-E use for text-image alignment?",
+    "options": ["Contrastive loss", "Cross-entropy loss", "Triplet loss", "Reconstruction loss"],
+    "answer": "Contrastive loss"
+  }
+]

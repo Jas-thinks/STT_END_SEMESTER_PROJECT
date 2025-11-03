@@ -1,0 +1,483 @@
+[
+  {
+    "id": 1,
+    "question": "A man buys an article for ₹800 and sells it for ₹960. Find his profit percentage.",
+    "options": ["A. 15%", "B. 18%", "C. 20%", "D. 25%"],
+    "answer": "C"
+  },
+  {
+    "id": 2,
+    "question": "If the average of five numbers is 27, what is their total sum?",
+    "options": ["A. 125", "B. 130", "C. 135", "D. 140"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "question": "A sum of ₹12,000 amounts to ₹13,200 in 2 years at simple interest. Find the rate of interest per annum.",
+    "options": ["A. 4%", "B. 5%", "C. 6%", "D. 8%"],
+    "answer": "C"
+  },
+  {
+    "id": 4,
+    "question": "The ratio of two numbers is 3:4 and their sum is 56. Find the numbers.",
+    "options": ["A. 21 and 35", "B. 24 and 32", "C. 25 and 31", "D. 28 and 32"],
+    "answer": "D"
+  },
+  {
+    "id": 5,
+    "question": "A train 180 meters long crosses a platform 120 meters long in 12 seconds. Find its speed.",
+    "options": ["A. 60 km/h", "B. 72 km/h", "C. 90 km/h", "D. 100 km/h"],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "question": "A can do a piece of work in 12 days and B can do it in 8 days. How long will they take to complete it together?",
+    "options": ["A. 4.5 days", "B. 5 days", "C. 6 days", "D. 7 days"],
+    "answer": "A"
+  },
+  {
+    "id": 7,
+    "question": "The average of 8 numbers is 25. If one number is removed, the average becomes 24. Find the number removed.",
+    "options": ["A. 30", "B. 31", "C. 32", "D. 33"],
+    "answer": "D"
+  },
+  {
+    "id": 8,
+    "question": "If the ratio of present ages of A and B is 5:7 and the difference in their ages is 6 years, find A’s age.",
+    "options": ["A. 24", "B. 25", "C. 26", "D. 27"],
+    "answer": "A"
+  },
+  {
+    "id": 9,
+    "question": "A shopkeeper marks an article 40% above cost price and allows a discount of 10%. Find his profit percentage.",
+    "options": ["A. 25%", "B. 26%", "C. 27%", "D. 28%"],
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "question": "A can complete a work in 10 days, B in 15 days. After A worked for 5 days, B joined him. In how many days will the work be completed?",
+    "options": ["A. 2", "B. 3", "C. 4", "D. 5"],
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "question": "If 12 men can do a work in 10 days, how many men can complete the same work in 8 days?",
+    "options": ["A. 13", "B. 14", "C. 15", "D. 16"],
+    "answer": "D"
+  },
+  {
+    "id": 12,
+    "question": "A sum doubles in 8 years under simple interest. In how many years will it triple?",
+    "options": ["A. 12 years", "B. 16 years", "C. 20 years", "D. 24 years"],
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "question": "A boat goes 24 km downstream in 3 hours and returns upstream in 4 hours. Find the speed of the boat in still water.",
+    "options": ["A. 6 km/h", "B. 7 km/h", "C. 8 km/h", "D. 9 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 14,
+    "question": "The difference between simple and compound interest on ₹5,000 for 2 years at 10% per annum is:",
+    "options": ["A. ₹45", "B. ₹50", "C. ₹55", "D. ₹60"],
+    "answer": "A"
+  },
+  {
+    "id": 15,
+    "question": "A sum of ₹8,000 is divided among A, B, and C in the ratio 2:3:5. Find C’s share.",
+    "options": ["A. ₹2,500", "B. ₹3,000", "C. ₹4,000", "D. ₹5,000"],
+    "answer": "C"
+  },
+  {
+    "id": 16,
+    "question": "If the cost price of 15 articles equals the selling price of 12, find the gain percent.",
+    "options": ["A. 20%", "B. 25%", "C. 30%", "D. 35%"],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "question": "A pipe can fill a tank in 12 hours. Another can empty it in 8 hours. If both are opened together, how long will it take to fill the tank?",
+    "options": ["A. 20 hours", "B. 22 hours", "C. 24 hours", "D. 25 hours"],
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "question": "A car covers 240 km at a speed of 60 km/h and returns at 40 km/h. Find the average speed.",
+    "options": ["A. 48 km/h", "B. 50 km/h", "C. 52 km/h", "D. 55 km/h"],
+    "answer": "A"
+  },
+  {
+    "id": 19,
+    "question": "The population of a town increases by 5% annually. If its population is 20,000 now, what will it be after 2 years?",
+    "options": ["A. 21,000", "B. 21,525", "C. 22,050", "D. 22,500"],
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "question": "If 40% of a number is 120, what is the number?",
+    "options": ["A. 250", "B. 275", "C. 300", "D. 320"],
+    "answer": "C"
+  },
+  {
+    "id": 21,
+    "question": "The average weight of 10 students increases by 2 kg when one new student joins. If the new student weighs 80 kg, find the previous average weight.",
+    "options": ["A. 60 kg", "B. 62 kg", "C. 64 kg", "D. 65 kg"],
+    "answer": "B"
+  },
+  {
+    "id": 22,
+    "question": "The sum of three consecutive odd numbers is 81. Find the numbers.",
+    "options": ["A. 25, 27, 29", "B. 27, 29, 31", "C. 29, 31, 33", "D. 31, 33, 35"],
+    "answer": "C"
+  },
+  {
+    "id": 23,
+    "question": "The compound interest on ₹5,000 at 10% per annum for 2 years is:",
+    "options": ["A. ₹1,000", "B. ₹1,050", "C. ₹1,100", "D. ₹1,200"],
+    "answer": "B"
+  },
+  {
+    "id": 24,
+    "question": "A fruit seller bought apples at ₹8 each and sold them at ₹10 each. Find the profit percentage.",
+    "options": ["A. 20%", "B. 22%", "C. 24%", "D. 25%"],
+    "answer": "D"
+  },
+  {
+    "id": 25,
+    "question": "Two numbers are in the ratio 7:9. If their sum is 128, find the numbers.",
+    "options": ["A. 56 and 72", "B. 54 and 74", "C. 58 and 70", "D. 60 and 68"],
+    "answer": "A"
+  },
+  {
+    "id": 26,
+    "question": "A train 150 m long passes a pole in 10 seconds. Find its speed in km/h.",
+    "options": ["A. 45", "B. 50", "C. 54", "D. 60"],
+    "answer": "C"
+  },
+  {
+    "id": 27,
+    "question": "If 25% of a number is 40, what is 12.5% of that number?",
+    "options": ["A. 15", "B. 18", "C. 20", "D. 22"],
+    "answer": "C"
+  },
+  {
+    "id": 28,
+    "question": "A and B together can complete a work in 12 days. B alone can do it in 30 days. In how many days can A alone do it?",
+    "options": ["A. 15", "B. 18", "C. 20", "D. 25"],
+    "answer": "B"
+  },
+  {
+    "id": 29,
+    "question": "The simple interest on ₹10,000 at 8% per annum for 4 years is:",
+    "options": ["A. ₹3,000", "B. ₹3,200", "C. ₹3,400", "D. ₹3,500"],
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "question": "A sum becomes ₹6,400 in 2 years at compound interest at 10% per annum. Find the principal.",
+    "options": ["A. ₹5,000", "B. ₹5,200", "C. ₹5,400", "D. ₹5,600"],
+    "answer": "A"
+  },
+  {
+    "id": 31,
+    "question": "The ratio of ages of A and B is 4:5. After 6 years, the ratio becomes 5:6. Find A’s age.",
+    "options": ["A. 20", "B. 22", "C. 24", "D. 26"],
+    "answer": "C"
+  },
+  {
+    "id": 32,
+    "question": "The area of a rectangle is 96 cm² and its length is 12 cm. Find its breadth.",
+    "options": ["A. 6", "B. 7", "C. 8", "D. 9"],
+    "answer": "C"
+  },
+  {
+    "id": 33,
+    "question": "A man walks at 5 km/h and runs at 10 km/h. He covers 30 km in 4 hours. Find how much he walked.",
+    "options": ["A. 10 km", "B. 15 km", "C. 20 km", "D. 25 km"],
+    "answer": "B"
+  },
+  {
+    "id": 34,
+    "question": "The sum of the digits of a two-digit number is 9. If the digits are reversed, the number increases by 27. Find the number.",
+    "options": ["A. 36", "B. 45", "C. 54", "D. 63"],
+    "answer": "B"
+  },
+  {
+    "id": 35,
+    "question": "A tap can fill a tank in 15 hours, and another can fill it in 20 hours. If both are opened together, how long will it take to fill the tank?",
+    "options": ["A. 8 hours", "B. 8.5 hours", "C. 9 hours", "D. 10 hours"],
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "The average of 10 numbers is 60. If one number is removed, the average becomes 58. Find the number removed.",
+    "options": ["A. 68", "B. 70", "C. 72", "D. 78"],
+    "answer": "C"
+  },
+  {
+    "id": 37,
+    "question": "A shopkeeper bought 100 pens for ₹400. He sold 75 of them at ₹5 each and the remaining at ₹4 each. Find his gain percent.",
+    "options": ["A. 12%", "B. 15%", "C. 18%", "D. 20%"],
+    "answer": "B"
+  },
+  {
+    "id": 38,
+    "question": "A number when divided by 5 leaves a remainder of 2. What will be the remainder when the square of that number is divided by 5?",
+    "options": ["A. 1", "B. 2", "C. 3", "D. 4"],
+    "answer": "A"
+  },
+  {
+    "id": 39,
+    "question": "If a train takes 3 seconds to cross a pole and 15 seconds to cross a platform 240 m long, find the length of the train.",
+    "options": ["A. 60 m", "B. 80 m", "C. 100 m", "D. 120 m"],
+    "answer": "C"
+  },
+  {
+    "id": 40,
+    "question": "The average of 4 consecutive even numbers is 27. Find the largest number.",
+    "options": ["A. 28", "B. 30", "C. 32", "D. 34"],
+    "answer": "B"
+  },
+  {
+    "id": 41,
+    "question": "A can complete a piece of work in 18 days, B in 12 days. They work together for 6 days. What fraction of work remains?",
+    "options": ["A. 1/2", "B. 1/3", "C. 1/4", "D. 1/5"],
+    "answer": "B"
+  },
+  {
+    "id": 42,
+    "question": "A sum becomes ₹8,820 in 2 years at 10% compound interest. Find the principal.",
+    "options": ["A. ₹7,000", "B. ₹7,200", "C. ₹7,500", "D. ₹8,000"],
+    "answer": "C"
+  },
+  {
+    "id": 43,
+    "question": "A person travels 2/5 of a distance by car and the rest by train. The speed of the car is 60 km/h and the train 90 km/h. Find the average speed for the whole journey.",
+    "options": ["A. 72 km/h", "B. 75 km/h", "C. 78 km/h", "D. 80 km/h"],
+    "answer": "A"
+  },
+  {
+    "id": 44,
+    "question": "The cost price of 20 pens is equal to the selling price of 16 pens. Find the gain percentage.",
+    "options": ["A. 20%", "B. 22%", "C. 24%", "D. 25%"],
+    "answer": "D"
+  },
+  {
+    "id": 45,
+    "question": "The difference between the squares of two consecutive even numbers is 68. Find the smaller number.",
+    "options": ["A. 16", "B. 18", "C. 20", "D. 22"],
+    "answer": "C"
+  },
+  {
+    "id": 46,
+    "question": "If a man walks 3 km at 4 km/h and runs 2 km at 8 km/h, find his average speed.",
+    "options": ["A. 4.8 km/h", "B. 5 km/h", "C. 5.2 km/h", "D. 5.4 km/h"],
+    "answer": "B"
+  },
+  {
+    "id": 47,
+    "question": "A mixture of milk and water contains 80% milk. How much water should be added to 20 liters of mixture to make it 60% milk?",
+    "options": ["A. 5 L", "B. 6 L", "C. 7 L", "D. 8 L"],
+    "answer": "D"
+  },
+  {
+    "id": 48,
+    "question": "A sum of ₹6,000 becomes ₹7,260 in 3 years at compound interest. Find the rate of interest per annum.",
+    "options": ["A. 6%", "B. 7%", "C. 8%", "D. 9%"],
+    "answer": "C"
+  },
+  {
+    "id": 49,
+    "question": "The perimeter of a rectangle is 60 m and its length is 20 m. Find its area.",
+    "options": ["A. 160 m²", "B. 180 m²", "C. 200 m²", "D. 220 m²"],
+    "answer": "C"
+  },
+  {
+    "id": 50,
+    "question": "The average of 5 consecutive multiples of 9 is 63. Find the largest multiple.",
+    "options": ["A. 63", "B. 72", "C. 81", "D. 90"],
+    "answer": "B"
+  },
+  {
+    "id": 51,
+    "question": "A shopkeeper marks an article at 40% above cost price and allows a discount of 10%. Find his gain percent.",
+    "options": ["A. 26%", "B. 27%", "C. 28%", "D. 30%"],
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "question": "The ratio of the present ages of A and B is 5:7. After 6 years, their ages will be in the ratio 7:9. Find A’s present age.",
+    "options": ["A. 24", "B. 25", "C. 26", "D. 28"],
+    "answer": "A"
+  },
+  {
+    "id": 53,
+    "question": "A sum of ₹5,000 amounts to ₹5,600 in 2 years at simple interest. Find the rate of interest per annum.",
+    "options": ["A. 5%", "B. 6%", "C. 8%", "D. 10%"],
+    "answer": "C"
+  },
+  {
+    "id": 54,
+    "question": "Two pipes can fill a tank in 12 hours and 15 hours respectively. A third pipe can empty it in 10 hours. If all are opened together, find the time taken to fill the tank.",
+    "options": ["A. 25 hours", "B. 30 hours", "C. 40 hours", "D. 50 hours"],
+    "answer": "C"
+  },
+  {
+    "id": 55,
+    "question": "The average weight of 40 students is 55 kg. If the teacher’s weight is included, the average increases by 0.5 kg. Find the teacher’s weight.",
+    "options": ["A. 72 kg", "B. 74 kg", "C. 75 kg", "D. 76 kg"],
+    "answer": "C"
+  },
+  {
+    "id": 56,
+    "question": "The difference between simple interest and compound interest on ₹5,000 for 2 years at 10% p.a. is:",
+    "options": ["A. ₹40", "B. ₹45", "C. ₹50", "D. ₹55"],
+    "answer": "C"
+  },
+  {
+    "id": 57,
+    "question": "The perimeter of a triangle is 48 cm. Its sides are in the ratio 3:4:5. Find its area.",
+    "options": ["A. 72 cm²", "B. 84 cm²", "C. 96 cm²", "D. 108 cm²"],
+    "answer": "C"
+  },
+  {
+    "id": 58,
+    "question": "A train crosses a platform 200 m long in 25 seconds and a signal post in 15 seconds. Find the speed of the train in km/h.",
+    "options": ["A. 48", "B. 60", "C. 72", "D. 80"],
+    "answer": "B"
+  },
+  {
+    "id": 59,
+    "question": "A certain sum of money triples itself in 10 years at simple interest. In how many years will it double?",
+    "options": ["A. 3.33 years", "B. 4 years", "C. 5 years", "D. 6 years"],
+    "answer": "C"
+  },
+  {
+    "id": 60,
+    "question": "The compound interest on ₹10,000 for 1 year at 10% compounded half-yearly is:",
+    "options": ["A. ₹1,000", "B. ₹1,010", "C. ₹1,025", "D. ₹1,050"],
+    "answer": "C"
+  },
+  {
+    "id": 61,
+    "question": "A can do a piece of work in 15 days and B in 20 days. With the help of C, they complete it in 8 days. How long will C take to do the work alone?",
+    "options": ["A. 24 days", "B. 30 days", "C. 40 days", "D. 60 days"],
+    "answer": "C"
+  },
+  {
+    "id": 62,
+    "question": "If 12 men can complete a work in 15 days, how many men are required to complete it in 10 days?",
+    "options": ["A. 16", "B. 18", "C. 20", "D. 22"],
+    "answer": "C"
+  },
+  {
+    "id": 63,
+    "question": "A man buys an article for ₹900 and sells it at a loss of 10%. Find the selling price.",
+    "options": ["A. ₹810", "B. ₹820", "C. ₹830", "D. ₹840"],
+    "answer": "A"
+  },
+  {
+    "id": 64,
+    "question": "The sum of two numbers is 50 and their difference is 10. Find the smaller number.",
+    "options": ["A. 15", "B. 18", "C. 20", "D. 25"],
+    "answer": "C"
+  },
+  {
+    "id": 65,
+    "question": "A train running at 72 km/h crosses another train running at 54 km/h in opposite direction in 12 seconds. If their total length is 420 m, find the speed of the first train.",
+    "options": ["A. 60 km/h", "B. 72 km/h", "C. 80 km/h", "D. 90 km/h"],
+    "answer": "B"
+  },
+  {
+    "id": 66,
+    "question": "A certain number is divided by 7; it leaves a remainder of 3. What will be the remainder when the square of that number is divided by 7?",
+    "options": ["A. 1", "B. 2", "C. 3", "D. 4"],
+    "answer": "D"
+  },
+  {
+    "id": 67,
+    "question": "The difference between 60% of a number and 40% of the same number is 36. Find the number.",
+    "options": ["A. 80", "B. 90", "C. 100", "D. 120"],
+    "answer": "C"
+  },
+  {
+    "id": 68,
+    "question": "A sum becomes ₹2,420 in 2 years and ₹2,662 in 3 years at compound interest. Find the rate of interest.",
+    "options": ["A. 8%", "B. 9%", "C. 10%", "D. 11%"],
+    "answer": "B"
+  },
+  {
+    "id": 69,
+    "question": "The average of 8 numbers is 20. If each number is increased by 4, what will be the new average?",
+    "options": ["A. 22", "B. 23", "C. 24", "D. 25"],
+    "answer": "C"
+  },
+  {
+    "id": 70,
+    "question": "If the selling price of 12 articles is equal to the cost price of 15 articles, find the gain percent.",
+    "options": ["A. 20%", "B. 25%", "C. 30%", "D. 35%"],
+    "answer": "B"
+  },
+  {
+    "id": 71,
+    "question": "The ratio of the speeds of two trains is 4:5. If the first train covers 400 km in 5 hours, find the speed of the second train.",
+    "options": ["A. 80 km/h", "B. 90 km/h", "C. 100 km/h", "D. 110 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 72,
+    "question": "A sum of ₹12,000 amounts to ₹15,000 in 2 years at compound interest. Find the rate per annum.",
+    "options": ["A. 10%", "B. 12%", "C. 15%", "D. 20%"],
+    "answer": "C"
+  },
+  {
+    "id": 73,
+    "question": "A boat can travel 30 km downstream in 2 hours and upstream in 3 hours. Find the speed of the stream.",
+    "options": ["A. 2 km/h", "B. 3 km/h", "C. 4 km/h", "D. 5 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 74,
+    "question": "The average age of a family of 5 members is 20 years. If the age of the youngest member is 10 years, find the average age of the remaining members.",
+    "options": ["A. 22.5", "B. 23", "C. 24", "D. 25"],
+    "answer": "D"
+  },
+  {
+    "id": 75,
+    "question": "A number consists of two digits whose sum is 8. When the digits are reversed, the number increases by 18. Find the number.",
+    "options": ["A. 35", "B. 42", "C. 53", "D. 62"],
+    "answer": "B"
+  },
+  {
+    "id": 76,
+    "question": "A and B can complete a job in 10 and 12 days respectively. They work together for 4 days. What fraction of the work remains?",
+    "options": ["A. 1/2", "B. 1/3", "C. 2/5", "D. 3/5"],
+    "answer": "D"
+  },
+  {
+    "id": 77,
+    "question": "A sum becomes ₹8,000 in 2 years and ₹9,600 in 4 years at compound interest. Find the rate of interest.",
+    "options": ["A. 8%", "B. 9%", "C. 10%", "D. 12%"],
+    "answer": "C"
+  },
+  {
+    "id": 78,
+    "question": "A shopkeeper buys an article for ₹800 and sells it for ₹920. Find the gain percent.",
+    "options": ["A. 10%", "B. 12%", "C. 15%", "D. 18%"],
+    "answer": "A"
+  },
+  {
+    "id": 79,
+    "question": "A car covers a distance of 180 km in 4 hours. If it travels the first half at 40 km/h, find the speed for the second half.",
+    "options": ["A. 50 km/h", "B. 55 km/h", "C. 60 km/h", "D. 65 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 80,
+    "question": "A sum becomes ₹2,000 in 2 years and ₹2,420 in 4 years at compound interest. Find the rate of interest per annum.",
+    "options": ["A. 8%", "B. 9%", "C. 10%", "D. 11%"],
+    "answer": "B"
+  }
+]
+

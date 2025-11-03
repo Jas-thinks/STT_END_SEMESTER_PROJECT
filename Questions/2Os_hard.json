@@ -1,0 +1,764 @@
+[
+  {
+    "question": "In a demand-paging system, which of the following is most likely to cause a thrashing condition?",
+    "options": ["A) Low degree of multiprogramming", "B) High degree of multiprogramming", "C) Long CPU bursts", "D) Large page size"],
+    "answer": "B"
+  },
+  {
+    "question": "The working set model helps in reducing which of the following?",
+    "options": ["A) Context switch time", "B) Page fault rate", "C) CPU utilization", "D) Cache misses"],
+    "answer": "B"
+  },
+  {
+    "question": "Which page replacement algorithm suffers from Belady’s anomaly?",
+    "options": ["A) LRU", "B) Optimal", "C) FIFO", "D) Clock"],
+    "answer": "C"
+  },
+  {
+    "question": "In Linux, the 'copy-on-write' mechanism is primarily used in which context?",
+    "options": ["A) Fork system call", "B) Paging", "C) Swapping", "D) I/O buffering"],
+    "answer": "A"
+  },
+  {
+    "question": "Which of the following is not a valid state in a process life cycle?",
+    "options": ["A) New", "B) Running", "C) Exit", "D) Halted"],
+    "answer": "D"
+  },
+  {
+    "question": "Which of the following ensures mutual exclusion using busy waiting?",
+    "options": ["A) Monitors", "B) Semaphores", "C) Spinlocks", "D) Message Passing"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of these statements is true about the Banker’s algorithm?",
+    "options": ["A) It prevents deadlock by resource ordering", "B) It detects deadlock", "C) It avoids deadlock by checking safe states", "D) It ignores resource allocation states"],
+    "answer": "C"
+  },
+  {
+    "question": "What does the 'dirty bit' in a page table entry indicate?",
+    "options": ["A) Page not used recently", "B) Page modified after being loaded", "C) Page swapped out", "D) Page invalid"],
+    "answer": "B"
+  },
+  {
+    "question": "Which is the main disadvantage of segmentation compared to paging?",
+    "options": ["A) External fragmentation", "B) Internal fragmentation", "C) Slower access", "D) Poor memory protection"],
+    "answer": "A"
+  },
+  {
+    "question": "In multilevel feedback queue scheduling, aging is used to:",
+    "options": ["A) Increase turnaround time", "B) Prevent starvation", "C) Decrease throughput", "D) Increase waiting time"],
+    "answer": "B"
+  },
+  {
+    "question": "Which system call is used to replace the current process image with a new one?",
+    "options": ["A) fork()", "B) exec()", "C) wait()", "D) kill()"],
+    "answer": "B"
+  },
+  {
+    "question": "In distributed systems, which mechanism ensures that all processes agree on the same global order of events?",
+    "options": ["A) Token passing", "B) Mutual exclusion", "C) Total ordering", "D) Two-phase commit"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of the following is NOT true about virtual memory?",
+    "options": ["A) Increases logical address space", "B) Requires swapping", "C) Eliminates all page faults", "D) Uses demand paging"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of the following does NOT cause a context switch?",
+    "options": ["A) I/O request", "B) Interrupt", "C) Time slice expiration", "D) Process in running state calls exec()"],
+    "answer": "D"
+  },
+  {
+    "question": "Which disk scheduling algorithm can cause starvation?",
+    "options": ["A) FCFS", "B) SSTF", "C) SCAN", "D) C-SCAN"],
+    "answer": "B"
+  },
+  {
+    "question": "In a system with multiple CPUs, which approach ensures scalability for synchronization?",
+    "options": ["A) Global lock", "B) Fine-grained locking", "C) Single queue scheduling", "D) Sequential execution"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following is not handled by the kernel?",
+    "options": ["A) Memory management", "B) File I/O", "C) GUI rendering", "D) Process scheduling"],
+    "answer": "C"
+  },
+  {
+    "question": "Which algorithm is used to detect deadlocks in a system with multiple instances of resources?",
+    "options": ["A) Resource allocation graph", "B) Wait-for graph", "C) Banker’s algorithm", "D) Priority inheritance"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of the following memory allocation techniques suffers least from external fragmentation?",
+    "options": ["A) Paging", "B) Segmentation", "C) Contiguous allocation", "D) Variable partitions"],
+    "answer": "A"
+  },
+  {
+    "question": "Which of the following best describes a microkernel?",
+    "options": ["A) A kernel handling only essential services", "B) A kernel that includes device drivers", "C) A kernel that runs in user mode", "D) A large, monolithic kernel"],
+    "answer": "A"
+  },
+  {
+    "question": "In a multiprocessor system, cache coherence is maintained by:",
+    "options": ["A) DMA", "B) MESI protocol", "C) Paging", "D) Context switching"],
+    "answer": "B"
+  },
+  {
+    "question": "Which algorithm guarantees the minimum average waiting time for processes?",
+    "options": ["A) Round Robin", "B) FCFS", "C) SJF", "D) Priority scheduling"],
+    "answer": "C"
+  },
+  {
+    "question": "A process that is indefinitely waiting because of resource unavailability is said to be in:",
+    "options": ["A) Starvation", "B) Deadlock", "C) Safe state", "D) Blocked state"],
+    "answer": "A"
+  },
+  {
+    "question": "In RAID 5, data redundancy is achieved through:",
+    "options": ["A) Disk mirroring", "B) Parity bits distributed across disks", "C) Striping without redundancy", "D) Log-structured writes"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of these conditions must hold for a deadlock to occur?",
+    "options": ["A) Preemption", "B) No preemption", "C) Limited resources only", "D) Interrupts disabled"],
+    "answer": "B"
+  },
+  {
+    "question": "In UNIX, the 'inode' structure contains:",
+    "options": ["A) File name and contents", "B) File metadata but not name", "C) Only directory entries", "D) File permissions and data"],
+    "answer": "B"
+  },
+  {
+    "question": "Which mechanism converts virtual addresses to physical addresses?",
+    "options": ["A) TLB", "B) Scheduler", "C) File descriptor", "D) Semaphore"],
+    "answer": "A"
+  },
+  {
+    "question": "Which of these statements about thrashing is true?",
+    "options": ["A) It increases CPU utilization", "B) It happens due to high page fault rate", "C) It occurs when working set is large enough", "D) It improves response time"],
+    "answer": "B"
+  },
+  {
+    "question": "In a distributed file system, what ensures that multiple users see the same data view?",
+    "options": ["A) Caching", "B) Consistency semantics", "C) Replication", "D) Fragmentation"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following best defines preemptive scheduling?",
+    "options": ["A) A process voluntarily releases CPU", "B) CPU forcibly taken from a process", "C) No context switching occurs", "D) All processes share CPU equally"],
+    "answer": "B"
+  },
+  {
+    "question": "In Linux, which command displays the current process hierarchy?",
+    "options": ["A) ps -ef", "B) top", "C) pstree", "D) jobs"],
+    "answer": "C"
+  },
+  {
+    "question": "In a multithreaded process, which resource is shared among threads?",
+    "options": ["A) Stack", "B) Program counter", "C) Heap", "D) Registers"],
+    "answer": "C"
+  },
+  {
+    "question": "What happens when a process calls wait() after a fork()?",
+    "options": ["A) Parent process waits for child", "B) Child process waits for parent", "C) Both terminate immediately", "D) Deadlock occurs"],
+    "answer": "A"
+  },
+  {
+    "question": "Which of these is true about message passing synchronization?",
+    "options": ["A) Sender and receiver must always be synchronous", "B) It can be synchronous or asynchronous", "C) It requires shared memory", "D) It cannot be used in distributed systems"],
+    "answer": "B"
+  },
+  {
+    "question": "In copy-on-write, when is the actual copy of a page made?",
+    "options": ["A) During fork()", "B) When the child process modifies it", "C) When parent terminates", "D) Immediately after exec()"],
+    "answer": "B"
+  },
+  {
+    "question": "The translation lookaside buffer (TLB) is used to:",
+    "options": ["A) Store disk I/O blocks", "B) Speed up address translation", "C) Replace main memory", "D) Handle cache misses"],
+    "answer": "B"
+  },
+  {
+    "question": "Which is a non-preemptive scheduling algorithm?",
+    "options": ["A) SJF", "B) Round Robin", "C) Priority (with preemption)", "D) Multilevel feedback"],
+    "answer": "A"
+  },
+  {
+    "question": "Which memory allocation algorithm can result in the worst fragmentation?",
+    "options": ["A) Best fit", "B) Worst fit", "C) First fit", "D) Next fit"],
+    "answer": "A"
+  },
+  {
+    "question": "The two-phase commit protocol is used to ensure:",
+    "options": ["A) Synchronization", "B) Atomicity in distributed transactions", "C) Deadlock avoidance", "D) Fair scheduling"],
+    "answer": "B"
+  },
+  {
+    "question": "Which component of the OS handles interrupts?",
+    "options": ["A) Device driver", "B) Scheduler", "C) Interrupt handler", "D) User program"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of the following best explains internal fragmentation?",
+    "options": ["A) Free memory scattered", "B) Memory allocated but unused inside a block", "C) Process too large for partition", "D) OS unable to allocate memory"],
+    "answer": "B"
+  },
+  {
+    "question": "A file allocation method where each file block points to the next block is:",
+    "options": ["A) Contiguous", "B) Linked", "C) Indexed", "D) Hashed"],
+    "answer": "B"
+  },
+  {
+    "question": "Which algorithm uses aging to approximate LRU behavior?",
+    "options": ["A) FIFO", "B) NRU", "C) Clock", "D) Optimal"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the main function of the dispatcher in OS scheduling?",
+    "options": ["A) Manage I/O", "B) Allocate CPU to processes", "C) Handle page faults", "D) Maintain file descriptors"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following ensures fairness among processes?",
+    "options": ["A) Priority scheduling", "B) Round Robin", "C) SJF", "D) FCFS"],
+    "answer": "B"
+  },
+  {
+    "question": "Which disk scheduling algorithm provides the best throughput?",
+    "options": ["A) FCFS", "B) SSTF", "C) SCAN", "D) C-SCAN"],
+    "answer": "D"
+  },
+  {
+    "question": "Which concept allows execution of multiple processes on a single processor?",
+    "options": ["A) Concurrency", "B) Parallelism", "C) Pipelining", "D) Multithreading"],
+    "answer": "A"
+  },
+  {
+    "question": "The OS module that loads executable files into memory is called:",
+    "options": ["A) Loader", "B) Linker", "C) Compiler", "D) Assembler"],
+    "answer": "A"
+  },
+  {
+    "question": "Which page replacement algorithm provides the lowest page fault rate for a given reference string?",
+    "options": ["A) FIFO", "B) LRU", "C) Optimal", "D) Clock"],
+    "answer": "C"
+  },
+  {
+    "question": "In a real-time OS, which of these is most important?",
+    "options": ["A) Throughput", "B) Predictability", "C) Fairness", "D) CPU utilization"],
+    "answer": "B"
+  },
+  {
+    "question": "In a system implementing demand paging, what happens if the page replacement policy is not optimal?",
+    "options": ["A) Increased page faults", "B) Decreased page size", "C) Faster TLB lookups", "D) No change in performance"],
+    "answer": "A"
+  },
+  {
+    "question": "The translation lookaside buffer (TLB) is usually implemented using:",
+    "options": ["A) Content-addressable memory", "B) Static RAM", "C) Dynamic RAM", "D) Cache memory"],
+    "answer": "A"
+  },
+  {
+    "question": "Which scheduling algorithm can lead to process starvation if not handled properly?",
+    "options": ["A) SJF", "B) Round Robin", "C) FCFS", "D) Multilevel Queue"],
+    "answer": "A"
+  },
+  {
+    "question": "Which of these is the main disadvantage of non-preemptive scheduling?",
+    "options": ["A) High context-switch rate", "B) Poor response time for short processes", "C) Starvation of long processes", "D) CPU underutilization"],
+    "answer": "B"
+  },
+  {
+    "question": "Which algorithm ensures minimal page faults for any possible reference string?",
+    "options": ["A) FIFO", "B) LRU", "C) Optimal", "D) Clock"],
+    "answer": "C"
+  },
+  {
+    "question": "In a distributed OS, the Lamport timestamp ensures:",
+    "options": ["A) Global physical clock synchronization", "B) Total ordering of events", "C) Mutual exclusion", "D) Process scheduling"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following does not contribute to external fragmentation?",
+    "options": ["A) Paging", "B) Segmentation", "C) Variable partition allocation", "D) Contiguous memory allocation"],
+    "answer": "A"
+  },
+  {
+    "question": "In the dining philosophers problem, deadlock occurs when:",
+    "options": ["A) All philosophers think simultaneously", "B) All pick up left fork simultaneously", "C) At least one philosopher never eats", "D) Forks are unevenly distributed"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following page replacement algorithms uses a reference bit?",
+    "options": ["A) LRU", "B) Clock", "C) FIFO", "D) Optimal"],
+    "answer": "B"
+  },
+  {
+    "question": "In UNIX, the 'exec()' family of system calls:",
+    "options": ["A) Creates a new process", "B) Replaces current process image", "C) Terminates a process", "D) Waits for child process"],
+    "answer": "B"
+  },
+  {
+    "question": "The 'aging' technique in OS scheduling helps to:",
+    "options": ["A) Decrease I/O wait", "B) Prevent starvation", "C) Speed up long processes", "D) Improve CPU utilization"],
+    "answer": "B"
+  },
+  {
+    "question": "What does the 'inode' in UNIX represent?",
+    "options": ["A) File content", "B) File metadata excluding name", "C) Directory structure", "D) Process table"],
+    "answer": "B"
+  },
+  {
+    "question": "Which synchronization mechanism is most suitable for avoiding busy waiting?",
+    "options": ["A) Spinlock", "B) Semaphore with blocking", "C) Test-and-set", "D) Peterson’s algorithm"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following best describes a hybrid kernel?",
+    "options": ["A) Combines monolithic and microkernel design", "B) Includes only user-level services", "C) Lacks process management", "D) Provides no device drivers"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the key idea behind copy-on-write?",
+    "options": ["A) Copy data before read", "B) Share pages until modification", "C) Duplicate memory at process start", "D) Write only once per process"],
+    "answer": "B"
+  },
+  {
+    "question": "In multiprocessor scheduling, load balancing ensures:",
+    "options": ["A) Equal execution time per process", "B) CPU cores have roughly equal workloads", "C) Higher throughput for short jobs", "D) Priority inversion prevention"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of these is not part of the critical section problem conditions?",
+    "options": ["A) Progress", "B) Bounded waiting", "C) Deadlock", "D) Mutual exclusion"],
+    "answer": "C"
+  },
+  {
+    "question": "In file allocation, the FAT (File Allocation Table) is used primarily for:",
+    "options": ["A) Contiguous allocation", "B) Linked allocation", "C) Indexed allocation", "D) Hash-based allocation"],
+    "answer": "B"
+  },
+  {
+    "question": "A deadlock avoidance algorithm dynamically examines:",
+    "options": ["A) System resources", "B) Resource allocation graph", "C) Safe state before allocation", "D) Deadlock detection table"],
+    "answer": "C"
+  },
+  {
+    "question": "Which is NOT a function of the I/O control system?",
+    "options": ["A) Device driver interface", "B) Buffering", "C) Process scheduling", "D) Spooling"],
+    "answer": "C"
+  },
+  {
+    "question": "The two-level paging scheme helps reduce:",
+    "options": ["A) Page size", "B) Page table size per process", "C) TLB misses", "D) Cache conflicts"],
+    "answer": "B"
+  },
+  {
+    "question": "Which consistency model ensures all processes see updates in the same order?",
+    "options": ["A) Sequential consistency", "B) Causal consistency", "C) Eventual consistency", "D) Weak consistency"],
+    "answer": "A"
+  },
+  {
+    "question": "In real-time systems, a 'hard deadline' means:",
+    "options": ["A) Can miss occasionally", "B) Must always be met", "C) Can delay for higher priority", "D) Depends on throughput"],
+    "answer": "B"
+  },
+  {
+    "question": "Which mechanism is used to implement preemptive scheduling?",
+    "options": ["A) Interrupts", "B) Context switch", "C) Semaphores", "D) Signals"],
+    "answer": "A"
+  },
+  {
+    "question": "In segmentation, the logical address is divided into:",
+    "options": ["A) Page number and offset", "B) Segment number and offset", "C) Block and byte", "D) Process ID and page number"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of the following is NOT a type of fragmentation?",
+    "options": ["A) Internal", "B) External", "C) Temporal", "D) None"],
+    "answer": "C"
+  },
+  {
+    "question": "In Linux, the scheduler uses which approach for CPU scheduling?",
+    "options": ["A) Multi-level feedback queue", "B) Fixed priority queue", "C) Simple round robin", "D) Shortest job first only"],
+    "answer": "A"
+  },
+  {
+    "question": "Which file allocation method provides the fastest direct access?",
+    "options": ["A) Contiguous", "B) Linked", "C) Indexed", "D) FAT"],
+    "answer": "A"
+  },
+  {
+    "question": "In distributed systems, mutual exclusion can be achieved using:",
+    "options": ["A) Token-based algorithms", "B) Spinlocks", "C) Semaphores only", "D) Shared memory"],
+    "answer": "A"
+  },
+  {
+    "question": "Which of these is not a valid RAID level?",
+    "options": ["A) RAID 0", "B) RAID 5", "C) RAID 10", "D) RAID 7"],
+    "answer": "D"
+  },
+  {
+    "question": "The 'thrashing' condition can be reduced by:",
+    "options": ["A) Increasing degree of multiprogramming", "B) Reducing page size", "C) Reducing degree of multiprogramming", "D) Using FIFO replacement"],
+    "answer": "C"
+  },
+  {
+    "question": "Which protocol ensures exactly-once message delivery in distributed systems?",
+    "options": ["A) Two-phase commit", "B) At-most-once", "C) At-least-once", "D) Idempotent RPC"],
+    "answer": "A"
+  },
+  {
+    "question": "Which layer of the OSI model corresponds most closely to the transport layer of an OS kernel?",
+    "options": ["A) Session", "B) Data link", "C) Transport", "D) Network"],
+    "answer": "C"
+  },
+  {
+    "question": "Which algorithm can suffer from convoy effect?",
+    "options": ["A) FCFS", "B) SJF", "C) Round Robin", "D) Priority"],
+    "answer": "A"
+  },
+  {
+    "question": "In demand paging, the time taken to service a page fault depends on:",
+    "options": ["A) Memory speed", "B) Disk access time", "C) CPU clock", "D) Cache latency"],
+    "answer": "B"
+  },
+  {
+    "question": "Which structure in OS contains information about all open files?",
+    "options": ["A) PCB", "B) Open file table", "C) Inode table", "D) File descriptor"],
+    "answer": "B"
+  },
+  {
+    "question": "Which disk scheduling algorithm is most fair in practice?",
+    "options": ["A) FCFS", "B) SSTF", "C) SCAN", "D) C-SCAN"],
+    "answer": "A"
+  },
+  {
+    "question": "In process synchronization, a 'race condition' occurs when:",
+    "options": ["A) Two processes share a variable without synchronization", "B) CPU runs too slowly", "C) Multiple threads use semaphores", "D) Deadlock occurs"],
+    "answer": "A"
+  },
+  {
+    "question": "Which of these systems typically uses time-triggered scheduling?",
+    "options": ["A) Embedded real-time systems", "B) General-purpose OS", "C) Batch processing systems", "D) Multiuser time-sharing"],
+    "answer": "A"
+  },
+  {
+    "question": "The 'buddy system' in memory management is used to:",
+    "options": ["A) Manage fragmentation", "B) Manage secondary storage", "C) Control CPU scheduling", "D) Perform swapping"],
+    "answer": "A"
+  },
+  {
+    "question": "Which page replacement algorithm requires keeping a counter of accesses?",
+    "options": ["A) LRU", "B) FIFO", "C) Optimal", "D) NRU"],
+    "answer": "A"
+  },
+  {
+    "question": "What does 'pre-paging' aim to reduce?",
+    "options": ["A) Page faults", "B) Context switches", "C) CPU utilization", "D) Deadlocks"],
+    "answer": "A"
+  },
+  {
+    "question": "In microkernels, user-level servers are responsible for:",
+    "options": ["A) Device management", "B) Scheduling", "C) Interrupt handling", "D) Page replacement"],
+    "answer": "A"
+  },
+  {
+    "question": "Which of the following best defines 'page buffering'? ",
+    "options": ["A) Keeping modified pages in memory temporarily", "B) Swapping inactive pages immediately", "C) Storing all pages in disk buffer", "D) Copying pages between CPUs"],
+    "answer": "A"
+  },
+  {
+    "question": "In UNIX, which command is used to monitor process CPU usage dynamically?",
+    "options": ["A) ps", "B) top", "C) kill", "D) nice"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of these provides the foundation for virtual memory implementation?",
+    "options": ["A) Paging", "B) Swapping", "C) Caching", "D) File mapping"],
+    "answer": "A"
+  },
+  {
+    "question": "Which structure keeps track of process states and scheduling information?",
+    "options": ["A) PCB", "B) Stack", "C) Inode", "D) Frame table"],
+    "answer": "A"
+  },
+  {
+    "question": "The major disadvantage of spinlocks is:",
+    "options": ["A) High CPU waste due to busy waiting", "B) Slow context switching", "C) Deadlock detection failure", "D) Poor scalability"],
+    "answer": "A"
+  },
+  {
+    "question": "The 'orphan process' in UNIX refers to:",
+    "options": ["A) Process without a parent", "B) Process without a child", "C) Zombie process", "D) Kernel thread"],
+    "answer": "A"
+  },
+  {
+    "question": "Which technique allows a process to execute even when it is partially in memory?",
+    "options": ["A) Demand paging", "B) Swapping", "C) Overlaying", "D) Segmentation"],
+    "answer": "A"
+  },
+  {
+    "question": "In message passing systems, the 'mailbox' mechanism is used for:",
+    "options": ["A) Direct communication", "B) Indirect communication", "C) Shared memory access", "D) Deadlock detection"],
+    "answer": "B"
+  },
+  
+  {
+    "question": "In a demand-paged memory system, the effective access time (EAT) depends on which parameters?",
+    "options": ["Page fault rate and page fault service time", "Hit ratio and CPU burst time", "TLB access time and CPU scheduling", "Context switch time and I/O time"],
+    "answer": "Page fault rate and page fault service time"
+  },
+  {
+    "question": "Which of the following algorithms can suffer from Belady’s anomaly?",
+    "options": ["FIFO", "LRU", "Optimal", "Clock"],
+    "answer": "FIFO"
+  },
+  {
+    "question": "Which scheduling algorithm minimizes the average waiting time for a set of processes?",
+    "options": ["Shortest Job First", "Round Robin", "FCFS", "Priority Scheduling"],
+    "answer": "Shortest Job First"
+  },
+  {
+    "question": "The working set model is used to prevent which issue?",
+    "options": ["Thrashing", "Deadlock", "Starvation", "Fragmentation"],
+    "answer": "Thrashing"
+  },
+  {
+    "question": "In the context of synchronization, what is the ‘entry section’?",
+    "options": ["Code that requests permission to enter critical section", "Code executed after critical section", "Code executed during deadlock", "Code that checks for starvation"],
+    "answer": "Code that requests permission to enter critical section"
+  },
+  {
+    "question": "The Banker's algorithm for deadlock avoidance requires knowledge of:",
+    "options": ["Maximum resource needs of each process", "Current CPU utilization", "System throughput", "Average waiting time"],
+    "answer": "Maximum resource needs of each process"
+  },
+  {
+    "question": "Which statement about Copy-on-Write (COW) is true?",
+    "options": ["It allows sharing pages until a write occurs", "It copies all pages during process creation", "It duplicates kernel pages eagerly", "It prevents shared memory access"],
+    "answer": "It allows sharing pages until a write occurs"
+  },
+  {
+    "question": "Which data structure is most suitable for implementing a disk scheduling algorithm like LOOK?",
+    "options": ["Doubly linked list", "Circular queue", "Priority queue", "Hash table"],
+    "answer": "Circular queue"
+  },
+  {
+    "question": "The principle of locality of reference is primarily used in:",
+    "options": ["Paging and caching", "Deadlock avoidance", "Process scheduling", "File access control"],
+    "answer": "Paging and caching"
+  },
+  {
+    "question": "In UNIX, which structure maintains information about all open files system-wide?",
+    "options": ["System File Table", "User File Descriptor Table", "Inode Table", "Directory Table"],
+    "answer": "System File Table"
+  },
+  {
+    "question": "What is the primary advantage of a microkernel architecture?",
+    "options": ["Improved modularity and fault isolation", "Faster context switches", "Simpler file management", "Reduced I/O overhead"],
+    "answer": "Improved modularity and fault isolation"
+  },
+  {
+    "question": "Which of the following is NOT a valid page replacement policy?",
+    "options": ["Optimal", "FIFO", "LRU", "Random Scheduling"],
+    "answer": "Random Scheduling"
+  },
+  {
+    "question": "A system is in a safe state if:",
+    "options": ["There exists a safe sequence of processes", "Deadlock has occurred", "All resources are allocated", "All processes are blocked"],
+    "answer": "There exists a safe sequence of processes"
+  },
+  {
+    "question": "What does the term ‘thrashing’ mean in virtual memory systems?",
+    "options": ["Excessive paging causing performance degradation", "Memory fragmentation", "Cache invalidation", "Page locking for security"],
+    "answer": "Excessive paging causing performance degradation"
+  },
+  {
+    "question": "Which of the following is a disadvantage of using segmentation?",
+    "options": ["External fragmentation", "Internal fragmentation", "Complex address translation", "Fixed partition size"],
+    "answer": "External fragmentation"
+  },
+  {
+    "question": "The ‘aging’ technique is used in OS to:",
+    "options": ["Prevent starvation", "Prevent deadlock", "Avoid page faults", "Reduce context switching"],
+    "answer": "Prevent starvation"
+  },
+  {
+    "question": "In a multiprocessor system, what is cache coherence?",
+    "options": ["Consistency of data stored in multiple caches", "Synchronization of CPU clocks", "Parallel execution order", "Shared memory protection"],
+    "answer": "Consistency of data stored in multiple caches"
+  },
+  {
+    "question": "Which of the following synchronization primitives is non-blocking?",
+    "options": ["Spinlock", "Semaphore", "Monitor", "Mutex"],
+    "answer": "Spinlock"
+  },
+  {
+    "question": "What is the main purpose of the Translation Lookaside Buffer (TLB)?",
+    "options": ["Speed up address translation", "Store disk block mappings", "Cache kernel routines", "Store file descriptors"],
+    "answer": "Speed up address translation"
+  },
+  {
+    "question": "A distributed system that tolerates partial failures is called:",
+    "options": ["Fault-tolerant system", "Synchronous system", "Real-time system", "Clustered system"],
+    "answer": "Fault-tolerant system"
+  },
+  {
+    "question": "In Linux, what does the ‘fork’ system call return in the child process?",
+    "options": ["0", "PID of parent", "PID of child", "Negative number"],
+    "answer": "0"
+  },
+  {
+    "question": "Which of the following algorithms is preemptive?",
+    "options": ["Round Robin", "FCFS", "Non-preemptive SJF", "Priority (non-preemptive)"],
+    "answer": "Round Robin"
+  },
+  {
+    "question": "In a multi-threaded process, which of the following is shared among threads?",
+    "options": ["Code and data segments", "Program counter", "Stack", "Registers"],
+    "answer": "Code and data segments"
+  },
+  {
+    "question": "The condition for deadlock prevention by resource ordering requires:",
+    "options": ["All processes request resources in a predefined order", "Processes release resources randomly", "Circular wait allowed", "Hold and wait enforced"],
+    "answer": "All processes request resources in a predefined order"
+  },
+  {
+    "question": "The page replacement algorithm that uses a reference bit is:",
+    "options": ["Clock algorithm", "Optimal", "FIFO", "LRU"],
+    "answer": "Clock algorithm"
+  },
+  {
+    "question": "What is the main role of the scheduler in an OS kernel?",
+    "options": ["Selects the next process to run", "Handles page faults", "Performs I/O buffering", "Manages system calls"],
+    "answer": "Selects the next process to run"
+  },
+  {
+    "question": "What is a ‘zombie’ process in UNIX?",
+    "options": ["Process terminated but not reaped by parent", "Process blocked on I/O", "Process with no parent", "Process swapped to disk"],
+    "answer": "Process terminated but not reaped by parent"
+  },
+  {
+    "question": "What type of fragmentation occurs in paging?",
+    "options": ["Internal fragmentation", "External fragmentation", "Both internal and external", "No fragmentation"],
+    "answer": "Internal fragmentation"
+  },
+  {
+    "question": "In demand paging, a page fault occurs when:",
+    "options": ["Page is not present in memory", "Page is swapped out", "Page is dirty", "Page is locked"],
+    "answer": "Page is not present in memory"
+  },
+  {
+    "question": "Which of the following file allocation methods suffers most from external fragmentation?",
+    "options": ["Contiguous allocation", "Linked allocation", "Indexed allocation", "Hash allocation"],
+    "answer": "Contiguous allocation"
+  },
+  {
+    "question": "In Linux, which command shows memory usage by process?",
+    "options": ["top", "ps -aux", "free -m", "df -h"],
+    "answer": "top"
+  },
+  {
+    "question": "Which type of scheduling is ideal for real-time systems?",
+    "options": ["Preemptive priority scheduling", "FCFS", "SJF", "RR"],
+    "answer": "Preemptive priority scheduling"
+  },
+  {
+    "question": "The main purpose of a device driver is to:",
+    "options": ["Act as an interface between hardware and OS", "Provide caching mechanism", "Store metadata", "Encrypt disk blocks"],
+    "answer": "Act as an interface between hardware and OS"
+  },
+  {
+    "question": "In UNIX file systems, which field in the inode structure tracks file ownership?",
+    "options": ["UID", "GID", "i_mode", "i_links_count"],
+    "answer": "UID"
+  },
+  {
+    "question": "Which kernel mode operation can cause a trap?",
+    "options": ["Division by zero", "User I/O call", "Timer interrupt", "Context switch"],
+    "answer": "Division by zero"
+  },
+  {
+    "question": "Which of the following is true about virtual memory?",
+    "options": ["Allows programs to be larger than physical memory", "Eliminates page faults", "Requires segmentation only", "Disables swapping"],
+    "answer": "Allows programs to be larger than physical memory"
+  },
+  {
+    "question": "In a real-time operating system, missed deadlines lead to:",
+    "options": ["System failure (hard real-time)", "Reduced performance only", "Memory leak", "Deadlock"],
+    "answer": "System failure (hard real-time)"
+  },
+  {
+    "question": "Which file system uses journaling to prevent corruption after crashes?",
+    "options": ["ext4", "FAT32", "NTFS", "Both ext4 and NTFS"],
+    "answer": "Both ext4 and NTFS"
+  },
+  {
+    "question": "In multiprogramming, CPU utilization improves by:",
+    "options": ["Overlapping I/O and computation", "Reducing memory", "Increasing context switches", "Increasing idle time"],
+    "answer": "Overlapping I/O and computation"
+  },
+  {
+    "question": "Which of these can be used to detect deadlock?",
+    "options": ["Resource allocation graph", "Peterson’s algorithm", "Banker’s algorithm", "Paging table"],
+    "answer": "Resource allocation graph"
+  },
+  {
+    "question": "What is the difference between trap and interrupt?",
+    "options": ["Trap is synchronous, interrupt is asynchronous", "Trap is hardware-generated", "Interrupt occurs due to CPU error", "Both are asynchronous"],
+    "answer": "Trap is synchronous, interrupt is asynchronous"
+  },
+  {
+    "question": "In the Linux process state model, ‘D’ state means:",
+    "options": ["Uninterruptible sleep", "Running", "Zombie", "Stopped"],
+    "answer": "Uninterruptible sleep"
+  },
+  {
+    "question": "Which component translates logical to physical addresses?",
+    "options": ["Memory Management Unit (MMU)", "TLB", "Cache controller", "Page table"],
+    "answer": "Memory Management Unit (MMU)"
+  },
+  {
+    "question": "What is the key idea behind Peterson’s solution?",
+    "options": ["Mutual exclusion with busy waiting", "Deadlock avoidance", "Non-preemptive scheduling", "Priority inversion handling"],
+    "answer": "Mutual exclusion with busy waiting"
+  },
+  {
+    "question": "Which data structure is used to implement semaphores?",
+    "options": ["Queue", "Stack", "Heap", "Linked list"],
+    "answer": "Queue"
+  },
+  {
+    "question": "In distributed systems, Lamport timestamps are used to:",
+    "options": ["Order events causally", "Detect deadlocks", "Synchronize physical clocks", "Allocate resources"],
+    "answer": "Order events causally"
+  },
+  {
+    "question": "Which system call is used to replace the current process image with a new one?",
+    "options": ["exec()", "fork()", "wait()", "clone()"],
+    "answer": "exec()"
+  },
+  {
+    "question": "In the dining philosophers problem, deadlock occurs when:",
+    "options": ["Each philosopher holds one fork and waits for another", "All philosophers eat simultaneously", "No philosopher takes a fork", "Forks are unlimited"],
+    "answer": "Each philosopher holds one fork and waits for another"
+  },
+  {
+    "question": "Which of the following is not a cause of fragmentation?",
+    "options": ["Variable-sized memory allocations", "Fixed partitioning", "Paging", "Dynamic loading"],
+    "answer": "Paging"
+  },
+  {
+    "question": "What is the time complexity of page replacement algorithms like LRU?",
+    "options": ["O(1) using stack or counter", "O(n) without optimization", "O(log n)", "O(n²)"],
+    "answer": "O(n) without optimization"
+  },
+  {
+    "question": "In UNIX, a file descriptor 0 refers to:",
+    "options": ["Standard input", "Standard output", "Standard error", "Null device"],
+    "answer": "Standard input"
+  }
+]
+

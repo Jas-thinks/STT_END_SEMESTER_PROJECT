@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "In TCP congestion control, what happens when a timeout occurs during the congestion avoidance phase?",
+    "options": ["Congestion window doubles", "Congestion window is reset to 1 MSS", "Slow start threshold is doubled", "Nothing happens"],
+    "answer": "Congestion window is reset to 1 MSS"
+  },
+  {
+    "id": 2,
+    "question": "Which algorithm is used by TCP to estimate the retransmission timeout (RTO)?",
+    "options": ["Jacobson/Karels Algorithm", "Leaky Bucket Algorithm", "AIMD", "Sliding Window Algorithm"],
+    "answer": "Jacobson/Karels Algorithm"
+  },
+  {
+    "id": 3,
+    "question": "In BGP, what is the purpose of the AS_PATH attribute?",
+    "options": ["Prevents routing loops", "Defines bandwidth of the link", "Manages congestion", "Specifies local preference"],
+    "answer": "Prevents routing loops"
+  },
+  {
+    "id": 4,
+    "question": "What is the main difference between link-state and distance-vector routing protocols?",
+    "options": ["Update type and convergence time", "Packet size", "Hop count limit", "Transport layer dependency"],
+    "answer": "Update type and convergence time"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following protocols provides reliable message delivery over UDP?",
+    "options": ["RTP", "SCTP", "DCCP", "RTCP"],
+    "answer": "SCTP"
+  },
+  {
+    "id": 6,
+    "question": "What is the purpose of the 'three-way handshake' in TCP?",
+    "options": ["To establish connection parameters and synchronize sequence numbers", "To ensure encryption keys exchange", "To test network bandwidth", "To check routing tables"],
+    "answer": "To establish connection parameters and synchronize sequence numbers"
+  },
+  {
+    "id": 7,
+    "question": "How does OSPF prevent routing loops?",
+    "options": ["By using Dijkstra’s algorithm with LSDB", "By using Bellman-Ford algorithm", "By using split horizon", "By using hop count"],
+    "answer": "By using Dijkstra’s algorithm with LSDB"
+  },
+  {
+    "id": 8,
+    "question": "Which layer of OSI model handles data compression and encryption?",
+    "options": ["Presentation", "Application", "Session", "Transport"],
+    "answer": "Presentation"
+  },
+  {
+    "id": 9,
+    "question": "Which type of NAT allows multiple private IP addresses to share a single public IP with different port mappings?",
+    "options": ["PAT", "Static NAT", "Dynamic NAT", "1:1 NAT"],
+    "answer": "PAT"
+  },
+  {
+    "id": 10,
+    "question": "In Ethernet, what happens when two stations transmit simultaneously?",
+    "options": ["Collision occurs", "Both frames are delivered", "One is delayed", "Frames are merged"],
+    "answer": "Collision occurs"
+  },
+  {
+    "id": 11,
+    "question": "Why is UDP preferred over TCP for real-time applications?",
+    "options": ["Low latency and no retransmission delay", "Guaranteed delivery", "Congestion control support", "Large buffer sizes"],
+    "answer": "Low latency and no retransmission delay"
+  },
+  {
+    "id": 12,
+    "question": "What is the significance of the 'Time To Live (TTL)' field in an IP packet?",
+    "options": ["Prevents routing loops", "Indicates packet size", "Measures latency", "Defines fragmentation level"],
+    "answer": "Prevents routing loops"
+  },
+  {
+    "id": 13,
+    "question": "How does the Spanning Tree Protocol (STP) prevent loops in Ethernet networks?",
+    "options": ["By blocking redundant links", "By adding random delays", "By increasing hop count", "By encrypting MAC addresses"],
+    "answer": "By blocking redundant links"
+  },
+  {
+    "id": 14,
+    "question": "Which protocol uses the concept of Autonomous Systems (AS)?",
+    "options": ["BGP", "OSPF", "EIGRP", "RIP"],
+    "answer": "BGP"
+  },
+  {
+    "id": 15,
+    "question": "What does the 'window size' field in TCP header represent?",
+    "options": ["Receiver buffer space", "Sender congestion window", "Packet size", "Network delay"],
+    "answer": "Receiver buffer space"
+  },
+  {
+    "id": 16,
+    "question": "What is the primary function of the ARP protocol?",
+    "options": ["Map IP address to MAC address", "Resolve DNS queries", "Assign IPs dynamically", "Encrypt network traffic"],
+    "answer": "Map IP address to MAC address"
+  },
+  {
+    "id": 17,
+    "question": "In IPv6, what replaces ARP?",
+    "options": ["Neighbor Discovery Protocol", "ICMPv6", "DHCPv6", "Multicast Listener Discovery"],
+    "answer": "Neighbor Discovery Protocol"
+  },
+  {
+    "id": 18,
+    "question": "What scheduling algorithm is used in Wi-Fi CSMA/CA?",
+    "options": ["Random backoff", "Round robin", "Priority queueing", "Token passing"],
+    "answer": "Random backoff"
+  },
+  {
+    "id": 19,
+    "question": "How does DNS improve performance using caching?",
+    "options": ["Stores resolved names locally", "Compresses packets", "Uses TCP for queries", "Increases TTL values"],
+    "answer": "Stores resolved names locally"
+  },
+  {
+    "id": 20,
+    "question": "Which field in the IPv4 header ensures integrity of the header?",
+    "options": ["Header checksum", "TTL", "Identification", "Flags"],
+    "answer": "Header checksum"
+  },
+  {
+    "id": 21,
+    "question": "Which type of switching provides a dedicated communication path for the entire session?",
+    "options": ["Circuit switching", "Packet switching", "Message switching", "Hybrid switching"],
+    "answer": "Circuit switching"
+  },
+  {
+    "id": 22,
+    "question": "In TCP, how is flow control achieved?",
+    "options": ["Sliding window mechanism", "Congestion window", "Retransmission timeout", "Checksum"],
+    "answer": "Sliding window mechanism"
+  },
+  {
+    "id": 23,
+    "question": "Which algorithm is used for shortest path computation in OSPF?",
+    "options": ["Dijkstra", "Bellman-Ford", "Floyd-Warshall", "Kruskal"],
+    "answer": "Dijkstra"
+  },
+  {
+    "id": 24,
+    "question": "Which of the following best describes MPLS?",
+    "options": ["Label-based packet forwarding", "IP-based routing", "Frame relay mechanism", "TCP-based flow control"],
+    "answer": "Label-based packet forwarding"
+  },
+  {
+    "id": 25,
+    "question": "Why is TCP considered connection-oriented?",
+    "options": ["Because it establishes, maintains, and terminates connections", "Because it uses port numbers", "Because it sends ACKs", "Because it uses encryption"],
+    "answer": "Because it establishes, maintains, and terminates connections"
+  },
+  {
+    "id": 26,
+    "question": "What mechanism does TCP use to detect lost packets without relying solely on timeouts?",
+    "options": ["Fast retransmit", "Slow start", "Selective acknowledgment", "Round-trip estimation"],
+    "answer": "Fast retransmit"
+  },
+  {
+    "id": 27,
+    "question": "In IPv6, what is the purpose of the Flow Label field?",
+    "options": ["Identify packets belonging to the same flow", "Indicate packet length", "Define routing options", "Carry encryption data"],
+    "answer": "Identify packets belonging to the same flow"
+  },
+  {
+    "id": 28,
+    "question": "How does DNSSEC improve security over traditional DNS?",
+    "options": ["It provides data origin authentication and integrity", "It encrypts all DNS traffic", "It uses TCP instead of UDP", "It hides domain records"],
+    "answer": "It provides data origin authentication and integrity"
+  },
+  {
+    "id": 29,
+    "question": "What type of attack exploits ARP’s lack of authentication?",
+    "options": ["ARP spoofing", "SYN flooding", "DNS poisoning", "MAC flooding"],
+    "answer": "ARP spoofing"
+  },
+  {
+    "id": 30,
+    "question": "In SDN architecture, what is the role of the control plane?",
+    "options": ["Manages routing logic centrally", "Transmits data packets", "Handles encryption", "Performs error correction"],
+    "answer": "Manages routing logic centrally"
+  },
+  {
+    "id": 31,
+    "question": "How does ECN (Explicit Congestion Notification) differ from traditional congestion signaling?",
+    "options": ["It marks packets instead of dropping them", "It uses separate control packets", "It doubles window size", "It ignores ACKs"],
+    "answer": "It marks packets instead of dropping them"
+  },
+  {
+    "id": 32,
+    "question": "Which of the following is a key advantage of IPv6 over IPv4?",
+    "options": ["Larger address space and built-in security", "Simpler routing only", "Compatibility with older routers", "Higher transmission speed"],
+    "answer": "Larger address space and built-in security"
+  },
+  {
+    "id": 33,
+    "question": "What does a TCP segment’s FIN flag indicate?",
+    "options": ["End of data from sender", "Retransmission request", "Error detected", "Congestion control trigger"],
+    "answer": "End of data from sender"
+  },
+  {
+    "id": 34,
+    "question": "Which protocol operates at the Data Link Layer to provide flow and error control?",
+    "options": ["HDLC", "RIP", "BGP", "TCP"],
+    "answer": "HDLC"
+  },
+  {
+    "id": 35,
+    "question": "Which technique is used by routers to prevent broadcast storms?",
+    "options": ["Spanning Tree Protocol", "Distance vector routing", "Congestion avoidance", "Round-robin forwarding"],
+    "answer": "Spanning Tree Protocol"
+  },
+  {
+    "id": 36,
+    "question": "In a subnet with mask 255.255.255.224, how many valid host addresses are available?",
+    "options": ["30", "32", "62", "14"],
+    "answer": "30"
+  },
+  {
+    "id": 37,
+    "question": "How does token ring topology avoid collisions?",
+    "options": ["Only one station holds the token at a time", "It uses backoff algorithms", "It uses random access", "It buffers all frames"],
+    "answer": "Only one station holds the token at a time"
+  },
+  {
+    "id": 38,
+    "question": "In congestion control, what is 'slow start threshold' used for?",
+    "options": ["Defines boundary between exponential and linear growth", "Controls retransmission delay", "Sets initial RTO value", "Determines MTU size"],
+    "answer": "Defines boundary between exponential and linear growth"
+  },
+  {
+    "id": 39,
+    "question": "Which field in Ethernet frame identifies the upper-layer protocol?",
+    "options": ["Type field", "CRC", "Preamble", "Padding"],
+    "answer": "Type field"
+  },
+  {
+    "id": 40,
+    "question": "What is the main disadvantage of distance vector routing protocols?",
+    "options": ["Slow convergence and count-to-infinity problem", "High memory usage", "Incompatibility with IPv6", "Lack of encryption"],
+    "answer": "Slow convergence and count-to-infinity problem"
+  },
+  {
+    "id": 41,
+    "question": "What is the main role of ICMP in IP networks?",
+    "options": ["Error reporting and diagnostics", "Data encryption", "Packet forwarding", "Routing updates"],
+    "answer": "Error reporting and diagnostics"
+  },
+  {
+    "id": 42,
+    "question": "Which TCP mechanism prevents a sender from overwhelming a receiver?",
+    "options": ["Flow control", "Congestion control", "Error correction", "Multiplexing"],
+    "answer": "Flow control"
+  },
+  {
+    "id": 43,
+    "question": "In wireless networks, what is the hidden terminal problem?",
+    "options": ["Two nodes can’t detect each other’s transmission due to range", "Node interference at AP", "Routing misconfiguration", "Beacon collision"],
+    "answer": "Two nodes can’t detect each other’s transmission due to range"
+  },
+  {
+    "id": 44,
+    "question": "Which QoS mechanism guarantees minimum bandwidth for specific traffic?",
+    "options": ["Traffic shaping", "Priority queuing", "Best effort delivery", "Flooding"],
+    "answer": "Traffic shaping"
+  },
+  {
+    "id": 45,
+    "question": "What is the main role of DHCP relay agents?",
+    "options": ["Forward DHCP messages between subnets", "Assign MAC addresses", "Encrypt configuration messages", "Store ARP tables"],
+    "answer": "Forward DHCP messages between subnets"
+  },
+  {
+    "id": 46,
+    "question": "What is the function of the 'ACK number' field in TCP header?",
+    "options": ["Indicates next expected byte", "Shows last transmitted packet", "Represents checksum value", "Specifies congestion level"],
+    "answer": "Indicates next expected byte"
+  },
+  {
+    "id": 47,
+    "question": "Which routing protocol is hybrid, combining both distance vector and link state properties?",
+    "options": ["EIGRP", "RIP", "OSPF", "BGP"],
+    "answer": "EIGRP"
+  },
+  {
+    "id": 48,
+    "question": "In IPv4 fragmentation, which field is used to identify fragments belonging to the same packet?",
+    "options": ["Identification field", "Flags field", "Offset field", "Checksum field"],
+    "answer": "Identification field"
+  },
+  {
+    "id": 49,
+    "question": "Which algorithm does Ethernet CSMA/CD use for retransmission after collision?",
+    "options": ["Binary exponential backoff", "Round robin", "Shortest job next", "Token passing"],
+    "answer": "Binary exponential backoff"
+  },
+  {
+    "id": 50,
+    "question": "How does a router determine the next hop for a packet?",
+    "options": ["By consulting its routing table", "By broadcasting packet", "By using DNS lookup", "By reading ARP cache only"],
+    "answer": "By consulting its routing table"
+  },
+  {
+    "id": 51,
+    "question": "What is the maximum payload size for an Ethernet frame?",
+    "options": ["1500 bytes", "1518 bytes", "4096 bytes", "64 bytes"],
+    "answer": "1500 bytes"
+  },
+  {
+    "id": 52,
+    "question": "Which protocol ensures loop-free routing among Autonomous Systems?",
+    "options": ["BGP", "RIP", "EIGRP", "OSPF"],
+    "answer": "BGP"
+  },
+  {
+    "id": 53,
+    "question": "In TCP, what triggers a fast recovery phase?",
+    "options": ["Three duplicate ACKs", "Timeout", "Window overflow", "Zero window advertisement"],
+    "answer": "Three duplicate ACKs"
+  },
+  {
+    "id": 54,
+    "question": "What is the purpose of ICMP Redirect messages?",
+    "options": ["Inform host of a better route", "Resend lost packets", "Restart connections", "Reassign IPs"],
+    "answer": "Inform host of a better route"
+  },
+  {
+    "id": 55,
+    "question": "In IPv6, what is the purpose of the Hop-by-Hop options header?",
+    "options": ["Carry optional information processed by each router", "Mark the last router in the path", "Store authentication keys", "Encrypt payload"],
+    "answer": "Carry optional information processed by each router"
+  },
+  {
+    "id": 56,
+    "question": "How does DiffServ achieve QoS differentiation?",
+    "options": ["By marking packets with DSCP values", "By using RSVP", "By reserving bandwidth", "By assigning VLAN IDs"],
+    "answer": "By marking packets with DSCP values"
+  },
+  {
+    "id": 57,
+    "question": "Which layer is responsible for end-to-end encryption and compression in OSI model?",
+    "options": ["Presentation layer", "Session layer", "Transport layer", "Network layer"],
+    "answer": "Presentation layer"
+  },
+  {
+    "id": 58,
+    "question": "What is the main purpose of Network Address Translation (NAT)?",
+    "options": ["Map private to public IPs", "Encrypt packets", "Reduce packet size", "Add redundancy"],
+    "answer": "Map private to public IPs"
+  },
+  {
+    "id": 59,
+    "question": "What does the 'DF' flag in IPv4 indicate?",
+    "options": ["Do not fragment", "Drop fragments", "Delay forwarding", "Duplicate frame"],
+    "answer": "Do not fragment"
+  },
+  {
+    "id": 60,
+    "question": "Which scheduling method is used in high-speed routers to ensure fairness among queues?",
+    "options": ["Weighted Fair Queuing", "First Come First Serve", "Round Robin", "Shortest Path First"],
+    "answer": "Weighted Fair Queuing"
+  },
+  {
+    "id": 61,
+    "question": "What is the main advantage of MPLS over traditional IP routing?",
+    "options": ["Faster packet forwarding using labels", "Larger address space", "Simpler configuration", "No need for routing protocols"],
+    "answer": "Faster packet forwarding using labels"
+  },
+  {
+    "id": 62,
+    "question": "Which protocol handles the translation between hostnames and IP addresses?",
+    "options": ["DNS", "ARP", "ICMP", "DHCP"],
+    "answer": "DNS"
+  },
+  {
+    "id": 63,
+    "question": "How does TCP handle out-of-order packets?",
+    "options": ["Reorders them before delivery", "Drops them", "Sends duplicate ACKs", "Requests retransmission immediately"],
+    "answer": "Reorders them before delivery"
+  },
+  {
+    "id": 64,
+    "question": "Which IPv6 transition mechanism encapsulates IPv6 packets inside IPv4?",
+    "options": ["Tunneling", "Dual stack", "Translation", "NAT64"],
+    "answer": "Tunneling"
+  },
+  {
+    "id": 65,
+    "question": "In CSMA/CA, how are collisions minimized?",
+    "options": ["By using RTS/CTS handshake", "By detecting voltage drops", "By packet checksum", "By round-robin scheduling"],
+    "answer": "By using RTS/CTS handshake"
+  },
+  {
+    "id": 66,
+    "question": "What is the function of the TCP urgent pointer?",
+    "options": ["Indicates urgent data within the segment", "Indicates retransmission count", "Marks segment boundaries", "Controls congestion"],
+    "answer": "Indicates urgent data within the segment"
+  },
+  {
+    "id": 67,
+    "question": "What is the primary difference between hub and switch?",
+    "options": ["Switch operates on MAC addresses; hub broadcasts", "Hub uses routing tables", "Switch increases collisions", "Hub isolates broadcast domains"],
+    "answer": "Switch operates on MAC addresses; hub broadcasts"
+  },
+  {
+    "id": 68,
+    "question": "What is the role of IGMP in multicast networking?",
+    "options": ["Manages membership of multicast groups", "Assigns multicast IPs", "Authenticates routers", "Encrypts multicast traffic"],
+    "answer": "Manages membership of multicast groups"
+  },
+  {
+    "id": 69,
+    "question": "Which factor primarily determines the propagation delay in a network?",
+    "options": ["Distance and signal speed", "Packet size", "Transmission rate", "Number of routers"],
+    "answer": "Distance and signal speed"
+  },
+  {
+    "id": 70,
+    "question": "In software-defined networking, what protocol allows controllers to communicate with switches?",
+    "options": ["OpenFlow", "NetFlow", "SNMP", "RADIUS"],
+    "answer": "OpenFlow"
+  },
+  {
+    "id": 71,
+    "question": "Which queuing discipline ensures that all flows get an equal share of bandwidth, regardless of packet size?",
+    "options": ["Fair Queuing", "Priority Queuing", "FIFO", "Round Robin"],
+    "answer": "Fair Queuing"
+  },
+  {
+    "id": 72,
+    "question": "In IPv6, what is the equivalent of IPv4’s broadcast address?",
+    "options": ["IPv6 does not support broadcast; uses multicast instead", "All-nodes address", "Anycast address", "Loopback address"],
+    "answer": "IPv6 does not support broadcast; uses multicast instead"
+  },
+  {
+    "id": 73,
+    "question": "What is the key difference between SDN and traditional networking?",
+    "options": ["SDN separates control and data planes", "SDN uses static routing", "SDN removes routers entirely", "SDN does not use IP addressing"],
+    "answer": "SDN separates control and data planes"
+  },
+  {
+    "id": 74,
+    "question": "Which technique allows multiple logical networks to share the same physical hardware?",
+    "options": ["VLAN", "Subnetting", "VPN", "Proxying"],
+    "answer": "VLAN"
+  },
+  {
+    "id": 75,
+    "question": "What is the purpose of the MTU in networking?",
+    "options": ["Defines maximum size of a packet that can be transmitted without fragmentation", "Limits session time", "Controls congestion window", "Specifies routing priority"],
+    "answer": "Defines maximum size of a packet that can be transmitted without fragmentation"
+  },
+  {
+    "id": 76,
+    "question": "How does IPv6 handle fragmentation?",
+    "options": ["Handled only by source host, not routers", "Handled by all routers", "Disabled by default", "Done at transport layer"],
+    "answer": "Handled only by source host, not routers"
+  },
+  {
+    "id": 77,
+    "question": "What is the role of the 'SYN cookie' in TCP?",
+    "options": ["Prevents SYN flood attacks", "Detects checksum errors", "Encrypts sequence numbers", "Prevents duplicate ACKs"],
+    "answer": "Prevents SYN flood attacks"
+  },
+  {
+    "id": 78,
+    "question": "What is a major disadvantage of stop-and-wait ARQ protocol?",
+    "options": ["Low channel utilization due to waiting time", "High complexity", "Excessive packet loss", "Requires full-duplex links"],
+    "answer": "Low channel utilization due to waiting time"
+  },
+  {
+    "id": 79,
+    "question": "Which protocol provides end-to-end error detection but not correction?",
+    "options": ["UDP with checksum", "TCP", "ICMP", "ARP"],
+    "answer": "UDP with checksum"
+  },
+  {
+    "id": 80,
+    "question": "In Ethernet, what is the minimum frame size to avoid collisions?",
+    "options": ["64 bytes", "46 bytes", "1500 bytes", "32 bytes"],
+    "answer": "64 bytes"
+  },
+  {
+    "id": 81,
+    "question": "Which feature allows MPLS to support VPNs?",
+    "options": ["Label stacking", "Hop-by-hop routing", "TTL decrementing", "Link aggregation"],
+    "answer": "Label stacking"
+  },
+  {
+    "id": 82,
+    "question": "In congestion control, what is additive increase/multiplicative decrease (AIMD) used for?",
+    "options": ["Adjusting congestion window based on network feedback", "Adjusting RTT values", "Synchronizing ACKs", "Reordering segments"],
+    "answer": "Adjusting congestion window based on network feedback"
+  },
+  {
+    "id": 83,
+    "question": "What is the main function of the network layer in the OSI model?",
+    "options": ["Routing packets between networks", "Error detection", "Encryption", "Session establishment"],
+    "answer": "Routing packets between networks"
+  },
+  {
+    "id": 84,
+    "question": "What differentiates a transport protocol like TCP from a network protocol like IP?",
+    "options": ["TCP provides reliability and flow control", "TCP defines addressing scheme", "IP ensures encryption", "IP manages sessions"],
+    "answer": "TCP provides reliability and flow control"
+  },
+  {
+    "id": 85,
+    "question": "Which field in a TCP segment ensures data integrity?",
+    "options": ["Checksum", "ACK number", "Sequence number", "Window size"],
+    "answer": "Checksum"
+  },
+  {
+    "id": 86,
+    "question": "Which routing protocol uses a hierarchical area structure to improve scalability?",
+    "options": ["OSPF", "RIP", "BGP", "EIGRP"],
+    "answer": "OSPF"
+  },
+  {
+    "id": 87,
+    "question": "In data link control, how does the Go-Back-N ARQ protocol handle lost frames?",
+    "options": ["Retransmits all frames from the lost one onwards", "Retransmits only the lost frame", "Ignores lost frame", "Resends ACKs only"],
+    "answer": "Retransmits all frames from the lost one onwards"
+  },
+  {
+    "id": 88,
+    "question": "Which technique is used to resolve MAC address conflicts in Ethernet?",
+    "options": ["CSMA/CD backoff mechanism", "ARP spoof detection", "Frame CRC check", "ICMP redirect"],
+    "answer": "CSMA/CD backoff mechanism"
+  },
+  {
+    "id": 89,
+    "question": "What is the primary reason for using IPv6 flow label?",
+    "options": ["Support real-time traffic requiring same path", "Prevent routing loops", "Track TTL value", "Enhance NAT translation"],
+    "answer": "Support real-time traffic requiring same path"
+  },
+  {
+    "id": 90,
+    "question": "Which approach is used by routers to handle QoS in high-priority traffic?",
+    "options": ["Weighted Fair Queuing", "Random Early Detection", "Token bucket filtering", "Best effort forwarding"],
+    "answer": "Weighted Fair Queuing"
+  },
+  {
+    "id": 91,
+    "question": "Which type of DNS record maps a domain name to an IPv6 address?",
+    "options": ["AAAA", "A", "MX", "PTR"],
+    "answer": "AAAA"
+  },
+  {
+    "id": 92,
+    "question": "In IEEE 802.11 networks, what is the function of the beacon frame?",
+    "options": ["Advertises network presence and parameters", "Authenticates users", "Assigns IP addresses", "Transfers payload data"],
+    "answer": "Advertises network presence and parameters"
+  },
+  {
+    "id": 93,
+    "question": "What is the maximum number of hosts in a /20 network?",
+    "options": ["4094", "2046", "8190", "1022"],
+    "answer": "4094"
+  },
+  {
+    "id": 94,
+    "question": "How does a router perform longest prefix matching in routing tables?",
+    "options": ["Chooses the route with the most specific subnet mask", "Chooses the route with least hops", "Chooses the oldest route", "Chooses the highest metric"],
+    "answer": "Chooses the route with the most specific subnet mask"
+  },
+  {
+    "id": 95,
+    "question": "What is a key advantage of link-state routing protocols over distance-vector protocols?",
+    "options": ["Faster convergence", "Lower memory requirement", "Less computation", "Simpler configuration"],
+    "answer": "Faster convergence"
+  },
+  {
+    "id": 96,
+    "question": "Which transport layer protocol supports message boundaries?",
+    "options": ["UDP", "TCP", "SCTP", "ICMP"],
+    "answer": "UDP"
+  },
+  {
+    "id": 97,
+    "question": "Which field in IPv4 header controls fragmentation and reassembly of packets?",
+    "options": ["Identification, Flags, and Fragment Offset", "Header Length", "TTL", "Options"],
+    "answer": "Identification, Flags, and Fragment Offset"
+  },
+  {
+    "id": 98,
+    "question": "What problem does the 'count-to-infinity' issue occur in?",
+    "options": ["Distance vector routing protocols", "Link-state routing", "Static routing", "QoS scheduling"],
+    "answer": "Distance vector routing protocols"
+  },
+  {
+    "id": 99,
+    "question": "Which addressing method is used to deliver packets to multiple devices simultaneously?",
+    "options": ["Multicast", "Broadcast", "Unicast", "Anycast"],
+    "answer": "Multicast"
+  },
+  {
+    "id": 100,
+    "question": "Which protocol is used in the control plane of SDN to communicate between switches and controllers?",
+    "options": ["OpenFlow", "NetConf", "REST API", "SNMP"],
+    "answer": "OpenFlow"
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "question": "What is 25% of 200?",
+    "options": ["A. 25", "B. 50", "C. 75", "D. 100"],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "A man buys an item for ₹400 and sells it for ₹500. What is his profit percentage?",
+    "options": ["A. 20%", "B. 22%", "C. 25%", "D. 30%"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "question": "If 5 pens cost ₹50, how much will 8 pens cost?",
+    "options": ["A. ₹70", "B. ₹75", "C. ₹80", "D. ₹85"],
+    "answer": "C"
+  },
+  {
+    "id": 4,
+    "question": "What is the simple interest on ₹1000 at 5% per annum for 2 years?",
+    "options": ["A. ₹50", "B. ₹75", "C. ₹100", "D. ₹150"],
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "question": "The ratio of 2 to 5 is equivalent to which of the following?",
+    "options": ["A. 4:10", "B. 6:10", "C. 8:15", "D. 10:25"],
+    "answer": "A"
+  },
+  {
+    "id": 6,
+    "question": "If a train travels 60 km in 1 hour, what is its speed in meters per second?",
+    "options": ["A. 10 m/s", "B. 15 m/s", "C. 16.67 m/s", "D. 20 m/s"],
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "question": "Find the average of 10, 20, 30, 40, and 50.",
+    "options": ["A. 25", "B. 30", "C. 35", "D. 40"],
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "question": "What is the square root of 81?",
+    "options": ["A. 7", "B. 8", "C. 9", "D. 10"],
+    "answer": "C"
+  },
+  {
+    "id": 9,
+    "question": "If a car covers 180 km in 3 hours, what is its average speed?",
+    "options": ["A. 50 km/h", "B. 55 km/h", "C. 60 km/h", "D. 65 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 10,
+    "question": "Simplify: 12 + 18 ÷ 3 × 2",
+    "options": ["A. 12", "B. 18", "C. 24", "D. 30"],
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "question": "If the perimeter of a square is 40 cm, what is the length of one side?",
+    "options": ["A. 8 cm", "B. 10 cm", "C. 12 cm", "D. 14 cm"],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "question": "Find the next number: 2, 4, 8, 16, ___",
+    "options": ["A. 18", "B. 24", "C. 30", "D. 32"],
+    "answer": "D"
+  },
+  {
+    "id": 13,
+    "question": "What is 15% of 400?",
+    "options": ["A. 50", "B. 55", "C. 60", "D. 65"],
+    "answer": "C"
+  },
+  {
+    "id": 14,
+    "question": "Find the LCM of 4 and 6.",
+    "options": ["A. 8", "B. 10", "C. 12", "D. 14"],
+    "answer": "C"
+  },
+  {
+    "id": 15,
+    "question": "How many minutes are there in 5 hours?",
+    "options": ["A. 200", "B. 240", "C. 300", "D. 360"],
+    "answer": "C"
+  },
+  {
+    "id": 16,
+    "question": "Simplify: 3² + 4²",
+    "options": ["A. 9", "B. 12", "C. 16", "D. 25"],
+    "answer": "D"
+  },
+  {
+    "id": 17,
+    "question": "If 10 workers complete a job in 6 days, how long will 5 workers take?",
+    "options": ["A. 8", "B. 10", "C. 12", "D. 15"],
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "question": "Convert 0.75 into a fraction.",
+    "options": ["A. 3/2", "B. 3/4", "C. 2/3", "D. 4/3"],
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "question": "A man walks 4 km east, then 3 km north. What is the shortest distance from the start point?",
+    "options": ["A. 5 km", "B. 6 km", "C. 7 km", "D. 8 km"],
+    "answer": "A"
+  },
+  {
+    "id": 20,
+    "question": "If 3 apples cost ₹9, what is the cost of 10 apples?",
+    "options": ["A. ₹20", "B. ₹25", "C. ₹30", "D. ₹35"],
+    "answer": "C"
+  },
+  {
+    "id": 21,
+    "question": "The sum of angles in a triangle is:",
+    "options": ["A. 90°", "B. 120°", "C. 180°", "D. 360°"],
+    "answer": "C"
+  },
+  {
+    "id": 22,
+    "question": "If a=5 and b=2, find a² - b².",
+    "options": ["A. 21", "B. 24", "C. 25", "D. 27"],
+    "answer": "A"
+  },
+  {
+    "id": 23,
+    "question": "Simplify: 15 ÷ 3 × 5",
+    "options": ["A. 20", "B. 25", "C. 30", "D. 35"],
+    "answer": "B"
+  },
+  {
+    "id": 24,
+    "question": "If the radius of a circle is 7 cm, what is its circumference? (Use π = 22/7)",
+    "options": ["A. 22 cm", "B. 33 cm", "C. 44 cm", "D. 66 cm"],
+    "answer": "C"
+  },
+  {
+    "id": 25,
+    "question": "The cube of 3 is:",
+    "options": ["A. 6", "B. 9", "C. 27", "D. 81"],
+    "answer": "C"
+  },
+  {
+    "id": 26,
+    "question": "Find the HCF of 12 and 18.",
+    "options": ["A. 2", "B. 3", "C. 6", "D. 9"],
+    "answer": "C"
+  },
+  {
+    "id": 27,
+    "question": "How many seconds are there in 2 hours?",
+    "options": ["A. 3600", "B. 5400", "C. 7200", "D. 9000"],
+    "answer": "C"
+  },
+  {
+    "id": 28,
+    "question": "If x + 5 = 10, what is x?",
+    "options": ["A. 4", "B. 5", "C. 6", "D. 7"],
+    "answer": "B"
+  },
+  {
+    "id": 29,
+    "question": "A man saves ₹500 from his salary of ₹2000. What percent does he save?",
+    "options": ["A. 20%", "B. 25%", "C. 30%", "D. 35%"],
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "question": "If the selling price is ₹120 and the cost price is ₹100, what is the profit percentage?",
+    "options": ["A. 15%", "B. 18%", "C. 20%", "D. 25%"],
+    "answer": "C"
+  },
+  {
+    "id": 31,
+    "question": "The sum of the first 10 natural numbers is:",
+    "options": ["A. 45", "B. 50", "C. 55", "D. 60"],
+    "answer": "C"
+  },
+  {
+    "id": 32,
+    "question": "Simplify: 8 × 3 + 6 ÷ 2",
+    "options": ["A. 21", "B. 24", "C. 27", "D. 30"],
+    "answer": "C"
+  },
+  {
+    "id": 33,
+    "question": "What is the perimeter of a rectangle with length 6 cm and breadth 4 cm?",
+    "options": ["A. 16 cm", "B. 18 cm", "C. 20 cm", "D. 22 cm"],
+    "answer": "C"
+  },
+  {
+    "id": 34,
+    "question": "What is ¾ of 100?",
+    "options": ["A. 50", "B. 65", "C. 70", "D. 75"],
+    "answer": "D"
+  },
+  {
+    "id": 35,
+    "question": "Find the missing number: 3, 6, 9, 12, ___",
+    "options": ["A. 14", "B. 15", "C. 16", "D. 18"],
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "If 20% of a number is 40, what is the number?",
+    "options": ["A. 160", "B. 180", "C. 200", "D. 220"],
+    "answer": "C"
+  },
+  {
+    "id": 37,
+    "question": "Find the simple interest on ₹8000 at 10% per annum for 1 year.",
+    "options": ["A. ₹800", "B. ₹850", "C. ₹900", "D. ₹1000"],
+    "answer": "A"
+  },
+  {
+    "id": 38,
+    "question": "What is the cube root of 64?",
+    "options": ["A. 2", "B. 3", "C. 4", "D. 5"],
+    "answer": "C"
+  },
+  {
+    "id": 39,
+    "question": "How many sides does a pentagon have?",
+    "options": ["A. 4", "B. 5", "C. 6", "D. 7"],
+    "answer": "B"
+  },
+  {
+    "id": 40,
+    "question": "Find the value of 7 × (8 - 3).",
+    "options": ["A. 25", "B. 30", "C. 35", "D. 40"],
+    "answer": "C"
+  },
+  {
+    "id": 41,
+    "question": "Convert 3/5 into a percentage.",
+    "options": ["A. 50%", "B. 55%", "C. 60%", "D. 65%"],
+    "answer": "C"
+  },
+  {
+    "id": 42,
+    "question": "A shopkeeper bought an article for ₹250 and sold it for ₹300. Find his profit percentage.",
+    "options": ["A. 15%", "B. 18%", "C. 20%", "D. 25%"],
+    "answer": "C"
+  },
+  {
+    "id": 43,
+    "question": "What is the average of 4, 8, 12, 16, and 20?",
+    "options": ["A. 10", "B. 12", "C. 14", "D. 16"],
+    "answer": "C"
+  },
+  {
+    "id": 44,
+    "question": "Simplify: (6 × 4) + (12 ÷ 3)",
+    "options": ["A. 20", "B. 22", "C. 24", "D. 28"],
+    "answer": "C"
+  },
+  {
+    "id": 45,
+    "question": "What is the area of a triangle with base 10 cm and height 5 cm?",
+    "options": ["A. 20 cm²", "B. 25 cm²", "C. 30 cm²", "D. 35 cm²"],
+    "answer": "B"
+  },
+  {
+    "id": 46,
+    "question": "How many months are there in 3 years?",
+    "options": ["A. 24", "B. 30", "C. 36", "D. 48"],
+    "answer": "C"
+  },
+  {
+    "id": 47,
+    "question": "Find the next term: 5, 10, 20, 40, ___",
+    "options": ["A. 60", "B. 70", "C. 80", "D. 90"],
+    "answer": "C"
+  },
+  {
+    "id": 48,
+    "question": "If 1 dozen = 12 items, how many items are in 3 dozens?",
+    "options": ["A. 24", "B. 30", "C. 36", "D. 40"],
+    "answer": "C"
+  },
+  {
+    "id": 49,
+    "question": "Convert 250 cm to meters.",
+    "options": ["A. 1.5 m", "B. 2.0 m", "C. 2.5 m", "D. 3.0 m"],
+    "answer": "C"
+  },
+  {
+    "id": 50,
+    "question": "What is ⅔ of 90?",
+    "options": ["A. 50", "B. 55", "C. 60", "D. 65"],
+    "answer": "C"
+  },
+  {
+    "id": 51,
+    "question": "Find the missing number: 9, 18, 27, 36, ___",
+    "options": ["A. 42", "B. 45", "C. 48", "D. 50"],
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "question": "If 1 km = 1000 m, how many meters are there in 5 km?",
+    "options": ["A. 3000", "B. 4000", "C. 5000", "D. 6000"],
+    "answer": "C"
+  },
+  {
+    "id": 53,
+    "question": "Find the sum of 8 and 15.",
+    "options": ["A. 20", "B. 22", "C. 23", "D. 25"],
+    "answer": "C"
+  },
+  {
+    "id": 54,
+    "question": "If the cost of 1 pen is ₹10, what is the cost of 15 pens?",
+    "options": ["A. ₹100", "B. ₹120", "C. ₹150", "D. ₹200"],
+    "answer": "C"
+  },
+  {
+    "id": 55,
+    "question": "Find the simple interest on ₹5000 at 8% for 2 years.",
+    "options": ["A. ₹600", "B. ₹700", "C. ₹800", "D. ₹900"],
+    "answer": "C"
+  },
+  {
+    "id": 56,
+    "question": "What is the next number in the series: 2, 6, 12, 20, ___",
+    "options": ["A. 28", "B. 30", "C. 32", "D. 34"],
+    "answer": "A"
+  },
+  {
+    "id": 57,
+    "question": "If a shirt costs ₹800 after a 20% discount, what was the original price?",
+    "options": ["A. ₹900", "B. ₹950", "C. ₹1000", "D. ₹1100"],
+    "answer": "C"
+  },
+  {
+    "id": 58,
+    "question": "Find the average of first five even numbers.",
+    "options": ["A. 4", "B. 5", "C. 6", "D. 7"],
+    "answer": "C"
+  },
+  {
+    "id": 59,
+    "question": "How many days are there in 6 weeks?",
+    "options": ["A. 30", "B. 36", "C. 40", "D. 42"],
+    "answer": "D"
+  },
+  {
+    "id": 60,
+    "question": "Simplify: 100 ÷ 5 + 20",
+    "options": ["A. 35", "B. 40", "C. 45", "D. 50"],
+    "answer": "D"
+  },
+  {
+    "id": 61,
+    "question": "If the perimeter of a rectangle is 30 cm and its length is 10 cm, what is its breadth?",
+    "options": ["A. 3 cm", "B. 4 cm", "C. 5 cm", "D. 6 cm"],
+    "answer": "C"
+  },
+  {
+    "id": 62,
+    "question": "Find the missing number: 1, 4, 9, 16, ___",
+    "options": ["A. 20", "B. 24", "C. 25", "D. 30"],
+    "answer": "C"
+  },
+  {
+    "id": 63,
+    "question": "If 50% of a number is 25, what is the number?",
+    "options": ["A. 40", "B. 45", "C. 50", "D. 60"],
+    "answer": "C"
+  },
+  {
+    "id": 64,
+    "question": "Convert 1.5 hours into minutes.",
+    "options": ["A. 60", "B. 75", "C. 80", "D. 90"],
+    "answer": "D"
+  },
+  {
+    "id": 65,
+    "question": "If the area of a square is 49 cm², find its side.",
+    "options": ["A. 6", "B. 7", "C. 8", "D. 9"],
+    "answer": "B"
+  },
+  {
+    "id": 66,
+    "question": "Find the difference between 250 and 175.",
+    "options": ["A. 65", "B. 70", "C. 75", "D. 80"],
+    "answer": "C"
+  },
+  {
+    "id": 67,
+    "question": "Simplify: 9 × 9 - 9",
+    "options": ["A. 72", "B. 80", "C. 81", "D. 90"],
+    "answer": "A"
+  },
+  {
+    "id": 68,
+    "question": "Find 10% of 350.",
+    "options": ["A. 30", "B. 32", "C. 35", "D. 40"],
+    "answer": "C"
+  },
+  {
+    "id": 69,
+    "question": "If a train travels 90 km in 2 hours, what is its average speed?",
+    "options": ["A. 40 km/h", "B. 45 km/h", "C. 50 km/h", "D. 60 km/h"],
+    "answer": "B"
+  },
+  {
+    "id": 70,
+    "question": "The sum of 15 and twice of 10 is:",
+    "options": ["A. 25", "B. 30", "C. 35", "D. 40"],
+    "answer": "C"
+  }
+]

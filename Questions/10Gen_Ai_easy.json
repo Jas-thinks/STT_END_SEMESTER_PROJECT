@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "What does Generative AI primarily focus on?",
+    "options": ["Analyzing data", "Generating new data", "Deleting data", "Compressing data"],
+    "answer": "Generating new data"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is a key model used in Generative AI?",
+    "options": ["CNN", "GAN", "RNN", "KNN"],
+    "answer": "GAN"
+  },
+  {
+    "id": 3,
+    "question": "What does GAN stand for?",
+    "options": ["Generative Adversarial Network", "General Artificial Network", "Gradient Approximation Network", "Generative Attention Node"],
+    "answer": "Generative Adversarial Network"
+  },
+  {
+    "id": 4,
+    "question": "Who introduced the concept of GANs?",
+    "options": ["Yann LeCun", "Ian Goodfellow", "Andrew Ng", "Geoffrey Hinton"],
+    "answer": "Ian Goodfellow"
+  },
+  {
+    "id": 5,
+    "question": "In GANs, what are the two main components?",
+    "options": ["Generator and Discriminator", "Encoder and Decoder", "Transformer and Tokenizer", "Classifier and Predictor"],
+    "answer": "Generator and Discriminator"
+  },
+  {
+    "id": 6,
+    "question": "Which of these models is mainly used for text generation?",
+    "options": ["VAE", "GAN", "Transformer", "CNN"],
+    "answer": "Transformer"
+  },
+  {
+    "id": 7,
+    "question": "The model GPT stands for?",
+    "options": ["Generative Pretrained Transformer", "General Prediction Transformer", "Graph Processing Tool", "Generative Prompting Technology"],
+    "answer": "Generative Pretrained Transformer"
+  },
+  {
+    "id": 8,
+    "question": "What is the main goal of the Generator in a GAN?",
+    "options": ["Classify real images", "Generate fake but realistic data", "Detect anomalies", "Compress data"],
+    "answer": "Generate fake but realistic data"
+  },
+  {
+    "id": 9,
+    "question": "Which architecture is the foundation for models like GPT and BERT?",
+    "options": ["CNN", "Transformer", "RNN", "Autoencoder"],
+    "answer": "Transformer"
+  },
+  {
+    "id": 10,
+    "question": "Which company developed GPT models?",
+    "options": ["Google", "Meta", "OpenAI", "Microsoft"],
+    "answer": "OpenAI"
+  },
+  {
+    "id": 11,
+    "question": "What does diffusion model generate?",
+    "options": ["Text", "Images", "Audio", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 12,
+    "question": "Which process is central to diffusion models?",
+    "options": ["Noise addition and removal", "Backpropagation", "Tokenization", "Normalization"],
+    "answer": "Noise addition and removal"
+  },
+  {
+    "id": 13,
+    "question": "Which model powers DALL·E?",
+    "options": ["GAN", "Diffusion", "Transformer", "CNN"],
+    "answer": "Transformer"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following is NOT a Generative AI application?",
+    "options": ["Image synthesis", "Speech recognition", "Text summarization", "Style transfer"],
+    "answer": "Speech recognition"
+  },
+  {
+    "id": 15,
+    "question": "In a GAN, the Discriminator is trained to?",
+    "options": ["Generate new data", "Differentiate real from fake data", "Classify images", "Predict text"],
+    "answer": "Differentiate real from fake data"
+  },
+  {
+    "id": 16,
+    "question": "What is the output of a text-to-image model?",
+    "options": ["Audio", "Text", "Image", "Code"],
+    "answer": "Image"
+  },
+  {
+    "id": 17,
+    "question": "What does VAE stand for?",
+    "options": ["Variational Autoencoder", "Visual Auto Enhancement", "Variable Artificial Encoder", "Vector Augmentation Encoder"],
+    "answer": "Variational Autoencoder"
+  },
+  {
+    "id": 18,
+    "question": "Which of these models is used for image generation?",
+    "options": ["VAE", "GAN", "Diffusion Model", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 19,
+    "question": "What is the key loss used in GANs?",
+    "options": ["Cross Entropy Loss", "Adversarial Loss", "Reconstruction Loss", "L1 Loss"],
+    "answer": "Adversarial Loss"
+  },
+  {
+    "id": 20,
+    "question": "Which of the following is a large language model?",
+    "options": ["ChatGPT", "Stable Diffusion", "StyleGAN", "DeepDream"],
+    "answer": "ChatGPT"
+  },
+  {
+    "id": 21,
+    "question": "What is 'prompt engineering' used for?",
+    "options": ["Improving model architecture", "Optimizing user input for better AI responses", "Adjusting learning rate", "Reducing dataset size"],
+    "answer": "Optimizing user input for better AI responses"
+  },
+  {
+    "id": 22,
+    "question": "Which of the following is an image diffusion model?",
+    "options": ["DALL·E 3", "Midjourney", "Stable Diffusion", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 23,
+    "question": "What is the main difference between GANs and VAEs?",
+    "options": ["GANs use adversarial training", "VAEs are supervised", "VAEs use discriminators", "GANs reconstruct input data"],
+    "answer": "GANs use adversarial training"
+  },
+  {
+    "id": 24,
+    "question": "Which of these models uses attention mechanism?",
+    "options": ["Transformer", "CNN", "VAE", "LSTM"],
+    "answer": "Transformer"
+  },
+  {
+    "id": 25,
+    "question": "What does the Discriminator output in a GAN?",
+    "options": ["Noise vector", "Probability of being real", "Generated image", "Encoded data"],
+    "answer": "Probability of being real"
+  },
+  {
+    "id": 26,
+    "question": "Which part of the Transformer handles relationships between tokens?",
+    "options": ["Self-attention", "Convolution", "Embedding", "Dropout"],
+    "answer": "Self-attention"
+  },
+  {
+    "id": 27,
+    "question": "What is the main advantage of Generative AI?",
+    "options": ["It creates new, realistic content", "It deletes old data", "It reduces computation", "It predicts labels"],
+    "answer": "It creates new, realistic content"
+  },
+  {
+    "id": 28,
+    "question": "Which of the following tasks can Generative AI perform?",
+    "options": ["Art creation", "Code generation", "Text writing", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 29,
+    "question": "Which of the following uses token embeddings?",
+    "options": ["Transformer", "GAN", "CNN", "Diffusion"],
+    "answer": "Transformer"
+  },
+  {
+    "id": 30,
+    "question": "What type of data does ChatGPT primarily generate?",
+    "options": ["Images", "Audio", "Text", "Video"],
+    "answer": "Text"
+  },
+  {
+    "id": 31,
+    "question": "What is a common use of Generative AI in marketing?",
+    "options": ["Creating ad copy", "Predicting sales", "Analyzing reviews", "Detecting fraud"],
+    "answer": "Creating ad copy"
+  },
+  {
+    "id": 32,
+    "question": "Which of the following AI models uses an encoder-decoder structure?",
+    "options": ["Transformer", "GAN", "CNN", "KNN"],
+    "answer": "Transformer"
+  },
+  {
+    "id": 33,
+    "question": "In diffusion models, what happens in the forward process?",
+    "options": ["Noise is added", "Noise is removed", "Image is generated", "Loss is minimized"],
+    "answer": "Noise is added"
+  },
+  {
+    "id": 34,
+    "question": "What type of AI model is used in DeepFakes?",
+    "options": ["GAN", "VAE", "Transformer", "CNN"],
+    "answer": "GAN"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following models is open-source?",
+    "options": ["Stable Diffusion", "ChatGPT", "Gemini", "Claude"],
+    "answer": "Stable Diffusion"
+  },
+  {
+    "id": 36,
+    "question": "What does the Generator in GAN learn from?",
+    "options": ["Discriminator feedback", "Labeled data", "Encoder output", "Text prompts"],
+    "answer": "Discriminator feedback"
+  },
+  {
+    "id": 37,
+    "question": "Which loss is often used in VAEs?",
+    "options": ["Reconstruction Loss", "Adversarial Loss", "Cross-Entropy Loss", "Triplet Loss"],
+    "answer": "Reconstruction Loss"
+  },
+  {
+    "id": 38,
+    "question": "Which of these models can perform text-to-speech?",
+    "options": ["Tacotron", "StyleGAN", "BERT", "DALL·E"],
+    "answer": "Tacotron"
+  },
+  {
+    "id": 39,
+    "question": "Which field benefits most from Generative AI’s creativity?",
+    "options": ["Art", "Finance", "Networking", "Cybersecurity"],
+    "answer": "Art"
+  },
+  {
+    "id": 40,
+    "question": "Which of the following uses masked language modeling?",
+    "options": ["BERT", "GPT", "Diffusion", "GAN"],
+    "answer": "BERT"
+  },
+  {
+    "id": 41,
+    "question": "Which of the following is NOT a text-based generative model?",
+    "options": ["GPT", "BERT", "Stable Diffusion", "T5"],
+    "answer": "Stable Diffusion"
+  },
+  {
+    "id": 42,
+    "question": "Which model uses reverse diffusion for generation?",
+    "options": ["Diffusion model", "GAN", "Transformer", "Autoencoder"],
+    "answer": "Diffusion model"
+  },
+  {
+    "id": 43,
+    "question": "What does an autoencoder learn to do?",
+    "options": ["Reconstruct input data", "Classify data", "Generate adversarial noise", "Translate languages"],
+    "answer": "Reconstruct input data"
+  },
+  {
+    "id": 44,
+    "question": "Which of these companies is a major contributor to open-source generative models?",
+    "options": ["Hugging Face", "Google", "Meta", "NVIDIA"],
+    "answer": "Hugging Face"
+  },
+  {
+    "id": 45,
+    "question": "Which AI task involves converting text descriptions into images?",
+    "options": ["Text-to-Image", "Text Classification", "Object Detection", "Speech Synthesis"],
+    "answer": "Text-to-Image"
+  },
+  {
+    "id": 46,
+    "question": "What does the term ‘latent space’ refer to?",
+    "options": ["Hidden representation of data", "Input noise", "Training dataset", "Attention map"],
+    "answer": "Hidden representation of data"
+  },
+  {
+    "id": 47,
+    "question": "What kind of learning do GANs use?",
+    "options": ["Unsupervised", "Supervised", "Reinforcement", "Semi-supervised"],
+    "answer": "Unsupervised"
+  },
+  {
+    "id": 48,
+    "question": "Which model is used to enhance image resolution?",
+    "options": ["SRGAN", "CycleGAN", "StyleGAN", "Pix2Pix"],
+    "answer": "SRGAN"
+  },
+  {
+    "id": 49,
+    "question": "Which concept allows models to understand token relationships?",
+    "options": ["Attention mechanism", "Gradient descent", "Batch normalization", "Pooling"],
+    "answer": "Attention mechanism"
+  },
+  {
+    "id": 50,
+    "question": "What is the purpose of a tokenizer in LLMs?",
+    "options": ["Convert text to tokens", "Generate embeddings", "Visualize layers", "Normalize data"],
+    "answer": "Convert text to tokens"
+  }
+]

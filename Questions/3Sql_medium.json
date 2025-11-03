@@ -1,0 +1,667 @@
+[
+  {
+    "question": "Which SQL clause is used to filter records after an aggregation has been performed?",
+    "options": ["WHERE", "HAVING", "GROUP BY", "ORDER BY"],
+    "answer": "HAVING"
+  },
+  {
+    "question": "Which type of JOIN returns all rows from both tables, matching rows where possible?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+    "answer": "FULL OUTER JOIN"
+  },
+  {
+    "question": "What is the output of SELECT COUNT(DISTINCT department) FROM employees?",
+    "options": ["Total employees", "Total distinct departments", "All departments", "Total rows in table"],
+    "answer": "Total distinct departments"
+  },
+  {
+    "question": "Which keyword is used to remove duplicates in SQL SELECT statements?",
+    "options": ["UNIQUE", "DISTINCT", "DIFFERENT", "NODUP"],
+    "answer": "DISTINCT"
+  },
+  {
+    "question": "Which of the following statements correctly updates multiple columns in SQL?",
+    "options": [
+      "UPDATE emp SET name='John', age=30 WHERE id=1;",
+      "UPDATE emp name='John' AND age=30 WHERE id=1;",
+      "UPDATE emp (name, age) VALUES ('John', 30) WHERE id=1;",
+      "UPDATE emp SET (name, age) = ('John', 30) WHERE id=1;"
+    ],
+    "answer": "UPDATE emp SET name='John', age=30 WHERE id=1;"
+  },
+  {
+    "question": "Which of these constraints ensures that a column’s value is unique across all rows?",
+    "options": ["CHECK", "DEFAULT", "PRIMARY KEY", "FOREIGN KEY"],
+    "answer": "PRIMARY KEY"
+  },
+  {
+    "question": "Which SQL command removes all rows from a table but keeps the structure?",
+    "options": ["DELETE", "DROP", "TRUNCATE", "REMOVE"],
+    "answer": "TRUNCATE"
+  },
+  {
+    "question": "Which SQL function is used to find the number of characters in a string?",
+    "options": ["LENGTH()", "SIZE()", "CHAR_COUNT()", "NUMCHARS()"],
+    "answer": "LENGTH()"
+  },
+  {
+    "question": "Which statement best describes a correlated subquery?",
+    "options": [
+      "A subquery that runs once for the entire query",
+      "A subquery that references columns from the outer query",
+      "A subquery that returns multiple columns",
+      "A subquery that contains another subquery"
+    ],
+    "answer": "A subquery that references columns from the outer query"
+  },
+  {
+    "question": "Which keyword creates an alias for a table?",
+    "options": ["AS", "ALIAS", "RENAME", "CHANGE"],
+    "answer": "AS"
+  },
+  {
+    "question": "Which function is used to find the highest salary in a department?",
+    "options": [
+      "SELECT MAX(salary) FROM employees;",
+      "SELECT TOP salary FROM employees;",
+      "SELECT HIGH(salary) FROM employees;",
+      "SELECT FIRST(salary) FROM employees;"
+    ],
+    "answer": "SELECT MAX(salary) FROM employees;"
+  },
+  {
+    "question": "Which clause is used to sort the result-set in descending order?",
+    "options": ["SORT DESC", "ORDER BY DESC", "ORDER DESC", "SORT BY DESC"],
+    "answer": "ORDER BY DESC"
+  },
+  {
+    "question": "Which SQL statement will copy only structure of a table, not data?",
+    "options": [
+      "CREATE TABLE new AS SELECT * FROM old;",
+      "CREATE TABLE new LIKE old;",
+      "SELECT INTO new FROM old WHERE 1=2;",
+      "CREATE CLONE TABLE new FROM old;"
+    ],
+    "answer": "CREATE TABLE new LIKE old;"
+  },
+  {
+    "question": "Which keyword ensures that no NULL values are allowed in a column?",
+    "options": ["UNIQUE", "CHECK", "NOT NULL", "DEFAULT"],
+    "answer": "NOT NULL"
+  },
+  {
+    "question": "Which SQL command is used to add a new column to an existing table?",
+    "options": ["UPDATE TABLE", "ADD COLUMN", "ALTER TABLE", "INSERT COLUMN"],
+    "answer": "ALTER TABLE"
+  },
+  {
+    "question": "What will happen if you execute DELETE FROM employees without a WHERE clause?",
+    "options": [
+      "It deletes all records",
+      "It deletes the first record",
+      "It throws an error",
+      "It does nothing"
+    ],
+    "answer": "It deletes all records"
+  },
+  {
+    "question": "Which SQL keyword combines the results of two SELECT statements and removes duplicates?",
+    "options": ["UNION", "UNION ALL", "INTERSECT", "JOIN"],
+    "answer": "UNION"
+  },
+  {
+    "question": "Which of the following statements about indexes is true?",
+    "options": [
+      "Indexes slow down SELECT queries",
+      "Indexes improve retrieval speed but slow down INSERT operations",
+      "Indexes prevent duplicate data",
+      "Indexes store all data twice"
+    ],
+    "answer": "Indexes improve retrieval speed but slow down INSERT operations"
+  },
+  {
+    "question": "Which SQL constraint enforces a relationship between two tables?",
+    "options": ["UNIQUE", "PRIMARY KEY", "FOREIGN KEY", "CHECK"],
+    "answer": "FOREIGN KEY"
+  },
+  {
+    "question": "Which of the following is not a valid SQL aggregate function?",
+    "options": ["SUM", "AVG", "MEDIAN", "COUNT"],
+    "answer": "MEDIAN"
+  },
+  {
+    "question": "In SQL, which keyword is used to rename a column in the output?",
+    "options": ["RENAME", "AS", "CHANGE", "ALIAS"],
+    "answer": "AS"
+  },
+  {
+    "question": "What is the default sorting order of ORDER BY clause?",
+    "options": ["Ascending", "Descending", "Random", "Based on Primary Key"],
+    "answer": "Ascending"
+  },
+  {
+    "question": "Which operator is used to match patterns in SQL?",
+    "options": ["LIKE", "MATCH", "PATTERN", "EQUALS"],
+    "answer": "LIKE"
+  },
+  {
+    "question": "Which clause groups rows that have the same values in specified columns?",
+    "options": ["ORDER BY", "GROUP BY", "HAVING", "WHERE"],
+    "answer": "GROUP BY"
+  },
+  {
+    "question": "Which function can be used to convert a string to uppercase in SQL?",
+    "options": ["TOUPPER()", "UPPER()", "CASE()", "CAPITALIZE()"],
+    "answer": "UPPER()"
+  },
+  {
+    "question": "Which SQL command is used to permanently remove a table from a database?",
+    "options": ["DELETE TABLE", "DROP TABLE", "REMOVE TABLE", "TRUNCATE TABLE"],
+    "answer": "DROP TABLE"
+  },
+  {
+    "question": "What will be the result of SELECT 10/4 in SQL?",
+    "options": ["2.5", "2", "3", "Error"],
+    "answer": "2.5"
+  },
+  {
+    "question": "What is a transaction in SQL?",
+    "options": [
+      "A single SQL query",
+      "A sequence of operations performed as a single logical unit of work",
+      "A backup operation",
+      "An index update"
+    ],
+    "answer": "A sequence of operations performed as a single logical unit of work"
+  },
+  {
+    "question": "Which command is used to make a transaction permanent?",
+    "options": ["SAVE", "COMMIT", "ROLLBACK", "END"],
+    "answer": "COMMIT"
+  },
+  {
+    "question": "What does the SQL ROLLBACK command do?",
+    "options": [
+      "Saves a transaction",
+      "Undoes transactions since the last COMMIT",
+      "Deletes a record permanently",
+      "Ends the session"
+    ],
+    "answer": "Undoes transactions since the last COMMIT"
+  },
+  {
+    "question": "Which of the following is true about a PRIMARY KEY?",
+    "options": [
+      "Can have NULL values",
+      "Can have duplicate values",
+      "Uniquely identifies each record",
+      "Can appear multiple times"
+    ],
+    "answer": "Uniquely identifies each record"
+  },
+  {
+    "question": "Which SQL statement returns employees who do not belong to any department?",
+    "options": [
+      "SELECT * FROM employees WHERE dept_id IS NULL;",
+      "SELECT * FROM employees WHERE dept_id = 0;",
+      "SELECT * FROM employees WHERE dept_id = '';",
+      "SELECT * FROM employees WHERE dept_id NOT EXISTS;"
+    ],
+    "answer": "SELECT * FROM employees WHERE dept_id IS NULL;"
+  },
+  {
+    "question": "Which SQL keyword is used to find common records between two SELECT statements?",
+    "options": ["UNION", "INTERSECT", "EXCEPT", "JOIN"],
+    "answer": "INTERSECT"
+  },
+  {
+    "question": "Which SQL constraint checks whether the value satisfies a specific condition?",
+    "options": ["CHECK", "UNIQUE", "DEFAULT", "PRIMARY KEY"],
+    "answer": "CHECK"
+  },
+  {
+    "question": "Which SQL clause is used to fetch a limited number of records?",
+    "options": ["LIMIT", "RANGE", "TOP", "OFFSET"],
+    "answer": "LIMIT"
+  },
+  {
+    "question": "Which function returns the current date and time in SQL?",
+    "options": ["SYSDATE()", "CURRENT_DATE()", "NOW()", "DATE()"],
+    "answer": "NOW()"
+  },
+  {
+    "question": "Which of these operations is not allowed on a view?",
+    "options": ["SELECT", "UPDATE", "DELETE", "CREATE INDEX"],
+    "answer": "CREATE INDEX"
+  },
+  {
+    "question": "Which SQL keyword is used to change the name of a table?",
+    "options": ["ALTER", "RENAME", "CHANGE", "UPDATE"],
+    "answer": "RENAME"
+  },
+  {
+    "question": "Which function returns the remainder of a division?",
+    "options": ["MOD()", "REMAINDER()", "DIV()", "REM()"],
+    "answer": "MOD()"
+  },
+  {
+    "question": "Which SQL clause is used with DELETE to remove specific rows?",
+    "options": ["WHERE", "HAVING", "ORDER BY", "GROUP BY"],
+    "answer": "WHERE"
+  },
+  {
+    "question": "Which SQL function removes spaces from both sides of a string?",
+    "options": ["CUT()", "TRIM()", "REMOVE()", "STRIP()"],
+    "answer": "TRIM()"
+  },
+  {
+    "question": "Which keyword is used to combine rows from two or more tables based on a related column?",
+    "options": ["MERGE", "JOIN", "COMBINE", "CONNECT"],
+    "answer": "JOIN"
+  },
+  {
+    "question": "Which statement best describes a trigger?",
+    "options": [
+      "A stored procedure executed manually",
+      "A database object executed automatically on an event",
+      "A type of index",
+      "A temporary table"
+    ],
+    "answer": "A database object executed automatically on an event"
+  },
+  {
+    "question": "Which SQL feature ensures referential integrity between tables?",
+    "options": ["FOREIGN KEY", "PRIMARY KEY", "CHECK", "UNIQUE"],
+    "answer": "FOREIGN KEY"
+  },
+  {
+    "question": "What does the SQL keyword BETWEEN do?",
+    "options": [
+      "Matches values in a given range",
+      "Matches a pattern",
+      "Finds equality",
+      "Finds NULL values"
+    ],
+    "answer": "Matches values in a given range"
+  },
+  {
+    "question": "Which SQL function can be used to replace NULL with a specified value?",
+    "options": ["NVL()", "ISNULL()", "COALESCE()", "ALL OF THESE"],
+    "answer": "ALL OF THESE"
+  },
+  {
+    "question": "Which SQL operation is used to add new rows?",
+    "options": ["INSERT", "ADD", "UPDATE", "APPEND"],
+    "answer": "INSERT"
+  },
+  {
+    "question": "Which command will rollback only part of a transaction?",
+    "options": ["ROLLBACK TO SAVEPOINT", "UNDO", "CANCEL", "PARTIAL ROLLBACK"],
+    "answer": "ROLLBACK TO SAVEPOINT"
+  },
+  {
+    "question": "Which of the following represents 3rd Normal Form (3NF)?",
+    "options": [
+      "No repeating groups",
+      "No transitive dependencies",
+      "No partial dependencies",
+      "Data split into separate tables"
+    ],
+    "answer": "No transitive dependencies"
+  },
+  {
+    "question": "Which SQL statement retrieves unique department IDs and total salary per department?",
+    "options": [
+      "SELECT dept_id, SUM(salary) FROM employees GROUP BY dept_id;",
+      "SELECT DISTINCT dept_id, salary FROM employees;",
+      "SELECT dept_id, COUNT(salary) FROM employees;",
+      "SELECT salary FROM employees GROUP BY dept_id;"
+    ],
+    "answer": "SELECT dept_id, SUM(salary) FROM employees GROUP BY dept_id;"
+  },
+  {
+    "question": "Which SQL function is used to calculate the average salary of all employees?",
+    "options": ["SUM()", "MEAN()", "AVG()", "AVERAGE()"],
+    "answer": "AVG()"
+  },
+  {
+    "question": "Which SQL statement is used to find employees earning more than the average salary?",
+    "options": [
+      "SELECT * FROM emp WHERE salary > (SELECT AVG(salary) FROM emp);",
+      "SELECT * FROM emp WHERE salary > AVG(salary);",
+      "SELECT * FROM emp HAVING salary > AVG(salary);",
+      "SELECT * FROM emp WHERE salary > salary.AVG;"
+    ],
+    "answer": "SELECT * FROM emp WHERE salary > (SELECT AVG(salary) FROM emp);"
+  },
+  {
+    "question": "Which SQL clause is used to combine rows with the same values into summary rows?",
+    "options": ["GROUP BY", "ORDER BY", "HAVING", "SUMMARY"],
+    "answer": "GROUP BY"
+  },
+  {
+    "question": "What is the purpose of a FOREIGN KEY constraint?",
+    "options": [
+      "To ensure each row is unique",
+      "To ensure referential integrity between tables",
+      "To improve performance",
+      "To create an index automatically"
+    ],
+    "answer": "To ensure referential integrity between tables"
+  },
+  {
+    "question": "Which SQL command creates a duplicate copy of a table including data?",
+    "options": [
+      "CREATE TABLE new AS SELECT * FROM old;",
+      "COPY TABLE new FROM old;",
+      "DUPLICATE TABLE old TO new;",
+      "SELECT * INTO new FROM old;"
+    ],
+    "answer": "CREATE TABLE new AS SELECT * FROM old;"
+  },
+  {
+    "question": "Which function is used to find the nth highest salary in SQL?",
+    "options": [
+      "LIMIT OFFSET",
+      "ROW_NUMBER() with ORDER BY",
+      "RANK() only",
+      "MAX() in subquery"
+    ],
+    "answer": "ROW_NUMBER() with ORDER BY"
+  },
+  {
+    "question": "Which statement is true about a view in SQL?",
+    "options": [
+      "A view stores physical data",
+      "A view is always updatable",
+      "A view is a virtual table based on query results",
+      "A view duplicates all base table data"
+    ],
+    "answer": "A view is a virtual table based on query results"
+  },
+  {
+    "question": "Which keyword is used to retrieve unique combinations of columns?",
+    "options": ["DISTINCT", "GROUP BY", "UNIQUE", "ONLY"],
+    "answer": "DISTINCT"
+  },
+  {
+    "question": "Which of these commands will remove all data but keep table structure and identity reset?",
+    "options": ["DELETE", "TRUNCATE", "DROP", "CLEAR"],
+    "answer": "TRUNCATE"
+  },
+  {
+    "question": "Which type of JOIN includes all rows from the left table and matching rows from the right table?",
+    "options": ["INNER JOIN", "RIGHT JOIN", "LEFT JOIN", "FULL JOIN"],
+    "answer": "LEFT JOIN"
+  },
+  {
+    "question": "Which SQL function is used to get the current timestamp?",
+    "options": ["NOW()", "CURRENT_TIMESTAMP()", "SYSDATE()", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "Which keyword is used to rename a column or table temporarily in a query?",
+    "options": ["AS", "RENAME", "CHANGE", "SET"],
+    "answer": "AS"
+  },
+  {
+    "question": "Which statement will return all records where name starts with 'A'?",
+    "options": [
+      "SELECT * FROM emp WHERE name LIKE 'A%';",
+      "SELECT * FROM emp WHERE name LIKE '%A';",
+      "SELECT * FROM emp WHERE name = 'A*';",
+      "SELECT * FROM emp WHERE name IN ('A');"
+    ],
+    "answer": "SELECT * FROM emp WHERE name LIKE 'A%';"
+  },
+  {
+    "question": "What is the result of using UNION ALL instead of UNION?",
+    "options": [
+      "Duplicates are removed",
+      "Duplicates are retained",
+      "Results are sorted automatically",
+      "Performance decreases"
+    ],
+    "answer": "Duplicates are retained"
+  },
+  {
+    "question": "Which SQL keyword returns rows that exist in one query but not in another?",
+    "options": ["MINUS", "EXCEPT", "DIFFERENCE", "INTERSECT"],
+    "answer": "EXCEPT"
+  },
+  {
+    "question": "Which SQL keyword is used to define a condition in an aggregate function?",
+    "options": ["WHERE", "HAVING", "GROUP BY", "CASE"],
+    "answer": "HAVING"
+  },
+  {
+    "question": "Which SQL statement adds a primary key to an existing table?",
+    "options": [
+      "ALTER TABLE emp ADD PRIMARY KEY(id);",
+      "UPDATE emp SET PRIMARY KEY(id);",
+      "CREATE PRIMARY KEY ON emp(id);",
+      "ALTER emp ADD CONSTRAINT PK PRIMARY KEY;"
+    ],
+    "answer": "ALTER TABLE emp ADD PRIMARY KEY(id);"
+  },
+  {
+    "question": "Which SQL statement finds the employees in departments 10 or 20?",
+    "options": [
+      "SELECT * FROM emp WHERE dept IN (10,20);",
+      "SELECT * FROM emp WHERE dept = 10 OR 20;",
+      "SELECT * FROM emp HAVING dept IN (10,20);",
+      "SELECT * FROM emp WHERE dept BETWEEN 10 AND 20;"
+    ],
+    "answer": "SELECT * FROM emp WHERE dept IN (10,20);"
+  },
+  {
+    "question": "What does the SQL keyword DISTINCT ON do in PostgreSQL?",
+    "options": [
+      "Removes all duplicates",
+      "Selects unique rows based on specified columns",
+      "Sorts data automatically",
+      "Removes NULL values"
+    ],
+    "answer": "Selects unique rows based on specified columns"
+  },
+  {
+    "question": "Which SQL clause restricts the number of rows returned by a query?",
+    "options": ["LIMIT", "OFFSET", "ROWNUM", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "What happens when you perform DELETE without WHERE?",
+    "options": [
+      "Deletes the first record only",
+      "Deletes all rows",
+      "Throws an error",
+      "Deletes random rows"
+    ],
+    "answer": "Deletes all rows"
+  },
+  {
+    "question": "Which SQL statement can be used to update multiple rows based on a condition?",
+    "options": [
+      "UPDATE emp SET salary = salary + 500 WHERE dept = 'HR';",
+      "ALTER TABLE emp SET salary = salary + 500 WHERE dept = 'HR';",
+      "INSERT INTO emp VALUES (salary + 500);",
+      "MODIFY emp salary = salary + 500;"
+    ],
+    "answer": "UPDATE emp SET salary = salary + 500 WHERE dept = 'HR';"
+  },
+  {
+    "question": "Which SQL keyword is used to test NULL values?",
+    "options": ["IS NULL", "EQUALS NULL", "== NULL", "IS NOT NULL"],
+    "answer": "IS NULL"
+  },
+  {
+    "question": "Which clause is used to group records by a condition?",
+    "options": ["GROUP BY", "ORDER BY", "WHERE", "HAVING"],
+    "answer": "GROUP BY"
+  },
+  {
+    "question": "Which function returns a rounded value of a numeric field?",
+    "options": ["ROUND()", "TRUNC()", "CEIL()", "FLOOR()"],
+    "answer": "ROUND()"
+  },
+  {
+    "question": "Which SQL operation can be used to merge data from multiple tables into one result set?",
+    "options": ["JOIN", "UNION", "MERGE", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "Which of the following cannot be rolled back in SQL?",
+    "options": ["DELETE", "INSERT", "TRUNCATE", "UPDATE"],
+    "answer": "TRUNCATE"
+  },
+  {
+    "question": "What is the purpose of the SQL SAVEPOINT command?",
+    "options": [
+      "Marks a point to rollback to within a transaction",
+      "Saves data to disk",
+      "Ends the transaction",
+      "Creates a backup"
+    ],
+    "answer": "Marks a point to rollback to within a transaction"
+  },
+  {
+    "question": "Which SQL command creates a duplicate record of a table including its data?",
+    "options": [
+      "CREATE TABLE new AS SELECT * FROM old;",
+      "CLONE TABLE old TO new;",
+      "BACKUP old TO new;",
+      "DUPLICATE old TO new;"
+    ],
+    "answer": "CREATE TABLE new AS SELECT * FROM old;"
+  },
+  {
+    "question": "Which SQL function returns the number of rows in a table?",
+    "options": ["ROWS()", "COUNT(*)", "TOTAL()", "SIZE()"],
+    "answer": "COUNT(*)"
+  },
+  {
+    "question": "Which statement will display employees with salary between 3000 and 6000?",
+    "options": [
+      "SELECT * FROM emp WHERE salary BETWEEN 3000 AND 6000;",
+      "SELECT * FROM emp WHERE salary >= 3000 OR salary <= 6000;",
+      "SELECT * FROM emp HAVING salary BETWEEN 3000 AND 6000;",
+      "SELECT * FROM emp WHERE salary IN (3000,6000);"
+    ],
+    "answer": "SELECT * FROM emp WHERE salary BETWEEN 3000 AND 6000;"
+  },
+  {
+    "question": "Which SQL clause filters groups created by GROUP BY?",
+    "options": ["HAVING", "WHERE", "ORDER BY", "FILTER"],
+    "answer": "HAVING"
+  },
+  {
+    "question": "Which function can convert lowercase letters to uppercase?",
+    "options": ["UPPER()", "TOUPPER()", "CASEUP()", "CAPS()"],
+    "answer": "UPPER()"
+  },
+  {
+    "question": "Which SQL feature prevents unauthorized access to data?",
+    "options": ["Privileges", "Constraints", "Indexes", "Normalization"],
+    "answer": "Privileges"
+  },
+  {
+    "question": "Which SQL command modifies the structure of an existing table?",
+    "options": ["ALTER TABLE", "UPDATE", "MODIFY", "CHANGE STRUCTURE"],
+    "answer": "ALTER TABLE"
+  },
+  {
+    "question": "Which SQL function is used to get the difference between two dates?",
+    "options": ["DATEDIFF()", "DATE_DIFF()", "TIMEDIFF()", "ALL OF THESE"],
+    "answer": "DATEDIFF()"
+  },
+  {
+    "question": "What is the use of the SQL CASE expression?",
+    "options": [
+      "Performs conditional logic inside queries",
+      "Creates loops",
+      "Defines procedures",
+      "Executes triggers"
+    ],
+    "answer": "Performs conditional logic inside queries"
+  },
+  {
+    "question": "Which SQL keyword removes duplicate records in result set?",
+    "options": ["DISTINCT", "UNIQUE", "GROUP BY", "ALL"],
+    "answer": "DISTINCT"
+  },
+  {
+    "question": "What is the purpose of an index in SQL?",
+    "options": [
+      "Speed up query performance",
+      "Store duplicate data",
+      "Reduce table size",
+      "Control data integrity"
+    ],
+    "answer": "Speed up query performance"
+  },
+  {
+    "question": "Which of these is a valid aggregate function?",
+    "options": ["AVG()", "MAX()", "COUNT()", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "Which SQL keyword allows creating temporary data storage?",
+    "options": ["TEMP TABLE", "CREATE TEMPORARY TABLE", "VOLATILE TABLE", "TRANSIENT"],
+    "answer": "CREATE TEMPORARY TABLE"
+  },
+  {
+    "question": "Which function concatenates two strings in SQL?",
+    "options": ["CONCAT()", "JOIN()", "MERGE()", "APPEND()"],
+    "answer": "CONCAT()"
+  },
+  {
+    "question": "What is the purpose of the SQL DEFAULT constraint?",
+    "options": [
+      "Assigns a predefined value if none is provided",
+      "Ensures uniqueness",
+      "Restricts NULL values",
+      "Auto-increments the column"
+    ],
+    "answer": "Assigns a predefined value if none is provided"
+  },
+  {
+    "question": "Which SQL keyword is used to copy data from one table into another?",
+    "options": ["INSERT INTO SELECT", "COPY TABLE", "DUPLICATE", "MERGE INTO"],
+    "answer": "INSERT INTO SELECT"
+  },
+  {
+    "question": "Which SQL function removes spaces from the start and end of a string?",
+    "options": ["TRIM()", "LTRIM()", "RTRIM()", "CUT()"],
+    "answer": "TRIM()"
+  },
+  {
+    "question": "Which of these is NOT a DML command?",
+    "options": ["INSERT", "UPDATE", "DELETE", "CREATE"],
+    "answer": "CREATE"
+  },
+  {
+    "question": "Which command permanently deletes a table from the database?",
+    "options": ["DROP TABLE", "DELETE TABLE", "REMOVE TABLE", "TRUNCATE TABLE"],
+    "answer": "DROP TABLE"
+  },
+  {
+    "question": "What is the use of COALESCE() in SQL?",
+    "options": [
+      "Returns the first non-NULL value",
+      "Combines all rows",
+      "Checks duplicates",
+      "Replaces string patterns"
+    ],
+    "answer": "Returns the first non-NULL value"
+  },
+  {
+    "question": "Which SQL function gives the current user name?",
+    "options": ["USER()", "CURRENT_USER()", "SESSION_USER()", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "Which SQL keyword defines rules for automatic actions in a table?",
+    "options": ["TRIGGER", "CONSTRAINT", "EVENT", "ACTION"],
+    "answer": "TRIGGER"
+  }
+]

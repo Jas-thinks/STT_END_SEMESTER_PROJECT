@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following algorithms is most suitable for predicting a continuous numerical value?",
+    "options": ["A. K-Means", "B. Linear Regression", "C. Naive Bayes", "D. Decision Tree (Classifier)"],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "In logistic regression, the output is mapped to a probability using which function?",
+    "options": ["A. Sigmoid", "B. ReLU", "C. Tanh", "D. Softmax"],
+    "answer": "A"
+  },
+  {
+    "id": 3,
+    "question": "What does 'overfitting' mean in Machine Learning?",
+    "options": ["A. Model performs well on training but poorly on test data", "B. Model performs well on both", "C. Model performs poorly on both", "D. Model ignores noise in data"],
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "question": "Which regularization technique adds the sum of absolute values of weights as a penalty term?",
+    "options": ["A. L1 Regularization", "B. L2 Regularization", "C. Dropout", "D. Early Stopping"],
+    "answer": "A"
+  },
+  {
+    "id": 5,
+    "question": "Principal Component Analysis (PCA) is used for:",
+    "options": ["A. Feature extraction", "B. Classification", "C. Regression", "D. Overfitting reduction only"],
+    "answer": "A"
+  },
+  {
+    "id": 6,
+    "question": "What is the main objective of gradient descent?",
+    "options": ["A. Minimize the loss function", "B. Maximize accuracy", "C. Normalize data", "D. Increase learning rate"],
+    "answer": "A"
+  },
+  {
+    "id": 7,
+    "question": "Which metric is best suited for imbalanced classification problems?",
+    "options": ["A. Accuracy", "B. Recall", "C. Mean Squared Error", "D. Adjusted R²"],
+    "answer": "B"
+  },
+  {
+    "id": 8,
+    "question": "Which ensemble method builds models sequentially, where each model tries to correct errors of the previous one?",
+    "options": ["A. Bagging", "B. Boosting", "C. Random Forest", "D. Voting"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "question": "What happens if learning rate is too high in gradient descent?",
+    "options": ["A. Slow convergence", "B. Model oscillates or diverges", "C. Overfitting", "D. Underfitting"],
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is NOT a hyperparameter?",
+    "options": ["A. Learning rate", "B. Number of hidden layers", "C. Model weights", "D. Batch size"],
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "question": "K-Means clustering minimizes which of the following?",
+    "options": ["A. Intra-cluster variance", "B. Inter-cluster distance", "C. Entropy", "D. Gini index"],
+    "answer": "A"
+  },
+  {
+    "id": 12,
+    "question": "Which activation function can cause the vanishing gradient problem?",
+    "options": ["A. ReLU", "B. Sigmoid", "C. Leaky ReLU", "D. Softmax"],
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "question": "What is the purpose of the validation set?",
+    "options": ["A. To train the model", "B. To tune hyperparameters", "C. To compute final accuracy", "D. To reduce dimensionality"],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "question": "Which evaluation metric is used for regression problems?",
+    "options": ["A. Precision", "B. Recall", "C. Mean Squared Error", "D. F1-score"],
+    "answer": "C"
+  },
+  {
+    "id": 15,
+    "question": "In Random Forest, each tree is trained using:",
+    "options": ["A. The entire dataset", "B. A bootstrap sample of the dataset", "C. Only the test data", "D. Cross-validation folds"],
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following best describes the bias-variance tradeoff?",
+    "options": ["A. Increasing bias decreases variance", "B. Increasing variance increases bias", "C. Both increase together", "D. They are unrelated"],
+    "answer": "A"
+  },
+  {
+    "id": 17,
+    "question": "Naive Bayes assumes that:",
+    "options": ["A. Features are independent", "B. Features are dependent", "C. Data is linearly separable", "D. Noise is zero"],
+    "answer": "A"
+  },
+  {
+    "id": 18,
+    "question": "What does the 'kernel trick' in SVM allow?",
+    "options": ["A. Non-linear classification in higher dimensions", "B. Faster training time", "C. Feature scaling", "D. Regularization"],
+    "answer": "A"
+  },
+  {
+    "id": 19,
+    "question": "What is a confusion matrix used for?",
+    "options": ["A. To measure performance of a classifier", "B. To visualize clusters", "C. To reduce dimensions", "D. To optimize hyperparameters"],
+    "answer": "A"
+  },
+  {
+    "id": 20,
+    "question": "Which optimizer adapts learning rates using moment estimates of gradients?",
+    "options": ["A. SGD", "B. Adam", "C. Adagrad", "D. RMSProp"],
+    "answer": "B"
+  },
+  {
+    "id": 21,
+    "question": "Which of these techniques helps reduce overfitting in neural networks?",
+    "options": ["A. Dropout", "B. Increasing learning rate", "C. Removing hidden layers", "D. Batch normalization"],
+    "answer": "A"
+  },
+  {
+    "id": 22,
+    "question": "Which distance metric is typically used in KNN for continuous variables?",
+    "options": ["A. Manhattan", "B. Euclidean", "C. Cosine", "D. Jaccard"],
+    "answer": "B"
+  },
+  {
+    "id": 23,
+    "question": "What is the output of a softmax layer?",
+    "options": ["A. Probabilities summing to 1", "B. Raw scores", "C. Binary output", "D. Logarithmic loss"],
+    "answer": "A"
+  },
+  {
+    "id": 24,
+    "question": "Which of these methods can handle non-linear decision boundaries?",
+    "options": ["A. Logistic Regression", "B. Linear SVM", "C. Decision Trees", "D. Naive Bayes"],
+    "answer": "C"
+  },
+  {
+    "id": 25,
+    "question": "What is the main drawback of KNN?",
+    "options": ["A. High bias", "B. High variance and computational cost", "C. Poor accuracy", "D. Needs large datasets to train weights"],
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "question": "The ROC curve plots:",
+    "options": ["A. Precision vs Recall", "B. True Positive Rate vs False Positive Rate", "C. Accuracy vs Threshold", "D. Sensitivity vs Specificity"],
+    "answer": "B"
+  },
+  {
+    "id": 27,
+    "question": "In feature scaling, which technique transforms data to have mean 0 and standard deviation 1?",
+    "options": ["A. Min-Max Scaling", "B. Standardization", "C. Normalization", "D. One-Hot Encoding"],
+    "answer": "B"
+  },
+  {
+    "id": 28,
+    "question": "Which algorithm uses Gini Index or Entropy for decision making?",
+    "options": ["A. Random Forest", "B. Decision Tree", "C. AdaBoost", "D. SVM"],
+    "answer": "B"
+  },
+  {
+    "id": 29,
+    "question": "Cross-validation helps in:",
+    "options": ["A. Estimating model performance on unseen data", "B. Reducing model complexity", "C. Increasing model bias", "D. Reducing gradient explosion"],
+    "answer": "A"
+  },
+  {
+    "id": 30,
+    "question": "What is the function of an activation function in neural networks?",
+    "options": ["A. Adds non-linearity", "B. Initializes weights", "C. Normalizes input", "D. Reduces overfitting"],
+    "answer": "A"
+  },
+  {
+    "id": 31,
+    "question": "What does 'epoch' represent in training neural networks?",
+    "options": ["A. One forward-backward pass through the dataset", "B. A batch of samples", "C. Only forward propagation", "D. Only loss calculation"],
+    "answer": "A"
+  },
+  {
+    "id": 32,
+    "question": "Which metric is insensitive to class imbalance?",
+    "options": ["A. Accuracy", "B. F1-score", "C. Precision", "D. Recall"],
+    "answer": "B"
+  },
+  {
+    "id": 33,
+    "question": "What happens if we use too few principal components in PCA?",
+    "options": ["A. Loss of information", "B. Overfitting", "C. Increase in dimensionality", "D. Higher accuracy"],
+    "answer": "A"
+  },
+  {
+    "id": 34,
+    "question": "Which of these algorithms assumes Gaussian distribution of features?",
+    "options": ["A. Naive Bayes", "B. KNN", "C. Decision Trees", "D. Random Forest"],
+    "answer": "A"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following is true about bagging?",
+    "options": ["A. It reduces variance", "B. It increases bias", "C. It uses weak learners sequentially", "D. It only works for regression"],
+    "answer": "A"
+  },
+  {
+    "id": 36,
+    "question": "In linear regression, what is assumed about the residuals?",
+    "options": ["A. They are normally distributed", "B. They are dependent", "C. They are increasing", "D. They are positive"],
+    "answer": "A"
+  },
+  {
+    "id": 37,
+    "question": "Which is an example of unsupervised learning?",
+    "options": ["A. Linear Regression", "B. Decision Trees", "C. K-Means", "D. Logistic Regression"],
+    "answer": "C"
+  },
+  {
+    "id": 38,
+    "question": "Which method helps identify correlated features?",
+    "options": ["A. Correlation matrix", "B. Confusion matrix", "C. ROC curve", "D. Gradient check"],
+    "answer": "A"
+  },
+  {
+    "id": 39,
+    "question": "What is 'early stopping' used for?",
+    "options": ["A. Prevent overfitting", "B. Reduce bias", "C. Increase dataset size", "D. Adjust learning rate"],
+    "answer": "A"
+  },
+  {
+    "id": 40,
+    "question": "Which loss function is used in logistic regression?",
+    "options": ["A. Hinge Loss", "B. Cross-Entropy Loss", "C. MSE", "D. L1 Loss"],
+    "answer": "B"
+  },
+  {
+    "id": 41,
+    "question": "What is the role of the bias term in linear models?",
+    "options": ["A. Shifts decision boundary", "B. Changes slope", "C. Reduces regularization", "D. Normalizes inputs"],
+    "answer": "A"
+  },
+  {
+    "id": 42,
+    "question": "What is dropout primarily used for?",
+    "options": ["A. Reducing overfitting", "B. Increasing training speed", "C. Improving bias", "D. Normalizing data"],
+    "answer": "A"
+  },
+  {
+    "id": 43,
+    "question": "Which method can detect multicollinearity?",
+    "options": ["A. VIF (Variance Inflation Factor)", "B. ROC Curve", "C. Gradient Descent", "D. Confusion Matrix"],
+    "answer": "A"
+  },
+  {
+    "id": 44,
+    "question": "What does feature scaling ensure in optimization?",
+    "options": ["A. Faster convergence", "B. Higher bias", "C. Larger learning rate", "D. Random initialization"],
+    "answer": "A"
+  },
+  {
+    "id": 45,
+    "question": "Which algorithm is most sensitive to feature scaling?",
+    "options": ["A. KNN", "B. Decision Tree", "C. Naive Bayes", "D. Random Forest"],
+    "answer": "A"
+  },
+  {
+    "id": 46,
+    "question": "Which type of regularization can drive some coefficients exactly to zero?",
+    "options": ["A. L1", "B. L2", "C. ElasticNet only", "D. Ridge"],
+    "answer": "A"
+  },
+  {
+    "id": 47,
+    "question": "What is the curse of dimensionality?",
+    "options": ["A. Data becomes sparse in high dimensions", "B. More features increase bias", "C. Models become simpler", "D. Gradient vanishes"],
+    "answer": "A"
+  },
+  {
+    "id": 48,
+    "question": "What is batch normalization mainly used for?",
+    "options": ["A. Stabilizing training", "B. Reducing dataset size", "C. Preventing overfitting", "D. Increasing dropout"],
+    "answer": "A"
+  },
+  {
+    "id": 49,
+    "question": "Which ML model is most interpretable?",
+    "options": ["A. Linear Regression", "B. Neural Network", "C. Random Forest", "D. Gradient Boosting"],
+    "answer": "A"
+  },
+  {
+    "id": 50,
+    "question": "Which algorithm is used for anomaly detection in high dimensions?",
+    "options": ["A. Isolation Forest", "B. Logistic Regression", "C. PCA", "D. Naive Bayes"],
+    "answer": "A"
+  },
+  {
+    "id": 51,
+    "question": "Which regularization method combines both L1 and L2 penalties?",
+    "options": ["A. Ridge", "B. Lasso", "C. ElasticNet", "D. Dropout"],
+    "answer": "C"
+  },
+  {
+    "id": 52,
+    "question": "What happens when we increase the number of estimators in a Random Forest?",
+    "options": ["A. Decreases variance", "B. Increases bias", "C. Increases variance", "D. Decreases training time"],
+    "answer": "A"
+  },
+  {
+    "id": 53,
+    "question": "Which of the following techniques can handle missing data effectively?",
+    "options": ["A. Mean imputation", "B. Dropping rows", "C. KNN imputer", "D. All of the above"],
+    "answer": "D"
+  },
+  {
+    "id": 54,
+    "question": "What is the main disadvantage of using a very deep neural network?",
+    "options": ["A. Underfitting", "B. Vanishing gradients", "C. Low accuracy", "D. High bias"],
+    "answer": "B"
+  },
+  {
+    "id": 55,
+    "question": "In ensemble learning, bagging primarily helps to reduce:",
+    "options": ["A. Bias", "B. Variance", "C. Both bias and variance", "D. Overfitting completely"],
+    "answer": "B"
+  },
+  {
+    "id": 56,
+    "question": "Which algorithm is sensitive to outliers?",
+    "options": ["A. Linear Regression", "B. Decision Trees", "C. Random Forest", "D. KNN"],
+    "answer": "A"
+  },
+  {
+    "id": 57,
+    "question": "What is 'feature selection'?",
+    "options": ["A. Choosing most relevant features", "B. Creating new features", "C. Removing missing values", "D. Reducing dataset size"],
+    "answer": "A"
+  },
+  {
+    "id": 58,
+    "question": "Which gradient descent variant uses mini-batches of data?",
+    "options": ["A. Batch GD", "B. Stochastic GD", "C. Mini-batch GD", "D. None of these"],
+    "answer": "C"
+  },
+  {
+    "id": 59,
+    "question": "In linear regression, which assumption must hold true?",
+    "options": ["A. Linearity", "B. Homoscedasticity", "C. No multicollinearity", "D. All of the above"],
+    "answer": "D"
+  },
+  {
+    "id": 60,
+    "question": "Which of the following models is non-parametric?",
+    "options": ["A. Logistic Regression", "B. Decision Tree", "C. Linear Regression", "D. Naive Bayes"],
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "question": "What is 'epoch' in neural network training?",
+    "options": ["A. One complete pass through the dataset", "B. One iteration on a batch", "C. One gradient update", "D. One test phase"],
+    "answer": "A"
+  },
+  {
+    "id": 62,
+    "question": "What is the purpose of using a learning rate scheduler?",
+    "options": ["A. Adjust learning rate dynamically", "B. Fix the learning rate", "C. Increase dropout rate", "D. Normalize gradients"],
+    "answer": "A"
+  },
+  {
+    "id": 63,
+    "question": "Which metric is most appropriate for multi-class classification?",
+    "options": ["A. R²", "B. F1-score (macro)", "C. ROC AUC", "D. MSE"],
+    "answer": "B"
+  },
+  {
+    "id": 64,
+    "question": "Which algorithm uses information gain for feature selection?",
+    "options": ["A. Decision Tree", "B. KNN", "C. Naive Bayes", "D. Linear Regression"],
+    "answer": "A"
+  },
+  {
+    "id": 65,
+    "question": "Which of the following reduces dimensionality while retaining variance?",
+    "options": ["A. PCA", "B. LDA", "C. KNN", "D. Naive Bayes"],
+    "answer": "A"
+  },
+  {
+    "id": 66,
+    "question": "What is the role of a cost function?",
+    "options": ["A. Measures model error", "B. Increases accuracy", "C. Changes learning rate", "D. Normalizes data"],
+    "answer": "A"
+  },
+  {
+    "id": 67,
+    "question": "Which approach can handle non-linear regression?",
+    "options": ["A. Polynomial Regression", "B. Logistic Regression", "C. Linear Regression", "D. Lasso"],
+    "answer": "A"
+  },
+  {
+    "id": 68,
+    "question": "What happens if you remove regularization completely?",
+    "options": ["A. Overfitting increases", "B. Underfitting increases", "C. Model becomes unbiased", "D. Gradient vanishes"],
+    "answer": "A"
+  },
+  {
+    "id": 69,
+    "question": "What is the main idea of boosting?",
+    "options": ["A. Combine weak learners sequentially", "B. Combine strong learners in parallel", "C. Select features randomly", "D. Reduce dimensionality"],
+    "answer": "A"
+  },
+  {
+    "id": 70,
+    "question": "Which evaluation metric penalizes large errors more heavily?",
+    "options": ["A. MAE", "B. MSE", "C. RMSE", "D. Accuracy"],
+    "answer": "B"
+  },
+  {
+    "id": 71,
+    "question": "What does ‘batch size’ determine?",
+    "options": ["A. Number of samples per weight update", "B. Learning rate", "C. Model complexity", "D. Number of epochs"],
+    "answer": "A"
+  },
+  {
+    "id": 72,
+    "question": "Which algorithm uses distance metrics for prediction?",
+    "options": ["A. KNN", "B. SVM", "C. Decision Tree", "D. Naive Bayes"],
+    "answer": "A"
+  },
+  {
+    "id": 73,
+    "question": "What does cross-entropy loss measure?",
+    "options": ["A. Difference between predicted and true probabilities", "B. Squared difference of outputs", "C. Distance between clusters", "D. Weight regularization"],
+    "answer": "A"
+  },
+  {
+    "id": 74,
+    "question": "Which of the following helps avoid gradient explosion?",
+    "options": ["A. Gradient clipping", "B. High learning rate", "C. Small batch size", "D. Early stopping"],
+    "answer": "A"
+  },
+  {
+    "id": 75,
+    "question": "In AdaBoost, misclassified samples are:",
+    "options": ["A. Given more weight", "B. Ignored", "C. Removed", "D. Replaced by random data"],
+    "answer": "A"
+  },
+  {
+    "id": 76,
+    "question": "Which model assumes linear separability?",
+    "options": ["A. Logistic Regression", "B. Decision Tree", "C. Random Forest", "D. KNN"],
+    "answer": "A"
+  },
+  {
+    "id": 77,
+    "question": "What is a perceptron unable to model?",
+    "options": ["A. Non-linear decision boundaries", "B. Linear separation", "C. Weighted inputs", "D. Bias term"],
+    "answer": "A"
+  },
+  {
+    "id": 78,
+    "question": "What is the difference between bagging and boosting?",
+    "options": ["A. Bagging builds models in parallel; boosting builds sequentially", "B. Bagging uses weak learners only", "C. Boosting increases bias", "D. Both reduce bias"],
+    "answer": "A"
+  },
+  {
+    "id": 79,
+    "question": "Which ML algorithm can output feature importance directly?",
+    "options": ["A. Decision Tree", "B. KNN", "C. SVM", "D. Naive Bayes"],
+    "answer": "A"
+  },
+  {
+    "id": 80,
+    "question": "Which method can reduce both overfitting and training time?",
+    "options": ["A. Feature selection", "B. Data augmentation", "C. Batch normalization", "D. Gradient clipping"],
+    "answer": "A"
+  },
+  {
+    "id": 81,
+    "question": "Which clustering method is hierarchical in nature?",
+    "options": ["A. Agglomerative clustering", "B. K-Means", "C. DBSCAN", "D. Spectral clustering"],
+    "answer": "A"
+  },
+  {
+    "id": 82,
+    "question": "In PCA, components are chosen based on:",
+    "options": ["A. Variance explained", "B. Mean value", "C. Covariance only", "D. Random order"],
+    "answer": "A"
+  },
+  {
+    "id": 83,
+    "question": "Which ML concept helps detect model drift over time?",
+    "options": ["A. Model monitoring", "B. Feature extraction", "C. Regularization", "D. PCA"],
+    "answer": "A"
+  },
+  {
+    "id": 84,
+    "question": "Which algorithm can be used for text classification?",
+    "options": ["A. Naive Bayes", "B. K-Means", "C. DBSCAN", "D. PCA"],
+    "answer": "A"
+  },
+  {
+    "id": 85,
+    "question": "What is the main goal of unsupervised learning?",
+    "options": ["A. Discover patterns or structure in data", "B. Predict output variable", "C. Reduce variance", "D. Improve training accuracy"],
+    "answer": "A"
+  },
+  {
+    "id": 86,
+    "question": "Which loss function is used in Support Vector Machines?",
+    "options": ["A. Hinge loss", "B. Cross-entropy", "C. MSE", "D. RMSE"],
+    "answer": "A"
+  },
+  {
+    "id": 87,
+    "question": "Which algorithm is more likely to underfit on complex data?",
+    "options": ["A. Linear Regression", "B. Decision Tree", "C. Random Forest", "D. XGBoost"],
+    "answer": "A"
+  },
+  {
+    "id": 88,
+    "question": "Which component of a neural network introduces non-linearity?",
+    "options": ["A. Activation function", "B. Weight initialization", "C. Dropout", "D. Loss function"],
+    "answer": "A"
+  },
+  {
+    "id": 89,
+    "question": "Which of the following measures feature correlation with target variable?",
+    "options": ["A. Mutual Information", "B. PCA", "C. Gradient Descent", "D. ROC Curve"],
+    "answer": "A"
+  },
+  {
+    "id": 90,
+    "question": "What does SMOTE technique do?",
+    "options": ["A. Oversamples minority class", "B. Removes outliers", "C. Normalizes features", "D. Selects features"],
+    "answer": "A"
+  },
+  {
+    "id": 91,
+    "question": "What is a 'confusion matrix' used for?",
+    "options": ["A. Evaluating classification performance", "B. Measuring variance", "C. Normalizing data", "D. Computing loss"],
+    "answer": "A"
+  },
+  {
+    "id": 92,
+    "question": "What is the output of K-Means algorithm?",
+    "options": ["A. Cluster centroids", "B. Regression coefficients", "C. Probability scores", "D. Loss values"],
+    "answer": "A"
+  },
+  {
+    "id": 93,
+    "question": "Which evaluation technique helps detect overfitting?",
+    "options": ["A. Cross-validation", "B. Feature selection", "C. Regularization", "D. Bagging"],
+    "answer": "A"
+  },
+  {
+    "id": 94,
+    "question": "Which algorithm can be used for both regression and classification?",
+    "options": ["A. Decision Tree", "B. K-Means", "C. PCA", "D. DBSCAN"],
+    "answer": "A"
+  },
+  {
+    "id": 95,
+    "question": "In deep learning, exploding gradients can be avoided by:",
+    "options": ["A. Gradient clipping", "B. Batch normalization", "C. Dropout", "D. All of the above"],
+    "answer": "D"
+  },
+  {
+    "id": 96,
+    "question": "What is the purpose of activation functions like ReLU?",
+    "options": ["A. Add non-linearity", "B. Reduce weights", "C. Increase bias", "D. Reduce dropout"],
+    "answer": "A"
+  },
+  {
+    "id": 97,
+    "question": "Which algorithm assumes conditional independence among features?",
+    "options": ["A. Naive Bayes", "B. Decision Tree", "C. SVM", "D. KNN"],
+    "answer": "A"
+  },
+  {
+    "id": 98,
+    "question": "Which optimization algorithm uses adaptive learning rates for each parameter?",
+    "options": ["A. Adam", "B. SGD", "C. Batch GD", "D. RMSProp"],
+    "answer": "A"
+  },
+  {
+    "id": 99,
+    "question": "Which feature scaling method rescales values between 0 and 1?",
+    "options": ["A. Min-Max Scaling", "B. Standardization", "C. Log transform", "D. PCA"],
+    "answer": "A"
+  },
+  {
+    "id": 100,
+    "question": "Which term refers to the process of converting categorical variables into numeric form?",
+    "options": ["A. One-Hot Encoding", "B. Normalization", "C. PCA", "D. Standardization"],
+    "answer": "A"
+  }
+]

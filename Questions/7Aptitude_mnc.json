@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "If the ratio of the present ages of A and B is 3:5 and after 10 years the ratio becomes 5:7, what is B’s current age?",
+    "options": ["A. 20", "B. 25", "C. 30", "D. 35"],
+    "answer": "C"
+  },
+  {
+    "id": 2,
+    "question": "A jar contains 4 red, 5 green, and 6 blue balls. If one ball is picked at random, what is the probability that it is not green?",
+    "options": ["A. 1/3", "B. 2/3", "C. 5/9", "D. 7/9"],
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "question": "A trader marks his goods 40% above cost price and allows 10% discount. What is his gain percent?",
+    "options": ["A. 26%", "B. 28%", "C. 30%", "D. 32%"],
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "question": "If log10(2) = 0.3010 and log10(3) = 0.4771, find log10(81).",
+    "options": ["A. 1.9084", "B. 1.9542", "C. 1.9824", "D. 1.9876"],
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "question": "A boat goes 16 km downstream in 2 hours and returns in 4 hours. Find the speed of the stream.",
+    "options": ["A. 2 km/h", "B. 3 km/h", "C. 4 km/h", "D. 5 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 6,
+    "question": "If the sum of two numbers is 45 and their product is 324, find the numbers.",
+    "options": ["A. 18, 27", "B. 15, 30", "C. 20, 25", "D. 12, 33"],
+    "answer": "A"
+  },
+  {
+    "id": 7,
+    "question": "In how many ways can the letters of the word ‘FAANG’ be arranged?",
+    "options": ["A. 20", "B. 30", "C. 40", "D. 60"],
+    "answer": "D"
+  },
+  {
+    "id": 8,
+    "question": "The average age of 5 employees is 30 years. A new employee joins and the average becomes 31. Find the age of the new employee.",
+    "options": ["A. 35", "B. 36", "C. 37", "D. 40"],
+    "answer": "D"
+  },
+  {
+    "id": 9,
+    "question": "A cube of side 10 cm is painted on all faces and then cut into smaller cubes of side 5 cm. How many small cubes have only one face painted?",
+    "options": ["A. 4", "B. 6", "C. 8", "D. 12"],
+    "answer": "D"
+  },
+  {
+    "id": 10,
+    "question": "A number is increased by 10% and then decreased by 10%. What is the net change?",
+    "options": ["A. 0%", "B. 1%", "C. 2%", "D. 3%"],
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "question": "The probability of getting at least one head in two tosses of a coin is:",
+    "options": ["A. 1/4", "B. 1/2", "C. 3/4", "D. 1"],
+    "answer": "C"
+  },
+  {
+    "id": 12,
+    "question": "A sum of ₹5000 amounts to ₹6050 in 2 years at compound interest. Find the rate of interest.",
+    "options": ["A. 8%", "B. 9%", "C. 10%", "D. 12%"],
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "question": "The average of 10 numbers is 70. If each number is increased by 5, the new average is:",
+    "options": ["A. 70", "B. 72", "C. 74", "D. 75"],
+    "answer": "D"
+  },
+  {
+    "id": 14,
+    "question": "A man covers 2/5 of a distance at 4 km/h and the remaining at 6 km/h. Find the average speed.",
+    "options": ["A. 4.8", "B. 5", "C. 5.2", "D. 5.4"],
+    "answer": "C"
+  },
+  {
+    "id": 15,
+    "question": "If 3 workers can build a wall in 12 days, how many days will 4 workers take?",
+    "options": ["A. 8", "B. 9", "C. 10", "D. 12"],
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "question": "A bag contains 3 red, 4 blue, and 5 green balls. What is the probability of picking a green ball?",
+    "options": ["A. 1/3", "B. 1/4", "C. 5/12", "D. 5/10"],
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "question": "The LCM of two numbers is 180 and their HCF is 15. If one number is 45, find the other.",
+    "options": ["A. 50", "B. 60", "C. 70", "D. 75"],
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "question": "A person saves ₹200 in the first month, ₹400 in the second, ₹600 in the third, and so on. Find the total savings after 10 months.",
+    "options": ["A. ₹10,000", "B. ₹11,000", "C. ₹12,000", "D. ₹13,000"],
+    "answer": "C"
+  },
+  {
+    "id": 19,
+    "question": "A pipe can fill a tank in 12 hours. Another can empty it in 8 hours. How long will they take together to fill it?",
+    "options": ["A. 20 h", "B. 24 h", "C. 48 h", "D. Never (tank won’t fill)"],
+    "answer": "D"
+  },
+  {
+    "id": 20,
+    "question": "If sin²x + cos²x = 1, then the value of sin²30° + cos²60° is:",
+    "options": ["A. 0", "B. 0.5", "C. 1", "D. 2"],
+    "answer": "C"
+  },
+  {
+    "id": 21,
+    "question": "A trader bought a horse for ₹10,000 and sold it for ₹12,000. His profit percentage is:",
+    "options": ["A. 15%", "B. 18%", "C. 20%", "D. 25%"],
+    "answer": "C"
+  },
+  {
+    "id": 22,
+    "question": "If A:B = 2:3 and B:C = 4:5, find A:C.",
+    "options": ["A. 6:10", "B. 8:15", "C. 3:4", "D. 5:8"],
+    "answer": "B"
+  },
+  {
+    "id": 23,
+    "question": "A number is divisible by both 3 and 5 but not by 15. Which of the following could it be?",
+    "options": ["A. 30", "B. 45", "C. 60", "D. 75"],
+    "answer": "C"
+  },
+  {
+    "id": 24,
+    "question": "The speed of a train is 90 km/h. How many seconds will it take to cross a 250 m long bridge?",
+    "options": ["A. 8", "B. 10", "C. 12", "D. 15"],
+    "answer": "C"
+  },
+  {
+    "id": 25,
+    "question": "A and B together can complete a work in 10 days. A alone can do it in 15 days. In how many days can B alone do it?",
+    "options": ["A. 20", "B. 25", "C. 30", "D. 35"],
+    "answer": "C"
+  },
+  {
+    "id": 26,
+    "question": "The sum of first 15 natural numbers is:",
+    "options": ["A. 100", "B. 110", "C. 120", "D. 130"],
+    "answer": "B"
+  },
+  {
+    "id": 27,
+    "question": "A card is drawn from a pack of 52 cards. What is the probability of getting a red king?",
+    "options": ["A. 1/13", "B. 1/26", "C. 1/52", "D. 1/12"],
+    "answer": "B"
+  },
+  {
+    "id": 28,
+    "question": "A sum amounts to ₹13,310 in 2 years at compound interest at 10% p.a. Find the principal.",
+    "options": ["A. ₹10,000", "B. ₹11,000", "C. ₹12,000", "D. ₹13,000"],
+    "answer": "C"
+  },
+  {
+    "id": 29,
+    "question": "In how many ways can 6 people sit around a circular table?",
+    "options": ["A. 120", "B. 720", "C. 60", "D. 240"],
+    "answer": "A"
+  },
+  {
+    "id": 30,
+    "question": "If A can finish a task in 6 days and B can finish the same in 12 days, what part of work is left after they work together for 2 days?",
+    "options": ["A. 1/3", "B. 1/2", "C. 2/3", "D. 1/4"],
+    "answer": "A"
+  },
+  {
+    "id": 31,
+    "question": "If 10% of a number is 20, then what is 25% of the same number?",
+    "options": ["A. 40", "B. 45", "C. 50", "D. 60"],
+    "answer": "C"
+  },
+  {
+    "id": 32,
+    "question": "A sum of money doubles itself in 5 years. In how many years will it become 8 times at the same rate?",
+    "options": ["A. 10", "B. 15", "C. 20", "D. 25"],
+    "answer": "C"
+  },
+  {
+    "id": 33,
+    "question": "Find the missing number: 5, 10, 20, 40, ?",
+    "options": ["A. 60", "B. 70", "C. 80", "D. 100"],
+    "answer": "C"
+  },
+  {
+    "id": 34,
+    "question": "A and B can finish a work in 18 days and 24 days respectively. In how many days will they complete the work together?",
+    "options": ["A. 9.6", "B. 10", "C. 10.2", "D. 12"],
+    "answer": "A"
+  },
+  {
+    "id": 35,
+    "question": "A train moving at 72 km/h crosses a pole in 25 seconds. Find the length of the train.",
+    "options": ["A. 400 m", "B. 450 m", "C. 500 m", "D. 600 m"],
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "A can do a job in 10 days and B can do it in 20 days. How long will they take together if A leaves after 4 days?",
+    "options": ["A. 6 days", "B. 7 days", "C. 8 days", "D. 9 days"],
+    "answer": "C"
+  },
+  {
+    "id": 37,
+    "question": "If selling price is twice the cost price, the gain percent is:",
+    "options": ["A. 50%", "B. 75%", "C. 100%", "D. 150%"],
+    "answer": "C"
+  },
+  {
+    "id": 38,
+    "question": "The sum of interior angles of a polygon with 9 sides is:",
+    "options": ["A. 1080°", "B. 1120°", "C. 1260°", "D. 1440°"],
+    "answer": "C"
+  },
+  {
+    "id": 39,
+    "question": "A shopkeeper gives 12% discount on marked price and still gains 20%. If the cost price is ₹800, find the marked price.",
+    "options": ["A. ₹950", "B. ₹1050", "C. ₹1100", "D. ₹1136"],
+    "answer": "D"
+  },
+  {
+    "id": 40,
+    "question": "A mixture contains milk and water in ratio 3:1. How much water should be added to 20 liters to make it 2:1?",
+    "options": ["A. 2 L", "B. 3 L", "C. 4 L", "D. 5 L"],
+    "answer": "B"
+  },
+  {
+    "id": 41,
+    "question": "In a certain code, ‘FAANG’ is written as ‘GZBOH’. How is ‘APPLE’ written?",
+    "options": ["A. BQQMF", "B. BQOMF", "C. BQQNF", "D. BPQMF"],
+    "answer": "A"
+  },
+  {
+    "id": 42,
+    "question": "The ratio of speeds of two trains is 3:4. If the first train covers 300 km in 5 hours, what is the speed of the second train?",
+    "options": ["A. 70 km/h", "B. 75 km/h", "C. 80 km/h", "D. 90 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 43,
+    "question": "The compound interest on ₹10,000 at 10% for 2 years is:",
+    "options": ["A. ₹1,000", "B. ₹2,000", "C. ₹2,100", "D. ₹2,200"],
+    "answer": "C"
+  },
+  {
+    "id": 44,
+    "question": "The average of 4 consecutive odd numbers is 27. Find the smallest number.",
+    "options": ["A. 23", "B. 24", "C. 25", "D. 26"],
+    "answer": "A"
+  },
+  {
+    "id": 45,
+    "question": "If 12 men can do a work in 15 days, in how many days will 9 men complete the same work?",
+    "options": ["A. 18", "B. 20", "C. 22", "D. 25"],
+    "answer": "A"
+  },
+  {
+    "id": 46,
+    "question": "The difference between the square of a number and the number itself is 156. Find the number.",
+    "options": ["A. 12", "B. 13", "C. 14", "D. 15"],
+    "answer": "C"
+  },
+  {
+    "id": 47,
+    "question": "A man spends 40% of his income on rent, 30% on food, and saves ₹6,000. Find his income.",
+    "options": ["A. ₹10,000", "B. ₹12,000", "C. ₹15,000", "D. ₹20,000"],
+    "answer": "D"
+  },
+  {
+    "id": 48,
+    "question": "A train 200 m long crosses a platform 300 m long in 50 s. Find the speed of the train.",
+    "options": ["A. 36 km/h", "B. 45 km/h", "C. 54 km/h", "D. 60 km/h"],
+    "answer": "C"
+  },
+  {
+    "id": 49,
+    "question": "If 5 men or 7 women can do a piece of work in 16 days, how long will 10 men and 14 women take?",
+    "options": ["A. 8 days", "B. 10 days", "C. 12 days", "D. 14 days"],
+    "answer": "A"
+  },
+  {
+    "id": 50,
+    "question": "A solid cube of side 3 cm is melted to form small cubes of side 1 cm. Find the number of small cubes formed.",
+    "options": ["A. 9", "B. 18", "C. 27", "D. 36"],
+    "answer": "C"
+  }
+]

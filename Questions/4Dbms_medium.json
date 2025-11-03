@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "question": "Explain the difference between 1NF, 2NF, 3NF, and BCNF with examples."
+  },
+  {
+    "id": 2,
+    "question": "What are anomalies in DBMS? How does normalization remove them?"
+  },
+  {
+    "id": 3,
+    "question": "Differentiate between logical data independence and physical data independence."
+  },
+  {
+    "id": 4,
+    "question": "What are the various types of relationships in an ER model?"
+  },
+  {
+    "id": 5,
+    "question": "Explain the difference between strong and weak entity sets."
+  },
+  {
+    "id": 6,
+    "question": "What is the difference between primary key and surrogate key?"
+  },
+  {
+    "id": 7,
+    "question": "What are partial and transitive dependencies in normalization?"
+  },
+  {
+    "id": 8,
+    "question": "Explain the concept of functional dependency with an example."
+  },
+  {
+    "id": 9,
+    "question": "What is decomposition in DBMS, and what are its properties?"
+  },
+  {
+    "id": 10,
+    "question": "What is the difference between lossless and lossy decomposition?"
+  },
+  {
+    "id": 11,
+    "question": "What is indexing? What are different types of indexes used in databases?"
+  },
+  {
+    "id": 12,
+    "question": "What is the difference between a B-Tree and a B+ Tree index?"
+  },
+  {
+    "id": 13,
+    "question": "Explain the difference between clustered and non-clustered indexes."
+  },
+  {
+    "id": 14,
+    "question": "What is hashing in DBMS and where is it used?"
+  },
+  {
+    "id": 15,
+    "question": "What is the difference between primary and secondary indexes?"
+  },
+  {
+    "id": 16,
+    "question": "What are the different types of database keys used in relational models?"
+  },
+  {
+    "id": 17,
+    "question": "Explain referential integrity constraint with an example."
+  },
+  {
+    "id": 18,
+    "question": "What are integrity constraints and why are they important?"
+  },
+  {
+    "id": 19,
+    "question": "What are the components of a DBMS architecture?"
+  },
+  {
+    "id": 20,
+    "question": "What are the responsibilities of the query processor in DBMS?"
+  },
+  {
+    "id": 21,
+    "question": "What is the difference between procedural and non-procedural query languages?"
+  },
+  {
+    "id": 22,
+    "question": "What are the different types of data models in DBMS?"
+  },
+  {
+    "id": 23,
+    "question": "What is concurrency control in DBMS and why is it needed?"
+  },
+  {
+    "id": 24,
+    "question": "Explain the two-phase locking (2PL) protocol."
+  },
+  {
+    "id": 25,
+    "question": "What is deadlock in DBMS? How can it be prevented?"
+  },
+  {
+    "id": 26,
+    "question": "What are the differences between shared lock and exclusive lock?"
+  },
+  {
+    "id": 27,
+    "question": "What is timestamp-based concurrency control?"
+  },
+  {
+    "id": 28,
+    "question": "What is the difference between serial and serializable schedules?"
+  },
+  {
+    "id": 29,
+    "question": "What are the different states of a transaction in DBMS?"
+  },
+  {
+    "id": 30,
+    "question": "Explain cascading rollback with an example."
+  },
+  {
+    "id": 31,
+    "question": "What is the difference between commit and rollback operations?"
+  },
+  {
+    "id": 32,
+    "question": "What are phantom reads in transactions?"
+  },
+  {
+    "id": 33,
+    "question": "Explain different types of database recovery techniques."
+  },
+  {
+    "id": 34,
+    "question": "What is shadow paging in database recovery?"
+  },
+  {
+    "id": 35,
+    "question": "Explain write-ahead logging (WAL) protocol."
+  },
+  {
+    "id": 36,
+    "question": "What is checkpointing in DBMS recovery?"
+  },
+  {
+    "id": 37,
+    "question": "What is the difference between static and dynamic hashing?"
+  },
+  {
+    "id": 38,
+    "question": "What is a materialized view and how is it different from a normal view?"
+  },
+  {
+    "id": 39,
+    "question": "What is the difference between OLTP and OLAP systems?"
+  },
+  {
+    "id": 40,
+    "question": "Explain data warehousing and its basic architecture."
+  },
+  {
+    "id": 41,
+    "question": "What are triggers and how do they work in DBMS?"
+  },
+  {
+    "id": 42,
+    "question": "What are stored procedures and what are their advantages?"
+  },
+  {
+    "id": 43,
+    "question": "What is the difference between stored procedures and functions?"
+  },
+  {
+    "id": 44,
+    "question": "Explain the concept of cursor and its types in DBMS."
+  },
+  {
+    "id": 45,
+    "question": "What is query optimization and why is it important?"
+  },
+  {
+    "id": 46,
+    "question": "What are heuristic and cost-based query optimizations?"
+  },
+  {
+    "id": 47,
+    "question": "What are nested queries and correlated subqueries?"
+  },
+  {
+    "id": 48,
+    "question": "Explain the concept of view resolution and view materialization."
+  },
+  {
+    "id": 49,
+    "question": "What is data dictionary and what information does it contain?"
+  },
+  {
+    "id": 50,
+    "question": "What is the difference between horizontal and vertical fragmentation?"
+  },
+  {
+    "id": 51,
+    "question": "What is distributed database and what are its advantages?"
+  },
+  {
+    "id": 52,
+    "question": "Explain the concept of replication in distributed databases."
+  },
+  {
+    "id": 53,
+    "question": "What is data partitioning and why is it used?"
+  },
+  {
+    "id": 54,
+    "question": "What are different join strategies used by DBMS?"
+  },
+  {
+    "id": 55,
+    "question": "What are derived attributes in ER modeling?"
+  },
+  {
+    "id": 56,
+    "question": "What is the difference between logical and physical schema?"
+  },
+  {
+    "id": 57,
+    "question": "What are the advantages of normalization and when should it be avoided?"
+  },
+  {
+    "id": 58,
+    "question": "What are recursive relationships in an ER diagram?"
+  },
+  {
+    "id": 59,
+    "question": "What are the properties of relational algebra operations?"
+  },
+  {
+    "id": 60,
+    "question": "What is the difference between inner query and outer query?"
+  }
+]

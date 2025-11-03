@@ -1,0 +1,787 @@
+[
+  {
+    "question": "Which of the following is not a typical function of an operating system?",
+    "options": ["Memory management", "Process scheduling", "Word processing", "File management"],
+    "answer": "Word processing"
+  },
+  {
+    "question": "In which of the following scheduling algorithms can starvation occur?",
+    "options": ["FCFS", "SJF", "Round Robin", "Priority Scheduling"],
+    "answer": "Priority Scheduling"
+  },
+  {
+    "question": "Which data structure is used for implementing a process table?",
+    "options": ["Linked list", "Hash table", "Array", "Stack"],
+    "answer": "Array"
+  },
+  {
+    "question": "What is the main purpose of a dispatcher in an OS?",
+    "options": ["To allocate CPU to a process", "To manage I/O operations", "To keep track of processes", "To handle interrupts"],
+    "answer": "To allocate CPU to a process"
+  },
+  {
+    "question": "In demand paging, what causes a page fault?",
+    "options": ["Invalid memory access", "Page not present in main memory", "Page already loaded", "Stack overflow"],
+    "answer": "Page not present in main memory"
+  },
+  {
+    "question": "Which of the following is true for a preemptive scheduling algorithm?",
+    "options": ["CPU cannot be taken away from a running process", "CPU can be taken from a process before completion", "Only I/O bound processes are scheduled", "It works only for batch systems"],
+    "answer": "CPU can be taken from a process before completion"
+  },
+  {
+    "question": "Which of the following is used for inter-process communication?",
+    "options": ["Pipes", "Threads", "Semaphores", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "The critical section problem is used to achieve:",
+    "options": ["Synchronization", "Deadlock", "Segmentation", "Paging"],
+    "answer": "Synchronization"
+  },
+  {
+    "question": "Which algorithm suffers from the 'Belady’s anomaly'?",
+    "options": ["FIFO page replacement", "LRU page replacement", "Optimal page replacement", "Clock algorithm"],
+    "answer": "FIFO page replacement"
+  },
+  {
+    "question": "A system is said to be in a safe state if:",
+    "options": ["There is no deadlock", "The system can allocate resources to each process safely", "All resources are used", "Processes are blocked"],
+    "answer": "The system can allocate resources to each process safely"
+  },
+  {
+    "question": "Thrashing occurs when:",
+    "options": ["CPU utilization is high", "Too many processes are in main memory", "Paging activity is very high", "There are too few pages in memory"],
+    "answer": "Paging activity is very high"
+  },
+  {
+    "question": "What is the main disadvantage of segmented memory allocation?",
+    "options": ["Internal fragmentation", "External fragmentation", "Thrashing", "Complex address translation"],
+    "answer": "External fragmentation"
+  },
+  {
+    "question": "In Unix, which command is used to change file permissions?",
+    "options": ["chmod", "chperm", "setperm", "permchange"],
+    "answer": "chmod"
+  },
+  {
+    "question": "Which of the following is true for kernel mode?",
+    "options": ["User processes execute here", "All privileged instructions are executed here", "No interrupts are handled here", "It has lower priority than user mode"],
+    "answer": "All privileged instructions are executed here"
+  },
+  {
+    "question": "A context switch is required when:",
+    "options": ["A process voluntarily releases CPU", "A process is preempted", "An interrupt occurs", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What is the purpose of the ‘init’ process in Unix systems?",
+    "options": ["It handles user input", "It initializes system services", "It manages user permissions", "It performs file I/O"],
+    "answer": "It initializes system services"
+  },
+  {
+    "question": "Which of the following is a non-preemptive scheduling algorithm?",
+    "options": ["Round Robin", "SJF", "Priority", "FCFS"],
+    "answer": "FCFS"
+  },
+  {
+    "question": "Which of the following best describes a zombie process?",
+    "options": ["A process that is blocked", "A process that has finished execution but still has an entry in the process table", "A process that is ready to run", "A process that is waiting for I/O"],
+    "answer": "A process that has finished execution but still has an entry in the process table"
+  },
+  {
+    "question": "Deadlock prevention ensures:",
+    "options": ["The system never enters a deadlock state", "The system recovers after deadlock", "Processes wait indefinitely", "Starvation occurs"],
+    "answer": "The system never enters a deadlock state"
+  },
+  {
+    "question": "Which page replacement algorithm uses the concept of 'age' or 'timestamp'?",
+    "options": ["FIFO", "LRU", "Optimal", "Clock"],
+    "answer": "LRU"
+  },
+  {
+    "question": "What is the main purpose of the Translation Lookaside Buffer (TLB)?",
+    "options": ["To store recently used page table entries", "To store all virtual addresses", "To manage segmentation", "To store process control blocks"],
+    "answer": "To store recently used page table entries"
+  },
+  {
+    "question": "Which scheduling algorithm gives the minimum average waiting time for a set of processes?",
+    "options": ["FCFS", "SJF", "Round Robin", "Priority"],
+    "answer": "SJF"
+  },
+  {
+    "question": "In a multi-programming environment, the CPU utilization is:",
+    "options": ["Lower than single program environment", "Higher than single program environment", "Same as single program", "Always 100%"],
+    "answer": "Higher than single program environment"
+  },
+  {
+    "question": "Which of the following is a non-blocking synchronization mechanism?",
+    "options": ["Spinlocks", "Semaphores", "Mutex", "Monitor"],
+    "answer": "Spinlocks"
+  },
+  {
+    "question": "What is the function of the 'exec()' system call in Unix?",
+    "options": ["Creates a new process", "Replaces the current process image with a new one", "Terminates a process", "Suspends a process"],
+    "answer": "Replaces the current process image with a new one"
+  },
+  {
+    "question": "Which of the following is a necessary condition for deadlock?",
+    "options": ["Mutual exclusion", "Hold and wait", "No preemption", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which of the following file allocation methods suffers from external fragmentation?",
+    "options": ["Linked allocation", "Indexed allocation", "Contiguous allocation", "None"],
+    "answer": "Contiguous allocation"
+  },
+  {
+    "question": "The Banker's Algorithm is used for:",
+    "options": ["Deadlock avoidance", "Deadlock detection", "Deadlock prevention", "Deadlock recovery"],
+    "answer": "Deadlock avoidance"
+  },
+  {
+    "question": "What is the role of the 'wait()' system call?",
+    "options": ["To terminate a process", "To make parent wait until child finishes", "To block a process forever", "To create a child process"],
+    "answer": "To make parent wait until child finishes"
+  },
+  {
+    "question": "What is the purpose of device drivers in an OS?",
+    "options": ["To handle CPU scheduling", "To control hardware devices", "To allocate memory", "To manage processes"],
+    "answer": "To control hardware devices"
+  },
+  {
+    "question": "The swapping technique is used to:",
+    "options": ["Move processes between main and secondary memory", "Replace a page in cache", "Synchronize threads", "Avoid deadlocks"],
+    "answer": "Move processes between main and secondary memory"
+  },
+  {
+    "question": "In UNIX, each file is identified by:",
+    "options": ["File name", "Inode number", "File descriptor", "Directory name"],
+    "answer": "Inode number"
+  },
+  {
+    "question": "What is the main function of the process control block (PCB)?",
+    "options": ["Stores process-related information", "Stores user data", "Stores kernel code", "Stores I/O statistics only"],
+    "answer": "Stores process-related information"
+  },
+  {
+    "question": "Which of the following causes internal fragmentation?",
+    "options": ["Variable-size partitions", "Fixed-size partitions", "Paging", "Segmentation"],
+    "answer": "Fixed-size partitions"
+  },
+  {
+    "question": "The working set model is used for:",
+    "options": ["Thrashing control", "Deadlock avoidance", "Scheduling", "I/O buffering"],
+    "answer": "Thrashing control"
+  },
+  {
+    "question": "Which of the following is a disk scheduling algorithm?",
+    "options": ["FCFS", "SCAN", "LOOK", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "In Unix, a forked child process initially:",
+    "options": ["Shares the parent’s code and data", "Has its own copy of the parent’s memory", "Has no access to parent's memory", "Runs independently with no memory"],
+    "answer": "Has its own copy of the parent’s memory"
+  },
+  {
+    "question": "What is the purpose of a semaphore in an operating system?",
+    "options": ["To manage memory", "To synchronize processes", "To allocate CPU time", "To handle interrupts"],
+    "answer": "To synchronize processes"
+  },
+  {
+    "question": "Which is the correct order of steps during process creation?",
+    "options": ["Allocation → Initialization → Linking → Execution", "Initialization → Allocation → Linking → Execution", "Linking → Allocation → Execution → Initialization", "Execution → Linking → Allocation → Initialization"],
+    "answer": "Allocation → Initialization → Linking → Execution"
+  },
+  {
+    "question": "What is the key difference between threads and processes?",
+    "options": ["Threads share memory, processes do not", "Processes share memory, threads do not", "Both share memory", "Both are independent"],
+    "answer": "Threads share memory, processes do not"
+  },
+  {
+    "question": "Which of these algorithms uses a circular queue?",
+    "options": ["SJF", "Round Robin", "Priority", "Multilevel Queue"],
+    "answer": "Round Robin"
+  },
+  {
+    "question": "What is the role of 'swap space'?",
+    "options": ["To store temporary files", "To store pages not in main memory", "To store I/O buffers", "To store CPU cache"],
+    "answer": "To store pages not in main memory"
+  },
+  {
+    "question": "Which of these occurs when two processes wait indefinitely for each other?",
+    "options": ["Starvation", "Deadlock", "Thrashing", "Blocking"],
+    "answer": "Deadlock"
+  },
+  {
+    "question": "Which of the following can break the hold-and-wait condition?",
+    "options": ["Request all resources at once", "Preempt resources", "Release all locks before requesting new ones", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which page replacement algorithm gives the least number of page faults?",
+    "options": ["LRU", "FIFO", "Optimal", "Random"],
+    "answer": "Optimal"
+  },
+  {
+    "question": "What is the main function of virtual memory?",
+    "options": ["To extend physical memory using disk space", "To increase CPU speed", "To store processes permanently", "To replace RAM"],
+    "answer": "To extend physical memory using disk space"
+  },
+  {
+    "question": "What is the main disadvantage of the Round Robin algorithm?",
+    "options": ["Low CPU utilization", "Long waiting time", "High context switching overhead", "Starvation"],
+    "answer": "High context switching overhead"
+  },
+  {
+    "question": "Which of the following can result in starvation?",
+    "options": ["Priority scheduling", "Round Robin", "FCFS", "SJF"],
+    "answer": "Priority scheduling"
+  },
+  {
+    "question": "What does the 'nice' value determine in Unix?",
+    "options": ["CPU scheduling priority", "Memory allocation", "Process ID", "File ownership"],
+    "answer": "CPU scheduling priority"
+  },
+  {
+    "question": "Which OS concept allows multiple programs to reside in memory at once?",
+    "options": ["Multiprogramming", "Multithreading", "Multitasking", "Virtualization"],
+    "answer": "Multiprogramming"
+  },
+  {
+    "question": "Which scheduling algorithm is most suitable for real-time systems?",
+    "options": ["FCFS", "Round Robin", "Priority", "Shortest Remaining Time First"],
+    "answer": "Priority"
+  },
+
+    
+  {
+    "question": "What is the main goal of multiprogramming?",
+    "options": ["Increase CPU utilization", "Reduce memory usage", "Simplify I/O operations", "Increase I/O time"],
+    "answer": "Increase CPU utilization"
+  },
+  {
+    "question": "Which of the following is NOT a valid state in the process lifecycle?",
+    "options": ["Running", "Waiting", "Stopped", "Compiling"],
+    "answer": "Compiling"
+  },
+  {
+    "question": "In a system with segmentation, each segment has:",
+    "options": ["Same length", "Variable length", "Fixed-size frames", "No limit"],
+    "answer": "Variable length"
+  },
+  {
+    "question": "In the context of OS, what is aging?",
+    "options": ["A process becoming slower over time", "Gradually increasing priority of waiting processes", "Decreasing the priority of running processes", "None of these"],
+    "answer": "Gradually increasing priority of waiting processes"
+  },
+  {
+    "question": "Which of these is NOT a part of process control block (PCB)?",
+    "options": ["Program counter", "Stack pointer", "Page table", "Compiler log"],
+    "answer": "Compiler log"
+  },
+  {
+    "question": "What is the purpose of the system call interface?",
+    "options": ["To switch between user mode and kernel mode", "To provide communication between user programs and kernel", "To perform I/O operations directly", "To manage CPU registers"],
+    "answer": "To provide communication between user programs and kernel"
+  },
+  {
+    "question": "In which condition do two processes share data without using shared memory?",
+    "options": ["Signals", "Pipes", "Mutex", "Threads"],
+    "answer": "Pipes"
+  },
+  {
+    "question": "The term 'spooling' is associated with:",
+    "options": ["Disk scheduling", "Process scheduling", "I/O buffering", "Interrupt handling"],
+    "answer": "I/O buffering"
+  },
+  {
+    "question": "Which system call creates a new process in Unix?",
+    "options": ["fork()", "create()", "exec()", "spawn()"],
+    "answer": "fork()"
+  },
+  {
+    "question": "In virtual memory, the address generated by the CPU is called:",
+    "options": ["Logical address", "Physical address", "Virtual page", "Block address"],
+    "answer": "Logical address"
+  },
+  {
+    "question": "The device that acts as a buffer between hardware and software is:",
+    "options": ["Device driver", "Kernel", "Controller", "System bus"],
+    "answer": "Device driver"
+  },
+  {
+    "question": "Which memory allocation scheme avoids external fragmentation?",
+    "options": ["Segmentation", "Paging", "Contiguous", "Variable partition"],
+    "answer": "Paging"
+  },
+  {
+    "question": "In preemptive scheduling, context switching can occur:",
+    "options": ["Only when a process terminates", "Whenever a higher-priority process arrives", "Only when a process waits for I/O", "Never"],
+    "answer": "Whenever a higher-priority process arrives"
+  },
+  {
+    "question": "What is the primary role of the 'shell' in an operating system?",
+    "options": ["Hardware management", "User command interpretation", "Memory management", "Scheduling"],
+    "answer": "User command interpretation"
+  },
+  {
+    "question": "Which of these is a disadvantage of multiprocessor systems?",
+    "options": ["Increased reliability", "Higher throughput", "Complex process synchronization", "Parallel execution"],
+    "answer": "Complex process synchronization"
+  },
+  {
+    "question": "What is a 'hard' real-time system?",
+    "options": ["A system where deadlines can be missed occasionally", "A system that must meet all deadlines", "A batch system", "None of the above"],
+    "answer": "A system that must meet all deadlines"
+  },
+  {
+    "question": "In memory management, compaction is used to:",
+    "options": ["Reduce internal fragmentation", "Reduce external fragmentation", "Increase paging speed", "Swap out processes"],
+    "answer": "Reduce external fragmentation"
+  },
+  {
+    "question": "Which of the following uses binary semaphores?",
+    "options": ["Mutex", "Monitor", "Barrier", "Spinlock"],
+    "answer": "Mutex"
+  },
+  {
+    "question": "What is the main advantage of distributed operating systems?",
+    "options": ["Single point of failure", "Resource sharing and reliability", "Lower performance", "Centralized control"],
+    "answer": "Resource sharing and reliability"
+  },
+  {
+    "question": "Which of these does NOT require CPU involvement directly?",
+    "options": ["DMA transfer", "I/O interrupt", "System call", "Polling"],
+    "answer": "DMA transfer"
+  },
+  {
+    "question": "The 'trap' instruction in OS is used for:",
+    "options": ["Invoking system calls", "Handling interrupts", "Memory protection", "Context switching"],
+    "answer": "Invoking system calls"
+  },
+  {
+    "question": "Which of the following is a hybrid CPU scheduling algorithm?",
+    "options": ["Multilevel queue", "FCFS", "SJF", "Round Robin"],
+    "answer": "Multilevel queue"
+  },
+  {
+    "question": "Which of these is an example of a preemptive algorithm?",
+    "options": ["Round Robin", "SJF (non-preemptive)", "FCFS", "Priority (non-preemptive)"],
+    "answer": "Round Robin"
+  },
+  {
+    "question": "In a paged memory system, what does the page table store?",
+    "options": ["Mapping of virtual to physical frames", "File descriptors", "Process identifiers", "Interrupt vectors"],
+    "answer": "Mapping of virtual to physical frames"
+  },
+  {
+    "question": "Which of the following is NOT a valid synchronization primitive?",
+    "options": ["Semaphore", "Monitor", "Critical section", "Paging"],
+    "answer": "Paging"
+  },
+  {
+    "question": "Which of these prevents busy waiting?",
+    "options": ["Semaphore with blocking", "Spinlock", "TestAndSet", "Atomic variables"],
+    "answer": "Semaphore with blocking"
+  },
+  {
+    "question": "What is the advantage of demand paging?",
+    "options": ["Faster memory access", "Less I/O overhead", "Reduced memory usage", "Avoids external fragmentation"],
+    "answer": "Reduced memory usage"
+  },
+  {
+    "question": "Which of these algorithms minimizes seek time in disk scheduling?",
+    "options": ["FCFS", "SCAN", "C-SCAN", "SSTF"],
+    "answer": "SSTF"
+  },
+  {
+    "question": "In CPU scheduling, turnaround time is:",
+    "options": ["Waiting time + Execution time", "Response time + Waiting time", "Execution time only", "Arrival to completion time"],
+    "answer": "Arrival to completion time"
+  },
+  {
+    "question": "What does 'reentrant code' mean?",
+    "options": ["Can be executed by multiple processes without interference", "Self-modifying code", "Runs only once", "Cannot be shared"],
+    "answer": "Can be executed by multiple processes without interference"
+  },
+  {
+    "question": "Which mechanism ensures mutual exclusion in OS?",
+    "options": ["Locks", "Paging", "Interrupts", "Virtual memory"],
+    "answer": "Locks"
+  },
+  {
+    "question": "In Unix, which command shows currently running processes?",
+    "options": ["ls", "ps", "grep", "proc"],
+    "answer": "ps"
+  },
+  {
+    "question": "Which part of the OS is responsible for handling interrupts?",
+    "options": ["Interrupt handler", "Scheduler", "Dispatcher", "System call interface"],
+    "answer": "Interrupt handler"
+  },
+  {
+    "question": "The main advantage of microkernel architecture is:",
+    "options": ["Larger kernel size", "Better security and modularity", "Slower context switch", "More kernel-level services"],
+    "answer": "Better security and modularity"
+  },
+  {
+    "question": "Which page replacement algorithm requires future knowledge?",
+    "options": ["Optimal", "FIFO", "LRU", "Clock"],
+    "answer": "Optimal"
+  },
+  {
+    "question": "Which structure stores information about open files in an OS?",
+    "options": ["File descriptor table", "Process table", "Page table", "Disk table"],
+    "answer": "File descriptor table"
+  },
+  {
+    "question": "A 'soft' real-time system ensures:",
+    "options": ["All deadlines must be met", "Most deadlines are met but occasional misses allowed", "Deadlines are ignored", "Tasks are executed in FCFS"],
+    "answer": "Most deadlines are met but occasional misses allowed"
+  },
+  {
+    "question": "Which condition must be eliminated to prevent deadlocks?",
+    "options": ["Circular wait", "Mutual exclusion", "Hold and wait", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What is the maximum number of processes in the 'ready' state at once?",
+    "options": ["Limited by CPU cores", "Limited by system resources", "One only", "Unlimited"],
+    "answer": "Limited by system resources"
+  },
+  {
+    "question": "A page frame refers to:",
+    "options": ["Fixed-size block of physical memory", "Variable block of virtual memory", "Stack segment", "Code block"],
+    "answer": "Fixed-size block of physical memory"
+  },
+  {
+    "question": "Which data structure is used for ready queue management?",
+    "options": ["Queue", "Stack", "Tree", "Linked list"],
+    "answer": "Queue"
+  },
+  {
+    "question": "Which type of fragmentation occurs in paging?",
+    "options": ["Internal", "External", "Both", "None"],
+    "answer": "Internal"
+  },
+  {
+    "question": "Which of these operations can a thread perform independently of other threads?",
+    "options": ["Open a file", "Update shared variable", "Access private stack", "Modify global data"],
+    "answer": "Access private stack"
+  },
+  {
+    "question": "In multi-threading, what happens if one thread blocks on I/O?",
+    "options": ["All threads block", "Only that thread blocks", "Process terminates", "CPU halts"],
+    "answer": "Only that thread blocks"
+  },
+  {
+    "question": "The term 'time quantum' refers to:",
+    "options": ["Maximum time allocated to a process in Round Robin", "Average waiting time", "Minimum turnaround time", "Context switch delay"],
+    "answer": "Maximum time allocated to a process in Round Robin"
+  },
+  {
+    "question": "Which part of the OS loads the kernel during booting?",
+    "options": ["Bootloader", "Scheduler", "BIOS", "Loader"],
+    "answer": "Bootloader"
+  },
+  {
+    "question": "Which of these cannot cause a context switch?",
+    "options": ["I/O request", "Timer interrupt", "System call", "Process finishing I/O"],
+    "answer": "Process finishing I/O"
+  },
+  {
+    "question": "The ‘buddy system’ is used for:",
+    "options": ["Memory allocation", "CPU scheduling", "Deadlock detection", "Disk scheduling"],
+    "answer": "Memory allocation"
+  },
+  {
+    "question": "Which of the following describes an orphan process?",
+    "options": ["Parent terminated before child", "Child terminated before parent", "Both terminate together", "Parent and child never created"],
+    "answer": "Parent terminated before child"
+  },
+  {
+    "question": "What is the main purpose of interrupts?",
+    "options": ["To improve CPU utilization", "To notify CPU of external events", "To start new processes", "To manage memory"],
+    "answer": "To notify CPU of external events"
+  },
+  {
+    "question": "Which of these is NOT an attribute of a file?",
+    "options": ["File name", "File size", "Owner ID", "CPU priority"],
+    "answer": "CPU priority"
+  },
+  {
+    "question": "In a paging system, the page size is typically determined by:",
+    "options": ["CPU architecture", "Process size", "Main memory size", "Number of processes"],
+    "answer": "CPU architecture"
+  },
+  {
+    "question": "What is the major drawback of using larger page sizes in paging?",
+    "options": ["Increased internal fragmentation", "Increased external fragmentation", "Reduced access time", "More page faults"],
+    "answer": "Increased internal fragmentation"
+  },
+  {
+    "question": "The OS structure where each layer builds upon lower layers is called:",
+    "options": ["Layered approach", "Monolithic", "Microkernel", "Hybrid system"],
+    "answer": "Layered approach"
+  },
+  {
+    "question": "Which one of the following is an example of a distributed OS?",
+    "options": ["Unix", "Amoeba", "Windows XP", "DOS"],
+    "answer": "Amoeba"
+  },
+  {
+    "question": "A page fault occurs when:",
+    "options": ["Page is not found in main memory", "Page is present in memory", "Invalid access to disk", "Memory is full"],
+    "answer": "Page is not found in main memory"
+  },
+  {
+    "question": "Which part of the OS decides which process runs next?",
+    "options": ["Long-term scheduler", "Short-term scheduler", "Dispatcher", "Job scheduler"],
+    "answer": "Short-term scheduler"
+  },
+  {
+    "question": "What is the main advantage of the microkernel design?",
+    "options": ["Smaller kernel and modularity", "Faster execution", "Single address space", "No interprocess communication needed"],
+    "answer": "Smaller kernel and modularity"
+  },
+  {
+    "question": "The kernel that executes all OS services in the same address space is called:",
+    "options": ["Monolithic kernel", "Microkernel", "Hybrid kernel", "Nano kernel"],
+    "answer": "Monolithic kernel"
+  },
+  {
+    "question": "In a demand-paging system, the page replacement is triggered when:",
+    "options": ["Page is invalid", "Page table is full", "No free frame is available", "TLB is full"],
+    "answer": "No free frame is available"
+  },
+  {
+    "question": "What is the main difference between logical and physical address?",
+    "options": ["Logical is generated by CPU; physical by memory unit", "Both are same", "Physical is virtualized", "Logical refers to RAM only"],
+    "answer": "Logical is generated by CPU; physical by memory unit"
+  },
+  {
+    "question": "The main role of the 'BIOS' is to:",
+    "options": ["Initialize hardware during booting", "Manage memory", "Handle interrupts", "Run applications"],
+    "answer": "Initialize hardware during booting"
+  },
+  {
+    "question": "Which of the following is an I/O control technique?",
+    "options": ["Polling", "Interrupt-driven I/O", "DMA", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which system call terminates a process in Unix?",
+    "options": ["exit()", "kill()", "end()", "terminate()"],
+    "answer": "exit()"
+  },
+  {
+    "question": "Which algorithm is used to allocate frames to processes in proportion to their size?",
+    "options": ["Equal allocation", "Proportional allocation", "Priority allocation", "Global allocation"],
+    "answer": "Proportional allocation"
+  },
+  {
+    "question": "Which process scheduling criterion favors I/O-bound processes?",
+    "options": ["Throughput", "Turnaround time", "Response time", "CPU utilization"],
+    "answer": "Response time"
+  },
+  {
+    "question": "The 'sleep()' system call in Unix does what?",
+    "options": ["Terminates process", "Pauses execution for some time", "Blocks signals", "Stops all processes"],
+    "answer": "Pauses execution for some time"
+  },
+  {
+    "question": "Which file system uses journaling to recover after crashes?",
+    "options": ["ext3", "FAT32", "NTFS", "Both ext3 and NTFS"],
+    "answer": "Both ext3 and NTFS"
+  },
+  {
+    "question": "The role of a loader is to:",
+    "options": ["Load programs into memory", "Compile programs", "Manage CPU", "Handle I/O requests"],
+    "answer": "Load programs into memory"
+  },
+  {
+    "question": "What is the main disadvantage of FCFS scheduling?",
+    "options": ["Starvation", "Poor average waiting time for long jobs", "High context switching", "CPU idle time"],
+    "answer": "Poor average waiting time for long jobs"
+  },
+  {
+    "question": "Which system call is used to duplicate a file descriptor?",
+    "options": ["dup()", "copy()", "clone()", "open()"],
+    "answer": "dup()"
+  },
+  {
+    "question": "The address binding done at compile time results in:",
+    "options": ["Absolute addresses", "Relative addresses", "Logical addresses", "Dynamic addresses"],
+    "answer": "Absolute addresses"
+  },
+  {
+    "question": "In paging, the offset determines:",
+    "options": ["Location within a page", "Frame number", "Page number", "Block number"],
+    "answer": "Location within a page"
+  },
+  {
+    "question": "Which OS structure allows dynamic loading of kernel modules?",
+    "options": ["Microkernel", "Monolithic", "Modular", "Layered"],
+    "answer": "Modular"
+  },
+  {
+    "question": "Which technique is used to increase effective CPU utilization by overlapping I/O with computation?",
+    "options": ["Multiprogramming", "Multithreading", "Spooling", "Interrupts"],
+    "answer": "Multiprogramming"
+  },
+  {
+    "question": "Which of the following best defines a ‘context’ in context switching?",
+    "options": ["CPU register and program counter values", "Memory layout", "I/O queue", "Stack frame only"],
+    "answer": "CPU register and program counter values"
+  },
+  {
+    "question": "What is the purpose of the ready queue?",
+    "options": ["Stores processes ready for CPU", "Stores terminated processes", "Stores blocked processes", "Stores swapped out processes"],
+    "answer": "Stores processes ready for CPU"
+  },
+  {
+    "question": "A process is said to be CPU-bound if:",
+    "options": ["It spends most time doing computations", "It frequently waits for I/O", "It performs mostly I/O", "It never uses the CPU"],
+    "answer": "It spends most time doing computations"
+  },
+  {
+    "question": "Which of these ensures that multiple processes can access shared data safely?",
+    "options": ["Critical section", "Paging", "Deadlock", "Memory swapping"],
+    "answer": "Critical section"
+  },
+  {
+    "question": "Which of the following can improve hit ratio in paging?",
+    "options": ["Larger page size", "Smaller page size", "Larger TLB", "Frequent context switch"],
+    "answer": "Larger TLB"
+  },
+  {
+    "question": "Which mechanism provides process isolation in OS?",
+    "options": ["Virtual memory", "Pipes", "Semaphores", "Forking"],
+    "answer": "Virtual memory"
+  },
+  {
+    "question": "Which scheduler determines which jobs are admitted to the system for execution?",
+    "options": ["Long-term scheduler", "Short-term scheduler", "Medium-term scheduler", "Dispatcher"],
+    "answer": "Long-term scheduler"
+  },
+  {
+    "question": "What is a 'binary semaphore' used for?",
+    "options": ["Mutual exclusion", "Counting resources", "Deadlock avoidance", "Thread communication"],
+    "answer": "Mutual exclusion"
+  },
+  {
+    "question": "Which disk scheduling algorithm is best for uniform request distribution?",
+    "options": ["FCFS", "C-SCAN", "LOOK", "SSTF"],
+    "answer": "C-SCAN"
+  },
+  {
+    "question": "In Unix, what does the command ‘nice -n 5 processname’ do?",
+    "options": ["Increases priority", "Decreases priority", "Kills the process", "Forks a new process"],
+    "answer": "Decreases priority"
+  },
+  {
+    "question": "Which of the following can reduce the degree of multiprogramming?",
+    "options": ["Thrashing", "Paging", "Segmentation", "Swapping"],
+    "answer": "Thrashing"
+  },
+  {
+    "question": "The key property of a reentrant function is:",
+    "options": ["Can be used by multiple threads safely", "Uses global variables", "Is not recursive", "Runs in kernel mode only"],
+    "answer": "Can be used by multiple threads safely"
+  },
+  {
+    "question": "Which OS concept allows execution of multiple threads of the same process?",
+    "options": ["Multithreading", "Multiprocessing", "Multitasking", "Time-sharing"],
+    "answer": "Multithreading"
+  },
+  {
+    "question": "In memory hierarchy, which is fastest?",
+    "options": ["Registers", "Cache", "RAM", "Disk"],
+    "answer": "Registers"
+  },
+  {
+    "question": "The command ‘kill -9 pid’ in Unix does what?",
+    "options": ["Terminates the process immediately", "Suspends the process", "Restarts the process", "Sends a stop signal"],
+    "answer": "Terminates the process immediately"
+  },
+  {
+    "question": "What is the main goal of the 'working set' model?",
+    "options": ["Reduce page faults", "Reduce external fragmentation", "Reduce CPU utilization", "Increase context switches"],
+    "answer": "Reduce page faults"
+  },
+  {
+    "question": "In deadlock detection, the system checks:",
+    "options": ["Circular wait conditions", "Priority levels", "Page faults", "Blocked I/O"],
+    "answer": "Circular wait conditions"
+  },
+  {
+    "question": "Which of the following uses LRU cache management?",
+    "options": ["Virtual memory", "File descriptor cache", "Buffer cache", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "The principle of locality refers to:",
+    "options": ["Processes accessing nearby memory locations", "Files stored contiguously", "Programs loaded in order", "CPU scheduling order"],
+    "answer": "Processes accessing nearby memory locations"
+  },
+  {
+    "question": "In Unix, which command shows CPU usage of processes?",
+    "options": ["top", "ls", "df", "du"],
+    "answer": "top"
+  },
+  {
+    "question": "What is a 'fork bomb'?",
+    "options": ["A process that recursively forks child processes", "A memory leak", "A virus file", "A buffer overflow"],
+    "answer": "A process that recursively forks child processes"
+  },
+  {
+    "question": "Which type of scheduling is ideal for time-sharing systems?",
+    "options": ["Round Robin", "FCFS", "SJF", "Priority"],
+    "answer": "Round Robin"
+  },
+  {
+    "question": "What does the term ‘context’ include during a context switch?",
+    "options": ["CPU registers, stack, and program counter", "Only program counter", "Only stack pointer", "Only CPU cache"],
+    "answer": "CPU registers, stack, and program counter"
+  },
+  {
+    "question": "In segmentation, each segment has:",
+    "options": ["Base and limit register", "Page table entry", "Offset only", "Frame number only"],
+    "answer": "Base and limit register"
+  },
+  {
+    "question": "Which system call in Unix creates a new child process?",
+    "options": ["fork()", "exec()", "wait()", "clone()"],
+    "answer": "fork()"
+  },
+  {
+    "question": "Which of these is not a function of an OS?",
+    "options": ["Security", "Networking", "File management", "Compiling user programs"],
+    "answer": "Compiling user programs"
+  },
+  {
+    "question": "Which mechanism allows the OS to handle multiple interrupts?",
+    "options": ["Interrupt nesting", "Polling", "Semaphore", "Context switching"],
+    "answer": "Interrupt nesting"
+  },
+  {
+    "question": "A ‘trap’ differs from an interrupt because it is:",
+    "options": ["Generated by software", "Generated by hardware", "Used only for I/O", "Used only by kernel"],
+    "answer": "Generated by software"
+  },
+  {
+    "question": "Which of the following is NOT a characteristic of real-time operating systems?",
+    "options": ["Deterministic response time", "High throughput", "Priority-based scheduling", "Minimal latency"],
+    "answer": "High throughput"
+  },
+  {
+    "question": "What is the main purpose of a 'watchdog timer' in an OS?",
+    "options": ["To monitor system health and reset if unresponsive", "To manage CPU scheduling", "To handle I/O operations", "To allocate memory"],
+    "answer": "To monitor system health and reset if unresponsive"
+  }
+]
+
+
+

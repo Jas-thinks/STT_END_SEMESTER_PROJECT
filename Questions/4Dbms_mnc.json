@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "question": "Explain how PostgreSQL implements MVCC and how it differs from traditional locking mechanisms."
+  },
+  {
+    "id": 2,
+    "question": "How does the two-phase commit protocol ensure atomicity in distributed systems?"
+  },
+  {
+    "id": 3,
+    "question": "What is the role of write-ahead logging (WAL) in ensuring durability?"
+  },
+  {
+    "id": 4,
+    "question": "How does Oracle handle deadlock detection and resolution?"
+  },
+  {
+    "id": 5,
+    "question": "Explain how query optimization works in MySQL with an example of cost-based optimization."
+  },
+  {
+    "id": 6,
+    "question": "What is the difference between optimistic and pessimistic concurrency control?"
+  },
+  {
+    "id": 7,
+    "question": "Describe the structure of a B+ tree and how it supports efficient range queries."
+  },
+  {
+    "id": 8,
+    "question": "How do indexes impact performance during insert and delete operations?"
+  },
+  {
+    "id": 9,
+    "question": "What are the major challenges in maintaining data consistency in distributed databases?"
+  },
+  {
+    "id": 10,
+    "question": "Explain the CAP theorem and its impact on distributed database design."
+  },
+  {
+    "id": 11,
+    "question": "What are different isolation levels and their trade-offs in relational databases?"
+  },
+  {
+    "id": 12,
+    "question": "How do databases implement read consistency under concurrent transactions?"
+  },
+  {
+    "id": 13,
+    "question": "What is a transaction log and how does it assist in crash recovery?"
+  },
+  {
+    "id": 14,
+    "question": "Explain the concept of cascading rollback and how to prevent it."
+  },
+  {
+    "id": 15,
+    "question": "What is shadow paging? Compare it with write-ahead logging."
+  },
+  {
+    "id": 16,
+    "question": "How does MySQL ensure crash recovery using redo and undo logs?"
+  },
+  {
+    "id": 17,
+    "question": "Describe the difference between physical and logical backups in enterprise databases."
+  },
+  {
+    "id": 18,
+    "question": "How do databases handle phantom reads and non-repeatable reads?"
+  },
+  {
+    "id": 19,
+    "question": "What are the trade-offs between normalization and denormalization in large-scale systems?"
+  },
+  {
+    "id": 20,
+    "question": "Explain how data partitioning improves query performance in distributed systems."
+  },
+  {
+    "id": 21,
+    "question": "What is the difference between range partitioning and hash partitioning?"
+  },
+  {
+    "id": 22,
+    "question": "How are indexes maintained during concurrent data modifications?"
+  },
+  {
+    "id": 23,
+    "question": "What are materialized views and how are they refreshed efficiently?"
+  },
+  {
+    "id": 24,
+    "question": "Explain how optimizer hints can influence query execution plans."
+  },
+  {
+    "id": 25,
+    "question": "What are correlated subqueries and how do they impact performance?"
+  },
+  {
+    "id": 26,
+    "question": "How does SQL Server detect and resolve deadlocks automatically?"
+  },
+  {
+    "id": 27,
+    "question": "Explain the concept of query execution pipelines in modern DBMS engines."
+  },
+  {
+    "id": 28,
+    "question": "How do columnar databases differ from row-oriented databases in query performance?"
+  },
+  {
+    "id": 29,
+    "question": "What are bitmap indexes and when are they preferred over B-trees?"
+  },
+  {
+    "id": 30,
+    "question": "Explain how database statistics influence the choice of query plan."
+  },
+  {
+    "id": 31,
+    "question": "How does Oracle manage buffer cache and redo log buffer for transaction efficiency?"
+  },
+  {
+    "id": 32,
+    "question": "Explain how distributed query execution works across multiple nodes."
+  },
+  {
+    "id": 33,
+    "question": "What is data replication lag and how can it be minimized?"
+  },
+  {
+    "id": 34,
+    "question": "What are the pros and cons of synchronous versus asynchronous replication?"
+  },
+  {
+    "id": 35,
+    "question": "How do cloud databases maintain consistency across regions?"
+  },
+  {
+    "id": 36,
+    "question": "What is a checkpoint in DBMS and how does it improve recovery time?"
+  },
+  {
+    "id": 37,
+    "question": "How does PostgreSQL maintain consistency using LSN (Log Sequence Numbers)?"
+  },
+  {
+    "id": 38,
+    "question": "What are the trade-offs between table scans and index scans in query optimization?"
+  },
+  {
+    "id": 39,
+    "question": "Explain how sharding works and how it affects query routing."
+  },
+  {
+    "id": 40,
+    "question": "What is quorum-based consistency and how does it work in distributed databases?"
+  },
+  {
+    "id": 41,
+    "question": "How do databases prevent write skew under snapshot isolation?"
+  },
+  {
+    "id": 42,
+    "question": "Describe the internal steps of join algorithms like hash join and sort-merge join."
+  },
+  {
+    "id": 43,
+    "question": "How do database engines implement parallel query execution?"
+  },
+  {
+    "id": 44,
+    "question": "What is adaptive query optimization and why is it used in Oracle 12c+?"
+  },
+  {
+    "id": 45,
+    "question": "Explain the difference between data lake and data warehouse in architecture."
+  },
+  {
+    "id": 46,
+    "question": "How does index fragmentation affect performance and how can it be resolved?"
+  },
+  {
+    "id": 47,
+    "question": "What are the benefits of using partitioned indexes in large-scale tables?"
+  },
+  {
+    "id": 48,
+    "question": "Explain the difference between shared-nothing and shared-disk architectures."
+  },
+  {
+    "id": 49,
+    "question": "How does query caching work in MySQL and PostgreSQL?"
+  },
+  {
+    "id": 50,
+    "question": "Explain the use of clustering and partition pruning in improving performance."
+  },
+  {
+    "id": 51,
+    "question": "What is a latch and how does it differ from a lock in DBMS internals?"
+  },
+  {
+    "id": 52,
+    "question": "How do databases ensure transaction atomicity under power failures?"
+  },
+  {
+    "id": 53,
+    "question": "What is a global transaction manager in distributed systems?"
+  },
+  {
+    "id": 54,
+    "question": "Explain how replication conflicts are detected and resolved in multi-master systems."
+  },
+  {
+    "id": 55,
+    "question": "How are Bloom filters used in database join optimizations?"
+  },
+  {
+    "id": 56,
+    "question": "What is vectorized query execution and how does it speed up analytical queries?"
+  },
+  {
+    "id": 57,
+    "question": "How do memory-optimized tables differ from traditional disk-based ones?"
+  },
+  {
+    "id": 58,
+    "question": "Explain how databases handle schema evolution without downtime."
+  },
+  {
+    "id": 59,
+    "question": "What are hotspots in distributed databases and how are they reduced?"
+  },
+  {
+    "id": 60,
+    "question": "Describe how transaction isolation is implemented in NoSQL systems like MongoDB."
+  },
+  {
+    "id": 61,
+    "question": "What are the limitations of two-phase commit and how does three-phase commit overcome them?"
+  },
+  {
+    "id": 62,
+    "question": "Explain how graph databases handle ACID properties differently from relational databases."
+  },
+  {
+    "id": 63,
+    "question": "How does query compilation and execution differ in Spark SQL compared to traditional RDBMS?"
+  },
+  {
+    "id": 64,
+    "question": "What is the difference between data replication and data federation?"
+  },
+  {
+    "id": 65,
+    "question": "Explain the internal structure of redo logs and how they support crash recovery."
+  },
+  {
+    "id": 66,
+    "question": "What are surrogate keys and why are they used in enterprise databases?"
+  },
+  {
+    "id": 67,
+    "question": "How does the database engine manage buffer replacement policies like LRU or MRU?"
+  },
+  {
+    "id": 68,
+    "question": "What are the mechanisms used to detect and recover from transaction failures?"
+  },
+  {
+    "id": 69,
+    "question": "Explain the internal working of foreign key constraint enforcement during large batch inserts."
+  },
+  {
+    "id": 70,
+    "question": "How does a distributed database achieve fault tolerance and high availability?"
+  }
+]

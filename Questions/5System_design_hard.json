@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "question": "How would you design Netflix — focusing on video encoding, CDN distribution, and recommendation systems?"
+  },
+  {
+    "id": 2,
+    "question": "Design a scalable messaging system like Slack or Discord supporting millions of concurrent users."
+  },
+  {
+    "id": 3,
+    "question": "How would you design Google Maps — focusing on route computation, map rendering, and live traffic updates?"
+  },
+  {
+    "id": 4,
+    "question": "Design YouTube's backend architecture for uploading, transcoding, and serving videos globally."
+  },
+  {
+    "id": 5,
+    "question": "How would you design a distributed search engine like Google Search?"
+  },
+  {
+    "id": 6,
+    "question": "Design a scalable payment processing system like Stripe or PayPal."
+  },
+  {
+    "id": 7,
+    "question": "How would you design a distributed caching system for a large-scale e-commerce website?"
+  },
+  {
+    "id": 8,
+    "question": "Design a distributed database like Amazon DynamoDB."
+  },
+  {
+    "id": 9,
+    "question": "How would you design an ad-serving platform like Google Ads?"
+  },
+  {
+    "id": 10,
+    "question": "Design an end-to-end ride-sharing system like Uber, focusing on matching, surge pricing, and driver routing."
+  },
+  {
+    "id": 11,
+    "question": "How would you design an event-driven notification system with guaranteed delivery?"
+  },
+  {
+    "id": 12,
+    "question": "Design a distributed rate-limiting system across multiple microservices."
+  },
+  {
+    "id": 13,
+    "question": "How would you design a cloud-based logging and analytics system like Splunk or ELK Stack?"
+  },
+  {
+    "id": 14,
+    "question": "Design a scalable recommendation engine like Amazon’s 'Customers also bought'."
+  },
+  {
+    "id": 15,
+    "question": "How would you design the backend for an online multiplayer game?"
+  },
+  {
+    "id": 16,
+    "question": "Design a distributed lock service similar to Google’s Chubby."
+  },
+  {
+    "id": 17,
+    "question": "How would you design a consistent distributed key-value store?"
+  },
+  {
+    "id": 18,
+    "question": "Design a system for global leaderboards that handle billions of entries with real-time updates."
+  },
+  {
+    "id": 19,
+    "question": "How would you design a high-frequency trading system with sub-millisecond latency?"
+  },
+  {
+    "id": 20,
+    "question": "Design an analytics pipeline similar to Facebook’s data warehouse infrastructure."
+  },
+  {
+    "id": 21,
+    "question": "How would you design a system to detect and prevent credit card fraud in real-time?"
+  },
+  {
+    "id": 22,
+    "question": "Design a large-scale distributed cron scheduling service."
+  },
+  {
+    "id": 23,
+    "question": "How would you design a global content delivery network (CDN)?"
+  },
+  {
+    "id": 24,
+    "question": "Design a fault-tolerant distributed queue system like Kafka."
+  },
+  {
+    "id": 25,
+    "question": "How would you design an object storage service like Amazon S3?"
+  },
+  {
+    "id": 26,
+    "question": "Design an end-to-end system for real-time collaborative editing like Google Docs."
+  },
+  {
+    "id": 27,
+    "question": "How would you design a social media feed ranking algorithm at scale?"
+  },
+  {
+    "id": 28,
+    "question": "Design a notification system that guarantees exactly-once delivery."
+  },
+  {
+    "id": 29,
+    "question": "How would you design an image recognition and search system?"
+  },
+  {
+    "id": 30,
+    "question": "Design a distributed transaction management system ensuring ACID properties across services."
+  },
+  {
+    "id": 31,
+    "question": "How would you design a scalable blockchain network?"
+  },
+  {
+    "id": 32,
+    "question": "Design an API gateway for handling millions of requests with rate limiting and security."
+  },
+  {
+    "id": 33,
+    "question": "How would you design a scalable metrics aggregation and alerting system?"
+  },
+  {
+    "id": 34,
+    "question": "Design a real-time bidding system for online advertising."
+  },
+  {
+    "id": 35,
+    "question": "How would you design an auto-scaling infrastructure for cloud services?"
+  },
+  {
+    "id": 36,
+    "question": "Design a version control system like Git."
+  },
+  {
+    "id": 37,
+    "question": "How would you design a real-time translation system like Google Translate?"
+  },
+  {
+    "id": 38,
+    "question": "Design a distributed consensus system using Raft or Paxos."
+  },
+  {
+    "id": 39,
+    "question": "How would you design a privacy-preserving data analytics system?"
+  },
+  {
+    "id": 40,
+    "question": "Design a failover and replication mechanism for databases."
+  },
+  {
+    "id": 41,
+    "question": "How would you design a global search index system for a social network?"
+  },
+  {
+    "id": 42,
+    "question": "Design a real-time stock trading platform."
+  },
+  {
+    "id": 43,
+    "question": "How would you design an end-to-end ML model deployment pipeline?"
+  },
+  {
+    "id": 44,
+    "question": "Design a distributed cache invalidation system."
+  },
+  {
+    "id": 45,
+    "question": "How would you design a scalable IoT data ingestion platform?"
+  },
+  {
+    "id": 46,
+    "question": "Design a fault-tolerant load balancer that distributes requests intelligently."
+  },
+  {
+    "id": 47,
+    "question": "How would you design a live streaming platform like Twitch?"
+  },
+  {
+    "id": 48,
+    "question": "Design an A/B testing platform handling billions of users."
+  },
+  {
+    "id": 49,
+    "question": "How would you design a distributed tracing system like Jaeger or Zipkin?"
+  },
+  {
+    "id": 50,
+    "question": "Design a massive multiplayer online game architecture."
+  },
+  {
+    "id": 51,
+    "question": "How would you design a scalable recommendation system based on collaborative filtering?"
+  },
+  {
+    "id": 52,
+    "question": "Design a distributed system for image processing pipelines."
+  },
+  {
+    "id": 53,
+    "question": "How would you design a multi-region database with automatic failover?"
+  },
+  {
+    "id": 54,
+    "question": "Design a secure authentication and identity management system like OAuth2."
+  },
+  {
+    "id": 55,
+    "question": "How would you design a large-scale customer analytics platform like Mixpanel?"
+  },
+  {
+    "id": 56,
+    "question": "Design a distributed pub-sub messaging system like Google Pub/Sub."
+  },
+  {
+    "id": 57,
+    "question": "How would you design a decentralized file sharing system like BitTorrent?"
+  },
+  {
+    "id": 58,
+    "question": "Design a distributed ledger system for enterprise use cases."
+  },
+  {
+    "id": 59,
+    "question": "How would you design a globally consistent shopping cart for e-commerce?"
+  },
+  {
+    "id": 60,
+    "question": "Design a high-performance in-memory database."
+  },
+  {
+    "id": 61,
+    "question": "How would you design a system for log ingestion and querying like CloudWatch?"
+  },
+  {
+    "id": 62,
+    "question": "Design a platform to serve machine learning model predictions at scale."
+  },
+  {
+    "id": 63,
+    "question": "How would you design a system to detect duplicate content across billions of documents?"
+  },
+  {
+    "id": 64,
+    "question": "Design a cloud resource provisioning system like AWS CloudFormation."
+  },
+  {
+    "id": 65,
+    "question": "How would you design an anomaly detection system for user activity?"
+  },
+  {
+    "id": 66,
+    "question": "Design a distributed configuration and service discovery system."
+  },
+  {
+    "id": 67,
+    "question": "How would you design a scalable file synchronization service?"
+  },
+  {
+    "id": 68,
+    "question": "Design an API rate limiter that works across distributed systems."
+  },
+  {
+    "id": 69,
+    "question": "How would you design a global-scale machine learning feature store?"
+  },
+  {
+    "id": 70,
+    "question": "Design a disaster recovery system ensuring zero data loss and minimal downtime."
+  }
+]

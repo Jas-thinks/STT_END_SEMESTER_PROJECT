@@ -1,0 +1,497 @@
+[
+  {
+    "question": "Which SQL feature allows you to write recursive queries such as finding all subordinates of a manager?",
+    "options": ["CTE", "Trigger", "View", "Subquery"],
+    "answer": "CTE"
+  },
+  {
+    "question": "In SQL Server, which isolation level prevents dirty reads, non-repeatable reads, but allows phantom reads?",
+    "options": ["Repeatable Read", "Serializable", "Read Committed", "Read Uncommitted"],
+    "answer": "Repeatable Read"
+  },
+  {
+    "question": "What is the main purpose of a clustered index in SQL?",
+    "options": ["Sorts and stores rows physically in the table", "Only stores index values separately", "Speeds up only SELECT queries", "Prevents duplicate values"],
+    "answer": "Sorts and stores rows physically in the table"
+  },
+  {
+    "question": "Which SQL clause can be used inside a window function to specify groups of rows for calculations?",
+    "options": ["PARTITION BY", "GROUP BY", "ORDER BY", "HAVING"],
+    "answer": "PARTITION BY"
+  },
+  {
+    "question": "What happens when you create an index on a column with many NULL values?",
+    "options": ["Index efficiency decreases", "Index efficiency increases", "No impact", "Index becomes unusable"],
+    "answer": "Index efficiency decreases"
+  },
+  {
+    "question": "Which SQL feature allows executing a piece of code automatically in response to certain events on a table?",
+    "options": ["Trigger", "Procedure", "View", "Function"],
+    "answer": "Trigger"
+  },
+  {
+    "question": "Which SQL keyword is used to lock selected rows to prevent modification by others until a transaction is committed?",
+    "options": ["FOR UPDATE", "LOCK TABLE", "TRANSACTION LOCK", "SAVEPOINT"],
+    "answer": "FOR UPDATE"
+  },
+  {
+    "question": "When performing a JOIN, which type ensures all rows from both tables are included even if no match exists?",
+    "options": ["FULL OUTER JOIN", "INNER JOIN", "LEFT JOIN", "CROSS JOIN"],
+    "answer": "FULL OUTER JOIN"
+  },
+  {
+    "question": "In a large table, which indexing strategy improves range queries on numeric columns?",
+    "options": ["B-tree index", "Hash index", "Bitmap index", "Full-text index"],
+    "answer": "B-tree index"
+  },
+  {
+    "question": "What does the EXPLAIN command do in SQL?",
+    "options": ["Shows query execution plan", "Executes the query", "Indexes the query", "Compiles query to machine code"],
+    "answer": "Shows query execution plan"
+  },
+  {
+    "question": "Which constraint ensures that a column in one table must correspond to a value in another table?",
+    "options": ["FOREIGN KEY", "PRIMARY KEY", "CHECK", "DEFAULT"],
+    "answer": "FOREIGN KEY"
+  },
+  {
+    "question": "What is the main advantage of using a covering index?",
+    "options": ["Query can be answered entirely using the index", "Reduces index size", "Prevents fragmentation", "Avoids full-table scans"],
+    "answer": "Query can be answered entirely using the index"
+  },
+  {
+    "question": "What type of join produces a Cartesian product?",
+    "options": ["CROSS JOIN", "INNER JOIN", "LEFT JOIN", "RIGHT JOIN"],
+    "answer": "CROSS JOIN"
+  },
+  {
+    "question": "Which SQL command is used to undo changes since the last COMMIT?",
+    "options": ["ROLLBACK", "SAVEPOINT", "REVOKE", "DELETE"],
+    "answer": "ROLLBACK"
+  },
+  {
+    "question": "What is a materialized view?",
+    "options": ["A view that stores query results physically", "A temporary view", "A dynamic view updated instantly", "A subquery"],
+    "answer": "A view that stores query results physically"
+  },
+  {
+    "question": "In SQL, which command can reduce the size of a table and release unused space?",
+    "options": ["VACUUM", "CLEAN", "OPTIMIZE", "SHRINK"],
+    "answer": "VACUUM"
+  },
+  {
+    "question": "Which of the following best describes database normalization?",
+    "options": ["Minimizing redundancy", "Increasing redundancy", "Improving indexing", "Encrypting data"],
+    "answer": "Minimizing redundancy"
+  },
+  {
+    "question": "Which level of normalization eliminates transitive dependency?",
+    "options": ["3NF", "2NF", "BCNF", "1NF"],
+    "answer": "3NF"
+  },
+  {
+    "question": "What happens when two concurrent transactions try to update the same row without isolation?",
+    "options": ["Race condition", "Deadlock", "Serialization", "Atomicity"],
+    "answer": "Race condition"
+  },
+  {
+    "question": "What is the main disadvantage of denormalization?",
+    "options": ["Data redundancy increases", "Query complexity increases", "Indexing becomes impossible", "Data consistency improves"],
+    "answer": "Data redundancy increases"
+  },
+  {
+    "question": "In SQL, what is a phantom read?",
+    "options": ["A new row appears between two reads in a transaction", "A read of a deleted record", "A read that never happens", "A cache read"],
+    "answer": "A new row appears between two reads in a transaction"
+  },
+  {
+    "question": "Which SQL keyword is used to merge two result sets and remove duplicates?",
+    "options": ["UNION", "UNION ALL", "INTERSECT", "JOIN"],
+    "answer": "UNION"
+  },
+  {
+    "question": "In PostgreSQL, what is the purpose of the ANALYZE command?",
+    "options": ["Collects statistics for the query planner", "Deletes unused indexes", "Executes triggers", "Compresses data files"],
+    "answer": "Collects statistics for the query planner"
+  },
+  {
+    "question": "What is a deadlock in SQL?",
+    "options": ["Two transactions waiting on each other’s locks", "Duplicate key violation", "Rollback conflict", "Cache invalidation"],
+    "answer": "Two transactions waiting on each other’s locks"
+  },
+  {
+    "question": "Which SQL clause allows you to define custom sorting inside a window function?",
+    "options": ["ORDER BY", "GROUP BY", "OVER", "RANK"],
+    "answer": "ORDER BY"
+  },
+  {
+    "question": "What does ACID stand for in databases?",
+    "options": ["Atomicity, Consistency, Isolation, Durability", "Access, Control, Index, Data", "Atomic, Consistent, Indexed, Durable", "Accuracy, Completion, Integration, Design"],
+    "answer": "Atomicity, Consistency, Isolation, Durability"
+  },
+  {
+    "question": "Which SQL keyword is used to temporarily save a transaction state?",
+    "options": ["SAVEPOINT", "COMMIT", "ROLLBACK", "LOCK"],
+    "answer": "SAVEPOINT"
+  },
+  {
+    "question": "What is the purpose of query optimization in SQL?",
+    "options": ["To find the most efficient execution plan", "To rewrite query syntax", "To store indexes", "To validate triggers"],
+    "answer": "To find the most efficient execution plan"
+  },
+  {
+    "question": "What is the difference between DELETE and TRUNCATE?",
+    "options": ["DELETE can have WHERE clause, TRUNCATE cannot", "TRUNCATE logs each row", "DELETE resets identity values", "Both are identical"],
+    "answer": "DELETE can have WHERE clause, TRUNCATE cannot"
+  },
+  {
+    "question": "Which function is used to rank rows in SQL without gaps in ranking values?",
+    "options": ["DENSE_RANK()", "RANK()", "ROW_NUMBER()", "NTILE()"],
+    "answer": "DENSE_RANK()"
+  },
+  {
+    "question": "Which of the following SQL functions can be used in windowing context?",
+    "options": ["SUM()", "COUNT()", "AVG()", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What is the main purpose of using partitioned tables?",
+    "options": ["Improve query performance and manageability", "Reduce normalization", "Eliminate redundancy", "Disable indexing"],
+    "answer": "Improve query performance and manageability"
+  },
+  {
+    "question": "Which of the following is true about index fragmentation?",
+    "options": ["Occurs when data is modified frequently", "Improves query performance", "Occurs only in read-only databases", "Is desirable for caching"],
+    "answer": "Occurs when data is modified frequently"
+  },
+  {
+    "question": "Which SQL operator is used to test whether a value exists in a subquery result?",
+    "options": ["IN", "EXISTS", "ANY", "ALL"],
+    "answer": "EXISTS"
+  },
+  {
+    "question": "What is a correlated subquery?",
+    "options": ["A subquery that refers to columns from the outer query", "Independent subquery", "Subquery used in SELECT clause", "Subquery with multiple tables"],
+    "answer": "A subquery that refers to columns from the outer query"
+  },
+  {
+    "question": "Which SQL constraint enforces that a value must satisfy a logical expression?",
+    "options": ["CHECK", "DEFAULT", "NOT NULL", "UNIQUE"],
+    "answer": "CHECK"
+  },
+  {
+    "question": "In SQL, what does 'optimizer hint' mean?",
+    "options": ["Directive to influence the query optimizer", "Comment inside SQL", "Metadata for constraints", "Cache preference"],
+    "answer": "Directive to influence the query optimizer"
+  },
+  {
+    "question": "What happens when you perform a LEFT JOIN but the ON condition fails?",
+    "options": ["NULLs are returned for right table columns", "Row is skipped", "Query fails", "Error occurs"],
+    "answer": "NULLs are returned for right table columns"
+  },
+  {
+    "question": "Which SQL function returns the first non-null value from a list?",
+    "options": ["COALESCE()", "ISNULL()", "NVL()", "IFNULL()"],
+    "answer": "COALESCE()"
+  },
+  {
+    "question": "In SQL, what is the purpose of HAVING clause?",
+    "options": ["Filter groups after aggregation", "Filter rows before aggregation", "Order groups", "Join conditions"],
+    "answer": "Filter groups after aggregation"
+  },
+  {
+    "question": "What is a surrogate key?",
+    "options": ["System-generated unique identifier", "User-defined unique key", "Composite key", "Foreign key"],
+    "answer": "System-generated unique identifier"
+  },
+  {
+    "question": "What happens if two transactions deadlock in SQL?",
+    "options": ["One transaction is rolled back", "Both transactions succeed", "Both wait indefinitely", "System shuts down"],
+    "answer": "One transaction is rolled back"
+  },
+  {
+    "question": "What is the difference between UNION and UNION ALL?",
+    "options": ["UNION removes duplicates, UNION ALL does not", "UNION ALL removes duplicates", "Both are same", "UNION ALL sorts automatically"],
+    "answer": "UNION removes duplicates, UNION ALL does not"
+  },
+  {
+    "question": "Which function is used to compute a running total in SQL?",
+    "options": ["SUM() OVER(ORDER BY ...)", "RANK()", "NTILE()", "ROW_NUMBER()"],
+    "answer": "SUM() OVER(ORDER BY ...)"
+  },
+  {
+    "question": "What is the result of dividing two integers in SQL when fractional part exists?",
+    "options": ["Truncated result", "Error", "Rounded result", "Float result always"],
+    "answer": "Truncated result"
+  },
+  {
+    "question": "Which SQL operation can cause table-level locks in MySQL InnoDB?",
+    "options": ["ALTER TABLE", "SELECT", "INSERT", "UPDATE"],
+    "answer": "ALTER TABLE"
+  },
+  {
+    "question": "Which command is used to grant a user permission to access a table?",
+    "options": ["GRANT", "ALLOW", "PERMIT", "ACCESS"],
+    "answer": "GRANT"
+  },
+  {
+    "question": "Which SQL feature allows splitting a large table into smaller pieces for better performance?",
+    "options": ["Partitioning", "Sharding", "Replication", "Normalization"],
+    "answer": "Partitioning"
+  },
+  {
+    "question": "What is the difference between horizontal and vertical partitioning?",
+    "options": ["Horizontal splits rows, vertical splits columns", "Vertical splits rows, horizontal splits columns", "Both split rows", "Both split columns"],
+    "answer": "Horizontal splits rows, vertical splits columns"
+  },
+  {
+    "question": "What is the purpose of transaction logs?",
+    "options": ["Record all database changes for recovery", "Store query plans", "Improve indexing", "Cache results"],
+    "answer": "Record all database changes for recovery"
+  },
+  {
+    "question": "What is the purpose of the SQL WITH RECURSIVE clause?",
+    "options": ["To perform recursive CTE queries", "To define triggers", "To build index hierarchies", "To perform pivoting"],
+    "answer": "To perform recursive CTE queries"
+  },
+  {
+    "question": "Which SQL operation can lead to a 'phantom read' if isolation level is too low?",
+    "options": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+    "answer": "INSERT"
+  },
+  {
+    "question": "What is a hash join most efficient for?",
+    "options": ["Joining large, unsorted tables", "Joining pre-sorted tables", "Joining tables with indexes", "Joining small tables"],
+    "answer": "Joining large, unsorted tables"
+  },
+  {
+    "question": "Which SQL feature ensures all updates occur in all replicas or none in distributed systems?",
+    "options": ["Two-phase commit", "Checkpointing", "Snapshot isolation", "Eventual consistency"],
+    "answer": "Two-phase commit"
+  },
+  {
+    "question": "Which index type is best for high-cardinality columns in OLTP workloads?",
+    "options": ["B-tree index", "Bitmap index", "Hash index", "Full-text index"],
+    "answer": "B-tree index"
+  },
+  {
+    "question": "Why might you prefer EXISTS over IN in a correlated subquery?",
+    "options": ["EXISTS stops on first match, improving performance", "IN supports NULLs better", "EXISTS always uses indexes", "IN uses less memory"],
+    "answer": "EXISTS stops on first match, improving performance"
+  },
+  {
+    "question": "What is the difference between SERIALIZABLE and SNAPSHOT isolation levels?",
+    "options": ["SNAPSHOT allows non-blocking reads", "SERIALIZABLE is faster", "SNAPSHOT blocks writers", "They are identical"],
+    "answer": "SNAPSHOT allows non-blocking reads"
+  },
+  {
+    "question": "In SQL Server, which feature can automatically execute actions after a table change?",
+    "options": ["AFTER trigger", "VIEW", "STORED PROCEDURE", "CONSTRAINT"],
+    "answer": "AFTER trigger"
+  },
+  {
+    "question": "Which SQL statement can rebuild fragmented indexes without blocking reads?",
+    "options": ["ALTER INDEX REORGANIZE", "ALTER TABLE SHRINK", "VACUUM FULL", "REINDEX"],
+    "answer": "ALTER INDEX REORGANIZE"
+  },
+  {
+    "question": "What is the difference between a temp table and a table variable in SQL Server?",
+    "options": ["Temp table supports indexes and stats; table variable doesn't", "Table variable supports triggers", "Both are identical", "Table variable is stored on disk"],
+    "answer": "Temp table supports indexes and stats; table variable doesn't"
+  },
+  {
+    "question": "Which SQL command ensures that all rows in a group satisfy a condition?",
+    "options": ["HAVING", "WHERE", "QUALIFY", "CHECK"],
+    "answer": "HAVING"
+  },
+  {
+    "question": "What is the advantage of using query partitioning in analytical workloads?",
+    "options": ["Parallel processing across partitions", "Faster write operations", "Reduced normalization", "Avoids indexing"],
+    "answer": "Parallel processing across partitions"
+  },
+  {
+    "question": "In SQL, what is a lateral join used for?",
+    "options": ["To allow subquery to reference columns from preceding tables", "To join based on computed columns", "To create recursive joins", "To join temporary tables"],
+    "answer": "To allow subquery to reference columns from preceding tables"
+  },
+  {
+    "question": "What is a bitmap index most suitable for?",
+    "options": ["Low-cardinality columns", "High-cardinality columns", "Text columns", "Foreign key columns"],
+    "answer": "Low-cardinality columns"
+  },
+  {
+    "question": "Which SQL keyword helps prevent concurrent transactions from modifying the same rows?",
+    "options": ["FOR UPDATE", "LOCK TABLES", "SYNCHRONIZE", "MUTEX"],
+    "answer": "FOR UPDATE"
+  },
+  {
+    "question": "In PostgreSQL, what does VACUUM FULL do differently than VACUUM?",
+    "options": ["Reclaims space and physically rewrites the table", "Only updates statistics", "Deletes indexes", "Truncates log files"],
+    "answer": "Reclaims space and physically rewrites the table"
+  },
+  {
+    "question": "Which SQL analytic function allows you to assign buckets to rows based on percentiles?",
+    "options": ["NTILE()", "PERCENT_RANK()", "RANK()", "DENSE_RANK()"],
+    "answer": "NTILE()"
+  },
+  {
+    "question": "What happens when a transaction violates referential integrity?",
+    "options": ["The transaction fails and rolls back", "The constraint is ignored", "A warning is logged", "Only affected row is skipped"],
+    "answer": "The transaction fails and rolls back"
+  },
+  {
+    "question": "What is the difference between schema-level and row-level triggers?",
+    "options": ["Schema-level trigger fires on DDL; row-level fires per affected row", "Row-level triggers are faster", "Schema-level triggers are deprecated", "Both are identical"],
+    "answer": "Schema-level trigger fires on DDL; row-level fires per affected row"
+  },
+  {
+    "question": "Which SQL concept is used to implement Slowly Changing Dimensions (SCD Type 2)?",
+    "options": ["Historical tables with version columns", "Dynamic views", "CTEs", "Triggers only"],
+    "answer": "Historical tables with version columns"
+  },
+  {
+    "question": "Why might a query planner choose a full table scan over using an index?",
+    "options": ["When the table is small or query is not selective", "Index corruption", "Index is unique", "It never does"],
+    "answer": "When the table is small or query is not selective"
+  },
+  {
+    "question": "What is a heap-organized table?",
+    "options": ["Table without a clustered index", "Table with multiple primary keys", "Temporary table", "Memory-only table"],
+    "answer": "Table without a clustered index"
+  },
+  {
+    "question": "Which SQL clause allows you to pivot rows into columns dynamically?",
+    "options": ["PIVOT", "TRANSFORM", "GROUP BY", "CASE"],
+    "answer": "PIVOT"
+  },
+  {
+    "question": "What is a primary difference between DELETE and DROP?",
+    "options": ["DELETE removes rows, DROP removes schema objects", "Both remove all data", "DROP can use WHERE", "DELETE removes columns"],
+    "answer": "DELETE removes rows, DROP removes schema objects"
+  },
+  {
+    "question": "What does the ANALYZE TABLE command do?",
+    "options": ["Updates optimizer statistics", "Checks constraints", "Deletes old rows", "Rebuilds indexes"],
+    "answer": "Updates optimizer statistics"
+  },
+  {
+    "question": "Which SQL concept allows you to isolate analytical workloads from transactional workloads?",
+    "options": ["OLAP vs OLTP architecture", "Sharding", "Replication", "Shadow tables"],
+    "answer": "OLAP vs OLTP architecture"
+  },
+  {
+    "question": "Which SQL feature enables you to execute one statement conditionally based on another?",
+    "options": ["CASE expression", "IF table", "SWITCH block", "WHEN operator"],
+    "answer": "CASE expression"
+  },
+  {
+    "question": "Which index structure is most efficient for equality lookups?",
+    "options": ["Hash index", "B-tree index", "Bitmap index", "Clustered index"],
+    "answer": "Hash index"
+  },
+  {
+    "question": "Which SQL clause can be used to define user-defined ordering logic?",
+    "options": ["ORDER BY CASE", "GROUP BY", "SORT USING", "QUALIFY"],
+    "answer": "ORDER BY CASE"
+  },
+  {
+    "question": "What is a self-join used for?",
+    "options": ["Join table with itself to compare rows", "Join duplicate columns", "Join two databases", "Create recursive triggers"],
+    "answer": "Join table with itself to compare rows"
+  },
+  {
+    "question": "Which function returns cumulative distribution of a value within a dataset?",
+    "options": ["CUME_DIST()", "NTILE()", "RANK()", "ROW_NUMBER()"],
+    "answer": "CUME_DIST()"
+  },
+  {
+    "question": "Which SQL clause can transform JSON data into relational rows?",
+    "options": ["JSON_TABLE()", "UNNEST()", "EXPAND()", "CAST_JSON()"],
+    "answer": "JSON_TABLE()"
+  },
+  {
+    "question": "Which operation can cause lock escalation?",
+    "options": ["Updating too many rows in one transaction", "Dropping small tables", "Creating views", "Granting privileges"],
+    "answer": "Updating too many rows in one transaction"
+  },
+  {
+    "question": "What is the role of write-ahead logging (WAL) in databases?",
+    "options": ["Ensures durability by logging before applying changes", "Caches query results", "Maintains index metadata", "Deletes unused rows"],
+    "answer": "Ensures durability by logging before applying changes"
+  },
+  {
+    "question": "What does the SET TRANSACTION ISOLATION LEVEL command do?",
+    "options": ["Defines how data is visible across concurrent transactions", "Locks a table", "Creates a new transaction", "Closes a transaction"],
+    "answer": "Defines how data is visible across concurrent transactions"
+  },
+  {
+    "question": "What happens if a foreign key references a non-indexed column?",
+    "options": ["Performance may degrade on DELETE/UPDATE", "Constraint fails", "Foreign key ignored", "Database rejects creation"],
+    "answer": "Performance may degrade on DELETE/UPDATE"
+  },
+  {
+    "question": "Which SQL technique helps optimize large batch inserts?",
+    "options": ["Disabling indexes temporarily", "Using multiple commits", "Adding triggers", "Enabling foreign keys early"],
+    "answer": "Disabling indexes temporarily"
+  },
+  {
+    "question": "What does normalization to BCNF remove that 3NF might still allow?",
+    "options": ["Functional dependency anomalies", "Partial dependency", "Redundant keys", "Duplicate tuples"],
+    "answer": "Functional dependency anomalies"
+  },
+  {
+    "question": "What is the main advantage of table partition pruning?",
+    "options": ["Reduces I/O by reading only relevant partitions", "Increases data redundancy", "Improves normalization", "Enhances constraint checking"],
+    "answer": "Reduces I/O by reading only relevant partitions"
+  },
+  {
+    "question": "What is the difference between a hot and cold standby database?",
+    "options": ["Hot standby is continuously updated, cold is restored on demand", "Cold standby is real-time", "Hot standby needs manual sync", "Both are identical"],
+    "answer": "Hot standby is continuously updated, cold is restored on demand"
+  },
+  {
+    "question": "Which SQL operation is least likely to benefit from indexing?",
+    "options": ["INSERT-heavy workloads", "SELECT-heavy workloads", "JOIN-heavy workloads", "Aggregation queries"],
+    "answer": "INSERT-heavy workloads"
+  },
+  {
+    "question": "Which function can flatten nested arrays in SQL?",
+    "options": ["UNNEST()", "EXPAND()", "SPLIT()", "ARRAY_FLATTEN()"],
+    "answer": "UNNEST()"
+  },
+  {
+    "question": "What is an execution plan cache used for?",
+    "options": ["Reusing compiled query plans", "Storing data pages", "Caching result sets", "Saving schema definitions"],
+    "answer": "Reusing compiled query plans"
+  },
+  {
+    "question": "Which SQL feature allows maintaining multiple versions of rows for concurrency control?",
+    "options": ["MVCC", "ACID", "WAL", "2PC"],
+    "answer": "MVCC"
+  },
+  {
+    "question": "Which SQL clause can generate row numbers based on custom sorting?",
+    "options": ["ROW_NUMBER() OVER(ORDER BY ...)", "RANK()", "NTILE()", "LIMIT"],
+    "answer": "ROW_NUMBER() OVER(ORDER BY ...)"
+  },
+  {
+    "question": "What is the purpose of a composite index?",
+    "options": ["Indexing multiple columns together to speed up multi-column queries", "Preventing NULLs", "Simplifying triggers", "Handling partitions"],
+    "answer": "Indexing multiple columns together to speed up multi-column queries"
+  },
+  {
+    "question": "Which SQL concept ensures a transaction executes as if it were the only one in the system?",
+    "options": ["Serializability", "Atomicity", "Isolation", "Durability"],
+    "answer": "Serializability"
+  },
+  {
+    "question": "Which SQL statement can automatically rollback partial changes in a failed batch?",
+    "options": ["Transaction block", "MERGE", "REVERT", "SAVEPOINT"],
+    "answer": "Transaction block"
+  },
+  {
+    "question": "In an OLAP cube, what does 'drill down' mean?",
+    "options": ["Moving from summary data to detailed data", "Summarizing detail data", "Switching schema", "Partition merging"],
+    "answer": "Moving from summary data to detailed data"
+  }
+]

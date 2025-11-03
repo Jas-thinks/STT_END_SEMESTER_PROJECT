@@ -1,0 +1,483 @@
+[
+  {
+    "id": 1,
+    "question": "Explain the difference between a shallow and deep neural network."
+  },
+  {
+    "id": 2,
+    "question": "How does batch normalization improve model training?"
+  },
+  {
+    "id": 3,
+    "question": "What is the difference between L1 and L2 regularization?"
+  },
+  {
+    "id": 4,
+    "question": "Why is ReLU activation often preferred over sigmoid or tanh?"
+  },
+  {
+    "id": 5,
+    "question": "What is the vanishing gradient problem and how can it be addressed?"
+  },
+  {
+    "id": 6,
+    "question": "How does the learning rate impact model training?"
+  },
+  {
+    "id": 7,
+    "question": "Explain the difference between batch gradient descent and mini-batch gradient descent."
+  },
+  {
+    "id": 8,
+    "question": "What is dropout and why is it used?"
+  },
+  {
+    "id": 9,
+    "question": "Explain the intuition behind the softmax function."
+  },
+  {
+    "id": 10,
+    "question": "What is the role of activation functions in neural networks?"
+  },
+  {
+    "id": 11,
+    "question": "What is the difference between a convolutional and fully connected layer?"
+  },
+  {
+    "id": 12,
+    "question": "What are kernels or filters in CNNs?"
+  },
+  {
+    "id": 13,
+    "question": "What is the effect of stride and padding in CNNs?"
+  },
+  {
+    "id": 14,
+    "question": "What are pooling layers and why are they used?"
+  },
+  {
+    "id": 15,
+    "question": "What is the purpose of feature maps in CNNs?"
+  },
+  {
+    "id": 16,
+    "question": "How do CNNs achieve translation invariance?"
+  },
+  {
+    "id": 17,
+    "question": "What is a receptive field in CNNs?"
+  },
+  {
+    "id": 18,
+    "question": "What are residual connections and why are they used?"
+  },
+  {
+    "id": 19,
+    "question": "What problem does ResNet solve in deep architectures?"
+  },
+  {
+    "id": 20,
+    "question": "What is gradient clipping and when is it used?"
+  },
+  {
+    "id": 21,
+    "question": "What is the difference between validation and test data?"
+  },
+  {
+    "id": 22,
+    "question": "How does early stopping prevent overfitting?"
+  },
+  {
+    "id": 23,
+    "question": "What is data augmentation and why is it important?"
+  },
+  {
+    "id": 24,
+    "question": "What are hyperparameters in deep learning?"
+  },
+  {
+    "id": 25,
+    "question": "How can hyperparameters be tuned efficiently?"
+  },
+  {
+    "id": 26,
+    "question": "What are the advantages of using Adam optimizer?"
+  },
+  {
+    "id": 27,
+    "question": "What is the difference between RMSProp and Adam?"
+  },
+  {
+    "id": 28,
+    "question": "What is transfer learning and when is it useful?"
+  },
+  {
+    "id": 29,
+    "question": "Explain the difference between feature extraction and fine-tuning."
+  },
+  {
+    "id": 30,
+    "question": "What are embeddings in deep learning?"
+  },
+  {
+    "id": 31,
+    "question": "What is an autoencoder?"
+  },
+  {
+    "id": 32,
+    "question": "What is the purpose of the latent space in an autoencoder?"
+  },
+  {
+    "id": 33,
+    "question": "What is the difference between underfitting and overfitting?"
+  },
+  {
+    "id": 34,
+    "question": "What is the vanishing gradient problem in RNNs?"
+  },
+  {
+    "id": 35,
+    "question": "How does an LSTM solve the vanishing gradient problem?"
+  },
+  {
+    "id": 36,
+    "question": "What is the difference between LSTM and GRU?"
+  },
+  {
+    "id": 37,
+    "question": "What are the gates in an LSTM and what do they do?"
+  },
+  {
+    "id": 38,
+    "question": "What is backpropagation through time (BPTT)?"
+  },
+  {
+    "id": 39,
+    "question": "What is the main purpose of RNNs?"
+  },
+  {
+    "id": 40,
+    "question": "How do CNNs differ from RNNs?"
+  },
+  {
+    "id": 41,
+    "question": "What is a GAN (Generative Adversarial Network)?"
+  },
+  {
+    "id": 42,
+    "question": "What are the two components of a GAN?"
+  },
+  {
+    "id": 43,
+    "question": "What is the objective of the generator in a GAN?"
+  },
+  {
+    "id": 44,
+    "question": "What is the role of the discriminator in a GAN?"
+  },
+  {
+    "id": 45,
+    "question": "What is mode collapse in GANs?"
+  },
+  {
+    "id": 46,
+    "question": "How can GAN training be stabilized?"
+  },
+  {
+    "id": 47,
+    "question": "What are attention mechanisms in deep learning?"
+  },
+  {
+    "id": 48,
+    "question": "What is the purpose of the Transformer architecture?"
+  },
+  {
+    "id": 49,
+    "question": "What is the difference between self-attention and cross-attention?"
+  },
+  {
+    "id": 50,
+    "question": "How does positional encoding work in Transformers?"
+  },
+  {
+    "id": 51,
+    "question": "What is the architecture of a typical Transformer model?"
+  },
+  {
+    "id": 52,
+    "question": "What are encoder and decoder blocks in a Transformer?"
+  },
+  {
+    "id": 53,
+    "question": "What is multi-head attention?"
+  },
+  {
+    "id": 54,
+    "question": "What is the main advantage of Transformers over RNNs?"
+  },
+  {
+    "id": 55,
+    "question": "What is the difference between BERT and GPT architectures?"
+  },
+  {
+    "id": 56,
+    "question": "What are embeddings used for in NLP models?"
+  },
+  {
+    "id": 57,
+    "question": "What is Word2Vec and how does it work?"
+  },
+  {
+    "id": 58,
+    "question": "What is cosine similarity used for in embeddings?"
+  },
+  {
+    "id": 59,
+    "question": "What is fine-tuning in pre-trained models?"
+  },
+  {
+    "id": 60,
+    "question": "What is a sequence-to-sequence model?"
+  },
+  {
+    "id": 61,
+    "question": "What is beam search in sequence generation?"
+  },
+  {
+    "id": 62,
+    "question": "What is cross-entropy loss used for?"
+  },
+  {
+    "id": 63,
+    "question": "What is the Kullback-Leibler (KL) divergence used for?"
+  },
+  {
+    "id": 64,
+    "question": "What is the purpose of regularization in deep learning?"
+  },
+  {
+    "id": 65,
+    "question": "What is weight decay and how does it relate to L2 regularization?"
+  },
+  {
+    "id": 66,
+    "question": "What is the role of bias in neural networks?"
+  },
+  {
+    "id": 67,
+    "question": "What is the impact of initialization on model convergence?"
+  },
+  {
+    "id": 68,
+    "question": "What is the purpose of gradient clipping?"
+  },
+  {
+    "id": 69,
+    "question": "Why is GPU acceleration essential for deep learning?"
+  },
+  {
+    "id": 70,
+    "question": "What is distributed training in deep learning?"
+  },
+  {
+    "id": 71,
+    "question": "How does the receptive field grow in deeper CNN architectures?"
+  },
+  {
+    "id": 72,
+    "question": "What is the role of feature extraction layers in CNNs?"
+  },
+  {
+    "id": 73,
+    "question": "What is the purpose of using 1x1 convolutions in CNNs?"
+  },
+  {
+    "id": 74,
+    "question": "What is a bottleneck layer in CNNs?"
+  },
+  {
+    "id": 75,
+    "question": "How does dropout affect gradient updates during training?"
+  },
+  {
+    "id": 76,
+    "question": "Why is initialization important for convergence?"
+  },
+  {
+    "id": 77,
+    "question": "What is the difference between global and local pooling?"
+  },
+  {
+    "id": 78,
+    "question": "How do dilated convolutions work and where are they used?"
+  },
+  {
+    "id": 79,
+    "question": "What are depthwise separable convolutions and why are they efficient?"
+  },
+  {
+    "id": 80,
+    "question": "Explain the architecture of MobileNet."
+  },
+  {
+    "id": 81,
+    "question": "What is the key innovation in the Inception architecture?"
+  },
+  {
+    "id": 82,
+    "question": "What are skip connections and why do they help deep models train?"
+  },
+  {
+    "id": 83,
+    "question": "What is the concept of residual learning?"
+  },
+  {
+    "id": 84,
+    "question": "What are vanishing activations and how can they be fixed?"
+  },
+  {
+    "id": 85,
+    "question": "What are exploding activations and how can they be controlled?"
+  },
+  {
+    "id": 86,
+    "question": "What are skip-gram and CBOW models in NLP?"
+  },
+  {
+    "id": 87,
+    "question": "What is transfer learning and when is freezing layers useful?"
+  },
+  {
+    "id": 88,
+    "question": "What are the benefits of pretrained convolutional models?"
+  },
+  {
+    "id": 89,
+    "question": "What is the main difference between BERT and Transformer encoders?"
+  },
+  {
+    "id": 90,
+    "question": "What is positional encoding and why is it needed in Transformers?"
+  },
+  {
+    "id": 91,
+    "question": "How does self-attention compute similarity between tokens?"
+  },
+  {
+    "id": 92,
+    "question": "What is the purpose of layer normalization in Transformers?"
+  },
+  {
+    "id": 93,
+    "question": "What is masked self-attention and where is it used?"
+  },
+  {
+    "id": 94,
+    "question": "What is a causal language model?"
+  },
+  {
+    "id": 95,
+    "question": "What are encoder-only and decoder-only Transformer models?"
+  },
+  {
+    "id": 96,
+    "question": "What are skip-layer connections in Transformer architectures?"
+  },
+  {
+    "id": 97,
+    "question": "How does attention differ from convolution in handling sequences?"
+  },
+  {
+    "id": 98,
+    "question": "What is the computational complexity of self-attention?"
+  },
+  {
+    "id": 99,
+    "question": "What are sparse attention mechanisms?"
+  },
+  {
+    "id": 100,
+    "question": "What is the purpose of temperature in softmax functions?"
+  },
+  {
+    "id": 101,
+    "question": "What is the intuition behind the Adam optimizer’s momentum term?"
+  },
+  {
+    "id": 102,
+    "question": "How does weight decay affect model performance?"
+  },
+  {
+    "id": 103,
+    "question": "What are the differences between gradient descent and momentum optimization?"
+  },
+  {
+    "id": 104,
+    "question": "How does the RMSProp optimizer handle learning rate adaptation?"
+  },
+  {
+    "id": 105,
+    "question": "What is layer-wise learning rate adjustment?"
+  },
+  {
+    "id": 106,
+    "question": "What is label smoothing and why is it used?"
+  },
+  {
+    "id": 107,
+    "question": "What is the difference between sigmoid and softmax outputs?"
+  },
+  {
+    "id": 108,
+    "question": "What is the effect of using a small batch size during training?"
+  },
+  {
+    "id": 109,
+    "question": "What are vanishing activations and how does batch normalization address them?"
+  },
+  {
+    "id": 110,
+    "question": "What is the purpose of gradient checkpointing?"
+  },
+  {
+    "id": 111,
+    "question": "What is data imbalance and how can it be handled in deep learning?"
+  },
+  {
+    "id": 112,
+    "question": "What is focal loss and why is it used for imbalanced data?"
+  },
+  {
+    "id": 113,
+    "question": "What is the difference between precision, recall, and F1 score?"
+  },
+  {
+    "id": 114,
+    "question": "What is the purpose of ROC and AUC in classification evaluation?"
+  },
+  {
+    "id": 115,
+    "question": "What is a confusion matrix and how is it used to assess performance?"
+  },
+  {
+    "id": 116,
+    "question": "What is model interpretability and why is it important?"
+  },
+  {
+    "id": 117,
+    "question": "What is the purpose of saliency maps in CNNs?"
+  },
+  {
+    "id": 118,
+    "question": "What is Grad-CAM and how does it visualize CNN decisions?"
+  },
+  {
+    "id": 119,
+    "question": "What is knowledge distillation in deep learning?"
+  },
+  {
+    "id": 120,
+    "question": "What is model pruning and why is it useful?"
+  }
+]
+

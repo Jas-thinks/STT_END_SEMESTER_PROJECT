@@ -1,0 +1,604 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is not a function of an operating system?",
+      "options": ["Memory management", "Compiler design", "File management", "Process management"],
+      "answer": "Compiler design"
+    },
+    {
+      "id": 2,
+      "question": "What is the main purpose of an operating system?",
+      "options": ["Convert code to binary", "Manage hardware and software resources", "Compile programs", "Run web servers"],
+      "answer": "Manage hardware and software resources"
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a type of operating system?",
+      "options": ["Batch", "Time-sharing", "Distributed", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "id": 4,
+      "question": "Which part of the OS manages CPU scheduling?",
+      "options": ["Kernel", "Shell", "Command interpreter", "Loader"],
+      "answer": "Kernel"
+    },
+    {
+      "id": 5,
+      "question": "What is a process?",
+      "options": ["Program in execution", "Static program", "Compiler", "File"],
+      "answer": "Program in execution"
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is a non-preemptive scheduling algorithm?",
+      "options": ["Round Robin", "SJF", "Priority", "FCFS"],
+      "answer": "FCFS"
+    },
+    {
+      "id": 7,
+      "question": "What does PCB stand for?",
+      "options": ["Process Control Block", "Program Control Block", "Processor Control Block", "Process Communication Block"],
+      "answer": "Process Control Block"
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is not a process state?",
+      "options": ["New", "Ready", "Terminated", "Suspended"],
+      "answer": "Suspended"
+    },
+    {
+      "id": 9,
+      "question": "Context switching refers to:",
+      "options": ["Changing from one process to another", "Deleting a process", "Compiling code", "Allocating memory"],
+      "answer": "Changing from one process to another"
+    },
+    {
+      "id": 10,
+      "question": "Which component of OS manages memory?",
+      "options": ["Scheduler", "Memory manager", "Processor", "Compiler"],
+      "answer": "Memory manager"
+    },
+    {
+      "id": 11,
+      "question": "Which memory is the fastest?",
+      "options": ["Cache", "RAM", "Disk", "ROM"],
+      "answer": "Cache"
+    },
+    {
+      "id": 12,
+      "question": "What is virtual memory?",
+      "options": ["Memory in CPU", "Part of secondary memory used as main memory", "Cache memory", "ROM"],
+      "answer": "Part of secondary memory used as main memory"
+    },
+    {
+      "id": 13,
+      "question": "Which of these causes a deadlock?",
+      "options": ["Mutual exclusion", "Hold and wait", "Circular wait", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "id": 14,
+      "question": "What is a semaphore used for?",
+      "options": ["Process creation", "Synchronization", "File management", "Memory allocation"],
+      "answer": "Synchronization"
+    },
+    {
+      "id": 15,
+      "question": "Which scheduling algorithm gives each process a fixed time slice?",
+      "options": ["FCFS", "SJF", "Round Robin", "Priority"],
+      "answer": "Round Robin"
+    },
+    {
+      "id": 16,
+      "question": "In a multiprogramming system, CPU utilization is:",
+      "options": ["Very low", "Very high", "Zero", "Constant"],
+      "answer": "Very high"
+    },
+    {
+      "id": 17,
+      "question": "Which of the following is a preemptive scheduling algorithm?",
+      "options": ["FCFS", "SJF (non-preemptive)", "Round Robin", "None"],
+      "answer": "Round Robin"
+    },
+    {
+      "id": 18,
+      "question": "Thrashing occurs when:",
+      "options": ["Too many processes are waiting", "CPU utilization is low", "Excessive paging occurs", "Deadlock happens"],
+      "answer": "Excessive paging occurs"
+    },
+    {
+      "id": 19,
+      "question": "Which of these is used to avoid deadlocks?",
+      "options": ["Banker's algorithm", "FIFO", "Paging", "Segmentation"],
+      "answer": "Banker's algorithm"
+    },
+    {
+      "id": 20,
+      "question": "What is a critical section?",
+      "options": ["Part of code that updates shared resources", "Part of code executed last", "Initialization code", "Loop structure"],
+      "answer": "Part of code that updates shared resources"
+    },
+    {
+      "id": 21,
+      "question": "Which of the following is not a type of scheduler?",
+      "options": ["Long-term", "Medium-term", "Short-term", "Memory-term"],
+      "answer": "Memory-term"
+    },
+    {
+      "id": 22,
+      "question": "What is the main goal of scheduling algorithms?",
+      "options": ["Minimize CPU usage", "Maximize throughput", "Reduce disk size", "Increase file size"],
+      "answer": "Maximize throughput"
+    },
+    {
+      "id": 23,
+      "question": "Paging helps to:",
+      "options": ["Eliminate fragmentation", "Speed up I/O", "Increase CPU frequency", "Handle interrupts"],
+      "answer": "Eliminate fragmentation"
+    },
+    {
+      "id": 24,
+      "question": "A page fault occurs when:",
+      "options": ["Page is in memory", "Page is not in memory", "Disk fails", "Process terminates"],
+      "answer": "Page is not in memory"
+    },
+    {
+      "id": 25,
+      "question": "Which is not an I/O scheduling algorithm?",
+      "options": ["FCFS", "SSTF", "SCAN", "FIFO"],
+      "answer": "FIFO"
+    },
+    {
+      "id": 26,
+      "question": "What is the main function of device drivers?",
+      "options": ["Manage CPU", "Interface OS with hardware devices", "Execute user programs", "Load files"],
+      "answer": "Interface OS with hardware devices"
+    },
+    {
+      "id": 27,
+      "question": "Which is an example of an embedded operating system?",
+      "options": ["Windows", "Linux", "VxWorks", "Unix"],
+      "answer": "VxWorks"
+    },
+    {
+      "id": 28,
+      "question": "Which scheduling algorithm can lead to starvation?",
+      "options": ["FCFS", "Round Robin", "Priority", "None"],
+      "answer": "Priority"
+    },
+    {
+      "id": 29,
+      "question": "Which file allocation method uses linked blocks?",
+      "options": ["Contiguous", "Linked", "Indexed", "Clustered"],
+      "answer": "Linked"
+    },
+    {
+      "id": 30,
+      "question": "Which of these is a disk scheduling algorithm?",
+      "options": ["SJF", "SCAN", "RR", "FCFS"],
+      "answer": "SCAN"
+    },
+    {
+      "id": 31,
+      "question": "Spooling stands for:",
+      "options": ["Simultaneous Peripheral Operation On-Line", "Special Process Operation Offline", "System Page Operation Level", "Spare Paging Operation"],
+      "answer": "Simultaneous Peripheral Operation On-Line"
+    },
+    {
+      "id": 32,
+      "question": "Which memory allocation technique suffers from external fragmentation?",
+      "options": ["Paging", "Segmentation", "Contiguous", "None"],
+      "answer": "Contiguous"
+    },
+    {
+      "id": 33,
+      "question": "What is the use of swapping?",
+      "options": ["Move process from memory to disk", "Increase CPU speed", "I/O scheduling", "Deadlock handling"],
+      "answer": "Move process from memory to disk"
+    },
+    {
+      "id": 34,
+      "question": "What does TLB stand for?",
+      "options": ["Translation Lookaside Buffer", "Temporary Lookup Block", "Table Lookup Base", "Translation Logic Block"],
+      "answer": "Translation Lookaside Buffer"
+    },
+    {
+      "id": 35,
+      "question": "Which of these is not a real-time OS?",
+      "options": ["VxWorks", "Windows CE", "MS-DOS", "RTLinux"],
+      "answer": "MS-DOS"
+    },
+    {
+      "id": 36,
+      "question": "Which register holds the address of the next instruction?",
+      "options": ["Instruction Register", "Program Counter", "Stack Pointer", "Memory Address Register"],
+      "answer": "Program Counter"
+    },
+    {
+      "id": 37,
+      "question": "What is inter-process communication used for?",
+      "options": ["Communication between processes", "Memory allocation", "File management", "Scheduling"],
+      "answer": "Communication between processes"
+    },
+    {
+      "id": 38,
+      "question": "Which mechanism prevents race conditions?",
+      "options": ["Critical sections", "Paging", "Interrupts", "Caching"],
+      "answer": "Critical sections"
+    },
+    {
+      "id": 39,
+      "question": "Which system call is used to create a process in UNIX?",
+      "options": ["create()", "new()", "fork()", "start()"],
+      "answer": "fork()"
+    },
+    {
+      "id": 40,
+      "question": "Zombie process is:",
+      "options": ["Process terminated but PCB still exists", "Process running", "Blocked process", "Child process waiting"],
+      "answer": "Process terminated but PCB still exists"
+    },
+    {
+      "id": 41,
+      "question": "Which of these is not part of process management?",
+      "options": ["Scheduling", "Creation", "Synchronization", "File opening"],
+      "answer": "File opening"
+    },
+    {
+      "id": 42,
+      "question": "Which process state means the process is waiting for I/O?",
+      "options": ["Ready", "Running", "Waiting", "Terminated"],
+      "answer": "Waiting"
+    },
+    {
+      "id": 43,
+      "question": "Dispatcher is responsible for:",
+      "options": ["Allocating CPU to process", "File management", "Memory mapping", "Deadlock handling"],
+      "answer": "Allocating CPU to process"
+    },
+    {
+      "id": 44,
+      "question": "Which OS structure allows fast context switching?",
+      "options": ["Monolithic", "Microkernel", "Layered", "Hybrid"],
+      "answer": "Microkernel"
+    },
+    {
+      "id": 45,
+      "question": "Which of the following is not a memory management scheme?",
+      "options": ["Paging", "Segmentation", "Swapping", "Compiling"],
+      "answer": "Compiling"
+    },
+    {
+      "id": 46,
+      "question": "Internal fragmentation occurs when:",
+      "options": ["Allocated memory is larger than requested", "Memory is insufficient", "Free space is scattered", "All of the above"],
+      "answer": "Allocated memory is larger than requested"
+    },
+    {
+      "id": 47,
+      "question": "Which of these is a page replacement algorithm?",
+      "options": ["FIFO", "LRU", "Optimal", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "id": 48,
+      "question": "Which file system is used by Linux?",
+      "options": ["NTFS", "ext4", "FAT32", "APFS"],
+      "answer": "ext4"
+    },
+    {
+      "id": 49,
+      "question": "What is the smallest unit of data storage in a file system?",
+      "options": ["Cluster", "Sector", "Block", "Byte"],
+      "answer": "Block"
+    },
+    {
+      "id": 50,
+      "question": "Which command is used to list processes in Linux?",
+      "options": ["ls", "ps", "top", "cat"],
+      "answer": "ps"
+    },
+    {
+      "id": 51,
+      "question": "Which system call is used to terminate a process?",
+      "options": ["exit()", "kill()", "stop()", "end()"],
+      "answer": "exit()"
+    },
+    {
+      "id": 52,
+      "question": "Which type of OS allows multiple users at the same time?",
+      "options": ["Single-user", "Multi-user", "Real-time", "Embedded"],
+      "answer": "Multi-user"
+    },
+    {
+      "id": 53,
+      "question": "Deadlock avoidance is done using:",
+      "options": ["Resource allocation graph", "Banker's algorithm", "Paging", "Semaphores"],
+      "answer": "Banker's algorithm"
+    },
+    {
+      "id": 54,
+      "question": "What is a system call?",
+      "options": ["Request to OS for a service", "Compiler instruction", "Process switch", "Memory request"],
+      "answer": "Request to OS for a service"
+    },
+    {
+      "id": 55,
+      "question": "Which OS was developed by Linus Torvalds?",
+      "options": ["Windows", "Linux", "Unix", "MacOS"],
+      "answer": "Linux"
+    },
+    {
+      "id": 56,
+      "question": "What is an interrupt?",
+      "options": ["Signal to CPU for attention", "Input command", "Software call", "File operation"],
+      "answer": "Signal to CPU for attention"
+    },
+    {
+      "id": 57,
+      "question": "Which OS is used in mobile phones?",
+      "options": ["Android", "DOS", "Unix", "Windows 7"],
+      "answer": "Android"
+    },
+    {
+      "id": 58,
+      "question": "Which scheduling criterion measures waiting time?",
+      "options": ["Throughput", "Turnaround time", "Response time", "Waiting time"],
+      "answer": "Waiting time"
+    },
+    {
+      "id": 59,
+      "question": "Which is a disk scheduling algorithm?",
+      "options": ["SCAN", "LOOK", "C-SCAN", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "id": 60,
+      "question": "The command used to change file permissions in Linux is:",
+      "options": ["chmod", "chperm", "perm", "setperm"],
+      "answer": "chmod"
+    },
+    {
+      "id": 61,
+      "question": "Which type of OS is MS-DOS?",
+      "options": ["Batch", "Time-sharing", "Single-user", "Network"],
+      "answer": "Single-user"
+    },
+    {
+      "id": 62,
+      "question": "DMA stands for:",
+      "options": ["Direct Memory Access", "Data Memory Allocation", "Dynamic Memory Access", "Direct Machine Allocation"],
+      "answer": "Direct Memory Access"
+    },
+    {
+      "id": 63,
+      "question": "A thread is:",
+      "options": ["Lightweight process", "Kernel", "File handler", "I/O request"],
+      "answer": "Lightweight process"
+    },
+    {
+      "id": 64,
+      "question": "The CPU scheduling is done by:",
+      "options": ["Long-term scheduler", "Short-term scheduler", "Medium-term scheduler", "Disk scheduler"],
+      "answer": "Short-term scheduler"
+    },
+    {
+      "id": 65,
+      "question": "Which of these allocates memory dynamically?",
+      "options": ["Paging", "Segmentation", "Both", "None"],
+      "answer": "Both"
+    },
+    {
+      "id": 66,
+      "question": "The OS part that directly interacts with hardware is:",
+      "options": ["Shell", "Kernel", "System programs", "Libraries"],
+      "answer": "Kernel"
+    },
+    {
+      "id": 67,
+      "question": "Mutex is used to:",
+      "options": ["Prevent race condition", "Speed up process", "Create threads", "Allocate memory"],
+      "answer": "Prevent race condition"
+    },
+    {
+      "id": 68,
+      "question": "Which scheduling algorithm is ideal for time-sharing systems?",
+      "options": ["FCFS", "Round Robin", "SJF", "Priority"],
+      "answer": "Round Robin"
+    },
+    {
+      "id": 69,
+      "question": "Which of the following handles file metadata?",
+      "options": ["Directory structure", "Process table", "Memory manager", "Disk scheduler"],
+      "answer": "Directory structure"
+    },
+    {
+      "id": 70,
+      "question": "What is the full form of FAT?",
+      "options": ["File Allocation Table", "Fast Access Table", "File Access Type", "File Archive Table"],
+      "answer": "File Allocation Table"
+    },
+    {
+      "id": 71,
+      "question": "UNIX is written in which language?",
+      "options": ["C", "Assembly", "Python", "Java"],
+      "answer": "C"
+    },
+    {
+      "id": 72,
+      "question": "The command to view running processes in Linux is:",
+      "options": ["top", "run", "show", "proc"],
+      "answer": "top"
+    },
+    {
+      "id": 73,
+      "question": "Which OS supports multi-threading?",
+      "options": ["Linux", "Windows", "MacOS", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "id": 74,
+      "question": "Round Robin scheduling depends on:",
+      "options": ["Time quantum", "Priority", "Burst time", "Arrival time"],
+      "answer": "Time quantum"
+    },
+    {
+      "id": 75,
+      "question": "Page table maps:",
+      "options": ["Virtual to physical addresses", "Processes to threads", "Files to blocks", "CPU to cache"],
+      "answer": "Virtual to physical addresses"
+    },
+    {
+      "id": 76,
+      "question": "What is the purpose of the shell?",
+      "options": ["Interface between user and kernel", "Memory allocation", "Scheduling", "Device control"],
+      "answer": "Interface between user and kernel"
+    },
+    {
+      "id": 77,
+      "question": "A process that is ready but waiting for CPU is in:",
+      "options": ["Running state", "Ready queue", "Waiting queue", "Terminated"],
+      "answer": "Ready queue"
+    },
+    {
+      "id": 78,
+      "question": "The file that stores boot information is called:",
+      "options": ["Boot block", "Superblock", "Inode", "MBR"],
+      "answer": "Boot block"
+    },
+    {
+      "id": 79,
+      "question": "Which scheduling algorithm has convoy effect?",
+      "options": ["FCFS", "SJF", "Priority", "RR"],
+      "answer": "FCFS"
+    },
+    {
+      "id": 80,
+      "question": "Which OS feature enables multiple programs to run at once?",
+      "options": ["Multitasking", "Paging", "Interrupt", "Compilation"],
+      "answer": "Multitasking"
+    },
+    {
+      "id": 81,
+      "question": "What does 'booting' mean?",
+      "options": ["Starting the OS", "Shutting down the OS", "Restarting process", "Saving files"],
+      "answer": "Starting the OS"
+    },
+    {
+      "id": 82,
+      "question": "Which file allocation method provides direct access?",
+      "options": ["Contiguous", "Linked", "Indexed", "All"],
+      "answer": "Contiguous"
+    },
+    {
+      "id": 83,
+      "question": "DMA is used for:",
+      "options": ["Fast I/O transfer", "CPU scheduling", "Memory paging", "Interrupt handling"],
+      "answer": "Fast I/O transfer"
+    },
+    {
+      "id": 84,
+      "question": "Which OS concept is used for protection?",
+      "options": ["Access control", "Paging", "Scheduling", "Deadlock detection"],
+      "answer": "Access control"
+    },
+    {
+      "id": 85,
+      "question": "Cache memory lies between:",
+      "options": ["CPU and RAM", "RAM and Disk", "CPU and Disk", "CPU and Bus"],
+      "answer": "CPU and RAM"
+    },
+    {
+      "id": 86,
+      "question": "The first process created by the kernel in UNIX is:",
+      "options": ["init", "bash", "systemd", "login"],
+      "answer": "init"
+    },
+    {
+      "id": 87,
+      "question": "What is system throughput?",
+      "options": ["Number of processes completed per unit time", "Response time", "Waiting time", "CPU utilization"],
+      "answer": "Number of processes completed per unit time"
+    },
+    {
+      "id": 88,
+      "question": "A process that has finished execution but still has an entry in process table is:",
+      "options": ["Zombie", "Orphan", "Blocked", "Suspended"],
+      "answer": "Zombie"
+    },
+    {
+      "id": 89,
+      "question": "Which one is not a valid page replacement algorithm?",
+      "options": ["FIFO", "LRU", "Optimal", "FCFS Scheduling"],
+      "answer": "FCFS Scheduling"
+    },
+    {
+      "id": 90,
+      "question": "What is a system program?",
+      "options": ["Supports OS functions", "Application software", "Compiler", "Editor"],
+      "answer": "Supports OS functions"
+    },
+    {
+      "id": 91,
+      "question": "In UNIX, every file has an entry in:",
+      "options": ["Inode table", "Process table", "Boot table", "User table"],
+      "answer": "Inode table"
+    },
+    {
+      "id": 92,
+      "question": "Which of the following is not true about threads?",
+      "options": ["Share same code", "Have independent stack", "Have independent address space", "Share same data section"],
+      "answer": "Have independent address space"
+    },
+    {
+      "id": 93,
+      "question": "CPU bound processes are best scheduled using:",
+      "options": ["Round Robin", "Priority", "SJF", "FCFS"],
+      "answer": "SJF"
+    },
+    {
+      "id": 94,
+      "question": "Which of the following is an I/O device?",
+      "options": ["Printer", "Keyboard", "Monitor", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "id": 95,
+      "question": "When does starvation occur?",
+      "options": ["A process waits indefinitely", "CPU fails", "Deadlock occurs", "All processes finish"],
+      "answer": "A process waits indefinitely"
+    },
+    {
+      "id": 96,
+      "question": "Which structure keeps track of all open files?",
+      "options": ["File descriptor table", "Page table", "Process table", "Inode table"],
+      "answer": "File descriptor table"
+    },
+    {
+      "id": 97,
+      "question": "Which of the following is not an OS?",
+      "options": ["Ubuntu", "Windows", "Python", "MacOS"],
+      "answer": "Python"
+    },
+    {
+      "id": 98,
+      "question": "Which of these techniques reduces external fragmentation?",
+      "options": ["Paging", "Swapping", "Contiguous allocation", "None"],
+      "answer": "Paging"
+    },
+    {
+      "id": 99,
+      "question": "Which part of OS loads the kernel at boot time?",
+      "options": ["Bootloader", "Scheduler", "Loader", "Shell"],
+      "answer": "Bootloader"
+    },
+    {
+      "id": 100,
+      "question": "The main advantage of multiprogramming is:",
+      "options": ["Better CPU utilization", "Less memory usage", "Simpler OS design", "Faster I/O"],
+      "answer": "Better CPU utilization"
+    }
+  ]
+}

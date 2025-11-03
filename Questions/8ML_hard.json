@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following optimization algorithms helps overcome saddle points effectively?",
+    "options": ["A. SGD", "B. Adam", "C. RMSProp", "D. Nadam"],
+    "answer": "D"
+  },
+  {
+    "id": 2,
+    "question": "The curse of dimensionality primarily affects which of the following?",
+    "options": ["A. Linear regression", "B. Decision trees", "C. KNN and clustering algorithms", "D. Naive Bayes"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "question": "Which regularization method adds a penalty equal to the absolute value of coefficients?",
+    "options": ["A. L2", "B. Ridge", "C. Lasso", "D. Elastic Net"],
+    "answer": "C"
+  },
+  {
+    "id": 4,
+    "question": "In PCA, what is maximized during computation?",
+    "options": ["A. Mean of data", "B. Covariance between variables", "C. Variance along principal components", "D. Eigenvalue ratio"],
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "question": "Which kernel function is most commonly used in SVM for non-linear data?",
+    "options": ["A. Linear", "B. Polynomial", "C. Gaussian RBF", "D. Sigmoid"],
+    "answer": "C"
+  },
+  {
+    "id": 6,
+    "question": "What is the main purpose of the softmax function in neural networks?",
+    "options": ["A. Normalize weights", "B. Convert logits into probabilities", "C. Avoid vanishing gradient", "D. Reduce bias"],
+    "answer": "B"
+  },
+  {
+    "id": 7,
+    "question": "Which of these techniques reduces overfitting in neural networks?",
+    "options": ["A. Dropout", "B. Batch Normalization", "C. ReLU", "D. Softmax"],
+    "answer": "A"
+  },
+  {
+    "id": 8,
+    "question": "Vanishing gradient problem occurs mostly in which activation function?",
+    "options": ["A. ReLU", "B. Sigmoid", "C. Tanh", "D. Leaky ReLU"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "question": "In gradient descent, what happens if the learning rate is too high?",
+    "options": ["A. Convergence slows down", "B. Model overfits", "C. Loss diverges", "D. Gradient vanishes"],
+    "answer": "C"
+  },
+  {
+    "id": 10,
+    "question": "What is the effect of using too many trees in a Random Forest?",
+    "options": ["A. Overfitting increases", "B. Variance decreases", "C. Bias increases", "D. Performance decreases"],
+    "answer": "B"
+  },
+  {
+    "id": 11,
+    "question": "What is the purpose of weight initialization in deep networks?",
+    "options": ["A. To regularize weights", "B. To control learning rate", "C. To prevent symmetry and aid convergence", "D. To control dropout rate"],
+    "answer": "C"
+  },
+  {
+    "id": 12,
+    "question": "Which method can help handle class imbalance in training data?",
+    "options": ["A. Cross-validation", "B. Oversampling and undersampling", "C. Early stopping", "D. Batch normalization"],
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "question": "What is a major disadvantage of KNN?",
+    "options": ["A. High bias", "B. Low variance", "C. High computation during inference", "D. Needs gradient computation"],
+    "answer": "C"
+  },
+  {
+    "id": 14,
+    "question": "Which algorithm uses information gain or Gini index for splitting?",
+    "options": ["A. SVM", "B. Decision Tree", "C. Logistic Regression", "D. PCA"],
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "question": "What is the bias-variance tradeoff?",
+    "options": ["A. Balancing model complexity and learning rate", "B. Balancing underfitting and overfitting", "C. Choosing kernel in SVM", "D. Handling multicollinearity"],
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "question": "In gradient boosting, each new tree is trained to:",
+    "options": ["A. Reduce variance", "B. Fit the residuals of the previous model", "C. Increase bias", "D. Replace old trees"],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "question": "What is the main issue with using a sigmoid activation in deep networks?",
+    "options": ["A. Not differentiable", "B. Exploding gradients", "C. Vanishing gradients", "D. Poor convergence"],
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "question": "Which algorithm is most sensitive to feature scaling?",
+    "options": ["A. Decision Tree", "B. Naive Bayes", "C. KNN", "D. Random Forest"],
+    "answer": "C"
+  },
+  {
+    "id": 19,
+    "question": "Which of these metrics is suitable for regression problems?",
+    "options": ["A. F1-score", "B. Accuracy", "C. RMSE", "D. Recall"],
+    "answer": "C"
+  },
+  {
+    "id": 20,
+    "question": "Batch Normalization helps in:",
+    "options": ["A. Reducing bias", "B. Normalizing input layer only", "C. Stabilizing learning and improving convergence", "D. Increasing dropout"],
+    "answer": "C"
+  },
+  {
+    "id": 21,
+    "question": "Which ensemble method combines predictions using weighted averages?",
+    "options": ["A. Bagging", "B. Stacking", "C. Boosting", "D. Random Forest"],
+    "answer": "B"
+  },
+  {
+    "id": 22,
+    "question": "Which loss function is commonly used in logistic regression?",
+    "options": ["A. MSE", "B. Cross-Entropy", "C. Hinge", "D. L1"],
+    "answer": "B"
+  },
+  {
+    "id": 23,
+    "question": "Which gradient descent variant uses moving averages of gradients?",
+    "options": ["A. AdaGrad", "B. Adam", "C. RMSProp", "D. Momentum"],
+    "answer": "B"
+  },
+  {
+    "id": 24,
+    "question": "The ReLU function helps reduce which of the following issues?",
+    "options": ["A. Overfitting", "B. Vanishing gradients", "C. Exploding gradients", "D. Bias"],
+    "answer": "B"
+  },
+  {
+    "id": 25,
+    "question": "Which concept ensures a model performs well on unseen data?",
+    "options": ["A. Overfitting", "B. Generalization", "C. Bias", "D. Regularization"],
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "question": "What is the main idea behind the Expectation-Maximization algorithm?",
+    "options": ["A. Iteratively improve estimates of hidden variables", "B. Compute posterior directly", "C. Reduce dimensionality", "D. Use ensemble learning"],
+    "answer": "A"
+  },
+  {
+    "id": 27,
+    "question": "Which method helps reduce overfitting in gradient boosting?",
+    "options": ["A. Decreasing learning rate", "B. Increasing tree depth", "C. Using large datasets", "D. Increasing estimators"],
+    "answer": "A"
+  },
+  {
+    "id": 28,
+    "question": "Why is feature scaling important before applying PCA?",
+    "options": ["A. To reduce bias", "B. To ensure equal variance contribution", "C. To improve interpretability", "D. To avoid overfitting"],
+    "answer": "B"
+  },
+  {
+    "id": 29,
+    "question": "Which of the following measures model calibration?",
+    "options": ["A. ROC-AUC", "B. Log-loss", "C. Recall", "D. F1-score"],
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "question": "Which deep learning model is best suited for sequence-to-sequence tasks?",
+    "options": ["A. CNN", "B. RNN", "C. GAN", "D. DBN"],
+    "answer": "B"
+  },
+  {
+    "id": 31,
+    "question": "What is gradient clipping used for?",
+    "options": ["A. Reducing bias", "B. Preventing exploding gradients", "C. Preventing vanishing gradients", "D. Adjusting learning rate"],
+    "answer": "B"
+  },
+  {
+    "id": 32,
+    "question": "Which neural network is best suited for image recognition?",
+    "options": ["A. RNN", "B. CNN", "C. LSTM", "D. GAN"],
+    "answer": "B"
+  },
+  {
+    "id": 33,
+    "question": "What does the attention mechanism solve in sequence models?",
+    "options": ["A. Long dependency problem", "B. Data imbalance", "C. Feature redundancy", "D. Overfitting"],
+    "answer": "A"
+  },
+  {
+    "id": 34,
+    "question": "What is the Kullback-Leibler divergence used for?",
+    "options": ["A. Comparing probability distributions", "B. Measuring accuracy", "C. Reducing bias", "D. Optimizing weights"],
+    "answer": "A"
+  },
+  {
+    "id": 35,
+    "question": "Which regularization technique combines both L1 and L2 penalties?",
+    "options": ["A. Ridge", "B. Lasso", "C. Elastic Net", "D. Dropout"],
+    "answer": "C"
+  },
+  {
+    "id": 36,
+    "question": "In reinforcement learning, the Bellman equation represents:",
+    "options": ["A. Reward maximization rule", "B. Relationship between state values and rewards", "C. Learning rate update", "D. Policy gradient"],
+    "answer": "B"
+  },
+  {
+    "id": 37,
+    "question": "What is the purpose of backpropagation in deep learning?",
+    "options": ["A. Initialize weights", "B. Optimize hyperparameters", "C. Compute gradients and update weights", "D. Reduce variance"],
+    "answer": "C"
+  },
+  {
+    "id": 38,
+    "question": "Which ensemble technique sequentially builds learners that correct previous errors?",
+    "options": ["A. Bagging", "B. Boosting", "C. Stacking", "D. Random Forest"],
+    "answer": "B"
+  },
+  {
+    "id": 39,
+    "question": "Which metric is used for multi-class classification evaluation?",
+    "options": ["A. ROC-AUC", "B. Log-loss", "C. Confusion matrix", "D. Adjusted R²"],
+    "answer": "C"
+  },
+  {
+    "id": 40,
+    "question": "Which optimization algorithm adapts the learning rate for each parameter?",
+    "options": ["A. SGD", "B. Adam", "C. Momentum", "D. Batch Gradient Descent"],
+    "answer": "B"
+  },
+  {
+    "id": 41,
+    "question": "What is the main advantage of transfer learning?",
+    "options": ["A. Requires smaller data and less training time", "B. Improves interpretability", "C. Reduces bias", "D. Increases regularization"],
+    "answer": "A"
+  },
+  {
+    "id": 42,
+    "question": "What type of model is a GAN?",
+    "options": ["A. Generative model", "B. Discriminative model", "C. Clustering model", "D. Regression model"],
+    "answer": "A"
+  },
+  {
+    "id": 43,
+    "question": "What is the main goal of reinforcement learning?",
+    "options": ["A. Minimize error", "B. Maximize cumulative reward", "C. Predict continuous values", "D. Reduce bias"],
+    "answer": "B"
+  },
+  {
+    "id": 44,
+    "question": "What is the role of the discriminator in a GAN?",
+    "options": ["A. Generates fake data", "B. Evaluates generated data", "C. Normalizes features", "D. Reduces overfitting"],
+    "answer": "B"
+  },
+  {
+    "id": 45,
+    "question": "Which algorithm is least affected by outliers?",
+    "options": ["A. Mean", "B. Median", "C. Linear Regression", "D. KNN"],
+    "answer": "B"
+  },
+  {
+    "id": 46,
+    "question": "In neural networks, why is normalization of inputs important?",
+    "options": ["A. Reduces computation time", "B. Speeds up convergence", "C. Prevents overfitting", "D. Increases variance"],
+    "answer": "B"
+  },
+  {
+    "id": 47,
+    "question": "Which loss is typically used in GANs?",
+    "options": ["A. Cross-Entropy Loss", "B. Hinge Loss", "C. Adversarial Loss", "D. L1 Loss"],
+    "answer": "C"
+  },
+  {
+    "id": 48,
+    "question": "What is the main challenge in reinforcement learning?",
+    "options": ["A. High bias", "B. Lack of labeled data", "C. Exploration vs. exploitation trade-off", "D. High variance"],
+    "answer": "C"
+  },
+  {
+    "id": 49,
+    "question": "Which neural network architecture is used for image segmentation?",
+    "options": ["A. CNN", "B. U-Net", "C. RNN", "D. GAN"],
+    "answer": "B"
+  },
+  {
+    "id": 50,
+    "question": "Which method is used to prevent mode collapse in GANs?",
+    "options": ["A. Dropout", "B. Batch Normalization", "C. Wasserstein loss", "D. Early stopping"],
+    "answer": "C"
+  },
+  {
+    "id": 51,
+    "question": "Which of the following problems can be best solved using reinforcement learning?",
+    "options": ["A. Spam detection", "B. Stock trading bot", "C. Sentiment analysis", "D. Image classification"],
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "question": "In deep learning, exploding gradients can be mitigated by:",
+    "options": ["A. Weight clipping", "B. L1 regularization", "C. Dropout", "D. Early stopping"],
+    "answer": "A"
+  },
+  {
+    "id": 53,
+    "question": "The VC dimension of a linear classifier in 2D space is:",
+    "options": ["A. 1", "B. 2", "C. 3", "D. Infinite"],
+    "answer": "C"
+  },
+  {
+    "id": 54,
+    "question": "Which metric is not suitable for highly imbalanced binary classification?",
+    "options": ["A. Accuracy", "B. Precision", "C. Recall", "D. F1-score"],
+    "answer": "A"
+  },
+  {
+    "id": 55,
+    "question": "In an autoencoder, what is the purpose of the bottleneck layer?",
+    "options": ["A. Increase dimensions", "B. Reduce reconstruction error", "C. Learn compressed representation", "D. Prevent overfitting"],
+    "answer": "C"
+  },
+  {
+    "id": 56,
+    "question": "Which of the following uses both discriminative and generative models?",
+    "options": ["A. Variational Autoencoder", "B. Random Forest", "C. Naive Bayes", "D. Logistic Regression"],
+    "answer": "A"
+  },
+  {
+    "id": 57,
+    "question": "What does the term 'overparameterization' in deep learning refer to?",
+    "options": ["A. Too few neurons", "B. Too many model parameters compared to data", "C. Small batch size", "D. Large learning rate"],
+    "answer": "B"
+  },
+  {
+    "id": 58,
+    "question": "Which of the following activation functions is non-monotonic?",
+    "options": ["A. ReLU", "B. Swish", "C. Sigmoid", "D. Tanh"],
+    "answer": "B"
+  },
+  {
+    "id": 59,
+    "question": "Which of the following optimization methods does not use momentum?",
+    "options": ["A. SGD", "B. RMSProp", "C. Adam", "D. Nadam"],
+    "answer": "A"
+  },
+  {
+    "id": 60,
+    "question": "What is the main advantage of using batch normalization?",
+    "options": ["A. Prevents overfitting", "B. Allows higher learning rates and stabilizes training", "C. Reduces number of layers", "D. Increases bias"],
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "question": "Which of the following statements about bias and variance is true?",
+    "options": ["A. High bias models overfit", "B. High variance models underfit", "C. Increasing model complexity increases variance", "D. Decreasing model complexity increases variance"],
+    "answer": "C"
+  },
+  {
+    "id": 62,
+    "question": "Which function represents the K-Means objective?",
+    "options": ["A. Sum of squared distances from centroids", "B. Maximizing likelihood", "C. Minimizing entropy", "D. Maximizing variance"],
+    "answer": "A"
+  },
+  {
+    "id": 63,
+    "question": "Which distance metric is most robust to outliers?",
+    "options": ["A. Euclidean", "B. Manhattan", "C. Cosine", "D. Minkowski"],
+    "answer": "B"
+  },
+  {
+    "id": 64,
+    "question": "What does the 'exploration vs exploitation' tradeoff address in reinforcement learning?",
+    "options": ["A. Learning rate tuning", "B. Balancing trying new actions vs. using known ones", "C. Gradient scaling", "D. Model selection"],
+    "answer": "B"
+  },
+  {
+    "id": 65,
+    "question": "Which deep learning technique is used to stabilize GAN training?",
+    "options": ["A. Spectral normalization", "B. Batch normalization", "C. L1 regularization", "D. Dropout"],
+    "answer": "A"
+  },
+  {
+    "id": 66,
+    "question": "Which of these metrics is NOT differentiable?",
+    "options": ["A. Accuracy", "B. Cross-entropy loss", "C. MSE", "D. Log loss"],
+    "answer": "A"
+  },
+  {
+    "id": 67,
+    "question": "Which of the following can cause data leakage?",
+    "options": ["A. Normalizing train and test separately", "B. Using test data during cross-validation", "C. Oversampling only training set", "D. Using dropout"],
+    "answer": "B"
+  },
+  {
+    "id": 68,
+    "question": "What is the primary drawback of using dropout during training?",
+    "options": ["A. Slower convergence", "B. Increased variance", "C. Reduced model capacity", "D. Vanishing gradients"],
+    "answer": "A"
+  },
+  {
+    "id": 69,
+    "question": "Which architecture is used for object detection in images?",
+    "options": ["A. CNN", "B. R-CNN", "C. RNN", "D. VAE"],
+    "answer": "B"
+  },
+  {
+    "id": 70,
+    "question": "What is the primary reason for using ReLU over sigmoid?",
+    "options": ["A. Non-linearity", "B. Avoids vanishing gradient", "C. Saturation", "D. Increases bias"],
+    "answer": "B"
+  },
+  {
+    "id": 71,
+    "question": "Which of the following techniques is used in transfer learning to adapt pre-trained models?",
+    "options": ["A. Fine-tuning last few layers", "B. Re-training all layers", "C. Removing all weights", "D. Using random initialization"],
+    "answer": "A"
+  },
+  {
+    "id": 72,
+    "question": "In LSTM, which gate controls how much information from the cell state should be output?",
+    "options": ["A. Input gate", "B. Forget gate", "C. Output gate", "D. Update gate"],
+    "answer": "C"
+  },
+  {
+    "id": 73,
+    "question": "What is the primary role of attention in transformers?",
+    "options": ["A. Reduce computation", "B. Focus on important parts of the input sequence", "C. Regularize weights", "D. Avoid overfitting"],
+    "answer": "B"
+  },
+  {
+    "id": 74,
+    "question": "Which method is used to handle vanishing gradients in RNNs?",
+    "options": ["A. Gradient clipping", "B. Batch normalization", "C. L1 regularization", "D. Skip connections"],
+    "answer": "A"
+  },
+  {
+    "id": 75,
+    "question": "Which of these is NOT a generative model?",
+    "options": ["A. GAN", "B. VAE", "C. Transformer", "D. PixelCNN"],
+    "answer": "C"
+  },
+  {
+    "id": 76,
+    "question": "Which loss function is used for training a VAE?",
+    "options": ["A. Cross-entropy + KL divergence", "B. MSE", "C. Hinge loss", "D. L1 loss"],
+    "answer": "A"
+  },
+  {
+    "id": 77,
+    "question": "In CNNs, what does a small kernel size help with?",
+    "options": ["A. Capturing local spatial features", "B. Reducing overfitting", "C. Increasing computation", "D. Global feature extraction"],
+    "answer": "A"
+  },
+  {
+    "id": 78,
+    "question": "Which of these metrics measures clustering quality?",
+    "options": ["A. Silhouette score", "B. RMSE", "C. ROC-AUC", "D. Log loss"],
+    "answer": "A"
+  },
+  {
+    "id": 79,
+    "question": "Which of these is an example of semi-supervised learning?",
+    "options": ["A. Label propagation", "B. Random Forest", "C. CNN", "D. KNN"],
+    "answer": "A"
+  },
+  {
+    "id": 80,
+    "question": "The universal approximation theorem applies to:",
+    "options": ["A. Linear models", "B. Neural networks with one hidden layer", "C. Decision trees", "D. SVMs"],
+    "answer": "B"
+  },
+  {
+    "id": 81,
+    "question": "Which optimizer is best suited for sparse gradients?",
+    "options": ["A. Adam", "B. AdaGrad", "C. SGD", "D. Momentum"],
+    "answer": "B"
+  },
+  {
+    "id": 82,
+    "question": "In Bayesian learning, the prior represents:",
+    "options": ["A. Data likelihood", "B. Prior belief before seeing data", "C. Posterior distribution", "D. Gradient update"],
+    "answer": "B"
+  },
+  {
+    "id": 83,
+    "question": "The gradient of the loss with respect to weights in backpropagation is computed using:",
+    "options": ["A. Chain rule", "B. Product rule", "C. Quotient rule", "D. Taylor expansion"],
+    "answer": "A"
+  },
+  {
+    "id": 84,
+    "question": "In which scenario is label smoothing useful?",
+    "options": ["A. Overfitting classification models", "B. Regression tasks", "C. Feature scaling", "D. Regularizing unsupervised models"],
+    "answer": "A"
+  },
+  {
+    "id": 85,
+    "question": "What does dropout do during training?",
+    "options": ["A. Reduces neurons permanently", "B. Randomly ignores neurons to prevent overfitting", "C. Freezes layers", "D. Increases regularization term"],
+    "answer": "B"
+  },
+  {
+    "id": 86,
+    "question": "What is the effect of adding L2 regularization to a model?",
+    "options": ["A. Encourages sparsity", "B. Reduces large weight magnitudes", "C. Increases variance", "D. Reduces learning rate"],
+    "answer": "B"
+  },
+  {
+    "id": 87,
+    "question": "Which component of a neural network determines the model’s capacity?",
+    "options": ["A. Activation function", "B. Number of parameters", "C. Learning rate", "D. Loss function"],
+    "answer": "B"
+  },
+  {
+    "id": 88,
+    "question": "Which concept is used in policy gradient methods in RL?",
+    "options": ["A. Bellman equation", "B. Stochastic gradient ascent", "C. Backpropagation", "D. Monte Carlo estimation"],
+    "answer": "B"
+  },
+  {
+    "id": 89,
+    "question": "Which of these methods can handle missing values natively?",
+    "options": ["A. KNN", "B. Decision Tree", "C. Linear Regression", "D. SVM"],
+    "answer": "B"
+  },
+  {
+    "id": 90,
+    "question": "Which factor causes overfitting in neural networks?",
+    "options": ["A. Too few neurons", "B. Too small dataset", "C. High dropout rate", "D. Large batch size"],
+    "answer": "B"
+  },
+  {
+    "id": 91,
+    "question": "Which model architecture uses self-attention mechanisms?",
+    "options": ["A. Transformer", "B. RNN", "C. CNN", "D. LSTM"],
+    "answer": "A"
+  },
+  {
+    "id": 92,
+    "question": "Which cost function is used in support vector regression?",
+    "options": ["A. Hinge loss", "B. Epsilon-insensitive loss", "C. Cross entropy", "D. Log loss"],
+    "answer": "B"
+  },
+  {
+    "id": 93,
+    "question": "Which of the following methods helps interpret black-box models?",
+    "options": ["A. SHAP values", "B. Gradient clipping", "C. Batch normalization", "D. PCA"],
+    "answer": "A"
+  },
+  {
+    "id": 94,
+    "question": "What is the key challenge in training GANs?",
+    "options": ["A. Mode collapse", "B. Overfitting", "C. Gradient vanishing", "D. Data imbalance"],
+    "answer": "A"
+  },
+  {
+    "id": 95,
+    "question": "Which layer in CNNs reduces spatial dimensions?",
+    "options": ["A. Convolutional", "B. Pooling", "C. Fully connected", "D. Normalization"],
+    "answer": "B"
+  },
+  {
+    "id": 96,
+    "question": "In Bayesian optimization, what is the acquisition function used for?",
+    "options": ["A. Selecting next sample point", "B. Computing posterior", "C. Normalizing data", "D. Updating priors"],
+    "answer": "A"
+  },
+  {
+    "id": 97,
+    "question": "What is the typical shape of the loss curve for a well-trained model?",
+    "options": ["A. Increasing", "B. Flat", "C. Decreasing and plateauing", "D. Oscillating"],
+    "answer": "C"
+  },
+  {
+    "id": 98,
+    "question": "Which approach allows models to learn from sequential experience without labeled data?",
+    "options": ["A. Unsupervised pretraining", "B. Reinforcement learning", "C. Semi-supervised learning", "D. Self-supervised learning"],
+    "answer": "D"
+  },
+  {
+    "id": 99,
+    "question": "What is a key difference between LSTM and GRU?",
+    "options": ["A. GRU has fewer gates", "B. LSTM lacks memory", "C. GRU uses peephole connections", "D. LSTM cannot handle sequences"],
+    "answer": "A"
+  },
+  {
+    "id": 100,
+    "question": "Which of the following models is used for text generation?",
+    "options": ["A. RNN", "B. Logistic Regression", "C. CNN", "D. Decision Tree"],
+    "answer": "A"
+  }
+]

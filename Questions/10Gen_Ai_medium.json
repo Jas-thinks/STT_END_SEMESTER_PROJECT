@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "In a GAN, what happens if the discriminator becomes too strong?",
+    "options": ["Generator learns faster", "Generator fails to learn", "Discriminator collapses", "Training speeds up"],
+    "answer": "Generator fails to learn"
+  },
+  {
+    "id": 2,
+    "question": "What is the primary challenge in training GANs?",
+    "options": ["Mode collapse", "Overfitting", "Vanishing gradient", "Data imbalance"],
+    "answer": "Mode collapse"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is an application of conditional GANs?",
+    "options": ["Image-to-image translation", "Text classification", "Audio detection", "Anomaly detection"],
+    "answer": "Image-to-image translation"
+  },
+  {
+    "id": 4,
+    "question": "In transformer models, what is positional encoding used for?",
+    "options": ["Adding sequential information", "Normalizing input", "Reducing overfitting", "Increasing model depth"],
+    "answer": "Adding sequential information"
+  },
+  {
+    "id": 5,
+    "question": "Which optimizer is commonly used for training GANs?",
+    "options": ["SGD", "Adam", "RMSprop", "Adagrad"],
+    "answer": "Adam"
+  },
+  {
+    "id": 6,
+    "question": "What is 'prompt tuning' in large language models?",
+    "options": ["Adjusting input prompts to improve outputs", "Training new weights", "Tokenizing data", "Regularizing embeddings"],
+    "answer": "Adjusting input prompts to improve outputs"
+  },
+  {
+    "id": 7,
+    "question": "Which loss function is typically used in Variational Autoencoders?",
+    "options": ["KL Divergence + Reconstruction Loss", "Adversarial Loss", "Cross-Entropy", "Triplet Loss"],
+    "answer": "KL Divergence + Reconstruction Loss"
+  },
+  {
+    "id": 8,
+    "question": "What does 'mode collapse' mean in GAN training?",
+    "options": ["Generator produces limited variety of outputs", "Discriminator stops updating", "Model diverges", "Loss becomes zero"],
+    "answer": "Generator produces limited variety of outputs"
+  },
+  {
+    "id": 9,
+    "question": "In diffusion models, what is the reverse process used for?",
+    "options": ["Generating data from noise", "Adding noise to data", "Classifying samples", "Normalizing latent space"],
+    "answer": "Generating data from noise"
+  },
+  {
+    "id": 10,
+    "question": "What technique helps stabilize GAN training?",
+    "options": ["Batch normalization", "Gradient clipping", "Feature matching", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 11,
+    "question": "Which of these models can be used for style transfer?",
+    "options": ["CycleGAN", "BERT", "Transformer", "CNN"],
+    "answer": "CycleGAN"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following is a multimodal generative AI model?",
+    "options": ["CLIP", "VAE", "LSTM", "CNN"],
+    "answer": "CLIP"
+  },
+  {
+    "id": 13,
+    "question": "Which transformer block enables parallel processing of tokens?",
+    "options": ["Self-attention", "RNN", "Feed-forward layer", "Positional encoder"],
+    "answer": "Self-attention"
+  },
+  {
+    "id": 14,
+    "question": "Why is KL Divergence used in VAEs?",
+    "options": ["To regularize latent space", "To increase variance", "To reconstruct data", "To prevent overfitting"],
+    "answer": "To regularize latent space"
+  },
+  {
+    "id": 15,
+    "question": "What does 'temperature' control in language generation?",
+    "options": ["Randomness in output", "Training speed", "Tokenization quality", "Model depth"],
+    "answer": "Randomness in output"
+  },
+  {
+    "id": 16,
+    "question": "In transformers, which mechanism replaces recurrence?",
+    "options": ["Self-attention", "Pooling", "Residual connections", "Batch normalization"],
+    "answer": "Self-attention"
+  },
+  {
+    "id": 17,
+    "question": "Which approach is used for fine-tuning LLMs efficiently?",
+    "options": ["LoRA (Low-Rank Adaptation)", "Full retraining", "Prompt injection", "Gradient freezing"],
+    "answer": "LoRA (Low-Rank Adaptation)"
+  },
+  {
+    "id": 18,
+    "question": "Which of these is a diffusion-based image generator?",
+    "options": ["Stable Diffusion", "CycleGAN", "StyleGAN", "Pix2Pix"],
+    "answer": "Stable Diffusion"
+  },
+  {
+    "id": 19,
+    "question": "What does CLIP stand for?",
+    "options": ["Contrastive Language-Image Pretraining", "Contextual Learning in Prompts", "Content Latent Image Processing", "Compressed Language-Image Prediction"],
+    "answer": "Contrastive Language-Image Pretraining"
+  },
+  {
+    "id": 20,
+    "question": "What is the latent vector in GANs?",
+    "options": ["Random noise input to the generator", "Output of discriminator", "Feature vector of real image", "Loss gradient"],
+    "answer": "Random noise input to the generator"
+  },
+  {
+    "id": 21,
+    "question": "Why are diffusion models considered more stable than GANs?",
+    "options": ["They avoid adversarial training", "They use smaller datasets", "They need fewer parameters", "They use transformers"],
+    "answer": "They avoid adversarial training"
+  },
+  {
+    "id": 22,
+    "question": "Which of these techniques improves diversity in GAN outputs?",
+    "options": ["Minibatch discrimination", "Batch normalization", "Dropout", "Weight clipping"],
+    "answer": "Minibatch discrimination"
+  },
+  {
+    "id": 23,
+    "question": "What is 'latent diffusion'?",
+    "options": ["Diffusion performed in latent space", "Noise added to tokens", "Embedding normalization", "Adversarial training in VAEs"],
+    "answer": "Diffusion performed in latent space"
+  },
+  {
+    "id": 24,
+    "question": "In text generation, beam search helps in?",
+    "options": ["Finding best sequence", "Reducing training time", "Improving embeddings", "Reducing loss"],
+    "answer": "Finding best sequence"
+  },
+  {
+    "id": 25,
+    "question": "What is the purpose of token embeddings in transformers?",
+    "options": ["Convert tokens into dense numerical vectors", "Reduce vocabulary size", "Improve normalization", "Generate attention maps"],
+    "answer": "Convert tokens into dense numerical vectors"
+  },
+  {
+    "id": 26,
+    "question": "Which loss is used in Wasserstein GANs?",
+    "options": ["Wasserstein distance", "Cross entropy", "Hinge loss", "KL divergence"],
+    "answer": "Wasserstein distance"
+  },
+  {
+    "id": 27,
+    "question": "Which part of a VAE outputs mean and variance vectors?",
+    "options": ["Encoder", "Decoder", "Discriminator", "Generator"],
+    "answer": "Encoder"
+  },
+  {
+    "id": 28,
+    "question": "Which model converts text descriptions into 3D objects?",
+    "options": ["DreamFusion", "CycleGAN", "GPT-4V", "StyleGAN"],
+    "answer": "DreamFusion"
+  },
+  {
+    "id": 29,
+    "question": "What is the main advantage of using attention in transformers?",
+    "options": ["Captures long-term dependencies", "Increases training speed", "Reduces overfitting", "Improves normalization"],
+    "answer": "Captures long-term dependencies"
+  },
+  {
+    "id": 30,
+    "question": "Which type of diffusion model predicts noise directly?",
+    "options": ["Score-based", "Autoregressive", "GAN-based", "RNN-based"],
+    "answer": "Score-based"
+  },
+  {
+    "id": 31,
+    "question": "Which model introduced the concept of 'self-supervised pretraining'?",
+    "options": ["BERT", "GPT-2", "VAE", "GAN"],
+    "answer": "BERT"
+  },
+  {
+    "id": 32,
+    "question": "What is the key benefit of LoRA fine-tuning?",
+    "options": ["Requires fewer trainable parameters", "Increases dataset size", "Improves decoding", "Speeds up tokenization"],
+    "answer": "Requires fewer trainable parameters"
+  },
+  {
+    "id": 33,
+    "question": "Which metric evaluates text generation diversity?",
+    "options": ["Self-BLEU", "Accuracy", "RMSE", "Precision"],
+    "answer": "Self-BLEU"
+  },
+  {
+    "id": 34,
+    "question": "Which of the following combines vision and language tasks?",
+    "options": ["GPT-4V", "StyleGAN", "VAE", "Tacotron"],
+    "answer": "GPT-4V"
+  },
+  {
+    "id": 35,
+    "question": "What is 'over-smoothing' in diffusion models?",
+    "options": ["Generated outputs lose sharpness", "Training loss diverges", "Gradient vanishes", "Too many parameters used"],
+    "answer": "Generated outputs lose sharpness"
+  },
+  {
+    "id": 36,
+    "question": "Which regularization method is used in GAN training?",
+    "options": ["Gradient penalty", "Dropout", "Batch norm", "Label smoothing"],
+    "answer": "Gradient penalty"
+  },
+  {
+    "id": 37,
+    "question": "What is the main purpose of latent space interpolation in GANs?",
+    "options": ["Visualize learned representations", "Reduce training loss", "Normalize embeddings", "Avoid overfitting"],
+    "answer": "Visualize learned representations"
+  },
+  {
+    "id": 38,
+    "question": "Which diffusion model architecture is commonly used for image generation?",
+    "options": ["UNet", "CNN", "Transformer", "ResNet"],
+    "answer": "UNet"
+  },
+  {
+    "id": 39,
+    "question": "What is the role of noise scheduling in diffusion models?",
+    "options": ["Controls noise levels during training", "Reduces token embeddings", "Improves attention", "Optimizes gradient flow"],
+    "answer": "Controls noise levels during training"
+  },
+  {
+    "id": 40,
+    "question": "Which generative model learns an implicit probability distribution?",
+    "options": ["GAN", "VAE", "Diffusion", "Autoencoder"],
+    "answer": "GAN"
+  },
+  {
+    "id": 41,
+    "question": "What is 'classifier-free guidance' in diffusion models?",
+    "options": ["Guidance without explicit classifier", "Noise removal", "Latent variable normalization", "Loss scaling"],
+    "answer": "Guidance without explicit classifier"
+  },
+  {
+    "id": 42,
+    "question": "Which training technique prevents GAN collapse?",
+    "options": ["Two-time scale updates (TTUR)", "High learning rate", "Noisy labels", "Dropout"],
+    "answer": "Two-time scale updates (TTUR)"
+  },
+  {
+    "id": 43,
+    "question": "What is the advantage of text embeddings in multimodal models?",
+    "options": ["Enable text-image alignment", "Reduce vocabulary", "Improve compression", "Reduce token count"],
+    "answer": "Enable text-image alignment"
+  },
+  {
+    "id": 44,
+    "question": "What is the latent dimension typically used for small GANs?",
+    "options": ["100", "1000", "10", "512"],
+    "answer": "100"
+  },
+  {
+    "id": 45,
+    "question": "What happens if KL divergence in VAE is too low?",
+    "options": ["Poor generalization", "Mode collapse", "Unstable gradients", "Over-regularization"],
+    "answer": "Poor generalization"
+  },
+  {
+    "id": 46,
+    "question": "Which type of GAN improves image quality using perceptual loss?",
+    "options": ["SRGAN", "CycleGAN", "WGAN", "StyleGAN"],
+    "answer": "SRGAN"
+  },
+  {
+    "id": 47,
+    "question": "What does the attention weight represent in transformers?",
+    "options": ["Relevance between tokens", "Training loss", "Noise level", "Batch normalization factor"],
+    "answer": "Relevance between tokens"
+  },
+  {
+    "id": 48,
+    "question": "Which dataset is commonly used to train image generation models?",
+    "options": ["CelebA", "MNIST", "IMDB", "SQuAD"],
+    "answer": "CelebA"
+  },
+  {
+    "id": 49,
+    "question": "What is the main output of an embedding model?",
+    "options": ["Vector representation", "Text", "Noise", "Image"],
+    "answer": "Vector representation"
+  },
+  {
+    "id": 50,
+    "question": "Which metric measures perceptual image quality in GANs?",
+    "options": ["FID (Fréchet Inception Distance)", "Accuracy", "BLEU", "Cross Entropy"],
+    "answer": "FID (Fréchet Inception Distance)"
+  }
+]

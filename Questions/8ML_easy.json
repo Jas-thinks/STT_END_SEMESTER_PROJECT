@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "What is the main goal of Machine Learning?",
+    "options": ["A. To write explicit programs", "B. To make machines learn from data", "C. To store large datasets", "D. To perform manual computations"],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is a supervised learning algorithm?",
+    "options": ["A. K-Means", "B. Linear Regression", "C. PCA", "D. Apriori"],
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "question": "Which type of learning uses labeled data?",
+    "options": ["A. Supervised Learning", "B. Unsupervised Learning", "C. Reinforcement Learning", "D. Semi-supervised Learning"],
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "question": "Which of these is an example of unsupervised learning?",
+    "options": ["A. Decision Tree", "B. K-Means Clustering", "C. Linear Regression", "D. Naive Bayes"],
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "question": "Which algorithm is used for classification tasks?",
+    "options": ["A. KNN", "B. PCA", "C. K-Means", "D. Apriori"],
+    "answer": "A"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is a type of regression algorithm?",
+    "options": ["A. Logistic Regression", "B. Decision Tree", "C. Random Forest", "D. All of the above"],
+    "answer": "D"
+  },
+  {
+    "id": 7,
+    "question": "In supervised learning, the model is trained using:",
+    "options": ["A. Unlabeled data", "B. Partially labeled data", "C. Labeled data", "D. Random data"],
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "question": "Which metric is used to evaluate a classification model?",
+    "options": ["A. Mean Absolute Error", "B. Accuracy", "C. R-Squared", "D. Mean Squared Error"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "question": "What is the main purpose of feature scaling?",
+    "options": ["A. To normalize data", "B. To remove outliers", "C. To reduce dimensionality", "D. To change labels"],
+    "answer": "A"
+  },
+  {
+    "id": 10,
+    "question": "Which algorithm is used for clustering?",
+    "options": ["A. Linear Regression", "B. Logistic Regression", "C. K-Means", "D. SVM"],
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "question": "What is overfitting in Machine Learning?",
+    "options": ["A. Model performs well on test data", "B. Model performs well on training data but poorly on test data", "C. Model performs poorly on both datasets", "D. None of the above"],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following reduces overfitting?",
+    "options": ["A. Increasing model complexity", "B. Regularization", "C. Removing features", "D. Adding noise"],
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "question": "What is the main goal of dimensionality reduction?",
+    "options": ["A. Increase data points", "B. Reduce number of features", "C. Add noise", "D. Improve labels"],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "question": "Which algorithm can be used for both classification and regression?",
+    "options": ["A. Decision Tree", "B. K-Means", "C. PCA", "D. Apriori"],
+    "answer": "A"
+  },
+  {
+    "id": 15,
+    "question": "What is the purpose of the activation function in neural networks?",
+    "options": ["A. Introduce non-linearity", "B. Remove noise", "C. Scale input data", "D. Reduce features"],
+    "answer": "A"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following is a loss function used in regression?",
+    "options": ["A. Cross-Entropy", "B. Mean Squared Error", "C. Log Loss", "D. Hinge Loss"],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "question": "Which term describes the difference between predicted and actual values?",
+    "options": ["A. Error", "B. Bias", "C. Variance", "D. Gradient"],
+    "answer": "A"
+  },
+  {
+    "id": 18,
+    "question": "Which of these is a supervised learning algorithm?",
+    "options": ["A. SVM", "B. K-Means", "C. Apriori", "D. PCA"],
+    "answer": "A"
+  },
+  {
+    "id": 19,
+    "question": "Which algorithm uses distance metrics like Euclidean distance?",
+    "options": ["A. KNN", "B. Decision Tree", "C. Naive Bayes", "D. Logistic Regression"],
+    "answer": "A"
+  },
+  {
+    "id": 20,
+    "question": "What does 'bias' in a model indicate?",
+    "options": ["A. Overfitting", "B. Systematic error", "C. Randomness", "D. Gradient issue"],
+    "answer": "B"
+  },
+  {
+    "id": 21,
+    "question": "Which of the following is used for feature selection?",
+    "options": ["A. Correlation", "B. PCA", "C. Variance threshold", "D. All of the above"],
+    "answer": "D"
+  },
+  {
+    "id": 22,
+    "question": "Which algorithm is based on Bayes’ theorem?",
+    "options": ["A. Naive Bayes", "B. SVM", "C. Decision Tree", "D. K-Means"],
+    "answer": "A"
+  },
+  {
+    "id": 23,
+    "question": "What is the output of a regression model?",
+    "options": ["A. Continuous value", "B. Class label", "C. Cluster", "D. Probability"],
+    "answer": "A"
+  },
+  {
+    "id": 24,
+    "question": "Which evaluation metric is NOT suitable for regression?",
+    "options": ["A. Accuracy", "B. RMSE", "C. MAE", "D. R² Score"],
+    "answer": "A"
+  },
+  {
+    "id": 25,
+    "question": "Which of the following is true for K-Means?",
+    "options": ["A. Number of clusters must be predefined", "B. It works with labeled data", "C. It uses decision boundaries", "D. It is supervised"],
+    "answer": "A"
+  },
+  {
+    "id": 26,
+    "question": "Which is a reinforcement learning example?",
+    "options": ["A. Spam detection", "B. Game playing AI", "C. Clustering customers", "D. Predicting house prices"],
+    "answer": "B"
+  },
+  {
+    "id": 27,
+    "question": "What is a confusion matrix used for?",
+    "options": ["A. Regression accuracy", "B. Classification evaluation", "C. Clustering analysis", "D. Data normalization"],
+    "answer": "B"
+  },
+  {
+    "id": 28,
+    "question": "Which of the following algorithms is used for dimensionality reduction?",
+    "options": ["A. PCA", "B. SVM", "C. KNN", "D. Random Forest"],
+    "answer": "A"
+  },
+  {
+    "id": 29,
+    "question": "What does PCA stand for?",
+    "options": ["A. Principal Component Analysis", "B. Primary Component Algorithm", "C. Projection Component Analysis", "D. Partial Component Adjustment"],
+    "answer": "A"
+  },
+  {
+    "id": 30,
+    "question": "Which algorithm is best for spam detection?",
+    "options": ["A. Naive Bayes", "B. K-Means", "C. PCA", "D. KNN"],
+    "answer": "A"
+  },
+  {
+    "id": 31,
+    "question": "Which step comes first in ML pipeline?",
+    "options": ["A. Model training", "B. Data collection", "C. Model evaluation", "D. Deployment"],
+    "answer": "B"
+  },
+  {
+    "id": 32,
+    "question": "What is cross-validation used for?",
+    "options": ["A. Evaluate model performance", "B. Normalize data", "C. Reduce dimensions", "D. Remove bias"],
+    "answer": "A"
+  },
+  {
+    "id": 33,
+    "question": "Which of these is a non-parametric algorithm?",
+    "options": ["A. KNN", "B. Linear Regression", "C. Naive Bayes", "D. SVM"],
+    "answer": "A"
+  },
+  {
+    "id": 34,
+    "question": "Which regularization method adds L1 penalty?",
+    "options": ["A. Ridge", "B. Lasso", "C. ElasticNet", "D. Dropout"],
+    "answer": "B"
+  },
+  {
+    "id": 35,
+    "question": "What does the 'kernel' in SVM do?",
+    "options": ["A. Transforms data to higher dimensions", "B. Reduces dimensions", "C. Adds bias", "D. Removes outliers"],
+    "answer": "A"
+  },
+  {
+    "id": 36,
+    "question": "What type of data does K-Means work with?",
+    "options": ["A. Labeled data", "B. Unlabeled data", "C. Semi-labeled data", "D. Sequential data"],
+    "answer": "B"
+  },
+  {
+    "id": 37,
+    "question": "Which algorithm is best for nonlinear decision boundaries?",
+    "options": ["A. SVM with kernel", "B. Linear Regression", "C. Naive Bayes", "D. PCA"],
+    "answer": "A"
+  },
+  {
+    "id": 38,
+    "question": "Which type of learning uses rewards and penalties?",
+    "options": ["A. Supervised", "B. Unsupervised", "C. Reinforcement", "D. Semi-supervised"],
+    "answer": "C"
+  },
+  {
+    "id": 39,
+    "question": "Which of the following uses entropy and information gain?",
+    "options": ["A. Decision Trees", "B. KNN", "C. PCA", "D. Logistic Regression"],
+    "answer": "A"
+  },
+  {
+    "id": 40,
+    "question": "What does gradient descent optimize?",
+    "options": ["A. Loss function", "B. Dataset size", "C. Model complexity", "D. Feature count"],
+    "answer": "A"
+  },
+  {
+    "id": 41,
+    "question": "Which of the following is NOT a type of ML?",
+    "options": ["A. Supervised", "B. Unsupervised", "C. Hybrid", "D. Reinforcement"],
+    "answer": "C"
+  },
+  {
+    "id": 42,
+    "question": "What does 'epoch' mean in training neural networks?",
+    "options": ["A. One full pass through training data", "B. A single batch", "C. A weight update", "D. Validation step"],
+    "answer": "A"
+  },
+  {
+    "id": 43,
+    "question": "What is the output of a sigmoid activation function?",
+    "options": ["A. Any real number", "B. 0 to 1", "C. -∞ to ∞", "D. -1 to 1"],
+    "answer": "B"
+  },
+  {
+    "id": 44,
+    "question": "Which of these is a deep learning library?",
+    "options": ["A. NumPy", "B. TensorFlow", "C. Pandas", "D. Scikit-learn"],
+    "answer": "B"
+  },
+  {
+    "id": 45,
+    "question": "Which metric measures classification precision?",
+    "options": ["A. TP / (TP + FP)", "B. TP / (TP + FN)", "C. FP / TP", "D. FN / FP"],
+    "answer": "A"
+  },
+  {
+    "id": 46,
+    "question": "Which of these is an ensemble learning method?",
+    "options": ["A. Random Forest", "B. Linear Regression", "C. PCA", "D. K-Means"],
+    "answer": "A"
+  },
+  {
+    "id": 47,
+    "question": "Which type of data preprocessing handles missing values?",
+    "options": ["A. Imputation", "B. Encoding", "C. Scaling", "D. Normalization"],
+    "answer": "A"
+  },
+  {
+    "id": 48,
+    "question": "What is the purpose of one-hot encoding?",
+    "options": ["A. Represent categorical data numerically", "B. Normalize continuous data", "C. Remove outliers", "D. Balance dataset"],
+    "answer": "A"
+  },
+  {
+    "id": 49,
+    "question": "Which of these is used to prevent overfitting in neural networks?",
+    "options": ["A. Dropout", "B. Batch Normalization", "C. Both A and B", "D. None"],
+    "answer": "C"
+  },
+  {
+    "id": 50,
+    "question": "Which ML library is primarily used for linear models and preprocessing?",
+    "options": ["A. Scikit-learn", "B. TensorFlow", "C. PyTorch", "D. OpenCV"],
+    "answer": "A"
+  },
+  {
+    "id": 51,
+    "question": "What does 'training data' refer to in ML?",
+    "options": ["A. Data used to test the model", "B. Data used to teach the model", "C. Data used after deployment", "D. Random data"],
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "question": "Which term refers to the process of cleaning and preparing raw data?",
+    "options": ["A. Data Wrangling", "B. Data Mining", "C. Data Extraction", "D. Data Encoding"],
+    "answer": "A"
+  },
+  {
+    "id": 53,
+    "question": "Which of these algorithms is used for recommendation systems?",
+    "options": ["A. Collaborative Filtering", "B. K-Means", "C. Decision Tree", "D. PCA"],
+    "answer": "A"
+  },
+  {
+    "id": 54,
+    "question": "What is the range of output for ReLU activation function?",
+    "options": ["A. 0 to 1", "B. -1 to 1", "C. 0 to ∞", "D. -∞ to ∞"],
+    "answer": "C"
+  },
+  {
+    "id": 55,
+    "question": "What does the 'learning rate' control in gradient descent?",
+    "options": ["A. Step size during optimization", "B. Dataset size", "C. Model complexity", "D. Batch size"],
+    "answer": "A"
+  },
+  {
+    "id": 56,
+    "question": "Which algorithm is suitable for predicting house prices?",
+    "options": ["A. Linear Regression", "B. K-Means", "C. SVM", "D. PCA"],
+    "answer": "A"
+  },
+  {
+    "id": 57,
+    "question": "Which of the following is NOT a supervised algorithm?",
+    "options": ["A. Linear Regression", "B. SVM", "C. K-Means", "D. Decision Tree"],
+    "answer": "C"
+  },
+  {
+    "id": 58,
+    "question": "Which library is primarily used for numerical computation in Python?",
+    "options": ["A. NumPy", "B. Pandas", "C. TensorFlow", "D. Matplotlib"],
+    "answer": "A"
+  },
+  {
+    "id": 59,
+    "question": "Which of the following is NOT a feature scaling technique?",
+    "options": ["A. Min-Max Scaling", "B. Standardization", "C. One-Hot Encoding", "D. Robust Scaling"],
+    "answer": "C"
+  },
+  {
+    "id": 60,
+    "question": "What is a 'feature' in machine learning?",
+    "options": ["A. Output variable", "B. Input variable", "C. Error term", "D. Model parameter"],
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "question": "Which algorithm works best for linearly separable data?",
+    "options": ["A. SVM", "B. KNN", "C. Random Forest", "D. Naive Bayes"],
+    "answer": "A"
+  },
+  {
+    "id": 62,
+    "question": "What is an epoch in machine learning training?",
+    "options": ["A. One forward and backward pass of all data", "B. One iteration", "C. One gradient step", "D. One test run"],
+    "answer": "A"
+  },
+  {
+    "id": 63,
+    "question": "Which of the following is NOT a clustering algorithm?",
+    "options": ["A. DBSCAN", "B. K-Means", "C. Hierarchical", "D. Logistic Regression"],
+    "answer": "D"
+  },
+  {
+    "id": 64,
+    "question": "What is the main goal of normalization?",
+    "options": ["A. Scale features to same range", "B. Remove duplicates", "C. Encode categorical data", "D. Reduce overfitting"],
+    "answer": "A"
+  },
+  {
+    "id": 65,
+    "question": "Which activation function is most used in output layer for binary classification?",
+    "options": ["A. ReLU", "B. Sigmoid", "C. Softmax", "D. Tanh"],
+    "answer": "B"
+  },
+  {
+    "id": 66,
+    "question": "Which metric is best suited for imbalanced datasets?",
+    "options": ["A. Accuracy", "B. F1 Score", "C. RMSE", "D. R² Score"],
+    "answer": "B"
+  },
+  {
+    "id": 67,
+    "question": "What is 'gradient' in gradient descent?",
+    "options": ["A. Rate of change of loss", "B. Dataset label", "C. Weight matrix", "D. Error term"],
+    "answer": "A"
+  },
+  {
+    "id": 68,
+    "question": "Which of these uses bagging?",
+    "options": ["A. Random Forest", "B. AdaBoost", "C. Gradient Boosting", "D. XGBoost"],
+    "answer": "A"
+  },
+  {
+    "id": 69,
+    "question": "Which algorithm is known as a 'lazy learner'?",
+    "options": ["A. KNN", "B. Decision Tree", "C. SVM", "D. Random Forest"],
+    "answer": "A"
+  },
+  {
+    "id": 70,
+    "question": "Which of the following measures model performance on unseen data?",
+    "options": ["A. Training accuracy", "B. Validation accuracy", "C. Gradient", "D. Bias"],
+    "answer": "B"
+  },
+  {
+    "id": 71,
+    "question": "Which library provides 'DataFrame' data structure?",
+    "options": ["A. Pandas", "B. NumPy", "C. TensorFlow", "D. Matplotlib"],
+    "answer": "A"
+  },
+  {
+    "id": 72,
+    "question": "What does the confusion matrix show?",
+    "options": ["A. True and false predictions", "B. Feature correlations", "C. Dataset imbalance", "D. Loss function values"],
+    "answer": "A"
+  },
+  {
+    "id": 73,
+    "question": "Which evaluation metric is used for regression?",
+    "options": ["A. R² Score", "B. Precision", "C. Recall", "D. F1 Score"],
+    "answer": "A"
+  },
+  {
+    "id": 74,
+    "question": "Which ML technique finds hidden patterns in data?",
+    "options": ["A. Unsupervised Learning", "B. Supervised Learning", "C. Reinforcement Learning", "D. None"],
+    "answer": "A"
+  },
+  {
+    "id": 75,
+    "question": "What is the main advantage of ensemble learning?",
+    "options": ["A. Reduces variance and bias", "B. Increases model size", "C. Reduces dataset size", "D. Increases bias"],
+    "answer": "A"
+  },
+  {
+    "id": 76,
+    "question": "Which model is sensitive to outliers?",
+    "options": ["A. Linear Regression", "B. Decision Tree", "C. Random Forest", "D. KNN"],
+    "answer": "A"
+  },
+  {
+    "id": 77,
+    "question": "What is the main difference between bagging and boosting?",
+    "options": ["A. Bagging trains in parallel, boosting sequentially", "B. Boosting trains in parallel, bagging sequentially", "C. Both same", "D. None"],
+    "answer": "A"
+  },
+  {
+    "id": 78,
+    "question": "Which optimizer is commonly used in deep learning?",
+    "options": ["A. Adam", "B. Lasso", "C. Ridge", "D. Gradient Boost"],
+    "answer": "A"
+  },
+  {
+    "id": 79,
+    "question": "Which function helps detect overfitting?",
+    "options": ["A. Validation loss", "B. Gradient", "C. Regularization", "D. Dropout"],
+    "answer": "A"
+  },
+  {
+    "id": 80,
+    "question": "Which type of variable can be encoded using label encoding?",
+    "options": ["A. Categorical", "B. Numerical", "C. Continuous", "D. Binary"],
+    "answer": "A"
+  },
+  {
+    "id": 81,
+    "question": "Which ML technique is used for market basket analysis?",
+    "options": ["A. Association Rule Mining", "B. Clustering", "C. Regression", "D. Classification"],
+    "answer": "A"
+  },
+  {
+    "id": 82,
+    "question": "Which of these is NOT a feature extraction method?",
+    "options": ["A. PCA", "B. LDA", "C. SVM", "D. ICA"],
+    "answer": "C"
+  },
+  {
+    "id": 83,
+    "question": "What is the output of softmax function?",
+    "options": ["A. Probability distribution", "B. Continuous value", "C. Binary output", "D. Gradient"],
+    "answer": "A"
+  },
+  {
+    "id": 84,
+    "question": "Which of these ML types is inspired by human behavior?",
+    "options": ["A. Reinforcement Learning", "B. Unsupervised Learning", "C. Semi-supervised Learning", "D. None"],
+    "answer": "A"
+  },
+  {
+    "id": 85,
+    "question": "What is the process of tuning hyperparameters called?",
+    "options": ["A. Model Optimization", "B. Model Fitting", "C. Model Validation", "D. Feature Scaling"],
+    "answer": "A"
+  },
+  {
+    "id": 86,
+    "question": "Which method helps in handling multicollinearity?",
+    "options": ["A. Ridge Regression", "B. Lasso", "C. Dropout", "D. Both A and B"],
+    "answer": "D"
+  },
+  {
+    "id": 87,
+    "question": "Which term refers to the difference between average prediction and true value?",
+    "options": ["A. Bias", "B. Variance", "C. Noise", "D. Loss"],
+    "answer": "A"
+  },
+  {
+    "id": 88,
+    "question": "What is the function of dropout?",
+    "options": ["A. Prevent overfitting", "B. Increase bias", "C. Reduce learning rate", "D. Normalize data"],
+    "answer": "A"
+  },
+  {
+    "id": 89,
+    "question": "Which algorithm builds trees sequentially?",
+    "options": ["A. Gradient Boosting", "B. Random Forest", "C. Bagging", "D. KNN"],
+    "answer": "A"
+  },
+  {
+    "id": 90,
+    "question": "Which algorithm divides dataset into smaller subsets?",
+    "options": ["A. Decision Tree", "B. SVM", "C. PCA", "D. Logistic Regression"],
+    "answer": "A"
+  },
+  {
+    "id": 91,
+    "question": "What is feature engineering?",
+    "options": ["A. Creating new features from existing data", "B. Encoding features", "C. Scaling features", "D. Dropping columns"],
+    "answer": "A"
+  },
+  {
+    "id": 92,
+    "question": "Which of these is an evaluation metric for clustering?",
+    "options": ["A. Silhouette Score", "B. Accuracy", "C. F1 Score", "D. RMSE"],
+    "answer": "A"
+  },
+  {
+    "id": 93,
+    "question": "Which technique is used for image recognition?",
+    "options": ["A. CNN", "B. RNN", "C. SVM", "D. Naive Bayes"],
+    "answer": "A"
+  },
+  {
+    "id": 94,
+    "question": "Which type of neural network is best for sequential data?",
+    "options": ["A. CNN", "B. RNN", "C. GAN", "D. Autoencoder"],
+    "answer": "B"
+  },
+  {
+    "id": 95,
+    "question": "What does 'epoch' mean in training deep learning models?",
+    "options": ["A. One full pass through training dataset", "B. One step", "C. One prediction", "D. One validation"],
+    "answer": "A"
+  },
+  {
+    "id": 96,
+    "question": "Which technique is used to detect anomalies?",
+    "options": ["A. Isolation Forest", "B. Linear Regression", "C. Naive Bayes", "D. PCA"],
+    "answer": "A"
+  },
+  {
+    "id": 97,
+    "question": "Which library provides tools for deep learning in Python?",
+    "options": ["A. TensorFlow", "B. Matplotlib", "C. Scikit-learn", "D. Pandas"],
+    "answer": "A"
+  },
+  {
+    "id": 98,
+    "question": "Which model is known as a generative model?",
+    "options": ["A. GAN", "B. CNN", "C. SVM", "D. KNN"],
+    "answer": "A"
+  },
+  {
+    "id": 99,
+    "question": "What does 'regularization' help prevent?",
+    "options": ["A. Overfitting", "B. Underfitting", "C. Both A and B", "D. None"],
+    "answer": "A"
+  },
+  {
+    "id": 100,
+    "question": "What does MAE stand for?",
+    "options": ["A. Mean Absolute Error", "B. Maximum Average Error", "C. Mean Accuracy Estimate", "D. Minimum Approximation Error"],
+    "answer": "A"
+  }
+]

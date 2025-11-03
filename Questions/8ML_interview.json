@@ -1,0 +1,603 @@
+[
+  {
+    "id": 1,
+    "question": "Explain the bias-variance tradeoff in machine learning and how you can balance it."
+  },
+  {
+    "id": 2,
+    "question": "How would you detect and handle data leakage in a machine learning pipeline?"
+  },
+  {
+    "id": 3,
+    "question": "What is the difference between L1 and L2 regularization, and when would you prefer one over the other?"
+  },
+  {
+    "id": 4,
+    "question": "Describe how you would evaluate a binary classification model with imbalanced data."
+  },
+  {
+    "id": 5,
+    "question": "What techniques can you use to prevent overfitting in deep learning models?"
+  },
+  {
+    "id": 6,
+    "question": "Explain the concept of gradient descent and its variants (SGD, Momentum, Adam)."
+  },
+  {
+    "id": 7,
+    "question": "How do you decide which activation function to use in a neural network?"
+  },
+  {
+    "id": 8,
+    "question": "What are vanishing and exploding gradients, and how can they be mitigated?"
+  },
+  {
+    "id": 9,
+    "question": "How does dropout work in neural networks, and why is it effective?"
+  },
+  {
+    "id": 10,
+    "question": "Explain precision, recall, F1-score, and AUC in simple terms."
+  },
+  {
+    "id": 11,
+    "question": "How does a decision tree decide where to split?"
+  },
+  {
+    "id": 12,
+    "question": "Why is feature scaling important for gradient-based algorithms?"
+  },
+  {
+    "id": 13,
+    "question": "Explain how k-means clustering works and one limitation of it."
+  },
+  {
+    "id": 14,
+    "question": "What is PCA and why is it used?"
+  },
+  {
+    "id": 15,
+    "question": "What are eigenvalues and eigenvectors, and how do they relate to PCA?"
+  },
+  {
+    "id": 16,
+    "question": "What is the intuition behind convolution in CNNs?"
+  },
+  {
+    "id": 17,
+    "question": "How do RNNs differ from traditional feedforward neural networks?"
+  },
+  {
+    "id": 18,
+    "question": "What is the vanishing gradient problem in RNNs, and how do LSTMs solve it?"
+  },
+  {
+    "id": 19,
+    "question": "Explain how attention mechanisms improve neural network performance."
+  },
+  {
+    "id": 20,
+    "question": "Describe how you would select features for a predictive model."
+  },
+  {
+    "id": 21,
+    "question": "What is feature importance, and how can you measure it in tree-based models?"
+  },
+  {
+    "id": 22,
+    "question": "Explain how gradient boosting differs from random forests."
+  },
+  {
+    "id": 23,
+    "question": "What are the advantages and disadvantages of using ensemble methods?"
+  },
+  {
+    "id": 24,
+    "question": "What is cross-validation, and why is it preferred over a single train-test split?"
+  },
+  {
+    "id": 25,
+    "question": "How does the ROC curve help in evaluating classification models?"
+  },
+  {
+    "id": 26,
+    "question": "How do you choose the number of clusters in k-means?"
+  },
+  {
+    "id": 27,
+    "question": "What is overfitting and underfitting? How do you detect them?"
+  },
+  {
+    "id": 28,
+    "question": "What is the curse of dimensionality, and how can it affect ML models?"
+  },
+  {
+    "id": 29,
+    "question": "Explain the difference between parametric and non-parametric models."
+  },
+  {
+    "id": 30,
+    "question": "What are word embeddings and how are they learned?"
+  },
+  {
+    "id": 31,
+    "question": "Describe the concept of transfer learning and when you would use it."
+  },
+  {
+    "id": 32,
+    "question": "How do you evaluate the performance of a recommendation system?"
+  },
+  {
+    "id": 33,
+    "question": "What’s the difference between bagging and boosting?"
+  },
+  {
+    "id": 34,
+    "question": "Explain why gradient descent might get stuck in local minima."
+  },
+  {
+    "id": 35,
+    "question": "How do you handle missing data in a dataset?"
+  },
+  {
+    "id": 36,
+    "question": "What is regularization, and how does it help in preventing overfitting?"
+  },
+  {
+    "id": 37,
+    "question": "What are hyperparameters, and how do you optimize them?"
+  },
+  {
+    "id": 38,
+    "question": "How do you interpret coefficients in a logistic regression model?"
+  },
+  {
+    "id": 39,
+    "question": "What is an ROC-AUC score, and what does it signify?"
+  },
+  {
+    "id": 40,
+    "question": "How do you evaluate the stability and robustness of an ML model?"
+  },
+  {
+    "id": 41,
+    "question": "How do you detect multicollinearity in data, and why is it problematic?"
+  },
+  {
+    "id": 42,
+    "question": "Explain the working of the Naive Bayes classifier."
+  },
+  {
+    "id": 43,
+    "question": "What is gradient clipping and why is it used?"
+  },
+  {
+    "id": 44,
+    "question": "Explain the tradeoff between model interpretability and accuracy."
+  },
+  {
+    "id": 45,
+    "question": "What are some techniques for model explainability (e.g., SHAP, LIME)?"
+  },
+  {
+    "id": 46,
+    "question": "How does early stopping help prevent overfitting?"
+  },
+  {
+    "id": 47,
+    "question": "What is a confusion matrix, and how do you interpret it?"
+  },
+  {
+    "id": 48,
+    "question": "Describe the concept of data drift and how to handle it in production ML systems."
+  },
+  {
+    "id": 49,
+    "question": "What is a cost-sensitive learning approach, and when is it used?"
+  },
+  {
+    "id": 50,
+    "question": "How would you design an end-to-end ML pipeline for fraud detection?"
+  },
+  {
+    "id": 51,
+    "question": "How does batch normalization improve neural network training?"
+  },
+  {
+    "id": 52,
+    "question": "Explain how you would tune hyperparameters for a deep neural network efficiently."
+  },
+  {
+    "id": 53,
+    "question": "What are the key differences between CNNs and RNNs?"
+  },
+  {
+    "id": 54,
+    "question": "How does the attention mechanism work in transformers?"
+  },
+  {
+    "id": 55,
+    "question": "What is the difference between autoencoders and PCA?"
+  },
+  {
+    "id": 56,
+    "question": "How would you detect and handle concept drift in a deployed ML model?"
+  },
+  {
+    "id": 57,
+    "question": "Explain how you would scale a recommendation system to millions of users."
+  },
+  {
+    "id": 58,
+    "question": "What is transfer learning, and how do you fine-tune a pre-trained model?"
+  },
+  {
+    "id": 59,
+    "question": "What is the role of embeddings in NLP models?"
+  },
+  {
+    "id": 60,
+    "question": "How do you handle highly imbalanced datasets in classification?"
+  },
+  {
+    "id": 61,
+    "question": "What is the difference between bag-of-words and word embeddings?"
+  },
+  {
+    "id": 62,
+    "question": "How do you evaluate the performance of a clustering algorithm?"
+  },
+  {
+    "id": 63,
+    "question": "What is the difference between underfitting and overfitting in neural networks?"
+  },
+  {
+    "id": 64,
+    "question": "What is model quantization, and why is it useful for deployment?"
+  },
+  {
+    "id": 65,
+    "question": "Explain how federated learning works."
+  },
+  {
+    "id": 66,
+    "question": "How does the softmax function work, and where is it used?"
+  },
+  {
+    "id": 67,
+    "question": "What are the key challenges in deploying ML models at scale?"
+  },
+  {
+    "id": 68,
+    "question": "What is an embedding matrix in NLP models?"
+  },
+  {
+    "id": 69,
+    "question": "Explain the architecture of a Transformer model."
+  },
+  {
+    "id": 70,
+    "question": "How does reinforcement learning differ from supervised learning?"
+  },
+  {
+    "id": 71,
+    "question": "What is Q-learning in reinforcement learning?"
+  },
+  {
+    "id": 72,
+    "question": "How does policy gradient differ from Q-learning?"
+  },
+  {
+    "id": 73,
+    "question": "What is experience replay in deep reinforcement learning?"
+  },
+  {
+    "id": 74,
+    "question": "Explain the concept of exploration vs exploitation in RL."
+  },
+  {
+    "id": 75,
+    "question": "What is the intuition behind the Bellman equation?"
+  },
+  {
+    "id": 76,
+    "question": "How does attention improve machine translation models?"
+  },
+  {
+    "id": 77,
+    "question": "What are residual connections in ResNet and why are they effective?"
+  },
+  {
+    "id": 78,
+    "question": "What are the key advantages of using transformers over RNNs for sequence data?"
+  },
+  {
+    "id": 79,
+    "question": "Explain the purpose of layer normalization in transformers."
+  },
+  {
+    "id": 80,
+    "question": "What is a Siamese network and where is it used?"
+  },
+  {
+    "id": 81,
+    "question": "What are the main differences between generative and discriminative models?"
+  },
+  {
+    "id": 82,
+    "question": "How does a Variational Autoencoder (VAE) differ from a standard autoencoder?"
+  },
+  {
+    "id": 83,
+    "question": "What is the KL-divergence and where is it used in ML?"
+  },
+  {
+    "id": 84,
+    "question": "Explain the architecture and intuition behind GANs (Generative Adversarial Networks)."
+  },
+  {
+    "id": 85,
+    "question": "How would you detect mode collapse in a GAN?"
+  },
+  {
+    "id": 86,
+    "question": "What are the main components of a GAN and their objectives?"
+  },
+  {
+    "id": 87,
+    "question": "What is the vanishing gradient problem in GANs, and how can it be mitigated?"
+  },
+  {
+    "id": 88,
+    "question": "Explain the concept of self-supervised learning with an example."
+  },
+  {
+    "id": 89,
+    "question": "What is contrastive learning and why is it powerful?"
+  },
+  {
+    "id": 90,
+    "question": "What is multi-head attention and why is it used in transformers?"
+  },
+  {
+    "id": 91,
+    "question": "Explain the role of positional encoding in transformer models."
+  },
+  {
+    "id": 92,
+    "question": "How does the Adam optimizer differ from standard SGD?"
+  },
+  {
+    "id": 93,
+    "question": "What are some techniques for improving model generalization?"
+  },
+  {
+    "id": 94,
+    "question": "Explain model distillation and its applications."
+  },
+  {
+    "id": 95,
+    "question": "How do you handle data versioning and model reproducibility in ML pipelines?"
+  },
+  {
+    "id": 96,
+    "question": "What is the role of feature stores in large-scale ML systems?"
+  },
+  {
+    "id": 97,
+    "question": "Explain how you would build a recommendation system for Netflix."
+  },
+  {
+    "id": 98,
+    "question": "How would you monitor and maintain ML models in production?"
+  },
+  {
+    "id": 99,
+    "question": "What are embeddings in graph neural networks?"
+  },
+  {
+    "id": 100,
+    "question": "Describe how transformers are applied in vision (Vision Transformers)."
+  },
+  {
+    "id": 101,
+    "question": "How do you ensure fairness and avoid bias in machine learning models?"
+  },
+  {
+    "id": 102,
+    "question": "What is model calibration and why is it important in probabilistic classifiers?"
+  },
+  {
+    "id": 103,
+    "question": "How would you approach building a spam detection system from scratch?"
+  },
+  {
+    "id": 104,
+    "question": "What are embeddings in recommendation systems, and how are they learned?"
+  },
+  {
+    "id": 105,
+    "question": "Explain how you would design an ML pipeline for ad click-through rate prediction."
+  },
+  {
+    "id": 106,
+    "question": "How does feature drift differ from concept drift?"
+  },
+  {
+    "id": 107,
+    "question": "What is model ensembling and how does it improve predictive accuracy?"
+  },
+  {
+    "id": 108,
+    "question": "Describe how attention works in transformer models."
+  },
+  {
+    "id": 109,
+    "question": "How would you evaluate the interpretability of a deep neural network?"
+  },
+  {
+    "id": 110,
+    "question": "Explain the concept of mutual information and its role in feature selection."
+  },
+  {
+    "id": 111,
+    "question": "What is label smoothing, and why is it useful in training classifiers?"
+  },
+  {
+    "id": 112,
+    "question": "How do you deal with extremely high-dimensional sparse data?"
+  },
+  {
+    "id": 113,
+    "question": "What are some methods for unsupervised anomaly detection?"
+  },
+  {
+    "id": 114,
+    "question": "Explain how reinforcement learning can be used for recommendation systems."
+  },
+  {
+    "id": 115,
+    "question": "What are the main steps to deploy a machine learning model in production?"
+  },
+  {
+    "id": 116,
+    "question": "How does online learning differ from batch learning?"
+  },
+  {
+    "id": 117,
+    "question": "What is transfer learning and how does it help when data is limited?"
+  },
+  {
+    "id": 118,
+    "question": "Explain how you can use SHAP values to interpret ML model predictions."
+  },
+  {
+    "id": 119,
+    "question": "What is active learning, and when should you use it?"
+  },
+  {
+    "id": 120,
+    "question": "Describe the process of hyperparameter tuning using Bayesian optimization."
+  },
+  {
+    "id": 121,
+    "question": "What are meta-learning algorithms, and how do they differ from traditional ML?"
+  },
+  {
+    "id": 122,
+    "question": "How do you handle class imbalance when using deep learning models?"
+  },
+  {
+    "id": 123,
+    "question": "Explain the tradeoffs between accuracy, latency, and interpretability in production ML."
+  },
+  {
+    "id": 124,
+    "question": "How do you detect data poisoning attacks in ML pipelines?"
+  },
+  {
+    "id": 125,
+    "question": "What are embeddings in graph neural networks, and how are they trained?"
+  },
+  {
+    "id": 126,
+    "question": "How would you monitor and retrain ML models post-deployment?"
+  },
+  {
+    "id": 127,
+    "question": "What is the difference between offline and online model evaluation?"
+  },
+  {
+    "id": 128,
+    "question": "Explain how you would implement A/B testing for ML model comparison."
+  },
+  {
+    "id": 129,
+    "question": "What is distillation in neural networks and what are its benefits?"
+  },
+  {
+    "id": 130,
+    "question": "How can reinforcement learning be used in robotics control?"
+  },
+  {
+    "id": 131,
+    "question": "Describe the architecture of BERT and how it improves NLP tasks."
+  },
+  {
+    "id": 132,
+    "question": "What are the challenges in distributed training of deep learning models?"
+  },
+  {
+    "id": 133,
+    "question": "How does gradient accumulation help when batch size is limited by GPU memory?"
+  },
+  {
+    "id": 134,
+    "question": "What is the difference between synchronous and asynchronous SGD?"
+  },
+  {
+    "id": 135,
+    "question": "Explain the difference between inference and training latency in ML models."
+  },
+  {
+    "id": 136,
+    "question": "How do you manage model drift in real-time ML systems?"
+  },
+  {
+    "id": 137,
+    "question": "What is the purpose of quantization and pruning in neural networks?"
+  },
+  {
+    "id": 138,
+    "question": "Explain the concept of knowledge transfer in multi-task learning."
+  },
+  {
+    "id": 139,
+    "question": "What is adversarial training and how does it improve robustness?"
+  },
+  {
+    "id": 140,
+    "question": "How would you design an ML system for dynamic pricing on an e-commerce platform?"
+  },
+  {
+    "id": 141,
+    "question": "What are the computational tradeoffs between CPU, GPU, and TPU in ML workloads?"
+  },
+  {
+    "id": 142,
+    "question": "Explain how embeddings are used in large-scale retrieval systems."
+  },
+  {
+    "id": 143,
+    "question": "What are graph attention networks and how do they differ from GCNs?"
+  },
+  {
+    "id": 144,
+    "question": "What is reinforcement learning from human feedback (RLHF)?"
+  },
+  {
+    "id": 145,
+    "question": "How do you evaluate fairness in ML models quantitatively?"
+  },
+  {
+    "id": 146,
+    "question": "What is the role of contrastive loss in self-supervised learning?"
+  },
+  {
+    "id": 147,
+    "question": "Explain the concept of zero-shot and few-shot learning with examples."
+  },
+  {
+    "id": 148,
+    "question": "What are the main differences between GPT and BERT architectures?"
+  },
+  {
+    "id": 149,
+    "question": "How do large language models handle tokenization and context windows?"
+  },
+  {
+    "id": 150,
+    "question": "What are ethical concerns when deploying generative AI systems?"
+  }
+]
+
