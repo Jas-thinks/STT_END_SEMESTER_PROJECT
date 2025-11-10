@@ -290,3 +290,343 @@ footer {
   font-weight: bold;
   box-shadow: 0 0 20px gold;
 }
+
+/* ========== QUIZ STYLES ========== */
+.hidden {
+  display: none !important;
+}
+
+#timerDisplay {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  border: 2px solid #30363d;
+}
+
+#timerDisplay h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #4CAF50;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.option:hover {
+  background: rgba(88,166,255,0.1);
+  border-color: #58a6ff;
+  transform: translateX(5px);
+}
+
+.option input[type="radio"] {
+  margin-right: 12px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.option span {
+  flex: 1;
+}
+
+.q-topic {
+  color: #58a6ff;
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+/* Results Section */
+#resultsContainer {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+#resultsContainer h2 {
+  text-align: center;
+  color: #58a6ff;
+  margin-bottom: 30px;
+}
+
+.score-card {
+  background: linear-gradient(135deg, rgba(88,166,255,0.1), rgba(139,92,246,0.1));
+  border: 2px solid #58a6ff;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 0 30px rgba(88,166,255,0.3);
+}
+
+.score-card h3 {
+  font-size: 2em;
+  margin: 0 0 15px 0;
+  color: #ffffff;
+}
+
+.percentage {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #4CAF50;
+  margin: 15px 0;
+  text-shadow: 0 0 20px rgba(76,175,80,0.5);
+}
+
+.grade {
+  font-size: 1.5em;
+  color: #ffd700;
+  margin: 15px 0;
+}
+
+.score-breakdown {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.score-breakdown p {
+  background: rgba(255,255,255,0.05);
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin: 0;
+  font-size: 1.1em;
+  border: 1px solid #30363d;
+}
+
+/* Review Section */
+#reviewContainer {
+  margin-top: 30px;
+}
+
+#reviewContainer h3 {
+  text-align: center;
+  color: #58a6ff;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.review-item {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.review-item:hover {
+  border-color: #58a6ff;
+  box-shadow: 0 0 20px rgba(88,166,255,0.2);
+}
+
+.review-item.correct {
+  border-left: 4px solid #4CAF50;
+}
+
+.review-item.wrong {
+  border-left: 4px solid #ff4444;
+}
+
+.review-item.unanswered {
+  border-left: 4px solid #ffaa00;
+}
+
+.review-header {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-options {
+  margin: 15px 0;
+}
+
+.review-option {
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid #30363d;
+}
+
+.review-option.correct-option {
+  background: rgba(76,175,80,0.2);
+  border-color: #4CAF50;
+  color: #a3f3a3;
+}
+
+.review-option.wrong-option {
+  background: rgba(255,68,68,0.2);
+  border-color: #ff4444;
+  color: #ffb3b3;
+}
+
+.explanation {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(88,166,255,0.1);
+  border-left: 3px solid #58a6ff;
+  border-radius: 5px;
+  font-style: italic;
+  color: #c9d1d9;
+}
+
+#newTestBtn {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  background: linear-gradient(90deg, #58a6ff, #8b5cf6);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(88,166,255,0.4);
+}
+
+#newTestBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(88,166,255,0.6);
+}
+
+/* Calendar Styles */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.calendar-day-header {
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 0.85em;
+  color: #58a6ff;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: all 0.3s;
+}
+
+.calendar-day.completed {
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(76,175,80,0.5);
+}
+
+.calendar-day.today {
+  border: 2px solid #58a6ff;
+  box-shadow: 0 0 10px rgba(88,166,255,0.5);
+}
+
+.calendar-day.empty {
+  background: transparent;
+  border: none;
+}
+
+.streak-widget {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #30363d;
+  min-width: 280px;
+  box-shadow: 0 0 20px rgba(88,166,255,0.2);
+}
+
+.streak-widget h3 {
+  margin: 0 0 15px 0;
+  color: #58a6ff;
+  text-align: center;
+}
+
+.streak-widget p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#streakCount {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+#markTodayBtn {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+
+#markTodayBtn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(76,175,80,0.5);
+}
+
+#badge {
+  text-align: center;
+  color: #ffd700;
+  font-weight: bold;
+  margin-top: 10px;
+  min-height: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .streak-widget {
+    position: static;
+    margin: 20px auto;
+    max-width: 300px;
+  }
+  
+  .score-breakdown {
+    flex-direction: column;
+  }
+  
+  .percentage {
+    font-size: 2.5em;
+  }
+}
+

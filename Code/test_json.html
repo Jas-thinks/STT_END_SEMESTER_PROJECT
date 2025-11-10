@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test JSON Loading</title></head>
+<body>
+<h1>JSON Test</h1>
+<button onclick="testLoad()">Test Load Questions</button>
+<pre id="output"></pre>
+
+<script>
+async function testLoad() {
+  try {
+    const res = await fetch('../Questions/1Dsa_easy.json');
+    const data = await res.json();
+    const questions = data.questions || data;
+    
+    document.getElementById('output').textContent = 
+      'Total questions: ' + questions.length + '\n' +
+      'First question:\n' + JSON.stringify(questions[0], null, 2) + '\n' +
+      'Type of correct_answer: ' + typeof questions[0].correct_answer + '\n' +
+      'Value: ' + questions[0].correct_answer;
+  } catch(e) {
+    document.getElementById('output').textContent = 'Error: ' + e.message;
+  }
+}
+</script>
+</body>
+</html>

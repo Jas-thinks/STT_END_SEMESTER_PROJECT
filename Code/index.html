@@ -53,15 +53,28 @@
         <option value="interview">Interview (ML/DL/GenAI)</option>
       </select>
 
-      <button id="startBtn">Load Questions</button>
-      <button id="shuffleBtn">Shuffle</button>
-      <button id="clearBtn">Clear</button>
+      <button id="startBtn">Start Test</button>
+      <button id="submitBtn" class="hidden">Submit Test</button>
+      <button id="clearBtn" class="hidden">New Test</button>
     </section>
+
+    <!-- Timer Display -->
+    <div id="timerDisplay" class="hidden">
+      <h3>⏱️ Time Remaining: <span id="timerText">00:00</span></h3>
+    </div>
 
     <div id="quizMeta" class="hidden"><span id="metaText"></span></div>
     <section id="quizContainer" class="questions empty">
-      <p class="hint">Select subject & level, then click <strong>Load Questions</strong>.</p>
+      <p class="hint">Select subject & level, then click <strong>Start Test</strong> to begin your quiz with 20 random questions.</p>
     </section>
+
+    <!-- Results Section -->
+    <div id="resultsContainer" class="hidden">
+      <h2>📊 Test Results</h2>
+      <div id="scoreDisplay"></div>
+      <div id="reviewContainer"></div>
+      <button id="newTestBtn">Take Another Test</button>
+    </div>
   </main>
 
   <!-- ⚡ Footer -->
