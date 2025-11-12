@@ -1,0 +1,98 @@
+{
+  "easy": [
+    {
+      "id": 1,
+      "question": "What is a network?",
+      "options": [
+        "A collection of computers and devices connected by communication channels",
+        "A type of software application",
+        "A hardware component",
+        "A programming language"
+      ],
+      "answer": "A collection of computers and devices connected by communication channels"
+    },
+    {
+      "id": 2,
+      "question": "What is the primary purpose of a router?",
+      "options": [
+        "To connect different networks and route data between them",
+        "To amplify signals",
+        "To store data",
+        "To provide security"
+      ],
+      "answer": "To connect different networks and route data between them"
+    }
+  ],
+  "medium": [
+    {
+      "id": 1,
+      "question": "What is the difference between TCP and UDP?",
+      "options": [
+        "TCP is connection-oriented; UDP is connectionless",
+        "UDP is more reliable than TCP",
+        "TCP is faster than UDP",
+        "Both are the same"
+      ],
+      "answer": "TCP is connection-oriented; UDP is connectionless"
+    },
+    {
+      "id": 2,
+      "question": "What is a subnet mask?",
+      "options": [
+        "A number that defines the network and host portions of an IP address",
+        "A type of firewall",
+        "A protocol for data transmission",
+        "A hardware device"
+      ],
+      "answer": "A number that defines the network and host portions of an IP address"
+    }
+  ],
+  "hard": [
+    {
+      "id": 1,
+      "question": "What is the purpose of the OSI model?",
+      "options": [
+        "To standardize networking protocols",
+        "To provide a framework for network communication",
+        "To enhance security",
+        "To improve data transfer speed"
+      ],
+      "answer": "To provide a framework for network communication"
+    },
+    {
+      "id": 2,
+      "question": "What is a VLAN?",
+      "options": [
+        "A virtual local area network that segments network traffic",
+        "A type of physical network",
+        "A protocol for data transmission",
+        "A network security measure"
+      ],
+      "answer": "A virtual local area network that segments network traffic"
+    }
+  ],
+  "mnc": [
+    {
+      "id": 1,
+      "question": "What is the function of a firewall?",
+      "options": [
+        "To monitor and control incoming and outgoing network traffic",
+        "To store data",
+        "To connect different networks",
+        "To provide internet access"
+      ],
+      "answer": "To monitor and control incoming and outgoing network traffic"
+    },
+    {
+      "id": 2,
+      "question": "What is NAT?",
+      "options": [
+        "Network Address Translation, a method for remapping IP addresses",
+        "Network Access Technology",
+        "Network Application Tool",
+        "Network Analysis Technique"
+      ],
+      "answer": "Network Address Translation, a method for remapping IP addresses"
+    }
+  ]
+}

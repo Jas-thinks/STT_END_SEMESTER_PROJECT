@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is SQL?",
+      "options": [
+        "Structured Query Language",
+        "Simple Query Language",
+        "Sequential Query Language",
+        "Standard Query Language"
+      ],
+      "answer": "Structured Query Language"
+    },
+    {
+      "id": 2,
+      "question": "What is a primary key?",
+      "options": [
+        "A unique identifier for a record in a table",
+        "A key that allows duplicate values",
+        "A key that is used to join tables",
+        "A key that is not indexed"
+      ],
+      "answer": "A unique identifier for a record in a table"
+    },
+    {
+      "id": 3,
+      "question": "What is normalization?",
+      "options": [
+        "The process of organizing data to reduce redundancy",
+        "The process of increasing data redundancy",
+        "The process of backing up data",
+        "The process of encrypting data"
+      ],
+      "answer": "The process of organizing data to reduce redundancy"
+    },
+    {
+      "id": 4,
+      "question": "What is a foreign key?",
+      "options": [
+        "A field in one table that uniquely identifies a row of another table",
+        "A key that is used to encrypt data",
+        "A key that allows duplicate values",
+        "A key that is not indexed"
+      ],
+      "answer": "A field in one table that uniquely identifies a row of another table"
+    },
+    {
+      "id": 5,
+      "question": "What does the SQL SELECT statement do?",
+      "options": [
+        "Retrieves data from a database",
+        "Inserts data into a database",
+        "Updates data in a database",
+        "Deletes data from a database"
+      ],
+      "answer": "Retrieves data from a database"
+    },
+    {
+      "id": 6,
+      "question": "What is a JOIN in SQL?",
+      "options": [
+        "Combining rows from two or more tables based on a related column",
+        "A command to delete data",
+        "A command to insert data",
+        "A command to update data"
+      ],
+      "answer": "Combining rows from two or more tables based on a related column"
+    },
+    {
+      "id": 7,
+      "question": "What is a subquery?",
+      "options": [
+        "A query nested inside another query",
+        "A query that retrieves all records",
+        "A query that updates records",
+        "A query that deletes records"
+      ],
+      "answer": "A query nested inside another query"
+    },
+    {
+      "id": 8,
+      "question": "What is an index in SQL?",
+      "options": [
+        "A data structure that improves the speed of data retrieval",
+        "A command to delete data",
+        "A command to insert data",
+        "A command to update data"
+      ],
+      "answer": "A data structure that improves the speed of data retrieval"
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of the GROUP BY clause?",
+      "options": [
+        "To group rows that have the same values in specified columns",
+        "To filter records",
+        "To sort records",
+        "To join tables"
+      ],
+      "answer": "To group rows that have the same values in specified columns"
+    },
+    {
+      "id": 10,
+      "question": "What is a view in SQL?",
+      "options": [
+        "A virtual table based on the result of a SELECT query",
+        "A physical table in the database",
+        "A command to delete data",
+        "A command to insert data"
+      ],
+      "answer": "A virtual table based on the result of a SELECT query"
+    }
+  ]
+}

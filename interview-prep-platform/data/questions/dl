@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary difference between a diffusion model and a GAN in generative modeling?",
+      "options": [
+        "GANs learn via adversarial loss; diffusion models learn to denoise data progressively",
+        "Diffusion models use discriminators; GANs do not",
+        "GANs are supervised; diffusion models are unsupervised",
+        "Diffusion models rely on reinforcement learning"
+      ],
+      "answer": "GANs learn via adversarial loss; diffusion models learn to denoise data progressively"
+    },
+    {
+      "id": 2,
+      "question": "Why do large language models like GPT use transformer decoders instead of encoders?",
+      "options": [
+        "Because decoders can model sequential dependencies in autoregressive tasks",
+        "Encoders are more expensive to train",
+        "Decoders avoid vanishing gradients",
+        "Encoders cannot process embeddings"
+      ],
+      "answer": "Because decoders can model sequential dependencies in autoregressive tasks"
+    },
+    {
+      "id": 3,
+      "question": "What is the role of the attention mechanism in generative AI models?",
+      "options": [
+        "Focus on relevant parts of input",
+        "Reduce overfitting",
+        "Normalize embeddings",
+        "Increase batch size"
+      ],
+      "answer": "Focus on relevant parts of input"
+    },
+    {
+      "id": 4,
+      "question": "Which component in Stable Diffusion converts text into a vector space?",
+      "options": [
+        "Text Encoder (CLIP)",
+        "Latent Decoder",
+        "Noise Predictor",
+        "Transformer Block"
+      ],
+      "answer": "Text Encoder (CLIP)"
+    },
+    {
+      "id": 5,
+      "question": "Why is KL divergence used in Variational Autoencoders?",
+      "options": [
+        "To enforce latent space regularization",
+        "To increase reconstruction accuracy",
+        "To reduce gradient variance",
+        "To balance data distribution"
+      ],
+      "answer": "To enforce latent space regularization"
+    },
+    {
+      "id": 6,
+      "question": "Which optimization algorithm is commonly used during RLHF fine-tuning of LLMs?",
+      "options": [
+        "PPO (Proximal Policy Optimization)",
+        "Adam",
+        "RMSProp",
+        "SGD"
+      ],
+      "answer": "PPO (Proximal Policy Optimization)"
+    },
+    {
+      "id": 7,
+      "question": "What is the main advantage of Latent Diffusion Models over pixel-space diffusion models?",
+      "options": [
+        "Faster and more memory efficient",
+        "Better text understanding",
+        "Simpler architecture",
+        "No need for a UNet"
+      ],
+      "answer": "Faster and more memory efficient"
+    },
+    {
+      "id": 8,
+      "question": "What does the 'temperature' parameter control in LLM generation?",
+      "options": [
+        "Randomness of output",
+        "Learning rate",
+        "Attention span",
+        "Batch normalization strength"
+      ],
+      "answer": "Randomness of output"
+    },
+    {
+      "id": 9,
+      "question": "Which loss function is used in CLIP to align text and image embeddings?",
+      "options": [
+        "Contrastive loss",
+        "MSE loss",
+        "KL Divergence",
+        "Cross-Entropy"
+      ],
+      "answer": "Contrastive loss"
+    },
+    {
+      "id": 10,
+      "question": "Why is classifier-free guidance used in diffusion models?",
+      "options": [
+        "To control conditional strength without external classifier",
+        "To improve convergence speed",
+        "To simplify gradient computation",
+        "To reduce batch size"
+      ],
+      "answer": "To control conditional strength without external classifier"
+    }
+  ]
+}

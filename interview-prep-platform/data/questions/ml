@@ -1,0 +1,98 @@
+{
+  "easy": [
+    {
+      "id": 1,
+      "question": "What is supervised learning?",
+      "options": [
+        "Learning from labeled data",
+        "Learning from unlabeled data",
+        "Learning without any data",
+        "Learning from partially labeled data"
+      ],
+      "answer": "Learning from labeled data"
+    },
+    {
+      "id": 2,
+      "question": "What is overfitting in machine learning?",
+      "options": [
+        "Model performs well on training data but poorly on unseen data",
+        "Model performs poorly on both training and unseen data",
+        "Model performs well on unseen data but poorly on training data",
+        "Model has too few parameters"
+      ],
+      "answer": "Model performs well on training data but poorly on unseen data"
+    }
+  ],
+  "medium": [
+    {
+      "id": 1,
+      "question": "What is the purpose of cross-validation?",
+      "options": [
+        "To assess how the results of a statistical analysis will generalize to an independent data set",
+        "To increase the size of the training dataset",
+        "To reduce overfitting",
+        "To improve model accuracy"
+      ],
+      "answer": "To assess how the results of a statistical analysis will generalize to an independent data set"
+    },
+    {
+      "id": 2,
+      "question": "What is a confusion matrix?",
+      "options": [
+        "A table used to describe the performance of a classification model",
+        "A method for reducing dimensionality",
+        "A technique for feature selection",
+        "A way to visualize data distributions"
+      ],
+      "answer": "A table used to describe the performance of a classification model"
+    }
+  ],
+  "hard": [
+    {
+      "id": 1,
+      "question": "What is the difference between L1 and L2 regularization?",
+      "options": [
+        "L1 regularization can lead to sparse solutions, while L2 regularization does not",
+        "L2 regularization can lead to sparse solutions, while L1 regularization does not",
+        "Both are the same",
+        "L1 regularization is used for classification, while L2 is used for regression"
+      ],
+      "answer": "L1 regularization can lead to sparse solutions, while L2 regularization does not"
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of a learning rate in training a model?",
+      "options": [
+        "To control how much to change the model in response to the estimated error each time the model weights are updated",
+        "To determine the number of epochs for training",
+        "To set the batch size for training",
+        "To define the architecture of the model"
+      ],
+      "answer": "To control how much to change the model in response to the estimated error each time the model weights are updated"
+    }
+  ],
+  "mnc": [
+    {
+      "id": 1,
+      "question": "What is the bias-variance tradeoff?",
+      "options": [
+        "The balance between a model's ability to minimize bias and variance",
+        "The tradeoff between training time and accuracy",
+        "The relationship between model complexity and performance",
+        "The balance between training and testing data"
+      ],
+      "answer": "The balance between a model's ability to minimize bias and variance"
+    },
+    {
+      "id": 2,
+      "question": "What is ensemble learning?",
+      "options": [
+        "Combining multiple models to improve performance",
+        "Training a single model multiple times",
+        "Using different algorithms for the same problem",
+        "Selecting the best model from a set of models"
+      ],
+      "answer": "Combining multiple models to improve performance"
+    }
+  ]
+}

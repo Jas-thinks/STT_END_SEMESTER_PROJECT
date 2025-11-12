@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the time complexity of binary search?",
+      "options": [
+        "O(log n)",
+        "O(n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "answer": "O(log n"
+    },
+    {
+      "id": 2,
+      "question": "What is the formula for the sum of the first n natural numbers?",
+      "options": [
+        "n(n + 1)/2",
+        "n^2",
+        "n(n - 1)/2",
+        "n(n + 1)"
+      ],
+      "answer": "n(n + 1)/2"
+    },
+    {
+      "id": 3,
+      "question": "If a train travels 60 miles in 1 hour, how long will it take to travel 180 miles?",
+      "options": [
+        "2 hours",
+        "3 hours",
+        "4 hours",
+        "5 hours"
+      ],
+      "answer": "3 hours"
+    },
+    {
+      "id": 4,
+      "question": "What is the least common multiple (LCM) of 4 and 6?",
+      "options": [
+        "12",
+        "24",
+        "6",
+        "8"
+      ],
+      "answer": "12"
+    },
+    {
+      "id": 5,
+      "question": "A rectangle has a length of 10 and a width of 5. What is its area?",
+      "options": [
+        "50",
+        "15",
+        "25",
+        "30"
+      ],
+      "answer": "50"
+    }
+  ]
+}

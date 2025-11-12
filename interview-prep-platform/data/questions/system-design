@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the purpose of load balancing in system design?",
+      "options": [
+        "Distribute traffic across multiple servers",
+        "Store data in a centralized database",
+        "Increase the speed of data retrieval",
+        "Ensure data redundancy"
+      ],
+      "answer": "Distribute traffic across multiple servers"
+    },
+    {
+      "id": 2,
+      "question": "What is a microservices architecture?",
+      "options": [
+        "A single monolithic application",
+        "A collection of loosely coupled services",
+        "A database-centric design",
+        "An architecture that uses only serverless functions"
+      ],
+      "answer": "A collection of loosely coupled services"
+    },
+    {
+      "id": 3,
+      "question": "What is the CAP theorem?",
+      "options": [
+        "Consistency, Availability, Partition tolerance",
+        "Cache, API, Performance",
+        "Centralized, Asynchronous, Parallel",
+        "Compression, Aggregation, Processing"
+      ],
+      "answer": "Consistency, Availability, Partition tolerance"
+    },
+    {
+      "id": 4,
+      "question": "What is the role of a CDN (Content Delivery Network)?",
+      "options": [
+        "Store data in a single location",
+        "Distribute content closer to users",
+        "Encrypt data for security",
+        "Manage user authentication"
+      ],
+      "answer": "Distribute content closer to users"
+    },
+    {
+      "id": 5,
+      "question": "What is sharding in database design?",
+      "options": [
+        "Partitioning data across multiple databases",
+        "Combining multiple databases into one",
+        "Creating backups of the database",
+        "Encrypting data for security"
+      ],
+      "answer": "Partitioning data across multiple databases"
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of caching in system design?",
+      "options": [
+        "To store data permanently",
+        "To speed up data retrieval",
+        "To ensure data consistency",
+        "To manage user sessions"
+      ],
+      "answer": "To speed up data retrieval"
+    },
+    {
+      "id": 7,
+      "question": "What is a message queue?",
+      "options": [
+        "A system for storing files",
+        "A method for asynchronous communication",
+        "A database for user data",
+        "A way to cache data"
+      ],
+      "answer": "A method for asynchronous communication"
+    },
+    {
+      "id": 8,
+      "question": "What is the difference between vertical and horizontal scaling?",
+      "options": [
+        "Vertical scaling adds more power to a single server; horizontal scaling adds more servers",
+        "Vertical scaling is cheaper than horizontal scaling",
+        "Horizontal scaling is only for databases",
+        "Vertical scaling requires more software changes"
+      ],
+      "answer": "Vertical scaling adds more power to a single server; horizontal scaling adds more servers"
+    },
+    {
+      "id": 9,
+      "question": "What is a load balancer?",
+      "options": [
+        "A device that stores data",
+        "A system that distributes network traffic",
+        "A type of database",
+        "A method for encrypting data"
+      ],
+      "answer": "A system that distributes network traffic"
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of a reverse proxy?",
+      "options": [
+        "To serve static content",
+        "To route requests to different servers",
+        "To store user sessions",
+        "To encrypt data in transit"
+      ],
+      "answer": "To route requests to different servers"
+    }
+  ]
+}

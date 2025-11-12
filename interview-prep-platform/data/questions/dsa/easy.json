@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "question": "What is a linked list?",
+    "options": [
+      "A data structure consisting of nodes that together represent a sequence",
+      "A collection of key-value pairs",
+      "A type of array with fixed size",
+      "A data structure that allows random access"
+    ],
+    "answer": "A data structure consisting of nodes that together represent a sequence"
+  },
+  {
+    "id": 2,
+    "question": "What is the time complexity of accessing an element in an array?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "answer": "O(1)"
+  },
+  {
+    "id": 3,
+    "question": "What is a binary tree?",
+    "options": [
+      "A tree data structure in which each node has at most two children",
+      "A tree where each node has three children",
+      "A linear data structure",
+      "A data structure that stores data in a sorted manner"
+    ],
+    "answer": "A tree data structure in which each node has at most two children"
+  },
+  {
+    "id": 4,
+    "question": "What is the purpose of a stack?",
+    "options": [
+      "To store data in a last-in, first-out manner",
+      "To store data in a first-in, first-out manner",
+      "To allow random access to elements",
+      "To sort elements"
+    ],
+    "answer": "To store data in a last-in, first-out manner"
+  },
+  {
+    "id": 5,
+    "question": "What is a hash table?",
+    "options": [
+      "A data structure that implements an associative array",
+      "A type of tree structure",
+      "A linear data structure",
+      "A data structure that allows for sorted data"
+    ],
+    "answer": "A data structure that implements an associative array"
+  }
+]

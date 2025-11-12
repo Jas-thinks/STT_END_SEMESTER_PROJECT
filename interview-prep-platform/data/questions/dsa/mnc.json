@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "question": "What is the time complexity of binary search?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "answer": "O(log n"
+  },
+  {
+    "id": 2,
+    "question": "What is a linked list?",
+    "options": [
+      "A data structure that consists of nodes",
+      "A type of array",
+      "A collection of key-value pairs",
+      "A type of tree"
+    ],
+    "answer": "A data structure that consists of nodes"
+  },
+  {
+    "id": 3,
+    "question": "What is the difference between a stack and a queue?",
+    "options": [
+      "Stack is LIFO; Queue is FIFO",
+      "Stack is FIFO; Queue is LIFO",
+      "Both are the same",
+      "Stack allows random access"
+    ],
+    "answer": "Stack is LIFO; Queue is FIFO"
+  },
+  {
+    "id": 4,
+    "question": "What is a hash table?",
+    "options": [
+      "A data structure that maps keys to values",
+      "A type of array",
+      "A collection of linked lists",
+      "A type of tree"
+    ],
+    "answer": "A data structure that maps keys to values"
+  },
+  {
+    "id": 5,
+    "question": "What is the purpose of a binary tree?",
+    "options": [
+      "To store hierarchical data",
+      "To store linear data",
+      "To store unordered data",
+      "To store key-value pairs"
+    ],
+    "answer": "To store hierarchical data"
+  }
+]

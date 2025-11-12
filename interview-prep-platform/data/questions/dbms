@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is a database?",
+      "options": [
+        "A collection of data",
+        "A type of software",
+        "A programming language",
+        "A hardware component"
+      ],
+      "answer": "A collection of data"
+    },
+    {
+      "id": 2,
+      "question": "What is normalization?",
+      "options": [
+        "The process of organizing data to reduce redundancy",
+        "A method of data encryption",
+        "A way to increase database size",
+        "A technique for data visualization"
+      ],
+      "answer": "The process of organizing data to reduce redundancy"
+    },
+    {
+      "id": 3,
+      "question": "What is a primary key?",
+      "options": [
+        "A unique identifier for a record in a table",
+        "A key used for encryption",
+        "A type of database query",
+        "A method of data backup"
+      ],
+      "answer": "A unique identifier for a record in a table"
+    },
+    {
+      "id": 4,
+      "question": "What is SQL?",
+      "options": [
+        "Structured Query Language",
+        "Simple Query Language",
+        "Standard Query Language",
+        "Sequential Query Language"
+      ],
+      "answer": "Structured Query Language"
+    },
+    {
+      "id": 5,
+      "question": "What is a foreign key?",
+      "options": [
+        "A field in one table that uniquely identifies a row of another table",
+        "A key used for data encryption",
+        "A type of database index",
+        "A method of data retrieval"
+      ],
+      "answer": "A field in one table that uniquely identifies a row of another table"
+    },
+    {
+      "id": 6,
+      "question": "What is a database management system (DBMS)?",
+      "options": [
+        "Software for creating and managing databases",
+        "A type of programming language",
+        "A hardware component for data storage",
+        "A method of data analysis"
+      ],
+      "answer": "Software for creating and managing databases"
+    },
+    {
+      "id": 7,
+      "question": "What is a transaction in a database?",
+      "options": [
+        "A sequence of operations performed as a single logical unit of work",
+        "A method of data backup",
+        "A type of database query",
+        "A way to encrypt data"
+      ],
+      "answer": "A sequence of operations performed as a single logical unit of work"
+    },
+    {
+      "id": 8,
+      "question": "What is indexing in databases?",
+      "options": [
+        "A data structure that improves the speed of data retrieval",
+        "A method of data encryption",
+        "A way to increase database size",
+        "A technique for data visualization"
+      ],
+      "answer": "A data structure that improves the speed of data retrieval"
+    },
+    {
+      "id": 9,
+      "question": "What is a view in SQL?",
+      "options": [
+        "A virtual table based on the result of a query",
+        "A method of data encryption",
+        "A type of database index",
+        "A way to increase database size"
+      ],
+      "answer": "A virtual table based on the result of a query"
+    },
+    {
+      "id": 10,
+      "question": "What is a stored procedure?",
+      "options": [
+        "A set of SQL statements stored in the database",
+        "A method of data backup",
+        "A type of database query",
+        "A way to encrypt data"
+      ],
+      "answer": "A set of SQL statements stored in the database"
+    }
+  ]
+}

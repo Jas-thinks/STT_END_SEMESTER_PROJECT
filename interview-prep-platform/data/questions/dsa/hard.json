@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the time complexity of binary search?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "answer": "O(log n"
+    },
+    {
+      "id": 2,
+      "question": "What is the difference between a stack and a queue?",
+      "options": [
+        "Stack is LIFO; Queue is FIFO",
+        "Stack is FIFO; Queue is LIFO",
+        "Both are the same",
+        "None of the above"
+      ],
+      "answer": "Stack is LIFO; Queue is FIFO"
+    },
+    {
+      "id": 3,
+      "question": "What is a hash table?",
+      "options": [
+        "A data structure that maps keys to values",
+        "A type of array",
+        "A linked list",
+        "None of the above"
+      ],
+      "answer": "A data structure that maps keys to values"
+    },
+    {
+      "id": 4,
+      "question": "What is the purpose of a linked list?",
+      "options": [
+        "To store data in a linear fashion",
+        "To allow dynamic memory allocation",
+        "To implement stacks and queues",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "id": 5,
+      "question": "What is the worst-case time complexity of quicksort?",
+      "options": [
+        "O(n)",
+        "O(n log n)",
+        "O(n^2)",
+        "O(log n)"
+      ],
+      "answer": "O(n^2"
+    }
+  ]
+}
