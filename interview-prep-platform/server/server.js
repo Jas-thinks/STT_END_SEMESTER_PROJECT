@@ -47,16 +47,14 @@ app.get('/api/health', (req, res) => {
 // Error handling middleware
 app.use(errorHandler);
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`🚀 Server running in ${NODE_ENV} mode on port ${PORT}`);
-});
+// Error handling middleware (should be after all routes)
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).send('Something broke!');
 });
 
-// Start the server
+// Start server
 app.listen(PORT, () => {
+    console.log(`🚀 Server running in ${NODE_ENV} mode on port ${PORT}`);
     console.log(`Server is running on http://localhost:${PORT}`);
 });

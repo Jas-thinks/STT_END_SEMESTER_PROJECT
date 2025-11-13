@@ -1,40 +1,58 @@
 services:
-  client:
-    build:
-      context: ./client
-      dockerfile: Dockerfile
+  mongo:
+    image: mongo:7.0
+    container_name: interview-prep-mongo
     ports:
-      - "3000:3000"
-    depends_on:
-      - server
-    environment:
-      - REACT_APP_API_URL=http://server:5000/api
+      - "27017:27017"
     volumes:
-      - ./client:/app
+      - mongo-data:/data/db
     networks:
       - interview-net
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   server:
     build:
       context: ./server
       dockerfile: Dockerfile
+    container_name: interview-prep-server
     ports:
       - "5000:5000"
     environment:
-      - MONGODB_URI=mongodb://mongo:27017/interview-prep
-      - JWT_SECRET=your_jwt_secret
-      - NODE_ENV=production
+      - NODE_ENV=development
+      - PORT=5000
+      - MONGODB_URI=mongodb://mongo:27017/interview-prep-platform
+      - JWT_SECRET=thetruetestsecretkey2025iitbhilai
+      - JWT_EXPIRE=7d
+      - CLIENT_URL=http://localhost:5173
+      - SESSION_SECRET=thetruetestsessionsecret2025
     volumes:
       - ./server:/app
+      - /app/node_modules
+    depends_on:
+      mongo:
+        condition: service_healthy
     networks:
       - interview-net
+    command: npm run dev
 
-  mongo:
-    image: mongo:latest
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: interview-prep-client
     ports:
-      - "27017:27017"
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:5000/api
     volumes:
-      - mongo-data:/data/db
+      - ./client:/app
+      - /app/node_modules
+    depends_on:
+      - server
     networks:
       - interview-net
 
