@@ -4,6 +4,7 @@ import { AuthProvider } from './context/AuthContext';
 import { QuizProvider } from './context/QuizContext';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
+import Chatbot from './components/chatbot/Chatbot';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import QuizPage from './pages/QuizPage';
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/leaderboard" component={Leaderboard} />
           </Switch>
           <Footer />
+          <Chatbot />
         </Router>
       </QuizProvider>
     </AuthProvider>
