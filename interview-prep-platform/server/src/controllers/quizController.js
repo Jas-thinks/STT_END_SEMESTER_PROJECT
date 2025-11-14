@@ -2,7 +2,21 @@ const Question = require('../models/Question');
 const QuizAttempt = require('../models/QuizAttempt');
 const User = require('../models/User');
 const Performance = require('../models/Performance');
+const questionService = require('../services/questionService');
 const asyncHandler = require('express-async-handler');
+
+// @desc    Get all categories with metadata
+// @route   GET /api/quiz/categories
+// @access  Private
+exports.getCategories = asyncHandler(async (req, res) => {
+    const categories = await questionService.getCategories();
+
+    res.json({
+        success: true,
+        count: categories.length,
+        data: categories
+    });
+});
 
 // @desc    Get random questions for quiz
 // @route   GET /api/quiz/questions?subject=DSA&difficulty=medium&count=20
@@ -15,24 +29,25 @@ exports.getQuestions = asyncHandler(async (req, res) => {
         throw new Error('Please provide subject and difficulty');
     }
 
-    // Get random questions
-    const questions = await Question.aggregate([
-        { $match: { subject, difficulty, isActive: true } },
-        { $sample: { size: parseInt(count) } },
-        { $project: { 
-            question: 1,
-            options: 1,
-            subject: 1,
-            difficulty: 1,
-            topic: 1
-            // Don't send correctAnswer to frontend
-        }}
-    ]);
+    const questionData = await questionService.getQuestions(subject, difficulty, parseInt(count));
 
     res.json({
         success: true,
-        count: questions.length,
-        data: questions
+        data: questionData
+    });
+});
+
+// @desc    Get random quiz questions
+// @route   GET /api/quiz/random?count=20
+// @access  Private
+exports.getRandomQuiz = asyncHandler(async (req, res) => {
+    const { count = 20 } = req.query;
+
+    const questionData = await questionService.getRandomQuestions(parseInt(count));
+
+    res.json({
+        success: true,
+        data: questionData
     });
 });
 
@@ -40,36 +55,26 @@ exports.getQuestions = asyncHandler(async (req, res) => {
 // @route   POST /api/quiz/submit
 // @access  Private
 exports.submitQuiz = asyncHandler(async (req, res) => {
-    const { subject, difficulty, answers, timeTaken, timeAllotted } = req.body;
+    const { subject, difficulty, answers, timeTaken, timeAllotted, questions } = req.body;
 
     if (!subject || !difficulty || !answers || !Array.isArray(answers)) {
         res.status(400);
         throw new Error('Invalid quiz submission data');
     }
 
-    // Get all questions with correct answers
-    const questionIds = answers.map(a => a.questionId);
-    const questions = await Question.find({ _id: { $in: questionIds } });
-
-    // Calculate score
+    // Calculate score from submitted answers
+    // Since questions come from JSON files, we need the questions array sent from frontend
     let score = 0;
-    const questionsData = answers.map(ans => {
-        const question = questions.find(q => q._id.toString() === ans.questionId);
+    const questionsData = answers.map((ans, index) => {
+        const question = questions ? questions[index] : null;
         const isCorrect = question && question.correctAnswer === ans.userAnswer;
         
         if (isCorrect) score++;
 
-        // Update question statistics
-        if (question) {
-            question.statistics.totalAttempts += 1;
-            if (isCorrect) question.statistics.correctAttempts += 1;
-            question.save();
-        }
-
         return {
-            questionId: ans.questionId,
+            questionId: ans.questionId || index,
             userAnswer: ans.userAnswer,
-            correctAnswer: question ? question.correctAnswer : -1,
+            correctAnswer: question ? question.correctAnswer : ans.correctAnswer,
             isCorrect,
             timeTaken: ans.timeTaken || 0
         };

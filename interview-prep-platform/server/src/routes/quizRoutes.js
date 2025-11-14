@@ -1,6 +1,8 @@
 const express = require('express');
 const {
+    getCategories,
     getQuestions,
+    getRandomQuiz,
     submitQuiz,
     getQuizHistory,
     getQuizAttempt,
@@ -12,7 +14,9 @@ const { protect } = require('../middleware/auth');
 
 const router = express.Router();
 
+router.get('/categories', protect, getCategories);
 router.get('/questions', protect, getQuestions);
+router.get('/random', protect, getRandomQuiz);
 router.post('/submit', protect, submitQuiz);
 router.get('/history', protect, getQuizHistory);
 router.get('/attempts', protect, getQuizAttempts);
