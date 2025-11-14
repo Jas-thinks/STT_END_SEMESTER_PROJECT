@@ -10,4 +10,16 @@ export default defineConfig({
   build: {
     outDir: 'build',
   },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      css: {
+        additionalData: '@import "@/styles/variables.css";',
+      },
+    },
+  },
 });
