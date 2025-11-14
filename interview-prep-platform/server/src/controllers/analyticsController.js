@@ -102,3 +102,128 @@ exports.getStats = asyncHandler(async (req, res) => {
         data: stats[0] || {}
     });
 });
+
+// @desc    Get category-wise performance
+// @route   GET /api/analytics/category-performance
+// @access  Private
+exports.getCategoryPerformance = asyncHandler(async (req, res) => {
+    const categoryPerformance = await QuizAttempt.aggregate([
+        { $match: { user: req.user._id } },
+        {
+            $group: {
+                _id: '$subject',
+                quizzesTaken: { $sum: 1 },
+                averageScore: { $avg: '$percentage' },
+                bestScore: { $max: '$percentage' },
+                totalQuestions: { $sum: '$totalQuestions' },
+                correctAnswers: { $sum: '$score' },
+                totalTime: { $sum: '$timeTaken' }
+            }
+        },
+        {
+            $project: {
+                category: '$_id',
+                quizzesTaken: 1,
+                averageScore: { $round: ['$averageScore', 2] },
+                bestScore: { $round: ['$bestScore', 2] },
+                accuracy: { 
+                    $round: [
+                        { $multiply: [
+                            { $divide: ['$correctAnswers', '$totalQuestions'] }, 
+                            100
+                        ]}, 
+                        2
+                    ] 
+                },
+                totalTime: 1,
+                _id: 0
+            }
+        },
+        { $sort: { averageScore: -1 } }
+    ]);
+
+    res.json({
+        success: true,
+        data: categoryPerformance
+    });
+});
+
+// @desc    Get weak areas (topics with < 60% accuracy)
+// @route   GET /api/analytics/weak-areas
+// @access  Private
+exports.getWeakAreas = asyncHandler(async (req, res) => {
+    const weakAreas = await QuizAttempt.aggregate([
+        { $match: { user: req.user._id } },
+        {
+            $group: {
+                _id: '$subject',
+                totalQuestions: { $sum: '$totalQuestions' },
+                correctAnswers: { $sum: '$score' },
+                attempts: { $sum: 1 }
+            }
+        },
+        {
+            $project: {
+                topic: '$_id',
+                accuracy: { 
+                    $multiply: [
+                        { $divide: ['$correctAnswers', '$totalQuestions'] }, 
+                        100
+                    ] 
+                },
+                attempts: 1,
+                _id: 0
+            }
+        },
+        { $match: { accuracy: { $lt: 60 } } },
+        { $sort: { accuracy: 1 } }
+    ]);
+
+    res.json({
+        success: true,
+        data: weakAreas
+    });
+});
+
+// @desc    Get time-based analytics
+// @route   GET /api/analytics/time-analytics
+// @access  Private
+exports.getTimeAnalytics = asyncHandler(async (req, res) => {
+    const { period = '7' } = req.query;
+    const daysAgo = new Date();
+    daysAgo.setDate(daysAgo.getDate() - parseInt(period));
+
+    const timeAnalytics = await QuizAttempt.aggregate([
+        { 
+            $match: { 
+                user: req.user._id,
+                completedAt: { $gte: daysAgo }
+            } 
+        },
+        {
+            $group: {
+                _id: {
+                    $dateToString: { format: "%Y-%m-%d", date: "$completedAt" }
+                },
+                quizzes: { $sum: 1 },
+                averageScore: { $avg: '$percentage' },
+                totalTime: { $sum: '$timeTaken' }
+            }
+        },
+        {
+            $project: {
+                date: '$_id',
+                quizzes: 1,
+                averageScore: { $round: ['$averageScore', 2] },
+                totalTime: 1,
+                _id: 0
+            }
+        },
+        { $sort: { date: 1 } }
+    ]);
+
+    res.json({
+        success: true,
+        data: timeAnalytics
+    });
+});

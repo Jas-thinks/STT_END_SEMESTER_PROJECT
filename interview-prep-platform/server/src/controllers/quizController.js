@@ -201,3 +201,21 @@ exports.getBookmarkedQuestions = asyncHandler(async (req, res) => {
         data: user.bookmarkedQuestions
     });
 });
+
+// @desc    Get all quiz attempts for user
+// @route   GET /api/quiz/attempts
+// @access  Private
+exports.getQuizAttempts = asyncHandler(async (req, res) => {
+    const { limit = 10 } = req.query;
+    
+    const attempts = await QuizAttempt.find({ user: req.user.id })
+        .sort({ completedAt: -1 })
+        .limit(parseInt(limit))
+        .select('-questions'); // Exclude detailed questions array for performance
+
+    res.json({
+        success: true,
+        count: attempts.length,
+        data: attempts
+    });
+});

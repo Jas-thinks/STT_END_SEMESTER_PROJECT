@@ -4,6 +4,7 @@ const {
     submitQuiz,
     getQuizHistory,
     getQuizAttempt,
+    getQuizAttempts,
     bookmarkQuestion,
     getBookmarkedQuestions
 } = require('../controllers/quizController');
@@ -14,6 +15,7 @@ const router = express.Router();
 router.get('/questions', protect, getQuestions);
 router.post('/submit', protect, submitQuiz);
 router.get('/history', protect, getQuizHistory);
+router.get('/attempts', protect, getQuizAttempts);
 router.get('/bookmarks', protect, getBookmarkedQuestions);
 router.get('/:id', protect, getQuizAttempt);
 router.post('/bookmark/:questionId', protect, bookmarkQuestion);
