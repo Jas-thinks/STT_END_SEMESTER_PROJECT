@@ -1,231 +1,174 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { Eye, EyeOff, Mail, Lock, LogIn as LoginIcon, ArrowRight, Github, Chrome, AlertCircle } from 'lucide-react';
 import useAuth from '../../hooks/useAuth.js';
 
 const Login = () => {
   const navigate = useNavigate();
-  const { login, loading, error, clearError } = useAuth();
+  const { login, loading, error: authError, clearError } = useAuth();
+  const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     email: '',
     password: '',
+    rememberMe: false,
   });
-  const [formErrors, setFormErrors] = useState({});
-  const [showPassword, setShowPassword] = useState(false);
+  const [focusedField, setFocusedField] = useState(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    // Clear field error when user starts typing
-    if (formErrors[name]) {
-      setFormErrors(prev => ({ ...prev, [name]: '' }));
-    }
+  const handleInputChange = (field, value) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
     clearError();
-  };
-
-  const validate = () => {
-    const errors = {};
-    
-    if (!formData.email) {
-      errors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      errors.email = 'Email is invalid';
-    }
-    
-    if (!formData.password) {
-      errors.password = 'Password is required';
-    }
-    
-    return errors;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    const errors = validate();
-    if (Object.keys(errors).length > 0) {
-      setFormErrors(errors);
-      return;
-    }
-
     try {
-      await login(formData);
+      await login({ email: formData.email, password: formData.password });
       navigate('/dashboard');
     } catch (err) {
-      // Error is handled by context
-      console.error('Login error:', err);
+      console.error('Login failed:', err);
     }
   };
 
+  const particles = [];
+  for (let i = 0; i < 20; i++) {
+    particles.push({
+      id: i,
+      left: Math.random() * 100 + '%',
+      top: Math.random() * 100 + '%',
+      delay: Math.random() * 2 + 's',
+      duration: 3 + Math.random() * 4 + 's',
+    });
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-lg w-full space-y-8 glass-effect p-12 rounded-3xl shadow-2xl animate-scale-in">
-        {/* Logo/Icon */}
-        <div className="text-center animate-slide-down">
-          <div className="mx-auto h-20 w-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-          </div>
-          <h2 className="text-4xl font-bold gradient-text mb-3">
-            Welcome Back!
-          </h2>
-          <p className="text-gray-600 text-base">
-            Sign in to continue your learning journey
-          </p>
+    <>
+      <style>{`
+        @keyframes slideInFromBottom {
+          from { opacity: 0; transform: translateY(2rem); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes float {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 0.2; }
+          50% { opacity: 0.4; }
+        }
+        .floating-particle { animation: float 3s ease-in-out infinite; }
+        .pulse-bg { animation: pulse 3s ease-in-out infinite; }
+        .pulse-bg-delay-1 { animation: pulse 3s ease-in-out infinite; animation-delay: 1s; }
+        .pulse-bg-delay-2 { animation: pulse 3s ease-in-out infinite; animation-delay: 0.5s; }
+        .hover-scale:hover { transform: scale(1.05); }
+        .hover-scale-110:hover { transform: scale(1.1); }
+        .group:hover .group-hover-translate { transform: translateX(0.25rem); }
+        .social-button:hover { background-color: rgba(71, 85, 105, 0.5); color: white; transform: scale(1.05); }
+        .main-button:hover:not(:disabled) { background: linear-gradient(to right, #9333ea, #db2777); transform: scale(1.05); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25); }
+        .checkbox-container { display: flex; align-items: center; gap: 0.5rem; }
+        .custom-checkbox {
+          width: 1rem; height: 1rem; border: 1px solid #475569; border-radius: 0.25rem;
+          background-color: rgba(51, 65, 85, 0.5); cursor: pointer; transition: all 0.3s ease; position: relative;
+        }
+        .custom-checkbox:hover { border-color: #a855f7; }
+        .custom-checkbox.checked { background-color: #a855f7; border-color: #a855f7; }
+        .custom-checkbox.checked::after {
+          content: '✓'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+          color: white; font-size: 0.75rem; font-weight: bold;
+        }
+      `}</style>
+
+      <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, overflow: 'hidden' }}>
+          <div className="pulse-bg" style={{ position: 'absolute', top: '-10rem', right: '-10rem', width: '20rem', height: '20rem', backgroundColor: '#a855f7', borderRadius: '50%', mixBlendMode: 'multiply', filter: 'blur(4rem)', opacity: 0.2 }} />
+          <div className="pulse-bg-delay-1" style={{ position: 'absolute', bottom: '-10rem', left: '-10rem', width: '20rem', height: '20rem', backgroundColor: '#3b82f6', borderRadius: '50%', mixBlendMode: 'multiply', filter: 'blur(4rem)', opacity: 0.2 }} />
+          <div className="pulse-bg-delay-2" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '20rem', height: '20rem', backgroundColor: '#ec4899', borderRadius: '50%', mixBlendMode: 'multiply', filter: 'blur(4rem)', opacity: 0.1 }} />
         </div>
 
-        {error && (
-          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-xl shadow-sm animate-slide-down">
-            <div className="flex items-center">
-              <svg className="h-5 w-5 text-red-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-              </svg>
-              <p className="text-sm text-red-800 font-medium">{error}</p>
-            </div>
-          </div>
-        )}
+        <div style={{ position: 'absolute', inset: 0 }}>
+          {particles.map((particle) => (
+            <div key={particle.id} className="floating-particle" style={{ position: 'absolute', width: '4px', height: '4px', backgroundColor: 'white', borderRadius: '50%', opacity: 0.3, left: particle.left, top: particle.top, animationDelay: particle.delay, animationDuration: particle.duration }} />
+          ))}
+        </div>
 
-        <form className="mt-10 space-y-7" onSubmit={handleSubmit}>
-          <div className="space-y-6">
-            <div className="animate-slide-up" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
-              <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                Email Address
-              </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                  </svg>
-                </div>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className={`appearance-none relative block w-full pl-10 pr-3 py-3.5 border ${
-                    formErrors.email ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500'
-                  } placeholder-gray-400 text-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:border-transparent sm:text-sm transition-all shadow-sm`}
-                  placeholder="you@example.com"
-                />
-              </div>
-              {formErrors.email && (
-                <p className="mt-2 text-sm text-red-600 flex items-center">
-                  <svg className="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-                  </svg>
-                  {formErrors.email}
-                </p>
-              )}
+        <div style={{ width: '100%', maxWidth: '28rem', backgroundColor: 'rgba(30, 41, 59, 0.5)', backdropFilter: 'blur(16px)', border: '1px solid rgba(51, 65, 85, 0.5)', borderRadius: '1rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', position: 'relative', zIndex: 10, animation: 'slideInFromBottom 1s ease-out', padding: '2rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <div className="hover-scale-110" style={{ width: '3rem', height: '3rem', background: 'linear-gradient(to right, #a855f7, #ec4899)', borderRadius: '0.75rem', margin: '0 auto 1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.3s ease' }}>
+              <LoginIcon style={{ width: '1.5rem', height: '1.5rem', color: 'white' }} />
             </div>
-
-            <div className="animate-slide-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
-              <label htmlFor="password" className="block text-sm font-semibold text-gray-700 mb-2">
-                Password
-              </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                  </svg>
-                </div>
-                <input
-                  id="password"
-                  name="password"
-                  type={showPassword ? 'text' : 'password'}
-                  autoComplete="current-password"
-                  value={formData.password}
-                  onChange={handleChange}
-                  className={`appearance-none relative block w-full pl-10 pr-12 py-3.5 border ${
-                    formErrors.password ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500'
-                  } placeholder-gray-400 text-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:border-transparent sm:text-sm transition-all shadow-sm`}
-                  placeholder="••••••••"
-                />
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center hover:scale-110 transition-transform"
-                >
-                  {showPassword ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-gray-400 hover:text-gray-600">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
-                    </svg>
-                  ) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-gray-400 hover:text-gray-600">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  )}
-                </button>
-              </div>
-              {formErrors.password && (
-                <p className="mt-2 text-sm text-red-600 flex items-center">
-                  <svg className="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-                  </svg>
-                  {formErrors.password}
-                </p>
-              )}
-            </div>
+            <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white', margin: '0 0 0.5rem 0' }}>Welcome Back</h1>
+            <p style={{ color: '#94a3b8', fontSize: '0.875rem', margin: 0 }}>Sign in to your account to continue</p>
           </div>
 
-          <div className="flex items-center justify-between animate-slide-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
-            <div className="flex items-center">
-              <input
-                id="remember-me"
-                name="remember-me"
-                type="checkbox"
-                className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded cursor-pointer"
-              />
-              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700 cursor-pointer">
-                Remember me
-              </label>
+          {authError && (
+            <div style={{ backgroundColor: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.5)', borderRadius: '0.5rem', padding: '0.75rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <AlertCircle style={{ width: '1rem', height: '1rem', color: '#ef4444' }} />
+              <span style={{ color: '#fca5a5', fontSize: '0.875rem' }}>{authError}</span>
             </div>
+          )}
 
-            <div className="text-sm">
-              <Link to="/forgot-password" className="font-semibold text-blue-600 hover:text-blue-700 transition-colors">
-                Forgot password?
-              </Link>
-            </div>
-          </div>
-
-          <div className="animate-slide-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
-            <button
-              type="submit"
-              disabled={loading}
-              className="btn-primary group relative w-full flex justify-center py-3.5 px-4 border border-transparent text-sm font-semibold rounded-xl text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-            >
-              {loading ? (
-                <span className="flex items-center">
-                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                  </svg>
-                  Signing in...
-                </span>
-              ) : (
-                <span className="flex items-center">
-                  Sign In
-                  <svg className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </span>
-              )}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem' }}>
+            <button className="social-button hover-scale" style={{ flex: 1, padding: '0.75rem', backgroundColor: 'rgba(51, 65, 85, 0.5)', border: '1px solid #475569', borderRadius: '0.5rem', color: '#cbd5e1', fontSize: '0.875rem', cursor: 'pointer', transition: 'all 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+              <Github style={{ width: '1rem', height: '1rem' }} />
+              GitHub
+            </button>
+            <button className="social-button hover-scale" style={{ flex: 1, padding: '0.75rem', backgroundColor: 'rgba(51, 65, 85, 0.5)', border: '1px solid #475569', borderRadius: '0.5rem', color: '#cbd5e1', fontSize: '0.875rem', cursor: 'pointer', transition: 'all 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+              <Chrome style={{ width: '1rem', height: '1rem' }} />
+              Google
             </button>
           </div>
 
-          <div className="text-center animate-slide-up" style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
-            <p className="text-sm text-gray-600">
+          <div style={{ position: 'relative', marginBottom: '1.5rem', display: 'flex', alignItems: 'center' }}>
+            <div style={{ flex: 1, height: '1px', backgroundColor: '#475569' }} />
+            <span style={{ backgroundColor: 'rgba(30, 41, 59, 0.5)', padding: '0 0.5rem', color: '#94a3b8', fontSize: '0.75rem', textTransform: 'uppercase' }}>Or continue with</span>
+            <div style={{ flex: 1, height: '1px', backgroundColor: '#475569' }} />
+          </div>
+
+          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <div style={{ position: 'relative' }}>
+              <label htmlFor="email" style={{ display: 'block', fontSize: '0.875rem', color: focusedField === 'email' ? '#c084fc' : '#94a3b8', marginBottom: '0.5rem', transition: 'color 0.2s ease' }}>Email</label>
+              <div style={{ position: 'relative' }}>
+                <Mail style={{ position: 'absolute', left: '0.75rem', top: '50%', transform: 'translateY(-50%)', width: '1rem', height: '1rem', color: focusedField === 'email' ? '#c084fc' : '#94a3b8', transition: 'color 0.2s ease' }} />
+                <input id="email" type="email" value={formData.email} onChange={(e) => handleInputChange('email', e.target.value)} onFocus={() => setFocusedField('email')} onBlur={() => setFocusedField(null)} placeholder="john@example.com" style={{ width: '100%', padding: '0.75rem', paddingLeft: '2.5rem', backgroundColor: 'rgba(51, 65, 85, 0.5)', border: focusedField === 'email' ? '1px solid #a855f7' : '1px solid #475569', borderRadius: '0.5rem', color: 'white', fontSize: '0.875rem', outline: 'none', transition: 'all 0.3s ease', boxShadow: focusedField === 'email' ? '0 0 0 3px rgba(168, 85, 247, 0.1)' : 'none' }} required />
+                <div style={{ position: 'absolute', bottom: 0, left: 0, height: '2px', background: 'linear-gradient(to right, #a855f7, #ec4899)', transition: 'width 0.3s ease', width: focusedField === 'email' ? '100%' : '0%' }} />
+              </div>
+            </div>
+
+            <div style={{ position: 'relative' }}>
+              <label htmlFor="password" style={{ display: 'block', fontSize: '0.875rem', color: focusedField === 'password' ? '#c084fc' : '#94a3b8', marginBottom: '0.5rem', transition: 'color 0.2s ease' }}>Password</label>
+              <div style={{ position: 'relative' }}>
+                <Lock style={{ position: 'absolute', left: '0.75rem', top: '50%', transform: 'translateY(-50%)', width: '1rem', height: '1rem', color: focusedField === 'password' ? '#c084fc' : '#94a3b8', transition: 'color 0.2s ease' }} />
+                <input id="password" type={showPassword ? 'text' : 'password'} value={formData.password} onChange={(e) => handleInputChange('password', e.target.value)} onFocus={() => setFocusedField('password')} onBlur={() => setFocusedField(null)} placeholder="••••••••" style={{ width: '100%', padding: '0.75rem', paddingLeft: '2.5rem', paddingRight: '2.5rem', backgroundColor: 'rgba(51, 65, 85, 0.5)', border: focusedField === 'password' ? '1px solid #a855f7' : '1px solid #475569', borderRadius: '0.5rem', color: 'white', fontSize: '0.875rem', outline: 'none', transition: 'all 0.3s ease', boxShadow: focusedField === 'password' ? '0 0 0 3px rgba(168, 85, 247, 0.1)' : 'none' }} required />
+                <button type="button" onClick={() => setShowPassword(!showPassword)} style={{ position: 'absolute', right: '0.75rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: '#94a3b8', cursor: 'pointer', transition: 'color 0.2s ease' }} onMouseEnter={(e) => (e.currentTarget.style.color = 'white')} onMouseLeave={(e) => (e.currentTarget.style.color = '#94a3b8')}>
+                  {showPassword ? <EyeOff style={{ width: '1rem', height: '1rem' }} /> : <Eye style={{ width: '1rem', height: '1rem' }} />}
+                </button>
+                <div style={{ position: 'absolute', bottom: 0, left: 0, height: '2px', background: 'linear-gradient(to right, #a855f7, #ec4899)', transition: 'width 0.3s ease', width: focusedField === 'password' ? '100%' : '0%' }} />
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div className="checkbox-container">
+                <div className={formData.rememberMe ? 'custom-checkbox checked' : 'custom-checkbox'} onClick={() => handleInputChange('rememberMe', !formData.rememberMe)} />
+                <label style={{ fontSize: '0.875rem', color: '#94a3b8', cursor: 'pointer' }} onClick={() => handleInputChange('rememberMe', !formData.rememberMe)}>Remember me</label>
+              </div>
+              <Link to="/forgot-password" style={{ fontSize: '0.875rem', color: '#c084fc', textDecoration: 'none', transition: 'color 0.2s ease' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#d8b4fe')} onMouseLeave={(e) => (e.currentTarget.style.color = '#c084fc')}>Forgot password?</Link>
+            </div>
+
+            <button type="submit" className="main-button group" style={{ width: '100%', padding: '0.75rem 1rem', background: 'linear-gradient(to right, #a855f7, #ec4899)', border: 'none', borderRadius: '0.5rem', color: 'white', fontWeight: '600', fontSize: '0.875rem', cursor: loading ? 'not-allowed' : 'pointer', transition: 'all 0.3s ease', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', opacity: loading ? 0.7 : 1 }} disabled={loading}>
+              {loading ? 'Signing in...' : 'Sign In'}
+              {!loading && <ArrowRight className="group-hover-translate" style={{ width: '1rem', height: '1rem', transition: 'transform 0.2s ease' }} />}
+            </button>
+          </form>
+
+          <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+            <p style={{ color: '#94a3b8', fontSize: '0.875rem', margin: 0 }}>
               Don't have an account?{' '}
-              <Link to="/register" className="font-semibold text-blue-600 hover:text-blue-700 transition-colors">
-                Sign up now
-              </Link>
+              <Link to="/register" style={{ color: '#c084fc', textDecoration: 'none', fontWeight: '600', transition: 'color 0.2s ease' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#d8b4fe')} onMouseLeave={(e) => (e.currentTarget.style.color = '#c084fc')}>Sign up</Link>
             </p>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
