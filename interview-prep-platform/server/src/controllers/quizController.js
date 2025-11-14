@@ -224,3 +224,185 @@ exports.getQuizAttempts = asyncHandler(async (req, res) => {
         data: attempts
     });
 });
+
+// @desc    Save quiz progress
+// @route   POST /api/quiz/save-progress
+// @access  Private
+exports.saveProgress = asyncHandler(async (req, res) => {
+    const { attemptId, answers, currentQuestionIndex, timeRemaining, flaggedQuestions } = req.body;
+
+    if (!attemptId) {
+        res.status(400);
+        throw new Error('Attempt ID is required');
+    }
+
+    // Find existing attempt or create new one
+    let quizAttempt = await QuizAttempt.findById(attemptId);
+
+    if (!quizAttempt) {
+        res.status(404);
+        throw new Error('Quiz attempt not found');
+    }
+
+    // Verify user owns this attempt
+    if (quizAttempt.user.toString() !== req.user.id) {
+        res.status(401);
+        throw new Error('Not authorized to update this quiz attempt');
+    }
+
+    // Update progress
+    quizAttempt.inProgress = true;
+    quizAttempt.currentQuestionIndex = currentQuestionIndex || 0;
+    quizAttempt.timeRemaining = timeRemaining;
+    quizAttempt.flaggedQuestions = flaggedQuestions || [];
+    
+    // Update answers if provided
+    if (answers && Array.isArray(answers)) {
+        quizAttempt.tempAnswers = answers;
+    }
+
+    await quizAttempt.save();
+
+    res.json({
+        success: true,
+        message: 'Progress saved successfully',
+        data: quizAttempt
+    });
+});
+
+// @desc    Get quiz attempt by ID
+// @route   GET /api/quiz/attempt/:attemptId
+// @access  Private
+exports.getAttemptById = asyncHandler(async (req, res) => {
+    const quizAttempt = await QuizAttempt.findById(req.params.attemptId);
+
+    if (!quizAttempt) {
+        res.status(404);
+        throw new Error('Quiz attempt not found');
+    }
+
+    // Verify user owns this attempt
+    if (quizAttempt.user.toString() !== req.user.id) {
+        res.status(401);
+        throw new Error('Not authorized to view this quiz attempt');
+    }
+
+    res.json({
+        success: true,
+        data: quizAttempt
+    });
+});
+
+// @desc    Get quiz results with detailed analysis
+// @route   GET /api/quiz/results/:attemptId
+// @access  Private
+exports.getQuizResults = asyncHandler(async (req, res) => {
+    const quizAttempt = await QuizAttempt.findById(req.params.attemptId);
+
+    if (!quizAttempt) {
+        res.status(404);
+        throw new Error('Quiz attempt not found');
+    }
+
+    // Verify user owns this attempt
+    if (quizAttempt.user.toString() !== req.user.id) {
+        res.status(401);
+        throw new Error('Not authorized to view this quiz attempt');
+    }
+
+    // Calculate additional metrics
+    const correctAnswers = quizAttempt.questions.filter(q => q.isCorrect).length;
+    const incorrectAnswers = quizAttempt.questions.filter(q => !q.isCorrect && q.userAnswer !== null && q.userAnswer !== -1).length;
+    const unattempted = quizAttempt.questions.filter(q => q.userAnswer === null || q.userAnswer === -1).length;
+
+    // Calculate percentile (mock - would need all attempts for accurate percentile)
+    const allAttempts = await QuizAttempt.find({
+        subject: quizAttempt.subject,
+        difficulty: quizAttempt.difficulty
+    }).select('percentage');
+    
+    const lowerScores = allAttempts.filter(attempt => attempt.percentage < quizAttempt.percentage).length;
+    const percentile = allAttempts.length > 0 ? Math.round((lowerScores / allAttempts.length) * 100) : 50;
+
+    // Group questions by topic for performance breakdown
+    const topicPerformance = {};
+    quizAttempt.questions.forEach(q => {
+        const topic = q.topic || 'General';
+        if (!topicPerformance[topic]) {
+            topicPerformance[topic] = { correct: 0, total: 0 };
+        }
+        topicPerformance[topic].total++;
+        if (q.isCorrect) topicPerformance[topic].correct++;
+    });
+
+    // Calculate average time per question
+    const avgTimePerQuestion = quizAttempt.timeTaken / quizAttempt.totalQuestions;
+
+    res.json({
+        success: true,
+        data: {
+            attempt: quizAttempt,
+            summary: {
+                totalScore: quizAttempt.score,
+                percentage: quizAttempt.percentage,
+                correctAnswers,
+                incorrectAnswers,
+                unattempted,
+                timeTaken: quizAttempt.timeTaken,
+                timeAllotted: quizAttempt.timeAllotted,
+                percentile,
+                avgTimePerQuestion: Math.round(avgTimePerQuestion)
+            },
+            performance: {
+                byTopic: Object.entries(topicPerformance).map(([topic, stats]) => ({
+                    topic,
+                    correct: stats.correct,
+                    total: stats.total,
+                    accuracy: Math.round((stats.correct / stats.total) * 100)
+                })),
+                byDifficulty: {
+                    difficulty: quizAttempt.difficulty,
+                    accuracy: quizAttempt.percentage
+                }
+            }
+        }
+    });
+});
+
+// @desc    Get quiz review with all questions and answers
+// @route   GET /api/quiz/review/:attemptId
+// @access  Private
+exports.getQuizReview = asyncHandler(async (req, res) => {
+    const quizAttempt = await QuizAttempt.findById(req.params.attemptId);
+
+    if (!quizAttempt) {
+        res.status(404);
+        throw new Error('Quiz attempt not found');
+    }
+
+    // Verify user owns this attempt
+    if (quizAttempt.user.toString() !== req.user.id) {
+        res.status(401);
+        throw new Error('Not authorized to view this quiz attempt');
+    }
+
+    // Return full attempt with all question details
+    res.json({
+        success: true,
+        data: {
+            subject: quizAttempt.subject,
+            difficulty: quizAttempt.difficulty,
+            score: quizAttempt.score,
+            totalQuestions: quizAttempt.totalQuestions,
+            percentage: quizAttempt.percentage,
+            timeTaken: quizAttempt.timeTaken,
+            questions: quizAttempt.questions.map(q => ({
+                questionId: q.questionId,
+                userAnswer: q.userAnswer,
+                correctAnswer: q.correctAnswer,
+                isCorrect: q.isCorrect,
+                timeTaken: q.timeTaken
+            }))
+        }
+    });
+});

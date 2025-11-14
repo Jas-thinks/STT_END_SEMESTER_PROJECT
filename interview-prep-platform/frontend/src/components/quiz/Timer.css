@@ -1,0 +1,210 @@
+.timer-container {
+    position: relative;
+}
+
+.timer-display {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.timer-display.timer-warning {
+    border-color: rgba(245, 158, 11, 0.5);
+    background: rgba(245, 158, 11, 0.1);
+    animation: pulse-warning 2s ease-in-out infinite;
+}
+
+.timer-display.timer-critical {
+    border-color: rgba(239, 68, 68, 0.5);
+    background: rgba(239, 68, 68, 0.1);
+    animation: pulse-critical 1s ease-in-out infinite;
+}
+
+@keyframes pulse-warning {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(245, 158, 11, 0);
+    }
+}
+
+@keyframes pulse-critical {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+    }
+}
+
+.timer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a855f7;
+}
+
+.timer-content {
+    flex: 1;
+}
+
+.timer-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 4px;
+}
+
+.timer-time {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+}
+
+.timer-progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+}
+
+.timer-progress-fill {
+    height: 100%;
+    transition: width 1s linear, background-color 0.3s ease;
+}
+
+/* Warning Modal */
+.timer-warning-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+.timer-warning-modal {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(88, 28, 135, 0.95) 100%);
+    border: 2px solid rgba(245, 158, 11, 0.5);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(245, 158, 11, 0.3);
+    animation: slideUp 0.3s ease;
+}
+
+.timer-warning-icon {
+    margin-bottom: 20px;
+}
+
+.warning-icon-svg {
+    color: #f59e0b;
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+.timer-warning-modal h3 {
+    color: #f59e0b;
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.timer-warning-modal p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.timer-warning-btn {
+    background: linear-gradient(to right, #f59e0b, #d97706);
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.timer-warning-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
+}
+
+/* Pause button (optional) */
+.timer-pause-btn {
+    margin-top: 8px;
+    background: rgba(168, 85, 247, 0.2);
+    border: 1px solid rgba(168, 85, 247, 0.5);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.timer-pause-btn:hover {
+    background: rgba(168, 85, 247, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timer-display {
+        padding: 12px 16px;
+    }
+
+    .timer-time {
+        font-size: 20px;
+    }
+
+    .timer-warning-modal {
+        padding: 30px 20px;
+        max-width: 90%;
+    }
+}

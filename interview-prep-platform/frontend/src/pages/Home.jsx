@@ -1,10 +1,48 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, Target, TrendingUp, Code, Clock, Trophy, BookOpen, ArrowRight } from 'lucide-react';
 import useAuth from '../hooks/useAuth.js';
+import api from '../services/api';
 
 const Home = () => {
   const { isAuthenticated } = useAuth();
+  const [questionCount, setQuestionCount] = useState('1000+');
+  const [topicCount, setTopicCount] = useState('50+');
+
+  useEffect(() => {
+    fetchStats();
+  }, []);
+
+  const fetchStats = async () => {
+    try {
+      const response = await api.get('/quiz/categories');
+      if (response.data && response.data.data) {
+        const categories = response.data.data;
+        
+        // Calculate total questions across all categories and difficulties
+        let total = 0;
+        categories.forEach(cat => {
+          if (cat.difficulties) {
+            cat.difficulties.forEach(diff => {
+              total += diff.count || 0;
+            });
+          }
+        });
+        
+        // Format the count
+        if (total > 0) {
+          setQuestionCount(total.toLocaleString());
+        }
+        
+        // Count unique topics (approximate based on categories)
+        const topicEstimate = categories.length * 5; // Rough estimate
+        setTopicCount(`${topicEstimate}+`);
+      }
+    } catch (error) {
+      console.error('Error fetching stats:', error);
+      // Keep default values
+    }
+  };
 
   const particles = [];
   for (let i = 0; i < 15; i++) {
@@ -121,11 +159,11 @@ const Home = () => {
               {/* Stats */}
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '3rem', maxWidth: '56rem', margin: '0 auto' }}>
                 <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '3rem', fontWeight: '800', background: 'linear-gradient(to right, #a855f7, #ec4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>1000+</div>
+                  <div style={{ fontSize: '3rem', fontWeight: '800', background: 'linear-gradient(to right, #a855f7, #ec4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{questionCount}</div>
                   <div style={{ fontSize: '1rem', color: '#94a3b8', marginTop: '0.5rem' }}>Questions</div>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '3rem', fontWeight: '800', background: 'linear-gradient(to right, #a855f7, #ec4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>50+</div>
+                  <div style={{ fontSize: '3rem', fontWeight: '800', background: 'linear-gradient(to right, #a855f7, #ec4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{topicCount}</div>
                   <div style={{ fontSize: '1rem', color: '#94a3b8', marginTop: '0.5rem' }}>Topics</div>
                 </div>
                 <div style={{ textAlign: 'center' }}>

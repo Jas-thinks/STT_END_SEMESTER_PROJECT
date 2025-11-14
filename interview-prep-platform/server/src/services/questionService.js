@@ -81,8 +81,17 @@ class QuestionService {
                     try {
                         const fileContent = await fs.readFile(filePath, 'utf-8');
                         const data = JSON.parse(fileContent);
-                        totalQuestions += data.total_questions || data.questions?.length || 0;
+                        
+                        // Handle both JSON formats
+                        if (Array.isArray(data)) {
+                            totalQuestions += data.length;
+                        } else if (data.questions && Array.isArray(data.questions)) {
+                            totalQuestions += data.questions.length;
+                        } else if (data.total_questions) {
+                            totalQuestions += data.total_questions;
+                        }
                     } catch (err) {
+                        // File might not exist, continue
                         continue;
                     }
                 }
@@ -122,24 +131,57 @@ class QuestionService {
             const fileContent = await fs.readFile(filePath, 'utf-8');
             const data = JSON.parse(fileContent);
 
-            if (!data.questions || !Array.isArray(data.questions)) {
+            // Handle two different JSON structures:
+            // 1. Direct array: [{question, options, answer}, ...]
+            // 2. Object with questions: {subject, difficulty, questions: [...]}
+            let questionsList = [];
+            
+            if (Array.isArray(data)) {
+                // Direct array format (SQL, DBMS, etc.)
+                questionsList = data;
+            } else if (data.questions && Array.isArray(data.questions)) {
+                // Object format (DSA, OS)
+                questionsList = data.questions;
+            } else {
                 throw new Error('Invalid question file format');
             }
 
+            // Normalize questions to have consistent format
+            const normalizedQuestions = questionsList.map((q, index) => {
+                // Handle different answer formats
+                let correctAnswerIndex;
+                if (q.correct_answer !== undefined) {
+                    correctAnswerIndex = q.correct_answer;
+                } else if (q.answer !== undefined) {
+                    // Find index of correct answer in options
+                    correctAnswerIndex = q.options.findIndex(opt => opt === q.answer);
+                    if (correctAnswerIndex === -1) correctAnswerIndex = 0;
+                } else {
+                    correctAnswerIndex = 0;
+                }
+
+                return {
+                    id: q.id || index + 1,
+                    topic: q.topic || category,
+                    question: q.question,
+                    options: q.options || [],
+                    correct_answer: correctAnswerIndex,
+                    code: q.code,
+                    image: q.image,
+                    explanation: q.explanation
+                };
+            });
+
             // Shuffle and select random questions
-            const shuffled = [...data.questions].sort(() => 0.5 - Math.random());
+            const shuffled = [...normalizedQuestions].sort(() => 0.5 - Math.random());
             const selected = shuffled.slice(0, Math.min(count, shuffled.length));
 
             return {
                 subject: category,
                 difficulty,
-                questions: selected.map(q => ({
-                    ...q,
-                    questionText: q.question,
-                    correctAnswer: q.correct_answer
-                })),
+                questions: selected,
                 timeLimit: this.getTimeLimit(difficulty),
-                totalAvailable: data.questions.length
+                totalAvailable: normalizedQuestions.length
             };
         } catch (error) {
             console.error('Error loading questions:', error);

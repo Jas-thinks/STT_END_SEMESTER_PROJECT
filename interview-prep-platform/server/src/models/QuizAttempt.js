@@ -18,8 +18,7 @@ const QuizAttemptSchema = new mongoose.Schema({
     },
     questions: [{
         questionId: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'Question',
+            type: mongoose.Schema.Types.Mixed, // Allow both ObjectId and Number
             required: true
         },
         userAnswer: Number,
@@ -54,6 +53,26 @@ const QuizAttemptSchema = new mongoose.Schema({
     badgesEarned: [{
         name: String,
         description: String
+    }],
+    // Progress tracking fields
+    inProgress: {
+        type: Boolean,
+        default: false
+    },
+    currentQuestionIndex: {
+        type: Number,
+        default: 0
+    },
+    timeRemaining: {
+        type: Number // time remaining in seconds
+    },
+    flaggedQuestions: [{
+        type: Number // array of question indices
+    }],
+    tempAnswers: [{
+        questionIndex: Number,
+        userAnswer: Number,
+        timeTaken: Number
     }],
     completedAt: {
         type: Date,

@@ -102,7 +102,7 @@ const Home = () => {
             </div>
             <div className="hero-stats">
               <div className="stat-item">
-                <h3>1000+</h3>
+                <h3>5000+</h3>
                 <p>Questions</p>
               </div>
               <div className="stat-item">
