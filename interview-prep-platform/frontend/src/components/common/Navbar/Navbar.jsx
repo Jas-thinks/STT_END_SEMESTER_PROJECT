@@ -66,11 +66,11 @@ const Navbar = () => {
                       Practice
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/leaderboard" className="nav-link-hover" style={{ color: '#e2e8f0', fontWeight: '500', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.3s ease' }}>
                       Leaderboard
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/chatbot" className="nav-link-hover" style={{ color: '#e2e8f0', fontWeight: '500', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.3s ease' }}>
                       Chatbot

@@ -69,11 +69,26 @@ const ResultPage = () => {
     };
 
     const calculateMetrics = (attempt, questions, answers) => {
-        const correctCount = attempt.score;
-        const incorrectCount = answers.filter((ans, idx) => 
-            ans !== null && ans !== -1 && ans !== questions[idx]?.correct_answer
-        ).length;
-        const unattempted = answers.filter(ans => ans === null || ans === -1).length;
+        console.log('Calculate Metrics - Input:', { attempt, questions, answers });
+        
+        // Get score from attempt (already calculated by backend)
+        const correctCount = attempt.quizAttempt?.score || attempt.score || 0;
+        const totalQuestionsCount = attempt.quizAttempt?.totalQuestions || attempt.totalQuestions || questions.length;
+        
+        // Calculate incorrect and unattempted
+        let incorrectCount = 0;
+        let unattemptedCount = 0;
+        
+        answers.forEach((ans, idx) => {
+            const userAnswer = ans !== null ? ans : -1;
+            const correctAnswer = questions[idx]?.correct_answer;
+            
+            if (userAnswer === null || userAnswer === -1) {
+                unattemptedCount++;
+            } else if (userAnswer !== correctAnswer) {
+                incorrectCount++;
+            }
+        });
 
         // Topic-wise performance
         const topicStats = {};
@@ -88,18 +103,20 @@ const ResultPage = () => {
             }
         });
 
-        setResultData({
-            attempt,
+        const attemptData = attempt.quizAttempt || attempt;
+
+        const calculatedData = {
+            attempt: attemptData,
             summary: {
                 totalScore: correctCount,
-                percentage: attempt.percentage,
+                percentage: attemptData.percentage || 0,
                 correctAnswers: correctCount,
                 incorrectAnswers: incorrectCount,
-                unattempted,
-                timeTaken: attempt.timeTaken,
-                timeAllotted: attempt.timeAllotted,
-                percentile: 75, // Mock value
-                avgTimePerQuestion: Math.round(attempt.timeTaken / questions.length)
+                unattempted: unattemptedCount,
+                timeTaken: attemptData.timeTaken || 0,
+                timeAllotted: attemptData.timeAllotted || 0,
+                percentile: 75, // Mock value - can be fetched from backend
+                avgTimePerQuestion: Math.round((attemptData.timeTaken || 0) / totalQuestionsCount)
             },
             performance: {
                 byTopic: Object.entries(topicStats).map(([topic, stats]) => ({
@@ -109,13 +126,16 @@ const ResultPage = () => {
                     accuracy: Math.round((stats.correct / stats.total) * 100)
                 })),
                 byDifficulty: {
-                    difficulty: attempt.difficulty,
-                    accuracy: attempt.percentage
+                    difficulty: attemptData.difficulty,
+                    accuracy: attemptData.percentage || 0
                 }
             },
             questions,
             answers
-        });
+        };
+
+        console.log('Calculate Metrics - Output:', calculatedData);
+        setResultData(calculatedData);
     };
 
     if (loading) {

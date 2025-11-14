@@ -62,25 +62,58 @@ exports.submitQuiz = asyncHandler(async (req, res) => {
         throw new Error('Invalid quiz submission data');
     }
 
+    console.log('Submit Quiz - Received data:', {
+        subject,
+        difficulty,
+        answersCount: answers.length,
+        questionsCount: questions?.length,
+        sampleAnswer: answers[0],
+        sampleQuestion: questions?.[0]
+    });
+
     // Calculate score from submitted answers
     // Since questions come from JSON files, we need the questions array sent from frontend
     let score = 0;
     const questionsData = answers.map((ans, index) => {
         const question = questions ? questions[index] : null;
-        const isCorrect = question && question.correctAnswer === ans.userAnswer;
+        
+        // Handle both userAnswer and direct answer formats
+        const userAnswerValue = ans.userAnswer !== undefined ? ans.userAnswer : ans;
+        
+        // Get correct answer from question (handle both formats: correctAnswer and correct_answer)
+        const correctAnswerValue = question ? 
+            (question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer) : 
+            ans.correctAnswer;
+        
+        // Check if answer is correct
+        const isCorrect = userAnswerValue !== null && 
+                         userAnswerValue !== -1 && 
+                         userAnswerValue === correctAnswerValue;
         
         if (isCorrect) score++;
 
+        console.log(`Question ${index + 1}:`, {
+            userAnswer: userAnswerValue,
+            correctAnswer: correctAnswerValue,
+            isCorrect
+        });
+
         return {
-            questionId: ans.questionId || index,
-            userAnswer: ans.userAnswer,
-            correctAnswer: question ? question.correctAnswer : ans.correctAnswer,
+            questionId: ans.questionId || question?.id || index,
+            userAnswer: userAnswerValue,
+            correctAnswer: correctAnswerValue,
             isCorrect,
             timeTaken: ans.timeTaken || 0
         };
     });
 
     const percentage = (score / answers.length) * 100;
+
+    console.log('Quiz Results:', {
+        score,
+        totalQuestions: answers.length,
+        percentage
+    });
 
     // Create quiz attempt
     const quizAttempt = await QuizAttempt.create({
