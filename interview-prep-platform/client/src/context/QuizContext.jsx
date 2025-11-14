@@ -57,3 +57,10 @@ export const QuizProvider = ({ children }) => {
         </QuizContext.Provider>
     );
 };
+export const useQuiz = () => {
+    const context = React.useContext(QuizContext);
+    if (!context) {
+        throw new Error("useQuiz must be used within QuizProvider");
+    }
+    return context;
+};

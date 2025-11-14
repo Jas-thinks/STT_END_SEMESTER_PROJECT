@@ -1,8 +1,11 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api'; // Adjust the URL based on your server configuration
+const API_URL = 'http://localhost:5000/api';
 
-// Function to get all categorized interview questions
+// Export all functions from apiService for compatibility
+export * from './apiService';
+
+// Legacy functions for backward compatibility
 export const fetchQuestions = async (category) => {
     try {
         const response = await axios.get(`${API_URL}/questions/${category}`);
@@ -12,7 +15,6 @@ export const fetchQuestions = async (category) => {
     }
 };
 
-// Function to submit a quiz attempt
 export const submitQuizAttempt = async (data) => {
     try {
         const response = await axios.post(`${API_URL}/quiz/attempt`, data);
@@ -22,17 +24,17 @@ export const submitQuizAttempt = async (data) => {
     }
 };
 
-// Function to get user performance analytics
 export const fetchUserPerformance = async (userId) => {
     try {
-        const response = await axios.get(`${API_URL}/analytics/performance/${userId}`);
+        const response = await axios.get(`${API_URL}/analytics/performance/${userId || ''}`);
         return response.data;
     } catch (error) {
         throw new Error('Error fetching user performance: ' + error.message);
     }
 };
 
-// Function to create a custom quiz
+export const fetchPerformanceData = fetchUserPerformance;
+
 export const createCustomQuiz = async (quizData) => {
     try {
         const response = await axios.post(`${API_URL}/quiz/custom`, quizData);

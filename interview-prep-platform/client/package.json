@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "vite": "^2.6.4",
+    "@vitejs/plugin-react": "^1.0.0",
     "jest": "^27.0.6",
     "babel-jest": "^27.0.6",
     "@testing-library/react": "^12.1.5",
