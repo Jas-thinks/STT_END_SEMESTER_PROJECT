@@ -34,12 +34,14 @@ const authRoutes = require('./src/routes/authRoutes');
 const quizRoutes = require('./src/routes/quizRoutes');
 const userRoutes = require('./src/routes/userRoutes');
 const analyticsRoutes = require('./src/routes/analyticsRoutes');
+const chatbotRoutes = require('./src/routes/chatbotRoutes');
 
 // Use routes
 app.use('/api/auth', authRoutes);
 app.use('/api/quiz', quizRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/analytics', analyticsRoutes);
+app.use('/api/chatbot', chatbotRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
