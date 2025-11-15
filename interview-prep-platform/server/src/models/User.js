@@ -29,6 +29,20 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: 'https://ui-avatars.com/api/?name='
     },
+    phone: {
+        type: String,
+        default: ''
+    },
+    bio: {
+        type: String,
+        default: '',
+        maxlength: 500
+    },
+    rank: {
+        type: String,
+        default: 'Beginner',
+        enum: ['Beginner', 'Novice', 'Intermediate', 'Advanced', 'Expert', 'Master']
+    },
     level: {
         type: Number,
         default: 1
@@ -44,8 +58,15 @@ const UserSchema = new mongoose.Schema({
     },
     badges: [{
         name: String,
+        description: String,
+        icon: String,
         earnedAt: { type: Date, default: Date.now }
     }],
+    settings: {
+        emailNotifications: { type: Boolean, default: true },
+        theme: { type: String, default: 'dark', enum: ['light', 'dark'] },
+        language: { type: String, default: 'en' }
+    },
     bookmarkedQuestions: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Question'
@@ -78,6 +99,11 @@ UserSchema.pre('save', async function(next) {
 
 // Match password
 UserSchema.methods.matchPassword = async function(enteredPassword) {
+    return await bcrypt.compare(enteredPassword, this.password);
+};
+
+// Compare password (alias for matchPassword)
+UserSchema.methods.comparePassword = async function(enteredPassword) {
     return await bcrypt.compare(enteredPassword, this.password);
 };
 

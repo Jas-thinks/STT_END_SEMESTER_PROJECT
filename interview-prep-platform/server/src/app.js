@@ -26,6 +26,12 @@ app.use('/api/quiz', quizRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/analytics', analyticsRoutes);
 
+console.log('✅ All routes registered:');
+console.log('   - /api/auth');
+console.log('   - /api/quiz');
+console.log('   - /api/users');
+console.log('   - /api/analytics');
+
 // Error handling middleware
 app.use(errorHandler);
 

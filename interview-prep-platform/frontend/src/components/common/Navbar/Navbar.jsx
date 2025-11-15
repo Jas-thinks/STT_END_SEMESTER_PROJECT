@@ -66,14 +66,14 @@ const Navbar = () => {
                       Practice
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link to="/leaderboard" className="nav-link-hover" style={{ color: '#e2e8f0', fontWeight: '500', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.3s ease' }}>
-                      Leaderboard
-                    </Link>
-                  </li> */}
                   <li>
                     <Link to="/chatbot" className="nav-link-hover" style={{ color: '#e2e8f0', fontWeight: '500', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.3s ease' }}>
                       Chatbot
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/profile" className="nav-link-hover" style={{ color: '#e2e8f0', fontWeight: '500', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.3s ease' }}>
+                      Profile
                     </Link>
                   </li>
                   <li style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -145,8 +145,8 @@ const Navbar = () => {
                 <>
                   <Link to="/dashboard" onClick={() => setMobileMenuOpen(false)} style={{ color: '#e2e8f0', fontWeight: '500', fontSize: '1rem', textDecoration: 'none', padding: '0.75rem 0' }}>Dashboard</Link>
                   <Link to="/practice" onClick={() => setMobileMenuOpen(false)} style={{ color: '#e2e8f0', fontWeight: '500', fontSize: '1rem', textDecoration: 'none', padding: '0.75rem 0' }}>Practice</Link>
-                  <Link to="/leaderboard" onClick={() => setMobileMenuOpen(false)} style={{ color: '#e2e8f0', fontWeight: '500', fontSize: '1rem', textDecoration: 'none', padding: '0.75rem 0' }}>Leaderboard</Link>
                   <Link to="/chatbot" onClick={() => setMobileMenuOpen(false)} style={{ color: '#e2e8f0', fontWeight: '500', fontSize: '1rem', textDecoration: 'none', padding: '0.75rem 0' }}>Chatbot</Link>
+                  <Link to="/profile" onClick={() => setMobileMenuOpen(false)} style={{ color: '#e2e8f0', fontWeight: '500', fontSize: '1rem', textDecoration: 'none', padding: '0.75rem 0' }}>Profile</Link>
                   <div style={{ padding: '0.75rem 0', color: '#c084fc', fontSize: '0.875rem' }}>Hi, {user?.name || 'User'}</div>
                   <button onClick={handleLogout} style={{ padding: '0.75rem 1.5rem', background: 'rgba(239, 68, 68, 0.2)', border: '1px solid rgba(239, 68, 68, 0.4)', borderRadius: '0.75rem', color: '#fca5a5', fontSize: '0.875rem', fontWeight: '600', cursor: 'pointer', textAlign: 'left' }}>Logout</button>
                 </>

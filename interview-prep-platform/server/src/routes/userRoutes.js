@@ -1,22 +1,37 @@
 const express = require('express');
-const { getUserProfile, updateUserProfile, updatePassword, deleteUserAccount } = require('../controllers/userController');
-const { authenticate, protect } = require('../middleware/auth');
+const { 
+    getUserProfile, 
+    updateUserProfile, 
+    updatePassword, 
+    deleteUserAccount,
+    getUserHistory,
+    exportHistory,
+    updateSettings
+} = require('../controllers/userController');
+const { protect } = require('../middleware/auth');
 
 const router = express.Router();
 
-// Use protect or authenticate - checking which one is available
-const authMiddleware = protect || authenticate;
+// Test route (no auth required)
+router.get('/test', (req, res) => {
+    res.json({ success: true, message: 'User routes are working!' });
+});
 
-// Route to get user profile
-router.get('/profile', authMiddleware, getUserProfile);
+// Profile routes
+router.get('/profile', protect, getUserProfile);
+router.put('/profile', protect, updateUserProfile);
 
-// Route to update user profile
-router.put('/profile', authMiddleware, updateUserProfile);
+// History routes
+router.get('/history', protect, getUserHistory);
+router.get('/history/export', protect, exportHistory);
 
-// Route to update password
-router.put('/password', authMiddleware, updatePassword);
+// Settings routes
+router.put('/password', protect, updatePassword);
+router.put('/settings', protect, updateSettings);
 
-// Route to delete user account
-router.delete('/account', authMiddleware, deleteUserAccount);
+// Account deletion
+router.delete('/account', protect, deleteUserAccount);
+
+console.log('✅ User routes registered');
 
 module.exports = router;

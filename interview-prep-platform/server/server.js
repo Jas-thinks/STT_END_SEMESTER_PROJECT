@@ -32,11 +32,13 @@ if (NODE_ENV === 'development') {
 // Import routes
 const authRoutes = require('./src/routes/authRoutes');
 const quizRoutes = require('./src/routes/quizRoutes');
+const userRoutes = require('./src/routes/userRoutes');
 const analyticsRoutes = require('./src/routes/analyticsRoutes');
 
 // Use routes
 app.use('/api/auth', authRoutes);
 app.use('/api/quiz', quizRoutes);
+app.use('/api/users', userRoutes);
 app.use('/api/analytics', analyticsRoutes);
 
 // Health check
