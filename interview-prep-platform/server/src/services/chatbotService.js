@@ -1,8 +1,10 @@
-const { GoogleGenerativeAI } = require('@google/generative-ai');
+const OpenAI = require('openai');
 const { tavily } = require('@tavily/core');
 
-// Initialize Gemini AI
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+// Initialize OpenAI
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
 
 // Initialize Tavily
 const tavilyClient = tavily({ apiKey: process.env.TAVILY_API_KEY });
@@ -43,55 +45,63 @@ Remember: You're preparing students for technical interviews. Focus on interview
 
 class ChatbotService {
   constructor() {
-    // Use gemini-pro model (most stable)
-    this.model = genAI.getGenerativeModel({
-      model: 'gemini-pro',
-    });
-
     this.systemInstruction = TUTOR_PROMPT;
-
-    this.generationConfig = {
-      temperature: 0.7,
-      topP: 0.95,
-      topK: 40,
-      maxOutputTokens: 1000,
-    };
-
-    this.safetySettings = [
-      {
-        category: 'HARM_CATEGORY_HARASSMENT',
-        threshold: 'BLOCK_MEDIUM_AND_ABOVE',
-      },
-      {
-        category: 'HARM_CATEGORY_HATE_SPEECH',
-        threshold: 'BLOCK_MEDIUM_AND_ABOVE',
-      },
-    ];
   }
 
   /**
-   * Send message to Gemini AI with conversation history
+   * Send message to OpenAI GPT-4-mini with conversation history
    */
   async chat(userMessage, conversationHistory = []) {
     try {
-      // Prepend system instruction as first user message
-      const promptWithContext = `${this.systemInstruction}\n\nUser: ${userMessage}\n\nAssistant:`;
-      
-      const result = await this.model.generateContent({
-        contents: [{ role: 'user', parts: [{ text: promptWithContext }] }],
-        generationConfig: this.generationConfig,
-        safetySettings: this.safetySettings,
+      console.log('🤖 ChatbotService.chat() called');
+      console.log('User message:', userMessage);
+      console.log('History length:', conversationHistory.length);
+
+      // Build messages array for OpenAI
+      const messages = [
+        {
+          role: 'system',
+          content: this.systemInstruction
+        },
+        // Add conversation history
+        ...conversationHistory.map(msg => ({
+          role: msg.role === 'model' ? 'assistant' : msg.role,
+          content: msg.parts?.[0]?.text || msg.content || ''
+        })),
+        // Add current user message
+        {
+          role: 'user',
+          content: userMessage
+        }
+      ];
+
+      console.log('Calling OpenAI API with GPT-4-mini...');
+      console.log('Total messages in context:', messages.length);
+
+      const completion = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        messages: messages,
+        temperature: 0.7,
+        max_tokens: 1000,
       });
 
-      const response = await result.response;
-      const text = response.text();
+      console.log('✅ OpenAI API call successful');
+      const text = completion.choices[0].message.content;
+      console.log('Response text length:', text.length);
+      console.log('Response preview:', text.substring(0, 100) + '...');
 
       return {
         success: true,
         message: text,
       };
     } catch (error) {
-      console.error('Gemini AI Error:', error);
+      console.error('❌ OpenAI API Error:', error);
+      console.error('Error name:', error.name);
+      console.error('Error message:', error.message);
+      console.error('Error stack:', error.stack);
+      if (error.response) {
+        console.error('Error response:', error.response?.data);
+      }
       throw new Error('Failed to get AI response');
     }
   }

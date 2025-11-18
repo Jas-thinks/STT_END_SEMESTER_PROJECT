@@ -43,6 +43,11 @@ exports.sendMessage = asyncHandler(async (req, res) => {
   const userId = req.user.id;
   const userName = req.user.name;
 
+  console.log('====== CHATBOT REQUEST ======');
+  console.log('User ID:', userId);
+  console.log('User Name:', userName);
+  console.log('Message:', message);
+
   if (!message || message.trim().length === 0) {
     res.status(400);
     throw new Error('Message is required');
@@ -50,9 +55,11 @@ exports.sendMessage = asyncHandler(async (req, res) => {
 
   // Get conversation history (in Gemini format)
   const history = getChatHistory(userId);
+  console.log('Conversation history length:', history.length);
 
   // Check if user is asking for resources
   const isResourceQuery = chatbotService.isResourceQuery(message);
+  console.log('Is resource query?', isResourceQuery);
 
   let botResponse;
   let resources = null;
@@ -60,9 +67,11 @@ exports.sendMessage = asyncHandler(async (req, res) => {
 
   try {
     if (isResourceQuery) {
+      console.log('🔍 Searching for resources...');
       // Search resources using Tavily first
       try {
         const searchResults = await chatbotService.searchResources(message);
+        console.log('Search results:', searchResults);
         
         if (searchResults.success && searchResults.resources.length > 0) {
           resources = searchResults.resources;
@@ -71,32 +80,44 @@ exports.sendMessage = asyncHandler(async (req, res) => {
           // Get AI response acknowledging the resources
           const aiPrompt = `The user asked: "${message}". I've found ${resources.length} helpful resources for them including YouTube videos, articles, and tutorials. Please provide a brief, encouraging response (2-3 sentences) acknowledging their question and mentioning that resources are available below.`;
           
+          console.log('🤖 Getting AI response for resources...');
           const aiResponse = await chatbotService.chat(aiPrompt, history);
+          console.log('AI response:', aiResponse);
           botResponse = aiResponse.message;
         } else {
+          console.log('No resources found, getting regular AI response...');
           // No resources found, give regular AI response
           const aiResponse = await chatbotService.chat(message, history);
+          console.log('AI response:', aiResponse);
           botResponse = aiResponse.message;
         }
       } catch (searchError) {
-        console.error('Resource search failed:', searchError);
+        console.error('❌ Resource search failed:', searchError);
+        console.error('Error stack:', searchError.stack);
         // Fallback to regular AI response
+        console.log('Falling back to regular AI response...');
         const aiResponse = await chatbotService.chat(message, history);
+        console.log('AI response:', aiResponse);
         botResponse = aiResponse.message;
       }
     } else {
+      console.log('💬 Getting regular AI response...');
       // Regular AI response for questions/explanations
       const aiResponse = await chatbotService.chat(message, history);
+      console.log('AI response:', aiResponse);
       botResponse = aiResponse.message;
     }
 
     // Add messages to history
     addToHistory(userId, 'user', message);
     addToHistory(userId, 'model', botResponse);
+    console.log('✅ Messages added to history');
 
     // Get quick actions
     const quickActions = chatbotService.getQuickActions(message);
+    console.log('Quick actions:', quickActions);
 
+    console.log('====== SENDING RESPONSE ======');
     res.json({
       success: true,
       data: {
@@ -108,7 +129,10 @@ exports.sendMessage = asyncHandler(async (req, res) => {
       },
     });
   } catch (error) {
-    console.error('Chatbot error:', error);
+    console.error('❌❌❌ CHATBOT ERROR ❌❌❌');
+    console.error('Error message:', error.message);
+    console.error('Error stack:', error.stack);
+    console.error('Error details:', error);
     res.status(500);
     throw new Error('Failed to process your message. Please try again.');
   }
